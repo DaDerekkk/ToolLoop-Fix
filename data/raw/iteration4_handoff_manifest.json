@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "iteration": "ITER-004",
+  "artifacts": [
+    {
+      "path": "docs/plans/M6_24G_TRAINING_HANDOFF.md",
+      "sha256": "25b732f98e5bd47a0d8ee6ebf3546727d4e5b9f1156a664784d2782da47b8eb4"
+    },
+    {
+      "path": "docs/plans/M6_PORTABILITY_ADDENDUM.md",
+      "sha256": "c98193bc7d837d2b7cf5e22e30bd1361bf05617e8c268c72e8b2206c40bed9a2"
+    },
+    {
+      "path": "configs/future_training_plan.json",
+      "sha256": "0e94a0f381537589b5fce5539f80ce3de379baf78ec4f9a5363e0bd500e654fa"
+    },
+    {
+      "path": "agents/handoffs/coordinator.md",
+      "sha256": "f723161ebb0cf3f0c778cccb366c06a8cc7a14d5978747b9236696f42d4261fa"
+    },
+    {
+      "path": "agents/NEXT_AGENT_PROMPT.md",
+      "sha256": "8bdf3cd070bef024ca20e78fefc5ca0ba37379a96b7cc1dba87d614a11c762b0"
+    },
+    {
+      "path": "agents/reviews/iteration4_results_review.md",
+      "sha256": "8c35b61ab2ff8b492b88d5cd031d792623d69583dfe34835505fd769e3464594"
+    },
+    {
+      "path": "docs/protocols/FIXED_PREFIX_RECOVERY.md",
+      "sha256": "cc286cb034f604aa7a0f6be97ec2fc15f242838e51f0f7b53f2cb3027354ab19"
+    }
+  ],
+  "model_training_executed": false,
+  "target_machine_verified": false,
+  "target_user_report": "M6 / 24G",
+  "current_host_read_only_observed": {
+    "chip": "Apple M5",
+    "memory_bytes": 17179869184,
+    "macOS": "26.6.2"
+  },
+  "training_plan_enabled": false,
+  "migration_executed": false,
+  "absolute_path_portability_requires_work": true,
+  "note": "Futureplan/header arithmetic archived021R1; finalreviews/portability archived033; all newtraining/migration requires futuregates andexplicitpermission."
+}

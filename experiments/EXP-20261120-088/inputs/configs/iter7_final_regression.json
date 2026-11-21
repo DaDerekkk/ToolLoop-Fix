@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "description": "ITER-007 final local unit test regression check across all test modules."
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-037/inputs/scripts/check_timeout_pair.py", line 86, in <module>
+    main()
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-037/inputs/scripts/check_timeout_pair.py", line 78, in main
+    args=p.parse_args();out=analyze(json.loads(args.config.read_text()))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-037/inputs/scripts/check_timeout_pair.py", line 54, in analyze
+    require(g["parse"]["valid"] and g["parse"]["action"] == proposed, "first parse/event mismatch")
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-037/inputs/scripts/check_timeout_pair.py", line 10, in require
+    raise ValueError(message)
+ValueError: first parse/event mismatch

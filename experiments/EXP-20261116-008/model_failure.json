@@ -1,0 +1,8 @@
+{
+  "error_type": "TypeError",
+  "evidence_class": "model_inference",
+  "executable": "/Users/derek/Documents/ChatGPT/LLM 作业/.venv/bin/python",
+  "message": "Object of type set is not JSON serializable",
+  "note": "Failure retained; no scripted fallback or success artifact fabricated.",
+  "stage": "model_load"
+}

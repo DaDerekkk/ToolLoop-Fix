@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-11-16T05:54:09.099232+00:00",
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages_in_current_interpreter": {
+    "torch": false,
+    "transformers": false,
+    "peft": false,
+    "trl": false,
+    "mlx": false,
+    "mlx_lm": false
+  },
+  "ram_bytes": null,
+  "ram_check_note": "sysctl hw.memsize denied by sandbox; not verified",
+  "scope": "Current interpreter and common model-cache paths only; no global absence claim"
+}

@@ -1,0 +1,9 @@
+{
+  "evidence_kind": "synthetic_harness",
+  "dataset": "data/dev/timeout_crossed_iter6.jsonl",
+  "design": "2 tool aliases × 2 neutral identifier strings × 3 prefix outcomes; one hand-authored template group; development only",
+  "owner": "research6",
+  "hypothesis": "Visible histories differ only in tool alias and identifier within an outcome; each retryable TIMEOUT can be resolved by executing one same-argument retry.",
+  "stop_conditions": "Fail on missing/duplicate grid cell, divergent normalized public payload, hidden fields, unexpected simulator feedback, or ungrounded reference completion.",
+  "cloud": false, "model_inference": false, "training": false
+}

@@ -1,0 +1,1244 @@
+{
+  "by_prefix": {
+    "pfx-files-timeout": {
+      "base_prefix_id": "pfx-files-timeout",
+      "category": "retry_required",
+      "completable": true,
+      "continuation_actual_tool_attempts": 6,
+      "continuation_proposal_attempts": 7,
+      "continuation_turns": 11,
+      "domain": "files",
+      "exact_grounded_structured_completion": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_structured_completion_with_new_goal": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "generation_seconds": 27.195440292125568,
+      "goal_at_prefix": false,
+      "guard_blocked_proposals": 0,
+      "has_invalid_loop": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "input_tokens": 11406,
+      "natural_termination_semantics_unknown": {
+        "denominator": 4,
+        "numerator": 4,
+        "value": 1.0
+      },
+      "new_goal_evidence": {
+        "denominator": 4,
+        "numerator": 1,
+        "value": 0.25
+      },
+      "original_case_id": "files-retry_required-001",
+      "output_tokens": 602,
+      "parser_error_turns": 1,
+      "prefix_role": "recovery",
+      "premature_stop_without_goal_evidence": {
+        "denominator": 4,
+        "numerator": 3,
+        "value": 0.75
+      },
+      "proposed_repeat_count": 0,
+      "recovery_eligible": true,
+      "schedule_count": 4,
+      "stopped_after_public_unavailable": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "tool_goal_attainment": {
+        "denominator": 4,
+        "numerator": 1,
+        "value": 0.25
+      },
+      "trial_ids": [
+        "pfx-files-timeout@s1",
+        "pfx-files-timeout@s2",
+        "pfx-files-timeout@s3",
+        "pfx-files-timeout@s4"
+      ]
+    },
+    "pfx-jobs-precondition": {
+      "base_prefix_id": "pfx-jobs-precondition",
+      "category": "retry_required",
+      "completable": true,
+      "continuation_actual_tool_attempts": 16,
+      "continuation_proposal_attempts": 16,
+      "continuation_turns": 19,
+      "domain": "jobs",
+      "exact_grounded_structured_completion": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_structured_completion_with_new_goal": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "generation_seconds": 44.1026887469925,
+      "goal_at_prefix": false,
+      "guard_blocked_proposals": 0,
+      "has_invalid_loop": {
+        "denominator": 4,
+        "numerator": 1,
+        "value": 0.25
+      },
+      "input_tokens": 24204,
+      "natural_termination_semantics_unknown": {
+        "denominator": 4,
+        "numerator": 3,
+        "value": 0.75
+      },
+      "new_goal_evidence": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "original_case_id": "jobs-retry_required-001",
+      "output_tokens": 781,
+      "parser_error_turns": 0,
+      "prefix_role": "recovery",
+      "premature_stop_without_goal_evidence": {
+        "denominator": 4,
+        "numerator": 3,
+        "value": 0.75
+      },
+      "proposed_repeat_count": 9,
+      "recovery_eligible": true,
+      "schedule_count": 4,
+      "stopped_after_public_unavailable": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "tool_goal_attainment": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "trial_ids": [
+        "pfx-jobs-precondition@s1",
+        "pfx-jobs-precondition@s2",
+        "pfx-jobs-precondition@s3",
+        "pfx-jobs-precondition@s4"
+      ]
+    },
+    "pfx-orders-invalid": {
+      "base_prefix_id": "pfx-orders-invalid",
+      "category": "recoverable",
+      "completable": true,
+      "continuation_actual_tool_attempts": 2,
+      "continuation_proposal_attempts": 2,
+      "continuation_turns": 6,
+      "domain": "orders",
+      "exact_grounded_structured_completion": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_structured_completion_with_new_goal": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "generation_seconds": 20.566391333006322,
+      "goal_at_prefix": false,
+      "guard_blocked_proposals": 0,
+      "has_invalid_loop": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "input_tokens": 5814,
+      "natural_termination_semantics_unknown": {
+        "denominator": 4,
+        "numerator": 2,
+        "value": 0.5
+      },
+      "new_goal_evidence": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "original_case_id": "orders-recoverable-001",
+      "output_tokens": 451,
+      "parser_error_turns": 0,
+      "prefix_role": "recovery",
+      "premature_stop_without_goal_evidence": {
+        "denominator": 4,
+        "numerator": 3,
+        "value": 0.75
+      },
+      "proposed_repeat_count": 0,
+      "recovery_eligible": true,
+      "schedule_count": 4,
+      "stopped_after_public_unavailable": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "tool_goal_attainment": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "trial_ids": [
+        "pfx-orders-invalid@s1",
+        "pfx-orders-invalid@s2",
+        "pfx-orders-invalid@s3",
+        "pfx-orders-invalid@s4"
+      ]
+    },
+    "pfx-orders-ok": {
+      "base_prefix_id": "pfx-orders-ok",
+      "category": "normal",
+      "completable": true,
+      "continuation_actual_tool_attempts": 0,
+      "continuation_proposal_attempts": 0,
+      "continuation_turns": 4,
+      "domain": "orders",
+      "exact_grounded_structured_completion": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_structured_completion_with_new_goal": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "generation_seconds": 8.994291333889123,
+      "goal_at_prefix": true,
+      "guard_blocked_proposals": 0,
+      "has_invalid_loop": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "input_tokens": 3928,
+      "natural_termination_semantics_unknown": {
+        "denominator": 4,
+        "numerator": 4,
+        "value": 1.0
+      },
+      "new_goal_evidence": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "original_case_id": "orders-normal-001",
+      "output_tokens": 183,
+      "parser_error_turns": 0,
+      "prefix_role": "normal_completion_control",
+      "premature_stop_without_goal_evidence": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "proposed_repeat_count": 0,
+      "recovery_eligible": false,
+      "schedule_count": 4,
+      "stopped_after_public_unavailable": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "tool_goal_attainment": {
+        "denominator": 4,
+        "numerator": 4,
+        "value": 1.0
+      },
+      "trial_ids": [
+        "pfx-orders-ok@s1",
+        "pfx-orders-ok@s2",
+        "pfx-orders-ok@s3",
+        "pfx-orders-ok@s4"
+      ]
+    },
+    "pfx-orders-timeout": {
+      "base_prefix_id": "pfx-orders-timeout",
+      "category": "retry_required",
+      "completable": true,
+      "continuation_actual_tool_attempts": 1,
+      "continuation_proposal_attempts": 2,
+      "continuation_turns": 6,
+      "domain": "orders",
+      "exact_grounded_structured_completion": {
+        "denominator": 4,
+        "numerator": 1,
+        "value": 0.25
+      },
+      "exact_stop_reason_code": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_structured_completion_with_new_goal": {
+        "denominator": 4,
+        "numerator": 1,
+        "value": 0.25
+      },
+      "generation_seconds": 24.841407416039146,
+      "goal_at_prefix": false,
+      "guard_blocked_proposals": 0,
+      "has_invalid_loop": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "input_tokens": 6162,
+      "natural_termination_semantics_unknown": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "new_goal_evidence": {
+        "denominator": 4,
+        "numerator": 1,
+        "value": 0.25
+      },
+      "original_case_id": "orders-retry_required-001",
+      "output_tokens": 606,
+      "parser_error_turns": 1,
+      "prefix_role": "recovery",
+      "premature_stop_without_goal_evidence": {
+        "denominator": 4,
+        "numerator": 2,
+        "value": 0.5
+      },
+      "proposed_repeat_count": 0,
+      "recovery_eligible": true,
+      "schedule_count": 4,
+      "stopped_after_public_unavailable": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "tool_goal_attainment": {
+        "denominator": 4,
+        "numerator": 1,
+        "value": 0.25
+      },
+      "trial_ids": [
+        "pfx-orders-timeout@s1",
+        "pfx-orders-timeout@s2",
+        "pfx-orders-timeout@s3",
+        "pfx-orders-timeout@s4"
+      ]
+    },
+    "pfx-orders-unavailable": {
+      "base_prefix_id": "pfx-orders-unavailable",
+      "category": "unrecoverable",
+      "completable": false,
+      "continuation_actual_tool_attempts": 1,
+      "continuation_proposal_attempts": 1,
+      "continuation_turns": 5,
+      "domain": "orders",
+      "exact_grounded_structured_completion": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_structured_completion_with_new_goal": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "generation_seconds": 16.108045123924967,
+      "goal_at_prefix": false,
+      "guard_blocked_proposals": 0,
+      "has_invalid_loop": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "input_tokens": 5293,
+      "natural_termination_semantics_unknown": {
+        "denominator": 4,
+        "numerator": 2,
+        "value": 0.5
+      },
+      "new_goal_evidence": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "original_case_id": "orders-unrecoverable-001",
+      "output_tokens": 360,
+      "parser_error_turns": 0,
+      "prefix_role": "unavailable_stop_control",
+      "premature_stop_without_goal_evidence": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "proposed_repeat_count": 0,
+      "recovery_eligible": false,
+      "schedule_count": 4,
+      "stopped_after_public_unavailable": {
+        "denominator": 4,
+        "numerator": 2,
+        "value": 0.5
+      },
+      "tool_goal_attainment": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "trial_ids": [
+        "pfx-orders-unavailable@s1",
+        "pfx-orders-unavailable@s2",
+        "pfx-orders-unavailable@s3",
+        "pfx-orders-unavailable@s4"
+      ]
+    }
+  },
+  "by_schedule": {
+    "s1": {
+      "actual_tool_attempts": 12,
+      "budget_exhausted": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "case_count": 6,
+      "continuation_actual_tool_attempts": 4,
+      "continuation_proposal_attempts": 4,
+      "continuation_turns": 10,
+      "exact_grounded_structured_completion": {
+        "denominator": 5,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_structured_completion_recovery": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "generation_seconds": 36.60664916795213,
+      "guard_blocked_proposals": 0,
+      "has_invalid_loop": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "historical_generation_seconds": 30.499345876000007,
+      "historical_input_tokens": 5918,
+      "historical_output_tokens": 288,
+      "input_tokens": 10603,
+      "natural_termination_semantics_unknown": {
+        "denominator": 6,
+        "numerator": 5,
+        "value": 0.8333333333333334
+      },
+      "new_goal_evidence_recovery": {
+        "denominator": 4,
+        "numerator": 1,
+        "value": 0.25
+      },
+      "normal_completion_control": {
+        "case_count": 1,
+        "exact_structured_completion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "natural_termination_semantics_unknown": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "normal_exact_grounded_structured_completion": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "normal_tool_goal_attainment": {
+        "denominator": 1,
+        "numerator": 1,
+        "value": 1.0
+      },
+      "output_tokens": 795,
+      "parser_error_turn_rate": {
+        "denominator": 10,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "parser_error_turns": 0,
+      "prefix_goal_already_attained": {
+        "denominator": 6,
+        "numerator": 1,
+        "value": 0.16666666666666666
+      },
+      "prefix_proposed_repeat_count": 0,
+      "prefix_tool_attempts": 8,
+      "prefix_turns": 8,
+      "premature_stop_without_goal_evidence": {
+        "denominator": 6,
+        "numerator": 3,
+        "value": 0.5
+      },
+      "proposal_attempts": 12,
+      "proposed_repeat_count": 0,
+      "proposed_repeat_rate": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "retry_required_exact_grounded_structured_completion": {
+        "denominator": 3,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "retry_required_tool_goal_attainment": {
+        "denominator": 3,
+        "numerator": 1,
+        "value": 0.3333333333333333
+      },
+      "stop_reason_semantics_unknown": {
+        "denominator": 1,
+        "numerator": 1,
+        "value": 1.0
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 1,
+        "numerator": 1,
+        "value": 1.0
+      },
+      "terminal_forms": {
+        "natural_text": 5,
+        "none": 0,
+        "structured_finish": 0,
+        "structured_stop": 1
+      },
+      "tool_goal_attainment": {
+        "denominator": 5,
+        "numerator": 2,
+        "value": 0.4
+      },
+      "turns": 18,
+      "unavailable_stop_control": {
+        "case_count": 1,
+        "exact_structured_completion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "natural_termination_semantics_unknown": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        }
+      },
+      "unsupported_finish_wrapper": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      }
+    },
+    "s2": {
+      "actual_tool_attempts": 20,
+      "budget_exhausted": {
+        "denominator": 6,
+        "numerator": 1,
+        "value": 0.16666666666666666
+      },
+      "case_count": 6,
+      "continuation_actual_tool_attempts": 12,
+      "continuation_proposal_attempts": 13,
+      "continuation_turns": 18,
+      "exact_grounded_structured_completion": {
+        "denominator": 5,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_structured_completion_recovery": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "generation_seconds": 50.61425658100052,
+      "guard_blocked_proposals": 0,
+      "has_invalid_loop": {
+        "denominator": 6,
+        "numerator": 1,
+        "value": 0.16666666666666666
+      },
+      "historical_generation_seconds": 30.499345876000007,
+      "historical_input_tokens": 5918,
+      "historical_output_tokens": 288,
+      "input_tokens": 21719,
+      "natural_termination_semantics_unknown": {
+        "denominator": 6,
+        "numerator": 2,
+        "value": 0.3333333333333333
+      },
+      "new_goal_evidence_recovery": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "normal_completion_control": {
+        "case_count": 1,
+        "exact_structured_completion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "natural_termination_semantics_unknown": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "normal_exact_grounded_structured_completion": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "normal_tool_goal_attainment": {
+        "denominator": 1,
+        "numerator": 1,
+        "value": 1.0
+      },
+      "output_tokens": 800,
+      "parser_error_turn_rate": {
+        "denominator": 18,
+        "numerator": 1,
+        "value": 0.05555555555555555
+      },
+      "parser_error_turns": 1,
+      "prefix_goal_already_attained": {
+        "denominator": 6,
+        "numerator": 1,
+        "value": 0.16666666666666666
+      },
+      "prefix_proposed_repeat_count": 0,
+      "prefix_tool_attempts": 8,
+      "prefix_turns": 8,
+      "premature_stop_without_goal_evidence": {
+        "denominator": 6,
+        "numerator": 2,
+        "value": 0.3333333333333333
+      },
+      "proposal_attempts": 21,
+      "proposed_repeat_count": 9,
+      "proposed_repeat_rate": {
+        "denominator": 13,
+        "numerator": 9,
+        "value": 0.6923076923076923
+      },
+      "retry_required_exact_grounded_structured_completion": {
+        "denominator": 3,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "retry_required_tool_goal_attainment": {
+        "denominator": 3,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "stop_reason_semantics_unknown": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "terminal_forms": {
+        "natural_text": 2,
+        "none": 1,
+        "structured_finish": 2,
+        "structured_stop": 1
+      },
+      "tool_goal_attainment": {
+        "denominator": 5,
+        "numerator": 1,
+        "value": 0.2
+      },
+      "turns": 26,
+      "unavailable_stop_control": {
+        "case_count": 1,
+        "exact_structured_completion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "natural_termination_semantics_unknown": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "unsupported_finish_wrapper": {
+        "denominator": 6,
+        "numerator": 2,
+        "value": 0.3333333333333333
+      }
+    },
+    "s3": {
+      "actual_tool_attempts": 14,
+      "budget_exhausted": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "case_count": 6,
+      "continuation_actual_tool_attempts": 6,
+      "continuation_proposal_attempts": 6,
+      "continuation_turns": 12,
+      "exact_grounded_structured_completion": {
+        "denominator": 5,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_structured_completion_recovery": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "generation_seconds": 27.29471566498978,
+      "guard_blocked_proposals": 0,
+      "has_invalid_loop": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "historical_generation_seconds": 30.499345876000007,
+      "historical_input_tokens": 5918,
+      "historical_output_tokens": 288,
+      "input_tokens": 12756,
+      "natural_termination_semantics_unknown": {
+        "denominator": 6,
+        "numerator": 5,
+        "value": 0.8333333333333334
+      },
+      "new_goal_evidence_recovery": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "normal_completion_control": {
+        "case_count": 1,
+        "exact_structured_completion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "natural_termination_semantics_unknown": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "normal_exact_grounded_structured_completion": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "normal_tool_goal_attainment": {
+        "denominator": 1,
+        "numerator": 1,
+        "value": 1.0
+      },
+      "output_tokens": 692,
+      "parser_error_turn_rate": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "parser_error_turns": 0,
+      "prefix_goal_already_attained": {
+        "denominator": 6,
+        "numerator": 1,
+        "value": 0.16666666666666666
+      },
+      "prefix_proposed_repeat_count": 0,
+      "prefix_tool_attempts": 8,
+      "prefix_turns": 8,
+      "premature_stop_without_goal_evidence": {
+        "denominator": 6,
+        "numerator": 3,
+        "value": 0.5
+      },
+      "proposal_attempts": 14,
+      "proposed_repeat_count": 0,
+      "proposed_repeat_rate": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "retry_required_exact_grounded_structured_completion": {
+        "denominator": 3,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "retry_required_tool_goal_attainment": {
+        "denominator": 3,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "stop_reason_semantics_unknown": {
+        "denominator": 1,
+        "numerator": 1,
+        "value": 1.0
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 1,
+        "numerator": 1,
+        "value": 1.0
+      },
+      "terminal_forms": {
+        "natural_text": 5,
+        "none": 0,
+        "structured_finish": 1,
+        "structured_stop": 0
+      },
+      "tool_goal_attainment": {
+        "denominator": 5,
+        "numerator": 1,
+        "value": 0.2
+      },
+      "turns": 20,
+      "unavailable_stop_control": {
+        "case_count": 1,
+        "exact_structured_completion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "natural_termination_semantics_unknown": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        }
+      },
+      "unsupported_finish_wrapper": {
+        "denominator": 6,
+        "numerator": 1,
+        "value": 0.16666666666666666
+      }
+    },
+    "s4": {
+      "actual_tool_attempts": 12,
+      "budget_exhausted": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "case_count": 6,
+      "continuation_actual_tool_attempts": 4,
+      "continuation_proposal_attempts": 5,
+      "continuation_turns": 11,
+      "exact_grounded_structured_completion": {
+        "denominator": 5,
+        "numerator": 1,
+        "value": 0.2
+      },
+      "exact_stop_reason_code": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_structured_completion_recovery": {
+        "denominator": 4,
+        "numerator": 1,
+        "value": 0.25
+      },
+      "generation_seconds": 27.2926428320352,
+      "guard_blocked_proposals": 0,
+      "has_invalid_loop": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "historical_generation_seconds": 30.499345876000007,
+      "historical_input_tokens": 5918,
+      "historical_output_tokens": 288,
+      "input_tokens": 11729,
+      "natural_termination_semantics_unknown": {
+        "denominator": 6,
+        "numerator": 3,
+        "value": 0.5
+      },
+      "new_goal_evidence_recovery": {
+        "denominator": 4,
+        "numerator": 1,
+        "value": 0.25
+      },
+      "normal_completion_control": {
+        "case_count": 1,
+        "exact_structured_completion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "natural_termination_semantics_unknown": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "normal_exact_grounded_structured_completion": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "normal_tool_goal_attainment": {
+        "denominator": 1,
+        "numerator": 1,
+        "value": 1.0
+      },
+      "output_tokens": 696,
+      "parser_error_turn_rate": {
+        "denominator": 11,
+        "numerator": 1,
+        "value": 0.09090909090909091
+      },
+      "parser_error_turns": 1,
+      "prefix_goal_already_attained": {
+        "denominator": 6,
+        "numerator": 1,
+        "value": 0.16666666666666666
+      },
+      "prefix_proposed_repeat_count": 0,
+      "prefix_tool_attempts": 8,
+      "prefix_turns": 8,
+      "premature_stop_without_goal_evidence": {
+        "denominator": 6,
+        "numerator": 3,
+        "value": 0.5
+      },
+      "proposal_attempts": 13,
+      "proposed_repeat_count": 0,
+      "proposed_repeat_rate": {
+        "denominator": 5,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "retry_required_exact_grounded_structured_completion": {
+        "denominator": 3,
+        "numerator": 1,
+        "value": 0.3333333333333333
+      },
+      "retry_required_tool_goal_attainment": {
+        "denominator": 3,
+        "numerator": 1,
+        "value": 0.3333333333333333
+      },
+      "stop_reason_semantics_unknown": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "terminal_forms": {
+        "natural_text": 3,
+        "none": 0,
+        "structured_finish": 2,
+        "structured_stop": 1
+      },
+      "tool_goal_attainment": {
+        "denominator": 5,
+        "numerator": 2,
+        "value": 0.4
+      },
+      "turns": 19,
+      "unavailable_stop_control": {
+        "case_count": 1,
+        "exact_structured_completion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "natural_termination_semantics_unknown": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "unsupported_finish_wrapper": {
+        "denominator": 6,
+        "numerator": 1,
+        "value": 0.16666666666666666
+      }
+    }
+  },
+  "comparison_arm": "B1",
+  "decoding_regime": "sampled_pp2",
+  "evidence_class": "model_inference",
+  "historical_cost_scope": "historical_* counters sum across schedule exposures of fixed source prefixes; no historical prefix generation was rerun",
+  "iter7_runner_version": "iter7_multiseed_and_templates_v1",
+  "metrics": {
+    "actual_tool_attempts": 58,
+    "budget_exhausted": {
+      "denominator": 24,
+      "numerator": 1,
+      "value": 0.041666666666666664
+    },
+    "case_count": 24,
+    "continuation_actual_tool_attempts": 26,
+    "continuation_proposal_attempts": 28,
+    "continuation_turns": 51,
+    "exact_grounded_structured_completion": {
+      "denominator": 20,
+      "numerator": 1,
+      "value": 0.05
+    },
+    "exact_stop_reason_code": {
+      "denominator": 4,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "exact_structured_completion_recovery": {
+      "denominator": 16,
+      "numerator": 1,
+      "value": 0.0625
+    },
+    "generation_seconds": 141.80826424597763,
+    "guard_blocked_proposals": 0,
+    "has_invalid_loop": {
+      "denominator": 24,
+      "numerator": 1,
+      "value": 0.041666666666666664
+    },
+    "historical_generation_seconds": 121.99738350400003,
+    "historical_input_tokens": 23672,
+    "historical_output_tokens": 1152,
+    "input_tokens": 56807,
+    "natural_termination_semantics_unknown": {
+      "denominator": 24,
+      "numerator": 15,
+      "value": 0.625
+    },
+    "new_goal_evidence_recovery": {
+      "denominator": 16,
+      "numerator": 2,
+      "value": 0.125
+    },
+    "normal_completion_control": {
+      "case_count": 4,
+      "exact_structured_completion": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 4,
+        "numerator": 4,
+        "value": 1.0
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      }
+    },
+    "normal_exact_grounded_structured_completion": {
+      "denominator": 4,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "normal_tool_goal_attainment": {
+      "denominator": 4,
+      "numerator": 4,
+      "value": 1.0
+    },
+    "output_tokens": 2983,
+    "parser_error_turn_rate": {
+      "denominator": 51,
+      "numerator": 2,
+      "value": 0.0392156862745098
+    },
+    "parser_error_turns": 2,
+    "prefix_goal_already_attained": {
+      "denominator": 24,
+      "numerator": 4,
+      "value": 0.16666666666666666
+    },
+    "prefix_proposed_repeat_count": 0,
+    "prefix_tool_attempts": 32,
+    "prefix_turns": 32,
+    "premature_stop_without_goal_evidence": {
+      "denominator": 24,
+      "numerator": 11,
+      "value": 0.4583333333333333
+    },
+    "proposal_attempts": 60,
+    "proposed_repeat_count": 9,
+    "proposed_repeat_rate": {
+      "denominator": 28,
+      "numerator": 9,
+      "value": 0.32142857142857145
+    },
+    "retry_required_exact_grounded_structured_completion": {
+      "denominator": 12,
+      "numerator": 1,
+      "value": 0.08333333333333333
+    },
+    "retry_required_tool_goal_attainment": {
+      "denominator": 12,
+      "numerator": 2,
+      "value": 0.16666666666666666
+    },
+    "stop_reason_semantics_unknown": {
+      "denominator": 4,
+      "numerator": 2,
+      "value": 0.5
+    },
+    "stopped_after_public_unavailable": {
+      "denominator": 4,
+      "numerator": 2,
+      "value": 0.5
+    },
+    "terminal_forms": {
+      "natural_text": 15,
+      "none": 1,
+      "structured_finish": 5,
+      "structured_stop": 3
+    },
+    "tool_goal_attainment": {
+      "denominator": 20,
+      "numerator": 6,
+      "value": 0.3
+    },
+    "turns": 83,
+    "unavailable_stop_control": {
+      "case_count": 4,
+      "exact_structured_completion": {
+        "denominator": 4,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 4,
+        "numerator": 2,
+        "value": 0.5
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 4,
+        "numerator": 2,
+        "value": 0.5
+      }
+    },
+    "unsupported_finish_wrapper": {
+      "denominator": 24,
+      "numerator": 4,
+      "value": 0.16666666666666666
+    }
+  },
+  "mode": "fixed_failure_prefix",
+  "prefix_runtime_version": "verified_prefix_continuation_v1",
+  "prefix_schema_version": "authentic_tool_prefix_v1",
+  "protocol_version": "qwen_xml_or_native_terminal_v1",
+  "runner_subcommand": "prefix-multiseed",
+  "schedule_count": 4,
+  "schedule_ids": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+  ],
+  "score_version": "evidence_and_terminal_form_v1",
+  "task_wording_version": "read_report_literal_target_v1",
+  "unique_prefix_count": 6,
+  "warning": "Multi-seed continuation over authentic selected historical prefixes in a single model load; seeded trials share 4 recovery + 2 control prefixes and are diagnostic development evidence, not independent tasks, held-out evaluation, or training.",
+  "wording_profile": "explicit"
+}

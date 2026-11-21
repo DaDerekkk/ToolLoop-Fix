@@ -1,0 +1,9 @@
+{
+  "mode": "compare-silver",
+  "output_dir": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-060",
+  "agreement_report_sha256": "fac65c4c4dc4be46dda1f39ff64f45e21066d5c1c242c9ba588f153115fd89fa",
+  "semantic_cohens_kappa": 0.9461912479740681,
+  "detector_cohens_kappa": 1.0,
+  "semantic_disagreements_for_human": 7,
+  "detector_disagreements_for_human": 18
+}

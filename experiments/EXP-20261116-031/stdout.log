@@ -1,0 +1,830 @@
+{
+  "checks": {
+    "complete_six_cells": true,
+    "all_source_inventories_hashes": true,
+    "shared_common_config": true,
+    "shared_inference_code_data_provenance": true,
+    "matched_snapshot_history_budgets_seeds": true,
+    "four_recovery_two_separate_controls": true,
+    "fresh_and_historical_costs_separated": true,
+    "paired_prompt_and_task_wording": true
+  },
+  "cells": {
+    "legacy/B0": {
+      "case_count": 6,
+      "recovery_case_ids": [
+        "pfx-orders-timeout",
+        "pfx-files-timeout",
+        "pfx-jobs-precondition",
+        "pfx-orders-invalid"
+      ],
+      "recovery_new_goal_evidence": {
+        "numerator": 1,
+        "denominator": 4,
+        "value": 0.25
+      },
+      "recovery_exact_structured_completion": {
+        "numerator": 1,
+        "denominator": 4,
+        "value": 0.25
+      },
+      "controls": {
+        "normal_completion_control": {
+          "case_ids": [
+            "pfx-orders-ok"
+          ],
+          "goal_already_at_prefix": 1,
+          "new_goal_evidence": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_structured_completion": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "stopped_after_public_unavailable": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_stop_reason_code": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "natural_semantics_unknown": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          }
+        },
+        "unavailable_stop_control": {
+          "case_ids": [
+            "pfx-orders-unavailable"
+          ],
+          "goal_already_at_prefix": 0,
+          "new_goal_evidence": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_structured_completion": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "stopped_after_public_unavailable": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_stop_reason_code": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "natural_semantics_unknown": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          }
+        }
+      },
+      "natural_termination_semantics_unknown": {
+        "numerator": 2,
+        "denominator": 6,
+        "value": 0.3333333333333333
+      },
+      "unsupported_finish_wrapper": {
+        "numerator": 2,
+        "denominator": 6,
+        "value": 0.3333333333333333
+      },
+      "budget_exhausted": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "has_inherited_loop": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "has_invalid_loop": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "premature_stop_without_goal_evidence": {
+        "numerator": 2,
+        "denominator": 6,
+        "value": 0.3333333333333333
+      },
+      "prefix_turns": 8,
+      "continuation_turns": 9,
+      "turns": 17,
+      "prefix_tool_attempts": 8,
+      "proposal_attempts": 11,
+      "continuation_proposal_attempts": 3,
+      "actual_tool_attempts": 11,
+      "continuation_actual_tool_attempts": 3,
+      "proposed_repeat_count": 0,
+      "guard_blocked_proposals": 0,
+      "parser_error_turns": 0,
+      "input_tokens": 7517,
+      "output_tokens": 416,
+      "generation_seconds": 20.19675570799882,
+      "historical_input_tokens": 5918,
+      "historical_output_tokens": 288,
+      "historical_generation_seconds": 30.499345876000007,
+      "fresh_token_cost_per_new_goal": {
+        "numerator": 5235,
+        "denominator": 1,
+        "value": 5235.0
+      },
+      "cost_scope": "input/output_tokens and generation_seconds are fresh continuation only; historical costs were not rerun"
+    },
+    "legacy/B1": {
+      "case_count": 6,
+      "recovery_case_ids": [
+        "pfx-orders-timeout",
+        "pfx-files-timeout",
+        "pfx-jobs-precondition",
+        "pfx-orders-invalid"
+      ],
+      "recovery_new_goal_evidence": {
+        "numerator": 1,
+        "denominator": 4,
+        "value": 0.25
+      },
+      "recovery_exact_structured_completion": {
+        "numerator": 1,
+        "denominator": 4,
+        "value": 0.25
+      },
+      "controls": {
+        "normal_completion_control": {
+          "case_ids": [
+            "pfx-orders-ok"
+          ],
+          "goal_already_at_prefix": 1,
+          "new_goal_evidence": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_structured_completion": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "stopped_after_public_unavailable": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_stop_reason_code": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "natural_semantics_unknown": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          }
+        },
+        "unavailable_stop_control": {
+          "case_ids": [
+            "pfx-orders-unavailable"
+          ],
+          "goal_already_at_prefix": 0,
+          "new_goal_evidence": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_structured_completion": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "stopped_after_public_unavailable": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_stop_reason_code": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "natural_semantics_unknown": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          }
+        }
+      },
+      "natural_termination_semantics_unknown": {
+        "numerator": 3,
+        "denominator": 6,
+        "value": 0.5
+      },
+      "unsupported_finish_wrapper": {
+        "numerator": 1,
+        "denominator": 6,
+        "value": 0.16666666666666666
+      },
+      "budget_exhausted": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "has_inherited_loop": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "has_invalid_loop": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "premature_stop_without_goal_evidence": {
+        "numerator": 3,
+        "denominator": 6,
+        "value": 0.5
+      },
+      "prefix_turns": 8,
+      "continuation_turns": 11,
+      "turns": 19,
+      "prefix_tool_attempts": 8,
+      "proposal_attempts": 13,
+      "continuation_proposal_attempts": 5,
+      "actual_tool_attempts": 13,
+      "continuation_actual_tool_attempts": 5,
+      "proposed_repeat_count": 0,
+      "guard_blocked_proposals": 0,
+      "parser_error_turns": 0,
+      "input_tokens": 10846,
+      "output_tokens": 670,
+      "generation_seconds": 32.39000762399883,
+      "historical_input_tokens": 5918,
+      "historical_output_tokens": 288,
+      "historical_generation_seconds": 30.499345876000007,
+      "fresh_token_cost_per_new_goal": {
+        "numerator": 8493,
+        "denominator": 1,
+        "value": 8493.0
+      },
+      "cost_scope": "input/output_tokens and generation_seconds are fresh continuation only; historical costs were not rerun"
+    },
+    "legacy/B2": {
+      "case_count": 6,
+      "recovery_case_ids": [
+        "pfx-orders-timeout",
+        "pfx-files-timeout",
+        "pfx-jobs-precondition",
+        "pfx-orders-invalid"
+      ],
+      "recovery_new_goal_evidence": {
+        "numerator": 1,
+        "denominator": 4,
+        "value": 0.25
+      },
+      "recovery_exact_structured_completion": {
+        "numerator": 1,
+        "denominator": 4,
+        "value": 0.25
+      },
+      "controls": {
+        "normal_completion_control": {
+          "case_ids": [
+            "pfx-orders-ok"
+          ],
+          "goal_already_at_prefix": 1,
+          "new_goal_evidence": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_structured_completion": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "stopped_after_public_unavailable": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_stop_reason_code": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "natural_semantics_unknown": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          }
+        },
+        "unavailable_stop_control": {
+          "case_ids": [
+            "pfx-orders-unavailable"
+          ],
+          "goal_already_at_prefix": 0,
+          "new_goal_evidence": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_structured_completion": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "stopped_after_public_unavailable": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_stop_reason_code": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "natural_semantics_unknown": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          }
+        }
+      },
+      "natural_termination_semantics_unknown": {
+        "numerator": 2,
+        "denominator": 6,
+        "value": 0.3333333333333333
+      },
+      "unsupported_finish_wrapper": {
+        "numerator": 2,
+        "denominator": 6,
+        "value": 0.3333333333333333
+      },
+      "budget_exhausted": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "has_inherited_loop": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "has_invalid_loop": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "premature_stop_without_goal_evidence": {
+        "numerator": 2,
+        "denominator": 6,
+        "value": 0.3333333333333333
+      },
+      "prefix_turns": 8,
+      "continuation_turns": 9,
+      "turns": 17,
+      "prefix_tool_attempts": 8,
+      "proposal_attempts": 11,
+      "continuation_proposal_attempts": 3,
+      "actual_tool_attempts": 11,
+      "continuation_actual_tool_attempts": 3,
+      "proposed_repeat_count": 0,
+      "guard_blocked_proposals": 0,
+      "parser_error_turns": 0,
+      "input_tokens": 7517,
+      "output_tokens": 416,
+      "generation_seconds": 26.943644665989268,
+      "historical_input_tokens": 5918,
+      "historical_output_tokens": 288,
+      "historical_generation_seconds": 30.499345876000007,
+      "fresh_token_cost_per_new_goal": {
+        "numerator": 5235,
+        "denominator": 1,
+        "value": 5235.0
+      },
+      "cost_scope": "input/output_tokens and generation_seconds are fresh continuation only; historical costs were not rerun"
+    },
+    "explicit/B0": {
+      "case_count": 6,
+      "recovery_case_ids": [
+        "pfx-orders-timeout",
+        "pfx-files-timeout",
+        "pfx-jobs-precondition",
+        "pfx-orders-invalid"
+      ],
+      "recovery_new_goal_evidence": {
+        "numerator": 1,
+        "denominator": 4,
+        "value": 0.25
+      },
+      "recovery_exact_structured_completion": {
+        "numerator": 1,
+        "denominator": 4,
+        "value": 0.25
+      },
+      "controls": {
+        "normal_completion_control": {
+          "case_ids": [
+            "pfx-orders-ok"
+          ],
+          "goal_already_at_prefix": 1,
+          "new_goal_evidence": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_structured_completion": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "stopped_after_public_unavailable": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_stop_reason_code": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "natural_semantics_unknown": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          }
+        },
+        "unavailable_stop_control": {
+          "case_ids": [
+            "pfx-orders-unavailable"
+          ],
+          "goal_already_at_prefix": 0,
+          "new_goal_evidence": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_structured_completion": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "stopped_after_public_unavailable": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "exact_stop_reason_code": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "natural_semantics_unknown": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          }
+        }
+      },
+      "natural_termination_semantics_unknown": {
+        "numerator": 4,
+        "denominator": 6,
+        "value": 0.6666666666666666
+      },
+      "unsupported_finish_wrapper": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "budget_exhausted": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "has_inherited_loop": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "has_invalid_loop": {
+        "numerator": 1,
+        "denominator": 6,
+        "value": 0.16666666666666666
+      },
+      "premature_stop_without_goal_evidence": {
+        "numerator": 3,
+        "denominator": 6,
+        "value": 0.5
+      },
+      "prefix_turns": 8,
+      "continuation_turns": 9,
+      "turns": 17,
+      "prefix_tool_attempts": 8,
+      "proposal_attempts": 11,
+      "continuation_proposal_attempts": 3,
+      "actual_tool_attempts": 11,
+      "continuation_actual_tool_attempts": 3,
+      "proposed_repeat_count": 1,
+      "guard_blocked_proposals": 0,
+      "parser_error_turns": 0,
+      "input_tokens": 8245,
+      "output_tokens": 454,
+      "generation_seconds": 40.98727783200957,
+      "historical_input_tokens": 5918,
+      "historical_output_tokens": 288,
+      "historical_generation_seconds": 30.499345876000007,
+      "fresh_token_cost_per_new_goal": {
+        "numerator": 4681,
+        "denominator": 1,
+        "value": 4681.0
+      },
+      "cost_scope": "input/output_tokens and generation_seconds are fresh continuation only; historical costs were not rerun"
+    },
+    "explicit/B1": {
+      "case_count": 6,
+      "recovery_case_ids": [
+        "pfx-orders-timeout",
+        "pfx-files-timeout",
+        "pfx-jobs-precondition",
+        "pfx-orders-invalid"
+      ],
+      "recovery_new_goal_evidence": {
+        "numerator": 1,
+        "denominator": 4,
+        "value": 0.25
+      },
+      "recovery_exact_structured_completion": {
+        "numerator": 1,
+        "denominator": 4,
+        "value": 0.25
+      },
+      "controls": {
+        "normal_completion_control": {
+          "case_ids": [
+            "pfx-orders-ok"
+          ],
+          "goal_already_at_prefix": 1,
+          "new_goal_evidence": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_structured_completion": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "stopped_after_public_unavailable": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_stop_reason_code": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "natural_semantics_unknown": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          }
+        },
+        "unavailable_stop_control": {
+          "case_ids": [
+            "pfx-orders-unavailable"
+          ],
+          "goal_already_at_prefix": 0,
+          "new_goal_evidence": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_structured_completion": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "stopped_after_public_unavailable": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "exact_stop_reason_code": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "natural_semantics_unknown": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          }
+        }
+      },
+      "natural_termination_semantics_unknown": {
+        "numerator": 3,
+        "denominator": 6,
+        "value": 0.5
+      },
+      "unsupported_finish_wrapper": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "budget_exhausted": {
+        "numerator": 1,
+        "denominator": 6,
+        "value": 0.16666666666666666
+      },
+      "has_inherited_loop": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "has_invalid_loop": {
+        "numerator": 1,
+        "denominator": 6,
+        "value": 0.16666666666666666
+      },
+      "premature_stop_without_goal_evidence": {
+        "numerator": 2,
+        "denominator": 6,
+        "value": 0.3333333333333333
+      },
+      "prefix_turns": 8,
+      "continuation_turns": 14,
+      "turns": 22,
+      "prefix_tool_attempts": 8,
+      "proposal_attempts": 17,
+      "continuation_proposal_attempts": 9,
+      "actual_tool_attempts": 15,
+      "continuation_actual_tool_attempts": 7,
+      "proposed_repeat_count": 1,
+      "guard_blocked_proposals": 0,
+      "parser_error_turns": 2,
+      "input_tokens": 15107,
+      "output_tokens": 905,
+      "generation_seconds": 90.78069495898308,
+      "historical_input_tokens": 5918,
+      "historical_output_tokens": 288,
+      "historical_generation_seconds": 30.499345876000007,
+      "fresh_token_cost_per_new_goal": {
+        "numerator": 11572,
+        "denominator": 1,
+        "value": 11572.0
+      },
+      "cost_scope": "input/output_tokens and generation_seconds are fresh continuation only; historical costs were not rerun"
+    },
+    "explicit/B2": {
+      "case_count": 6,
+      "recovery_case_ids": [
+        "pfx-orders-timeout",
+        "pfx-files-timeout",
+        "pfx-jobs-precondition",
+        "pfx-orders-invalid"
+      ],
+      "recovery_new_goal_evidence": {
+        "numerator": 1,
+        "denominator": 4,
+        "value": 0.25
+      },
+      "recovery_exact_structured_completion": {
+        "numerator": 1,
+        "denominator": 4,
+        "value": 0.25
+      },
+      "controls": {
+        "normal_completion_control": {
+          "case_ids": [
+            "pfx-orders-ok"
+          ],
+          "goal_already_at_prefix": 1,
+          "new_goal_evidence": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_structured_completion": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "stopped_after_public_unavailable": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_stop_reason_code": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "natural_semantics_unknown": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          }
+        },
+        "unavailable_stop_control": {
+          "case_ids": [
+            "pfx-orders-unavailable"
+          ],
+          "goal_already_at_prefix": 0,
+          "new_goal_evidence": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "exact_structured_completion": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "stopped_after_public_unavailable": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "exact_stop_reason_code": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "natural_semantics_unknown": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          }
+        }
+      },
+      "natural_termination_semantics_unknown": {
+        "numerator": 4,
+        "denominator": 6,
+        "value": 0.6666666666666666
+      },
+      "unsupported_finish_wrapper": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "budget_exhausted": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "has_inherited_loop": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "has_invalid_loop": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "premature_stop_without_goal_evidence": {
+        "numerator": 3,
+        "denominator": 6,
+        "value": 0.5
+      },
+      "prefix_turns": 8,
+      "continuation_turns": 10,
+      "turns": 18,
+      "prefix_tool_attempts": 8,
+      "proposal_attempts": 12,
+      "continuation_proposal_attempts": 4,
+      "actual_tool_attempts": 10,
+      "continuation_actual_tool_attempts": 2,
+      "proposed_repeat_count": 2,
+      "guard_blocked_proposals": 2,
+      "parser_error_turns": 0,
+      "input_tokens": 9411,
+      "output_tokens": 572,
+      "generation_seconds": 63.554686914998456,
+      "historical_input_tokens": 5918,
+      "historical_output_tokens": 288,
+      "historical_generation_seconds": 30.499345876000007,
+      "fresh_token_cost_per_new_goal": {
+        "numerator": 4681,
+        "denominator": 1,
+        "value": 4681.0
+      },
+      "cost_scope": "input/output_tokens and generation_seconds are fresh continuation only; historical costs were not rerun"
+    }
+  }
+}

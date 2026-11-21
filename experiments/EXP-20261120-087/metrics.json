@@ -1,0 +1,486 @@
+{
+  "adapter_id": "B3_s202",
+  "by_category": {
+    "clarification": {
+      "case_count": 6,
+      "completable_count": 6,
+      "exact_grounded_structured_completion": {
+        "denominator": 6,
+        "numerator": 6,
+        "value": 1.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "has_invalid_loop": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "tool_goal_attainment": {
+        "denominator": 6,
+        "numerator": 6,
+        "value": 1.0
+      },
+      "unrecoverable_count": 0
+    },
+    "normal": {
+      "case_count": 6,
+      "completable_count": 6,
+      "exact_grounded_structured_completion": {
+        "denominator": 6,
+        "numerator": 6,
+        "value": 1.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "has_invalid_loop": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "tool_goal_attainment": {
+        "denominator": 6,
+        "numerator": 6,
+        "value": 1.0
+      },
+      "unrecoverable_count": 0
+    },
+    "recoverable": {
+      "case_count": 12,
+      "completable_count": 12,
+      "exact_grounded_structured_completion": {
+        "denominator": 12,
+        "numerator": 11,
+        "value": 0.9166666666666666
+      },
+      "exact_stop_reason_code": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "has_invalid_loop": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "tool_goal_attainment": {
+        "denominator": 12,
+        "numerator": 12,
+        "value": 1.0
+      },
+      "unrecoverable_count": 0
+    },
+    "retry_required": {
+      "case_count": 6,
+      "completable_count": 6,
+      "exact_grounded_structured_completion": {
+        "denominator": 6,
+        "numerator": 6,
+        "value": 1.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "has_invalid_loop": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "tool_goal_attainment": {
+        "denominator": 6,
+        "numerator": 6,
+        "value": 1.0
+      },
+      "unrecoverable_count": 0
+    },
+    "unrecoverable": {
+      "case_count": 6,
+      "completable_count": 0,
+      "exact_grounded_structured_completion": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "exact_stop_reason_code": {
+        "denominator": 6,
+        "numerator": 6,
+        "value": 1.0
+      },
+      "has_invalid_loop": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 6,
+        "numerator": 6,
+        "value": 1.0
+      },
+      "tool_goal_attainment": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "unrecoverable_count": 6
+    }
+  },
+  "by_domain": {
+    "files": {
+      "case_count": 12,
+      "completable_count": 10,
+      "exact_grounded_structured_completion": {
+        "denominator": 10,
+        "numerator": 10,
+        "value": 1.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 2,
+        "numerator": 2,
+        "value": 1.0
+      },
+      "has_invalid_loop": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 2,
+        "numerator": 2,
+        "value": 1.0
+      },
+      "tool_goal_attainment": {
+        "denominator": 10,
+        "numerator": 10,
+        "value": 1.0
+      },
+      "unrecoverable_count": 2
+    },
+    "jobs": {
+      "case_count": 12,
+      "completable_count": 10,
+      "exact_grounded_structured_completion": {
+        "denominator": 10,
+        "numerator": 9,
+        "value": 0.9
+      },
+      "exact_stop_reason_code": {
+        "denominator": 2,
+        "numerator": 2,
+        "value": 1.0
+      },
+      "has_invalid_loop": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 2,
+        "numerator": 2,
+        "value": 1.0
+      },
+      "tool_goal_attainment": {
+        "denominator": 10,
+        "numerator": 10,
+        "value": 1.0
+      },
+      "unrecoverable_count": 2
+    },
+    "orders": {
+      "case_count": 12,
+      "completable_count": 10,
+      "exact_grounded_structured_completion": {
+        "denominator": 10,
+        "numerator": 10,
+        "value": 1.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 2,
+        "numerator": 2,
+        "value": 1.0
+      },
+      "has_invalid_loop": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 2,
+        "numerator": 2,
+        "value": 1.0
+      },
+      "tool_goal_attainment": {
+        "denominator": 10,
+        "numerator": 10,
+        "value": 1.0
+      },
+      "unrecoverable_count": 2
+    }
+  },
+  "comparison_arm": "B0",
+  "decoding_regime": "sampled_pp2",
+  "detector_v2_version": "nonretryable_repeat_without_progress_v2",
+  "evaluated_arm": "B3",
+  "evidence_class": "model_inference",
+  "lora_enabled": true,
+  "lora_eval_runner_version": "iter9_lora_and_g4_eval_runner_v1",
+  "metrics": {
+    "actual_tool_attempts": 95,
+    "budget_exhausted": {
+      "denominator": 36,
+      "numerator": 1,
+      "value": 0.027777777777777776
+    },
+    "case_count": 36,
+    "exact_grounded_structured_completion": {
+      "denominator": 30,
+      "numerator": 29,
+      "value": 0.9666666666666667
+    },
+    "exact_stop_reason_code": {
+      "denominator": 6,
+      "numerator": 6,
+      "value": 1.0
+    },
+    "generation_seconds": 330.7372126225382,
+    "guard_blocked_proposals": 0,
+    "has_invalid_loop": {
+      "denominator": 36,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "has_invalid_loop_v2": {
+      "denominator": 36,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "input_tokens": 129506,
+    "natural_termination_semantics_unknown": {
+      "denominator": 36,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "normal_exact_grounded_structured_completion": {
+      "denominator": 6,
+      "numerator": 6,
+      "value": 1.0
+    },
+    "normal_tool_goal_attainment": {
+      "denominator": 6,
+      "numerator": 6,
+      "value": 1.0
+    },
+    "output_tokens": 5697,
+    "parser_error_turn_rate": {
+      "denominator": 135,
+      "numerator": 5,
+      "value": 0.037037037037037035
+    },
+    "parser_error_turns": 5,
+    "premature_stop_without_goal_evidence": {
+      "denominator": 36,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "proposal_attempts": 100,
+    "proposed_repeat_count": 0,
+    "proposed_repeat_rate": {
+      "denominator": 100,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "retry_required_exact_grounded_structured_completion": {
+      "denominator": 6,
+      "numerator": 6,
+      "value": 1.0
+    },
+    "retry_required_tool_goal_attainment": {
+      "denominator": 6,
+      "numerator": 6,
+      "value": 1.0
+    },
+    "stop_reason_semantics_unknown": {
+      "denominator": 6,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "stopped_after_public_unavailable": {
+      "denominator": 6,
+      "numerator": 6,
+      "value": 1.0
+    },
+    "terminal_forms": {
+      "natural_text": 0,
+      "none": 1,
+      "structured_finish": 29,
+      "structured_stop": 6
+    },
+    "tool_goal_attainment": {
+      "denominator": 30,
+      "numerator": 30,
+      "value": 1.0
+    },
+    "turns": 135,
+    "unsupported_finish_wrapper": {
+      "denominator": 36,
+      "numerator": 0,
+      "value": 0.0
+    }
+  },
+  "mode": "end_to_end",
+  "protocol_version": "qwen_xml_or_native_terminal_v1",
+  "runner_subcommand": "explicit-e2e",
+  "score_version": "evidence_and_terminal_form_v1",
+  "task_wording_version": "read_report_literal_target_v1",
+  "train_seed": 202,
+  "training_arm": "B3",
+  "warning": "Explicit read-and-report end_to_end evaluation (36 episodes); reports both v1 and G2-frozen v2 loop detectors. Natural-language semantics remain ungraded.",
+  "wording_profile": "explicit"
+}

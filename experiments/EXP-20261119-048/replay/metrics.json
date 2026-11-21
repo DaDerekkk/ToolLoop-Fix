@@ -1,0 +1,272 @@
+{
+  "detector_status": "prototype_not_human_validated",
+  "evidence_class": "synthetic_harness",
+  "groups": [
+    {
+      "budget_exhaustion": {
+        "denominator": 180,
+        "numerator": 120,
+        "value": 0.6666666666666666
+      },
+      "case_count": 180,
+      "continuation_tool_attempts_per_success": {
+        "denominator": 60,
+        "numerator": 1100,
+        "value": 18.333333333333332
+      },
+      "correct_termination": {
+        "denominator": 36,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "cost_scope": "total_including_prefix; tool_attempts_not_tokens_or_money",
+      "error_recovery": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "false_success": {
+        "denominator": 180,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "invalid_loop_rate": {
+        "denominator": 180,
+        "numerator": 120,
+        "value": 0.6666666666666666
+      },
+      "mode": "end_to_end",
+      "necessary_retry_success": {
+        "denominator": 36,
+        "numerator": 24,
+        "value": 0.6666666666666666
+      },
+      "normal_completion": {
+        "denominator": 36,
+        "numerator": 36,
+        "value": 1.0
+      },
+      "policy": "scripted_naive",
+      "premature_abandonment": {
+        "denominator": 144,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "task_completion": {
+        "denominator": 144,
+        "numerator": 60,
+        "value": 0.4166666666666667
+      },
+      "tool_attempts_per_success": {
+        "denominator": 60,
+        "numerator": 1100,
+        "value": 18.333333333333332
+      },
+      "unnecessary_clarification": {
+        "denominator": 180,
+        "numerator": 0,
+        "value": 0.0
+      }
+    },
+    {
+      "budget_exhaustion": {
+        "denominator": 72,
+        "numerator": 48,
+        "value": 0.6666666666666666
+      },
+      "case_count": 72,
+      "continuation_tool_attempts_per_success": {
+        "denominator": 24,
+        "numerator": 560,
+        "value": 23.333333333333332
+      },
+      "correct_termination": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "cost_scope": "total_including_prefix; tool_attempts_not_tokens_or_money",
+      "error_recovery": {
+        "denominator": 36,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "false_success": {
+        "denominator": 72,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "invalid_loop_rate": {
+        "denominator": 72,
+        "numerator": 48,
+        "value": 0.6666666666666666
+      },
+      "mode": "fixed_failure_prefix",
+      "necessary_retry_success": {
+        "denominator": 36,
+        "numerator": 24,
+        "value": 0.6666666666666666
+      },
+      "normal_completion": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "policy": "scripted_naive",
+      "premature_abandonment": {
+        "denominator": 72,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "task_completion": {
+        "denominator": 72,
+        "numerator": 24,
+        "value": 0.3333333333333333
+      },
+      "tool_attempts_per_success": {
+        "denominator": 24,
+        "numerator": 632,
+        "value": 26.333333333333332
+      },
+      "unnecessary_clarification": {
+        "denominator": 72,
+        "numerator": 0,
+        "value": 0.0
+      }
+    },
+    {
+      "budget_exhaustion": {
+        "denominator": 180,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "case_count": 180,
+      "continuation_tool_attempts_per_success": {
+        "denominator": 144,
+        "numerator": 392,
+        "value": 2.7222222222222223
+      },
+      "correct_termination": {
+        "denominator": 36,
+        "numerator": 36,
+        "value": 1.0
+      },
+      "cost_scope": "total_including_prefix; tool_attempts_not_tokens_or_money",
+      "error_recovery": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "false_success": {
+        "denominator": 180,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "invalid_loop_rate": {
+        "denominator": 180,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "mode": "end_to_end",
+      "necessary_retry_success": {
+        "denominator": 36,
+        "numerator": 36,
+        "value": 1.0
+      },
+      "normal_completion": {
+        "denominator": 36,
+        "numerator": 36,
+        "value": 1.0
+      },
+      "policy": "scripted_reference",
+      "premature_abandonment": {
+        "denominator": 144,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "task_completion": {
+        "denominator": 144,
+        "numerator": 144,
+        "value": 1.0
+      },
+      "tool_attempts_per_success": {
+        "denominator": 144,
+        "numerator": 392,
+        "value": 2.7222222222222223
+      },
+      "unnecessary_clarification": {
+        "denominator": 180,
+        "numerator": 0,
+        "value": 0.0
+      }
+    },
+    {
+      "budget_exhaustion": {
+        "denominator": 72,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "case_count": 72,
+      "continuation_tool_attempts_per_success": {
+        "denominator": 72,
+        "numerator": 176,
+        "value": 2.4444444444444446
+      },
+      "correct_termination": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "cost_scope": "total_including_prefix; tool_attempts_not_tokens_or_money",
+      "error_recovery": {
+        "denominator": 36,
+        "numerator": 36,
+        "value": 1.0
+      },
+      "false_success": {
+        "denominator": 72,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "invalid_loop_rate": {
+        "denominator": 72,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "mode": "fixed_failure_prefix",
+      "necessary_retry_success": {
+        "denominator": 36,
+        "numerator": 36,
+        "value": 1.0
+      },
+      "normal_completion": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "policy": "scripted_reference",
+      "premature_abandonment": {
+        "denominator": 72,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "task_completion": {
+        "denominator": 72,
+        "numerator": 72,
+        "value": 1.0
+      },
+      "tool_attempts_per_success": {
+        "denominator": 72,
+        "numerator": 248,
+        "value": 3.4444444444444446
+      },
+      "unnecessary_clarification": {
+        "denominator": 72,
+        "numerator": 0,
+        "value": 0.0
+      }
+    }
+  ],
+  "schema_version": 2,
+  "warning": "Scripted policies on 15 development fixtures; not model or training evidence."
+}

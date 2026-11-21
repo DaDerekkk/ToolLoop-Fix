@@ -1,0 +1,96 @@
+{
+  "evidence_class": "analysis",
+  "review_files": [
+    {
+      "name": "semantic_review_ITER004.json",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/data/processed/semantic_review_ITER004.json",
+      "sha256": "2b105cacb5b7cfd303295cb5d726249953fa1dd9a22f15586e2e98ad251fe212",
+      "archived_path": "review_sources/semantic_review_ITER004.json"
+    },
+    {
+      "name": "ITER004_SEMANTIC_REVIEW.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/docs/research/ITER004_SEMANTIC_REVIEW.md",
+      "sha256": "ee337ce0cc2df182a614e8f4137cd4975e5270a50eeaa516446962ad035f5a08",
+      "archived_path": "review_sources/ITER004_SEMANTIC_REVIEW.md"
+    },
+    {
+      "name": "review_iteration4_semantics.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/agents/reviews/iteration4_semantics.md",
+      "sha256": "0432b0fcf14f33badd027a2f02e599935224bda63dfe9c8e4d1de7f6ba089c55",
+      "archived_path": "review_sources/review_iteration4_semantics.md"
+    },
+    {
+      "name": "handoff_iteration4_semantics.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/agents/handoffs/iteration4_semantics.md",
+      "sha256": "160af67165b8e698aff72f571209fdd6e06cd617b338cf40609f1adea9bfdcfd",
+      "archived_path": "review_sources/handoff_iteration4_semantics.md"
+    },
+    {
+      "name": "M6_24G_TRAINING_HANDOFF.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/docs/plans/M6_24G_TRAINING_HANDOFF.md",
+      "sha256": "25b732f98e5bd47a0d8ee6ebf3546727d4e5b9f1156a664784d2782da47b8eb4",
+      "archived_path": "review_sources/M6_24G_TRAINING_HANDOFF.md"
+    },
+    {
+      "name": "future_training_plan.json",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/configs/future_training_plan.json",
+      "sha256": "0e94a0f381537589b5fce5539f80ce3de379baf78ec4f9a5363e0bd500e654fa",
+      "archived_path": "review_sources/future_training_plan.json"
+    },
+    {
+      "name": "m6_training_plan.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/agents/handoffs/m6_training_plan.md",
+      "sha256": "f959d8d9afb5c0a7b731452e962519acabbaee894576c8292dd0d7c0b8ffb7d6",
+      "archived_path": "review_sources/m6_training_plan.md"
+    }
+  ],
+  "review_status": "agent_authored_not_human_gold",
+  "model_inference_performed": false,
+  "training_performed": false,
+  "note": "Archive/hash check does not independently validate semantic labels, hardware capabilities, or trainability.",
+  "semantic_reference_check": {
+    "evidence_class": "analysis",
+    "source_rows_checked": 45,
+    "queue_items": 42,
+    "supplementary_controls": 3,
+    "agent_label_counts_not_performance_metrics": {
+      "grounded_value_report_with_wording_ambiguity": 2,
+      "unsupported_failure_or_cause": 21,
+      "unsupported_execution_claim": 2,
+      "clarification_or_task_scope_ambiguity": 7,
+      "unsupported_structured_finish": 4,
+      "grounded_noncompletion_report": 3,
+      "incomplete_output_semantics_unresolved": 2,
+      "unsupported_success_claim": 1,
+      "exact_grounded_structured_completion": 3
+    },
+    "source_refs_valid": true,
+    "human_review_performed": false,
+    "training_labels_created": false
+  },
+  "future_plan_check": {
+    "enabled": false,
+    "header_inventory": {
+      "language_model": {
+        "tensors": 320,
+        "stored_scalars": 752393024,
+        "stored_bytes": 1504791232
+      },
+      "visual": {
+        "tensors": 153,
+        "stored_scalars": 100592896,
+        "stored_bytes": 201185792
+      },
+      "mtp": {
+        "tensors": 15,
+        "stored_scalars": 20452864,
+        "stored_bytes": 40905728
+      }
+    },
+    "header_bytes": 59840,
+    "hardware_target_verified": false,
+    "model_loaded": false,
+    "training_performed": false,
+    "note": "File-header arithmetic only, not live memory or gradient feasibility."
+  }
+}

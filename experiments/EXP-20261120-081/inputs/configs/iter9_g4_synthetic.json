@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "evidence_class": "synthetic_harness",
+  "evidence_kind": "synthetic_harness",
+  "description": "36 formal closed-holdout G4 fixtures across 36 unseen template_groups (24 in-domain orders/files + 12 zero-shot cross-domain jobs); scripted_naive vs scripted_reference in end_to_end and fixed_failure_prefix modes; zero Qwen inference or training.",
+  "cases_path": "data/dev/g4_closed_holdout_iter9.jsonl",
+  "policies": [
+    "scripted_naive",
+    "scripted_reference"
+  ],
+  "modes": [
+    "end_to_end",
+    "fixed_failure_prefix"
+  ],
+  "tool_budget": 12,
+  "turn_budget": 16,
+  "seed": 0,
+  "seed_note": "deterministic fixtures and scripted policies; no model sampling"
+}

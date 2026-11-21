@@ -1,0 +1,14 @@
+{
+  "purpose": "Freeze independent Contents download of bytes from a one-shot detached GPU job; small nonce activation only after online sentinel succeeds.",
+  "training": false,
+  "user_scope": "L4 non-training inference with teardown; no purchase or other sessions",
+  "controller_sha256": "a6048faeb8b120d946e0cc54f4cd17e55f3a8ae9b90f60d6d8932b3a0682886d",
+  "source_sha256": {
+    "probe.py": "99172529772f33e31d955c9f5dacfee448aa6f15326b3c030c6dbf3c8832401b",
+    "tx.py": "4deb6bef46d5b011239b6a6e26ff55b66070443abb6a080bb9cac5c0283c8b64",
+    "worker.py": "8a4c1b5f54da0c2956b3623e554f49b05ccaee290c152f11687f9852b7669627"
+  },
+  "work_deadline_seconds": 505,
+  "predecessor": "COLAB-20261119-003",
+  "model_revision": "2fc06364715b967f1860aea9cf38778875588b17"
+}

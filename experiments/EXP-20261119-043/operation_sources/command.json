@@ -1,0 +1,29 @@
+{
+  "cwd": "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/operations/CPU-20261119-001/inputs",
+  "argv": [
+    "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/.venv/bin/python",
+    "-m",
+    "scripts.cpu_crossed_iter6",
+    "generate",
+    "--config",
+    "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/operations/CPU-20261119-001/config.json",
+    "--operation",
+    "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/operations/CPU-20261119-001"
+  ],
+  "observed_env_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "HF_HUB_DISABLE_IMPLICIT_TOKEN": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  },
+  "stdout": "stdout.log",
+  "stderr": "stderr.log",
+  "report_timezone": "Asia/Shanghai",
+  "explicit_network_used": false,
+  "paid_resource_used": false,
+  "note": "Operation launched from frozen inputs directory; environment contains only listed non-sensitive overrides."
+}

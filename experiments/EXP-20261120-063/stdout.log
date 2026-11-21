@@ -1,0 +1,18 @@
+{"status": "failed", "stage": "example_stage"}
+{"status": "completed", "stage": "completed"}
+{"accepted": true, "output": "/var/folders/c4/sch310r503z627tdt4vvh1t80000gn/T/iter7-full-suite-ds82nx3y/audit_out/iter7_audit.json"}
+{"accepted": false, "output": "/var/folders/c4/sch310r503z627tdt4vvh1t80000gn/T/iter7-full-suite-za4324n2/bad_audit_out/iter7_audit.json"}
+{
+  "checks": {
+    "all_manifests_and_inventories_verified": true,
+    "shared_harness_sha256_verified": true,
+    "disjoint_5_seed_prefix_schedules": true,
+    "ninety_paired_prefix_episodes_verified": true,
+    "greedy_decoding_ablation_paired": true,
+    "unseen_template_e2e_paired": true,
+    "b0_vs_b2_pre_intervention_exact_match_prefix": true,
+    "b0_vs_b2_pre_intervention_exact_match_e2e": true,
+    "public_only_alternatives_leak_free": true,
+    "zero_model_loading": true
+  }
+}

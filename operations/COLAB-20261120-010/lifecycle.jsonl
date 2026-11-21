@@ -1,0 +1,52 @@
+{"step": "reservation", "utc": "2026-11-20T10:17:44.405854+00:00", "elapsed_s": 0.0, "session": "tlfix-2e73409dc1aa", "receipt_nonce": "2e73409dc1aa483f99cbde17d394b21c", "training": true, "source_sha256": {"lora_adapter.py": "861fb15b746161f505cf79340d95065a0c6c58e23f1ca1d33f5461a8cbdc4dbc", "colab_g3_train_worker.py": "c259f90951a371dc5e7193ba01457d0eef5502cb1b8d6f70b867260f01eb4e05", "train_job_config.json": "cca8daa0d8593d1788b1315ef46bc88e2bc5f9a7192a3f1b81a9086e9f6044e7", "controller": "1dba84bcaca7008d24df8be40d60c0dd859867e6445f73700f8da4dc8470ac1d"}, "bundle_sha256": "08d833addafcf94dcd07ff7ad229c82b3616e92cc34b5636d88d6864f6eda637", "bundle_zlib_sha256": "9bf9ad48082db05b7420e3acec90ad25ea1207e3a6a38ab41ecd062c1f7104d4", "bundle_zlib_bytes": 288581, "job_count": 4, "wall_limit_seconds": 3600.0}
+{"step": "baseline_sessions", "utc": "2026-11-20T10:17:45.968837+00:00", "elapsed_s": 1.56, "exit": 0, "reason": null}
+{"step": "baseline_usage", "utc": "2026-11-20T10:17:47.017144+00:00", "elapsed_s": 2.61, "exit": 0, "reason": null}
+{"step": "baseline_usage_observation", "utc": "2026-11-20T10:17:47.017625+00:00", "elapsed_s": 2.61, "balance_cu": 2686.85, "rate_cu_hr": 8.88, "assignments": 1.0}
+{"step": "new", "utc": "2026-11-20T10:17:50.980541+00:00", "elapsed_s": 6.57, "exit": 0, "reason": "Session READY"}
+{"step": "allocated_sessions", "utc": "2026-11-20T10:17:51.943528+00:00", "elapsed_s": 7.54, "exit": 0, "reason": null}
+{"step": "owned_l4", "utc": "2026-11-20T10:17:51.943887+00:00", "elapsed_s": 7.54, "endpoint_sha256": "c3b428b840194eba70161d1c01499dce114bd4698f70ac6d93d79017c53e17a4"}
+{"step": "allocated_usage", "utc": "2026-11-20T10:17:52.900202+00:00", "elapsed_s": 8.49, "exit": 0, "reason": null}
+{"step": "allocated_usage_observation", "utc": "2026-11-20T10:17:52.900464+00:00", "elapsed_s": 8.49, "balance_cu": 2686.85, "rate_cu_hr": 10.82, "assignments": 2.0}
+{"step": "status", "utc": "2026-11-20T10:17:54.118642+00:00", "elapsed_s": 9.71, "exit": 0, "reason": null}
+{"step": "warm", "utc": "2026-11-20T10:17:57.796846+00:00", "elapsed_s": 13.39, "exit": 0, "stdout_bytes": 10, "cell_sha256": "f68703b7eed76b3423158ada8ddca6018570a626562e67539eb4bd6e40602868"}
+{"step": "bootstrap_no_model_until_armed", "utc": "2026-11-20T10:18:00.771736+00:00", "elapsed_s": 16.37, "exit": 0, "stdout_bytes": 322, "cell_sha256": "363adcb0d7cd8e00d923cbff27b22758168f536b94679e4243fe87eefb1cb064"}
+{"step": "two_way_sentinel", "utc": "2026-11-20T10:18:01.686194+00:00", "elapsed_s": 17.28, "identical": true, "bytes": 150}
+{"step": "upload_bundle_attempt_1", "utc": "2026-11-20T10:18:04.652765+00:00", "elapsed_s": 20.25, "exit": 0, "reason": "Uploaded"}
+{"step": "arm_single_worker", "utc": "2026-11-20T10:18:05.600540+00:00", "elapsed_s": 21.19, "exit": 0, "reason": "Uploaded"}
+{"step": "worker_stage", "utc": "2026-11-20T10:18:06.964063+00:00", "elapsed_s": 22.56, "stage": "install_transformers"}
+{"step": "worker_stage", "utc": "2026-11-20T10:18:22.224870+00:00", "elapsed_s": 37.82, "stage": "runtime_check"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T10:20:12.434553+00:00", "elapsed_s": 148.03, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "worker_stage", "utc": "2026-11-20T10:20:36.352982+00:00", "elapsed_s": 171.95, "stage": "anonymous_public_download"}
+{"step": "worker_stage", "utc": "2026-11-20T10:20:52.712620+00:00", "elapsed_s": 188.31, "stage": "load_base_model"}
+{"step": "worker_stage", "utc": "2026-11-20T10:21:02.656961+00:00", "elapsed_s": 198.25, "stage": "tokenize_and_precompute_ref"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T10:22:14.755428+00:00", "elapsed_s": 270.35, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "worker_stage", "utc": "2026-11-20T10:23:09.695657+00:00", "elapsed_s": 325.29, "stage": "train_P_no_retry_s101"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T10:24:19.168240+00:00", "elapsed_s": 394.76, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T10:26:26.108688+00:00", "elapsed_s": 521.7, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T10:28:31.175495+00:00", "elapsed_s": 646.77, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "worker_stage", "utc": "2026-11-20T10:30:36.064476+00:00", "elapsed_s": 771.65, "stage": "train_P_no_normal_s101"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T10:30:38.944331+00:00", "elapsed_s": 774.53, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T10:32:42.206373+00:00", "elapsed_s": 897.8, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T10:34:47.503948+00:00", "elapsed_s": 1023.09, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "worker_stage", "utc": "2026-11-20T10:36:33.033945+00:00", "elapsed_s": 1128.62, "stage": "train_B3_s202"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T10:36:51.131188+00:00", "elapsed_s": 1146.72, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T10:38:58.428273+00:00", "elapsed_s": 1274.02, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T10:41:21.660296+00:00", "elapsed_s": 1417.25, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "worker_stage", "utc": "2026-11-20T10:41:30.188565+00:00", "elapsed_s": 1425.77, "stage": "train_B3_s303"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T10:43:25.484008+00:00", "elapsed_s": 1541.07, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "worker_stage", "utc": "2026-11-20T10:44:45.984515+00:00", "elapsed_s": 1621.57, "stage": "pack_chunks"}
+{"step": "worker_stage", "utc": "2026-11-20T10:44:51.001067+00:00", "elapsed_s": 1626.59, "stage": "receipt_published_completed"}
+{"step": "local_receipt", "utc": "2026-11-20T10:44:52.091271+00:00", "elapsed_s": 1627.68, "status": "completed", "stage": "completed", "error_type": null, "adapter_count": 4, "base_weights_unchanged": true, "sha256": "14c8ed8664ab489d0873c8f5a81eb7fca7e7b57c17abc0d199d18499773c338b"}
+{"step": "adapter_reassembled", "utc": "2026-11-20T10:45:13.014837+00:00", "elapsed_s": 1648.6, "adapter_id": "P_no_retry_s101", "chunk_count": 13, "size_bytes": 5452480, "safetensors_sha256": "5f29de60f21673ddc8e3e25c14fb30f53d7b6cf81864a783ba02e31e856fa209"}
+{"step": "adapter_reassembled", "utc": "2026-11-20T10:45:58.690449+00:00", "elapsed_s": 1694.28, "adapter_id": "P_no_normal_s101", "chunk_count": 13, "size_bytes": 5452488, "safetensors_sha256": "2a0478ae9e5256f7ffc58a88dea83d53355e962edbad729972d2768cd5670fb2"}
+{"step": "adapter_reassembled", "utc": "2026-11-20T10:46:24.475360+00:00", "elapsed_s": 1720.06, "adapter_id": "B3_s202", "chunk_count": 13, "size_bytes": 5452424, "safetensors_sha256": "27232edca47d2adb666038fbac78b2ceac6c902e0e4e627d1c05a88b3a914e74"}
+{"step": "adapter_reassembled", "utc": "2026-11-20T10:46:45.951223+00:00", "elapsed_s": 1741.54, "adapter_id": "B3_s303", "chunk_count": 13, "size_bytes": 5452424, "safetensors_sha256": "a084bf684c1ad16b45ece79ef14da945edb8777f5204b162415898fc13e86f81"}
+{"step": "adapter_manifests_written", "utc": "2026-11-20T10:46:45.952449+00:00", "elapsed_s": 1741.54, "adapter_count": 4, "g3_adapters_manifest_sha256": "3f1b158562125924da9dc6358fbec14ef18cf56b13dab7cc6f4fa4b1674530f0"}
+{"step": "release_sessions_check", "utc": "2026-11-20T10:46:46.933246+00:00", "elapsed_s": 1742.52, "exit": 0, "reason": null}
+{"step": "stop_owned_only", "utc": "2026-11-20T10:46:48.338754+00:00", "elapsed_s": 1743.92, "exit": 0, "reason": "Session terminated"}
+{"step": "stop_ack", "utc": "2026-11-20T10:46:48.338970+00:00", "elapsed_s": 1743.92, "confirmed": true}
+{"step": "final_sessions", "utc": "2026-11-20T10:46:49.333569+00:00", "elapsed_s": 1744.92, "exit": 0, "reason": null}
+{"step": "final_usage", "utc": "2026-11-20T10:46:50.537176+00:00", "elapsed_s": 1746.12, "exit": 0, "reason": null}
+{"step": "final_usage_observation", "utc": "2026-11-20T10:46:50.537765+00:00", "elapsed_s": 1746.12, "balance_cu": 2684.68, "rate_cu_hr": 1.94, "assignments": 1.0}
+{"step": "cleanup_observed", "utc": "2026-11-20T10:46:50.537915+00:00", "elapsed_s": 1746.12, "owned_absent": true, "original_set_unchanged": false, "active_count": 1}
+{"step": "finished", "utc": "2026-11-20T10:46:50.537979+00:00", "elapsed_s": 1746.12, "received_completed_training": true, "adapters_reassembled": true, "owned_released": true, "allocation_refused": false}

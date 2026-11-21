@@ -1,0 +1,10 @@
+{
+  "adapters_dir": "/Users/derek/Documents/ChatGPT/LLM 作业/models/adapters/iter9_g3_wave1",
+  "evidence_class": "analysis",
+  "failure_code": "base_probe_tokenizer_replay_mismatch",
+  "failure_detail": "",
+  "operation_dir": "/Users/derek/Documents/ChatGPT/LLM 作业/operations/COLAB-20261120-009R1",
+  "remote_evidence_source": "remote_colab_l4_model_training",
+  "schema_version": "iter9_colab_g3_verification_v1",
+  "verified": false
+}

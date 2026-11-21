@@ -1,0 +1,1473 @@
+{
+  "dataset_evidence_class": "synthetic_harness",
+  "dataset_path": "data/dev/grouped_dev_suite_iter7.jsonl",
+  "dataset_sha256": "d34b717b6872d9e5645a1bc65fc749215b3c61878083209f1db63eb0ef7f2c58",
+  "disjointness_checks": {
+    "disjoint_from_pilot_cases_jsonl": true,
+    "disjoint_from_timeout_crossed_iter6_jsonl": true,
+    "pilot_cases_sha256": "6797958d66b9fe6022e04141d6736774b3c2e899f16d5f16dc70311b86a2f03c",
+    "timeout_crossed_iter6_sha256": "f74ea540ffe77c9ff05af922c20b859529872ab5bd045122e23e9a6c29afe461",
+    "zero_identifier_overlap_across_partitions": true,
+    "zero_target_overlap_across_partitions": true,
+    "zero_template_group_overlap_across_partitions": true,
+    "zero_value_overlap_across_partitions": true
+  },
+  "evidence_class": "analysis",
+  "formal_closed_holdout_unsealed": false,
+  "gate_status": {
+    "g1_dev_fixture_total_with_pilot15": 195,
+    "g2_human_detector_and_semantic_audit_complete": false,
+    "g3_training_authorized": false,
+    "g4_closed_holdout_created_or_unsealed": false,
+    "note": "Development-only grouped split manifest under EVALUATION_SPEC.md §5. Preserves 1 case per distinct template_group across all 24 cases in mps_unseen_eval24_case_ids (Option A: 16 selection + 8 diagnostic groups). Not a formal closed holdout and not eligible for training."
+  },
+  "generator_script": "scripts/build_grouped_dev_suite.py",
+  "iteration": "ITER-007",
+  "manifest_id": "grouped_split_manifest_ITER007",
+  "mps_unseen_eval24_case_ids": [
+    "gdev7-orders-normal-f1-01",
+    "gdev7-orders-recoverable-f1-01",
+    "gdev7-orders-recoverable-f2-01",
+    "gdev7-orders-retry_required-f1-01",
+    "gdev7-orders-retry_required-f2-01",
+    "gdev7-orders-clarification-f1-01",
+    "gdev7-orders-clarification-f3-01",
+    "gdev7-orders-unrecoverable-f1-01",
+    "gdev7-files-normal-f1-01",
+    "gdev7-files-recoverable-f1-01",
+    "gdev7-files-recoverable-f2-01",
+    "gdev7-files-retry_required-f1-01",
+    "gdev7-files-retry_required-f2-01",
+    "gdev7-files-clarification-f1-01",
+    "gdev7-files-clarification-f3-01",
+    "gdev7-files-unrecoverable-f1-01",
+    "gdev7-jobs-normal-f1-01",
+    "gdev7-jobs-recoverable-f1-01",
+    "gdev7-jobs-recoverable-f3-01",
+    "gdev7-jobs-retry_required-f1-01",
+    "gdev7-jobs-retry_required-f3-01",
+    "gdev7-jobs-clarification-f1-01",
+    "gdev7-jobs-clarification-f3-01",
+    "gdev7-jobs-unrecoverable-f1-01"
+  ],
+  "mps_unseen_eval24_case_seeds": {
+    "gdev7-files-clarification-f1-01": 6416,
+    "gdev7-files-clarification-f3-01": 6448,
+    "gdev7-files-normal-f1-01": 6256,
+    "gdev7-files-recoverable-f1-01": 6288,
+    "gdev7-files-recoverable-f2-01": 6320,
+    "gdev7-files-retry_required-f1-01": 6352,
+    "gdev7-files-retry_required-f2-01": 6384,
+    "gdev7-files-unrecoverable-f1-01": 6480,
+    "gdev7-jobs-clarification-f1-01": 6672,
+    "gdev7-jobs-clarification-f3-01": 6704,
+    "gdev7-jobs-normal-f1-01": 6512,
+    "gdev7-jobs-recoverable-f1-01": 6544,
+    "gdev7-jobs-recoverable-f3-01": 6576,
+    "gdev7-jobs-retry_required-f1-01": 6608,
+    "gdev7-jobs-retry_required-f3-01": 6640,
+    "gdev7-jobs-unrecoverable-f1-01": 6736,
+    "gdev7-orders-clarification-f1-01": 6160,
+    "gdev7-orders-clarification-f3-01": 6192,
+    "gdev7-orders-normal-f1-01": 6000,
+    "gdev7-orders-recoverable-f1-01": 6032,
+    "gdev7-orders-recoverable-f2-01": 6064,
+    "gdev7-orders-retry_required-f1-01": 6096,
+    "gdev7-orders-retry_required-f2-01": 6128,
+    "gdev7-orders-unrecoverable-f1-01": 6224
+  },
+  "mps_unseen_eval24_slice": {
+    "case_count": 24,
+    "cases": [
+      {
+        "case_id": "gdev7-orders-normal-f1-01",
+        "case_seed": 6000,
+        "category": "normal",
+        "domain": "orders",
+        "eval24_slot": "normal",
+        "family": 1,
+        "fault_subtype": "direct_ok_f1",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6000,
+          6015
+        ],
+        "template_group": "iter7-orders-normal-f1"
+      },
+      {
+        "case_id": "gdev7-orders-recoverable-f1-01",
+        "case_seed": 6032,
+        "category": "recoverable",
+        "domain": "orders",
+        "eval24_slot": "recoverable_stale_id_locate",
+        "family": 1,
+        "fault_subtype": "stale_id_locate",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6032,
+          6047
+        ],
+        "template_group": "iter7-orders-recoverable-f1"
+      },
+      {
+        "case_id": "gdev7-orders-recoverable-f2-01",
+        "case_seed": 6064,
+        "category": "recoverable",
+        "domain": "orders",
+        "eval24_slot": "recoverable_compound",
+        "family": 2,
+        "fault_subtype": "stale_id_locate_plus_1timeout",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6064,
+          6079
+        ],
+        "template_group": "iter7-orders-recoverable-f2"
+      },
+      {
+        "case_id": "gdev7-orders-retry_required-f1-01",
+        "case_seed": 6096,
+        "category": "retry_required",
+        "domain": "orders",
+        "eval24_slot": "retry_required_1_step",
+        "family": 1,
+        "fault_subtype": "transient_1_retry",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6096,
+          6111
+        ],
+        "template_group": "iter7-orders-retry_required-f1"
+      },
+      {
+        "case_id": "gdev7-orders-retry_required-f2-01",
+        "case_seed": 6128,
+        "category": "retry_required",
+        "domain": "orders",
+        "eval24_slot": "retry_required_boundary",
+        "family": 2,
+        "fault_subtype": "transient_2_retries_boundary",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6128,
+          6143
+        ],
+        "template_group": "iter7-orders-retry_required-f2"
+      },
+      {
+        "case_id": "gdev7-orders-clarification-f1-01",
+        "case_seed": 6160,
+        "category": "clarification",
+        "domain": "orders",
+        "eval24_slot": "clarification_direct",
+        "family": 1,
+        "fault_subtype": "missing_id_direct",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6160,
+          6175
+        ],
+        "template_group": "iter7-orders-clarification-f1"
+      },
+      {
+        "case_id": "gdev7-orders-clarification-f3-01",
+        "case_seed": 6192,
+        "category": "clarification",
+        "domain": "orders",
+        "eval24_slot": "clarification_compound",
+        "family": 3,
+        "fault_subtype": "missing_id_plus_2timeout",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6192,
+          6207
+        ],
+        "template_group": "iter7-orders-clarification-f3"
+      },
+      {
+        "case_id": "gdev7-orders-unrecoverable-f1-01",
+        "case_seed": 6224,
+        "category": "unrecoverable",
+        "domain": "orders",
+        "eval24_slot": "unrecoverable",
+        "family": 1,
+        "fault_subtype": "unavailable_valid_id_f1",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6224,
+          6239
+        ],
+        "template_group": "iter7-orders-unrecoverable-f1"
+      },
+      {
+        "case_id": "gdev7-files-normal-f1-01",
+        "case_seed": 6256,
+        "category": "normal",
+        "domain": "files",
+        "eval24_slot": "normal",
+        "family": 1,
+        "fault_subtype": "direct_ok_f1",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6256,
+          6271
+        ],
+        "template_group": "iter7-files-normal-f1"
+      },
+      {
+        "case_id": "gdev7-files-recoverable-f1-01",
+        "case_seed": 6288,
+        "category": "recoverable",
+        "domain": "files",
+        "eval24_slot": "recoverable_stale_id_locate",
+        "family": 1,
+        "fault_subtype": "stale_id_locate",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6288,
+          6303
+        ],
+        "template_group": "iter7-files-recoverable-f1"
+      },
+      {
+        "case_id": "gdev7-files-recoverable-f2-01",
+        "case_seed": 6320,
+        "category": "recoverable",
+        "domain": "files",
+        "eval24_slot": "recoverable_compound",
+        "family": 2,
+        "fault_subtype": "stale_id_locate_plus_1timeout",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6320,
+          6335
+        ],
+        "template_group": "iter7-files-recoverable-f2"
+      },
+      {
+        "case_id": "gdev7-files-retry_required-f1-01",
+        "case_seed": 6352,
+        "category": "retry_required",
+        "domain": "files",
+        "eval24_slot": "retry_required_1_step",
+        "family": 1,
+        "fault_subtype": "transient_1_retry",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6352,
+          6367
+        ],
+        "template_group": "iter7-files-retry_required-f1"
+      },
+      {
+        "case_id": "gdev7-files-retry_required-f2-01",
+        "case_seed": 6384,
+        "category": "retry_required",
+        "domain": "files",
+        "eval24_slot": "retry_required_boundary",
+        "family": 2,
+        "fault_subtype": "transient_2_retries_boundary",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6384,
+          6399
+        ],
+        "template_group": "iter7-files-retry_required-f2"
+      },
+      {
+        "case_id": "gdev7-files-clarification-f1-01",
+        "case_seed": 6416,
+        "category": "clarification",
+        "domain": "files",
+        "eval24_slot": "clarification_direct",
+        "family": 1,
+        "fault_subtype": "missing_id_direct",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6416,
+          6431
+        ],
+        "template_group": "iter7-files-clarification-f1"
+      },
+      {
+        "case_id": "gdev7-files-clarification-f3-01",
+        "case_seed": 6448,
+        "category": "clarification",
+        "domain": "files",
+        "eval24_slot": "clarification_compound",
+        "family": 3,
+        "fault_subtype": "missing_id_plus_2timeout",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6448,
+          6463
+        ],
+        "template_group": "iter7-files-clarification-f3"
+      },
+      {
+        "case_id": "gdev7-files-unrecoverable-f1-01",
+        "case_seed": 6480,
+        "category": "unrecoverable",
+        "domain": "files",
+        "eval24_slot": "unrecoverable",
+        "family": 1,
+        "fault_subtype": "unavailable_valid_id_f1",
+        "partition": "dev_InDomain_selection",
+        "seed_range_turn16": [
+          6480,
+          6495
+        ],
+        "template_group": "iter7-files-unrecoverable-f1"
+      },
+      {
+        "case_id": "gdev7-jobs-normal-f1-01",
+        "case_seed": 6512,
+        "category": "normal",
+        "domain": "jobs",
+        "eval24_slot": "normal",
+        "family": 1,
+        "fault_subtype": "direct_ok_f1",
+        "partition": "dev_CrossDomain_diagnostic",
+        "seed_range_turn16": [
+          6512,
+          6527
+        ],
+        "template_group": "iter7-jobs-normal-f1"
+      },
+      {
+        "case_id": "gdev7-jobs-recoverable-f1-01",
+        "case_seed": 6544,
+        "category": "recoverable",
+        "domain": "jobs",
+        "eval24_slot": "recoverable_stale_id_locate",
+        "family": 1,
+        "fault_subtype": "stale_id_locate",
+        "partition": "dev_CrossDomain_diagnostic",
+        "seed_range_turn16": [
+          6544,
+          6559
+        ],
+        "template_group": "iter7-jobs-recoverable-f1"
+      },
+      {
+        "case_id": "gdev7-jobs-recoverable-f3-01",
+        "case_seed": 6576,
+        "category": "recoverable",
+        "domain": "jobs",
+        "eval24_slot": "recoverable_compound",
+        "family": 3,
+        "fault_subtype": "stale_id_locate_plus_1poll",
+        "partition": "dev_CrossDomain_diagnostic",
+        "seed_range_turn16": [
+          6576,
+          6591
+        ],
+        "template_group": "iter7-jobs-recoverable-f3"
+      },
+      {
+        "case_id": "gdev7-jobs-retry_required-f1-01",
+        "case_seed": 6608,
+        "category": "retry_required",
+        "domain": "jobs",
+        "eval24_slot": "retry_required_1_step",
+        "family": 1,
+        "fault_subtype": "job_poll_1_step",
+        "partition": "dev_CrossDomain_diagnostic",
+        "seed_range_turn16": [
+          6608,
+          6623
+        ],
+        "template_group": "iter7-jobs-retry_required-f1"
+      },
+      {
+        "case_id": "gdev7-jobs-retry_required-f3-01",
+        "case_seed": 6640,
+        "category": "retry_required",
+        "domain": "jobs",
+        "eval24_slot": "retry_required_boundary",
+        "family": 3,
+        "fault_subtype": "job_poll_3_steps_boundary",
+        "partition": "dev_CrossDomain_diagnostic",
+        "seed_range_turn16": [
+          6640,
+          6655
+        ],
+        "template_group": "iter7-jobs-retry_required-f3"
+      },
+      {
+        "case_id": "gdev7-jobs-clarification-f1-01",
+        "case_seed": 6672,
+        "category": "clarification",
+        "domain": "jobs",
+        "eval24_slot": "clarification_direct",
+        "family": 1,
+        "fault_subtype": "missing_id_direct",
+        "partition": "dev_CrossDomain_diagnostic",
+        "seed_range_turn16": [
+          6672,
+          6687
+        ],
+        "template_group": "iter7-jobs-clarification-f1"
+      },
+      {
+        "case_id": "gdev7-jobs-clarification-f3-01",
+        "case_seed": 6704,
+        "category": "clarification",
+        "domain": "jobs",
+        "eval24_slot": "clarification_compound",
+        "family": 3,
+        "fault_subtype": "missing_id_plus_1poll",
+        "partition": "dev_CrossDomain_diagnostic",
+        "seed_range_turn16": [
+          6704,
+          6719
+        ],
+        "template_group": "iter7-jobs-clarification-f3"
+      },
+      {
+        "case_id": "gdev7-jobs-unrecoverable-f1-01",
+        "case_seed": 6736,
+        "category": "unrecoverable",
+        "domain": "jobs",
+        "eval24_slot": "unrecoverable",
+        "family": 1,
+        "fault_subtype": "unavailable_valid_id_f1",
+        "partition": "dev_CrossDomain_diagnostic",
+        "seed_range_turn16": [
+          6736,
+          6751
+        ],
+        "template_group": "iter7-jobs-unrecoverable-f1"
+      }
+    ],
+    "category_counts": {
+      "clarification": 6,
+      "normal": 3,
+      "recoverable": 6,
+      "retry_required": 6,
+      "unrecoverable": 3
+    },
+    "distinct_template_group_count": 24,
+    "domain_counts": {
+      "files": 8,
+      "jobs": 8,
+      "orders": 8
+    },
+    "non_overlapping_with_0_to_5999": true,
+    "seed_end": 6736,
+    "seed_start": 6000,
+    "seed_step": 32,
+    "slot_counts": {
+      "clarification_compound": 3,
+      "clarification_direct": 3,
+      "normal": 3,
+      "recoverable_compound": 3,
+      "recoverable_stale_id_locate": 3,
+      "retry_required_1_step": 3,
+      "retry_required_boundary": 3,
+      "unrecoverable": 3
+    },
+    "source_partitions": [
+      "dev_InDomain_selection",
+      "dev_CrossDomain_diagnostic"
+    ]
+  },
+  "partitions": {
+    "dev_CrossDomain_diagnostic": {
+      "case_count": 32,
+      "case_ids": [
+        "gdev7-jobs-normal-f1-01",
+        "gdev7-jobs-normal-f1-02",
+        "gdev7-jobs-normal-f1-03",
+        "gdev7-jobs-normal-f1-04",
+        "gdev7-jobs-recoverable-f1-01",
+        "gdev7-jobs-recoverable-f1-02",
+        "gdev7-jobs-recoverable-f1-03",
+        "gdev7-jobs-recoverable-f1-04",
+        "gdev7-jobs-recoverable-f3-01",
+        "gdev7-jobs-recoverable-f3-02",
+        "gdev7-jobs-recoverable-f3-03",
+        "gdev7-jobs-recoverable-f3-04",
+        "gdev7-jobs-retry_required-f1-01",
+        "gdev7-jobs-retry_required-f1-02",
+        "gdev7-jobs-retry_required-f1-03",
+        "gdev7-jobs-retry_required-f1-04",
+        "gdev7-jobs-retry_required-f3-01",
+        "gdev7-jobs-retry_required-f3-02",
+        "gdev7-jobs-retry_required-f3-03",
+        "gdev7-jobs-retry_required-f3-04",
+        "gdev7-jobs-clarification-f1-01",
+        "gdev7-jobs-clarification-f1-02",
+        "gdev7-jobs-clarification-f1-03",
+        "gdev7-jobs-clarification-f1-04",
+        "gdev7-jobs-clarification-f3-01",
+        "gdev7-jobs-clarification-f3-02",
+        "gdev7-jobs-clarification-f3-03",
+        "gdev7-jobs-clarification-f3-04",
+        "gdev7-jobs-unrecoverable-f1-01",
+        "gdev7-jobs-unrecoverable-f1-02",
+        "gdev7-jobs-unrecoverable-f1-03",
+        "gdev7-jobs-unrecoverable-f1-04"
+      ],
+      "domains": [
+        "jobs"
+      ],
+      "excluded_from_in_domain_training_pool": true,
+      "role": "cross_domain_held_out_diagnostic_dev_eval",
+      "template_group_count": 8,
+      "template_groups": [
+        "iter7-jobs-normal-f1",
+        "iter7-jobs-recoverable-f1",
+        "iter7-jobs-recoverable-f3",
+        "iter7-jobs-retry_required-f1",
+        "iter7-jobs-retry_required-f3",
+        "iter7-jobs-clarification-f1",
+        "iter7-jobs-clarification-f3",
+        "iter7-jobs-unrecoverable-f1"
+      ],
+      "training_eligible": false
+    },
+    "dev_CrossDomain_reserved": {
+      "case_count": 28,
+      "case_ids": [
+        "gdev7-jobs-normal-f2-01",
+        "gdev7-jobs-normal-f2-02",
+        "gdev7-jobs-normal-f2-03",
+        "gdev7-jobs-normal-f2-04",
+        "gdev7-jobs-normal-f3-01",
+        "gdev7-jobs-normal-f3-02",
+        "gdev7-jobs-normal-f3-03",
+        "gdev7-jobs-normal-f3-04",
+        "gdev7-jobs-recoverable-f2-01",
+        "gdev7-jobs-recoverable-f2-02",
+        "gdev7-jobs-recoverable-f2-03",
+        "gdev7-jobs-recoverable-f2-04",
+        "gdev7-jobs-retry_required-f2-01",
+        "gdev7-jobs-retry_required-f2-02",
+        "gdev7-jobs-retry_required-f2-03",
+        "gdev7-jobs-retry_required-f2-04",
+        "gdev7-jobs-clarification-f2-01",
+        "gdev7-jobs-clarification-f2-02",
+        "gdev7-jobs-clarification-f2-03",
+        "gdev7-jobs-clarification-f2-04",
+        "gdev7-jobs-unrecoverable-f2-01",
+        "gdev7-jobs-unrecoverable-f2-02",
+        "gdev7-jobs-unrecoverable-f2-03",
+        "gdev7-jobs-unrecoverable-f2-04",
+        "gdev7-jobs-unrecoverable-f3-01",
+        "gdev7-jobs-unrecoverable-f3-02",
+        "gdev7-jobs-unrecoverable-f3-03",
+        "gdev7-jobs-unrecoverable-f3-04"
+      ],
+      "domains": [
+        "jobs"
+      ],
+      "excluded_from_in_domain_training_pool": true,
+      "role": "cross_domain_held_out_reserved_dev_pool",
+      "template_group_count": 7,
+      "template_groups": [
+        "iter7-jobs-normal-f2",
+        "iter7-jobs-normal-f3",
+        "iter7-jobs-recoverable-f2",
+        "iter7-jobs-retry_required-f2",
+        "iter7-jobs-clarification-f2",
+        "iter7-jobs-unrecoverable-f2",
+        "iter7-jobs-unrecoverable-f3"
+      ],
+      "training_eligible": false
+    },
+    "dev_InDomain_candidate_pool": {
+      "case_count": 56,
+      "case_ids": [
+        "gdev7-orders-normal-f2-01",
+        "gdev7-orders-normal-f2-02",
+        "gdev7-orders-normal-f2-03",
+        "gdev7-orders-normal-f2-04",
+        "gdev7-orders-normal-f3-01",
+        "gdev7-orders-normal-f3-02",
+        "gdev7-orders-normal-f3-03",
+        "gdev7-orders-normal-f3-04",
+        "gdev7-orders-recoverable-f3-01",
+        "gdev7-orders-recoverable-f3-02",
+        "gdev7-orders-recoverable-f3-03",
+        "gdev7-orders-recoverable-f3-04",
+        "gdev7-orders-retry_required-f3-01",
+        "gdev7-orders-retry_required-f3-02",
+        "gdev7-orders-retry_required-f3-03",
+        "gdev7-orders-retry_required-f3-04",
+        "gdev7-orders-clarification-f2-01",
+        "gdev7-orders-clarification-f2-02",
+        "gdev7-orders-clarification-f2-03",
+        "gdev7-orders-clarification-f2-04",
+        "gdev7-orders-unrecoverable-f2-01",
+        "gdev7-orders-unrecoverable-f2-02",
+        "gdev7-orders-unrecoverable-f2-03",
+        "gdev7-orders-unrecoverable-f2-04",
+        "gdev7-orders-unrecoverable-f3-01",
+        "gdev7-orders-unrecoverable-f3-02",
+        "gdev7-orders-unrecoverable-f3-03",
+        "gdev7-orders-unrecoverable-f3-04",
+        "gdev7-files-normal-f2-01",
+        "gdev7-files-normal-f2-02",
+        "gdev7-files-normal-f2-03",
+        "gdev7-files-normal-f2-04",
+        "gdev7-files-normal-f3-01",
+        "gdev7-files-normal-f3-02",
+        "gdev7-files-normal-f3-03",
+        "gdev7-files-normal-f3-04",
+        "gdev7-files-recoverable-f3-01",
+        "gdev7-files-recoverable-f3-02",
+        "gdev7-files-recoverable-f3-03",
+        "gdev7-files-recoverable-f3-04",
+        "gdev7-files-retry_required-f3-01",
+        "gdev7-files-retry_required-f3-02",
+        "gdev7-files-retry_required-f3-03",
+        "gdev7-files-retry_required-f3-04",
+        "gdev7-files-clarification-f2-01",
+        "gdev7-files-clarification-f2-02",
+        "gdev7-files-clarification-f2-03",
+        "gdev7-files-clarification-f2-04",
+        "gdev7-files-unrecoverable-f2-01",
+        "gdev7-files-unrecoverable-f2-02",
+        "gdev7-files-unrecoverable-f2-03",
+        "gdev7-files-unrecoverable-f2-04",
+        "gdev7-files-unrecoverable-f3-01",
+        "gdev7-files-unrecoverable-f3-02",
+        "gdev7-files-unrecoverable-f3-03",
+        "gdev7-files-unrecoverable-f3-04"
+      ],
+      "domains": [
+        "orders",
+        "files"
+      ],
+      "role": "in_domain_future_candidate_pool_dev_only",
+      "template_group_count": 14,
+      "template_groups": [
+        "iter7-orders-normal-f2",
+        "iter7-orders-normal-f3",
+        "iter7-orders-recoverable-f3",
+        "iter7-orders-retry_required-f3",
+        "iter7-orders-clarification-f2",
+        "iter7-orders-unrecoverable-f2",
+        "iter7-orders-unrecoverable-f3",
+        "iter7-files-normal-f2",
+        "iter7-files-normal-f3",
+        "iter7-files-recoverable-f3",
+        "iter7-files-retry_required-f3",
+        "iter7-files-clarification-f2",
+        "iter7-files-unrecoverable-f2",
+        "iter7-files-unrecoverable-f3"
+      ],
+      "training_eligible": false
+    },
+    "dev_InDomain_selection": {
+      "case_count": 64,
+      "case_ids": [
+        "gdev7-orders-normal-f1-01",
+        "gdev7-orders-normal-f1-02",
+        "gdev7-orders-normal-f1-03",
+        "gdev7-orders-normal-f1-04",
+        "gdev7-orders-recoverable-f1-01",
+        "gdev7-orders-recoverable-f1-02",
+        "gdev7-orders-recoverable-f1-03",
+        "gdev7-orders-recoverable-f1-04",
+        "gdev7-orders-recoverable-f2-01",
+        "gdev7-orders-recoverable-f2-02",
+        "gdev7-orders-recoverable-f2-03",
+        "gdev7-orders-recoverable-f2-04",
+        "gdev7-orders-retry_required-f1-01",
+        "gdev7-orders-retry_required-f1-02",
+        "gdev7-orders-retry_required-f1-03",
+        "gdev7-orders-retry_required-f1-04",
+        "gdev7-orders-retry_required-f2-01",
+        "gdev7-orders-retry_required-f2-02",
+        "gdev7-orders-retry_required-f2-03",
+        "gdev7-orders-retry_required-f2-04",
+        "gdev7-orders-clarification-f1-01",
+        "gdev7-orders-clarification-f1-02",
+        "gdev7-orders-clarification-f1-03",
+        "gdev7-orders-clarification-f1-04",
+        "gdev7-orders-clarification-f3-01",
+        "gdev7-orders-clarification-f3-02",
+        "gdev7-orders-clarification-f3-03",
+        "gdev7-orders-clarification-f3-04",
+        "gdev7-orders-unrecoverable-f1-01",
+        "gdev7-orders-unrecoverable-f1-02",
+        "gdev7-orders-unrecoverable-f1-03",
+        "gdev7-orders-unrecoverable-f1-04",
+        "gdev7-files-normal-f1-01",
+        "gdev7-files-normal-f1-02",
+        "gdev7-files-normal-f1-03",
+        "gdev7-files-normal-f1-04",
+        "gdev7-files-recoverable-f1-01",
+        "gdev7-files-recoverable-f1-02",
+        "gdev7-files-recoverable-f1-03",
+        "gdev7-files-recoverable-f1-04",
+        "gdev7-files-recoverable-f2-01",
+        "gdev7-files-recoverable-f2-02",
+        "gdev7-files-recoverable-f2-03",
+        "gdev7-files-recoverable-f2-04",
+        "gdev7-files-retry_required-f1-01",
+        "gdev7-files-retry_required-f1-02",
+        "gdev7-files-retry_required-f1-03",
+        "gdev7-files-retry_required-f1-04",
+        "gdev7-files-retry_required-f2-01",
+        "gdev7-files-retry_required-f2-02",
+        "gdev7-files-retry_required-f2-03",
+        "gdev7-files-retry_required-f2-04",
+        "gdev7-files-clarification-f1-01",
+        "gdev7-files-clarification-f1-02",
+        "gdev7-files-clarification-f1-03",
+        "gdev7-files-clarification-f1-04",
+        "gdev7-files-clarification-f3-01",
+        "gdev7-files-clarification-f3-02",
+        "gdev7-files-clarification-f3-03",
+        "gdev7-files-clarification-f3-04",
+        "gdev7-files-unrecoverable-f1-01",
+        "gdev7-files-unrecoverable-f1-02",
+        "gdev7-files-unrecoverable-f1-03",
+        "gdev7-files-unrecoverable-f1-04"
+      ],
+      "domains": [
+        "orders",
+        "files"
+      ],
+      "role": "in_domain_unseen_template_selection_and_dev_eval",
+      "template_group_count": 16,
+      "template_groups": [
+        "iter7-orders-normal-f1",
+        "iter7-orders-recoverable-f1",
+        "iter7-orders-recoverable-f2",
+        "iter7-orders-retry_required-f1",
+        "iter7-orders-retry_required-f2",
+        "iter7-orders-clarification-f1",
+        "iter7-orders-clarification-f3",
+        "iter7-orders-unrecoverable-f1",
+        "iter7-files-normal-f1",
+        "iter7-files-recoverable-f1",
+        "iter7-files-recoverable-f2",
+        "iter7-files-retry_required-f1",
+        "iter7-files-retry_required-f2",
+        "iter7-files-clarification-f1",
+        "iter7-files-clarification-f3",
+        "iter7-files-unrecoverable-f1"
+      ],
+      "training_eligible": false
+    }
+  },
+  "schema_version": 1,
+  "summary": {
+    "cases_per_domain_category_cell": 12,
+    "categories": [
+      "normal",
+      "recoverable",
+      "retry_required",
+      "clarification",
+      "unrecoverable"
+    ],
+    "cross_domain_held_out_domain": "jobs",
+    "domains": [
+      "orders",
+      "files",
+      "jobs"
+    ],
+    "families_per_domain_category_cell": 3,
+    "in_domain_domains": [
+      "orders",
+      "files"
+    ],
+    "partition_case_counts": {
+      "dev_CrossDomain_diagnostic": 32,
+      "dev_CrossDomain_reserved": 28,
+      "dev_InDomain_candidate_pool": 56,
+      "dev_InDomain_selection": 64
+    },
+    "partition_group_counts": {
+      "dev_CrossDomain_diagnostic": 8,
+      "dev_CrossDomain_reserved": 7,
+      "dev_InDomain_candidate_pool": 14,
+      "dev_InDomain_selection": 16
+    },
+    "total_cases": 180,
+    "total_template_groups": 45,
+    "variants_per_template_group": 4
+  },
+  "template_groups": [
+    {
+      "case_ids": [
+        "gdev7-orders-normal-f1-01",
+        "gdev7-orders-normal-f1-02",
+        "gdev7-orders-normal-f1-03",
+        "gdev7-orders-normal-f1-04"
+      ],
+      "category": "normal",
+      "domain": "orders",
+      "eval24_slot": "normal",
+      "family": 1,
+      "fault_subtype": "direct_ok_f1",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-orders-normal-f1"
+    },
+    {
+      "case_ids": [
+        "gdev7-orders-normal-f2-01",
+        "gdev7-orders-normal-f2-02",
+        "gdev7-orders-normal-f2-03",
+        "gdev7-orders-normal-f2-04"
+      ],
+      "category": "normal",
+      "domain": "orders",
+      "eval24_slot": null,
+      "family": 2,
+      "fault_subtype": "direct_ok_f2",
+      "partition": "dev_InDomain_candidate_pool",
+      "template_group": "iter7-orders-normal-f2"
+    },
+    {
+      "case_ids": [
+        "gdev7-orders-normal-f3-01",
+        "gdev7-orders-normal-f3-02",
+        "gdev7-orders-normal-f3-03",
+        "gdev7-orders-normal-f3-04"
+      ],
+      "category": "normal",
+      "domain": "orders",
+      "eval24_slot": null,
+      "family": 3,
+      "fault_subtype": "direct_ok_f3",
+      "partition": "dev_InDomain_candidate_pool",
+      "template_group": "iter7-orders-normal-f3"
+    },
+    {
+      "case_ids": [
+        "gdev7-orders-recoverable-f1-01",
+        "gdev7-orders-recoverable-f1-02",
+        "gdev7-orders-recoverable-f1-03",
+        "gdev7-orders-recoverable-f1-04"
+      ],
+      "category": "recoverable",
+      "domain": "orders",
+      "eval24_slot": "recoverable_stale_id_locate",
+      "family": 1,
+      "fault_subtype": "stale_id_locate",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-orders-recoverable-f1"
+    },
+    {
+      "case_ids": [
+        "gdev7-orders-recoverable-f2-01",
+        "gdev7-orders-recoverable-f2-02",
+        "gdev7-orders-recoverable-f2-03",
+        "gdev7-orders-recoverable-f2-04"
+      ],
+      "category": "recoverable",
+      "domain": "orders",
+      "eval24_slot": "recoverable_compound",
+      "family": 2,
+      "fault_subtype": "stale_id_locate_plus_1timeout",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-orders-recoverable-f2"
+    },
+    {
+      "case_ids": [
+        "gdev7-orders-recoverable-f3-01",
+        "gdev7-orders-recoverable-f3-02",
+        "gdev7-orders-recoverable-f3-03",
+        "gdev7-orders-recoverable-f3-04"
+      ],
+      "category": "recoverable",
+      "domain": "orders",
+      "eval24_slot": null,
+      "family": 3,
+      "fault_subtype": "stale_id_locate_plus_2timeout",
+      "partition": "dev_InDomain_candidate_pool",
+      "template_group": "iter7-orders-recoverable-f3"
+    },
+    {
+      "case_ids": [
+        "gdev7-orders-retry_required-f1-01",
+        "gdev7-orders-retry_required-f1-02",
+        "gdev7-orders-retry_required-f1-03",
+        "gdev7-orders-retry_required-f1-04"
+      ],
+      "category": "retry_required",
+      "domain": "orders",
+      "eval24_slot": "retry_required_1_step",
+      "family": 1,
+      "fault_subtype": "transient_1_retry",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-orders-retry_required-f1"
+    },
+    {
+      "case_ids": [
+        "gdev7-orders-retry_required-f2-01",
+        "gdev7-orders-retry_required-f2-02",
+        "gdev7-orders-retry_required-f2-03",
+        "gdev7-orders-retry_required-f2-04"
+      ],
+      "category": "retry_required",
+      "domain": "orders",
+      "eval24_slot": "retry_required_boundary",
+      "family": 2,
+      "fault_subtype": "transient_2_retries_boundary",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-orders-retry_required-f2"
+    },
+    {
+      "case_ids": [
+        "gdev7-orders-retry_required-f3-01",
+        "gdev7-orders-retry_required-f3-02",
+        "gdev7-orders-retry_required-f3-03",
+        "gdev7-orders-retry_required-f3-04"
+      ],
+      "category": "retry_required",
+      "domain": "orders",
+      "eval24_slot": null,
+      "family": 3,
+      "fault_subtype": "transient_1_retry_alt_schema",
+      "partition": "dev_InDomain_candidate_pool",
+      "template_group": "iter7-orders-retry_required-f3"
+    },
+    {
+      "case_ids": [
+        "gdev7-orders-clarification-f1-01",
+        "gdev7-orders-clarification-f1-02",
+        "gdev7-orders-clarification-f1-03",
+        "gdev7-orders-clarification-f1-04"
+      ],
+      "category": "clarification",
+      "domain": "orders",
+      "eval24_slot": "clarification_direct",
+      "family": 1,
+      "fault_subtype": "missing_id_direct",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-orders-clarification-f1"
+    },
+    {
+      "case_ids": [
+        "gdev7-orders-clarification-f2-01",
+        "gdev7-orders-clarification-f2-02",
+        "gdev7-orders-clarification-f2-03",
+        "gdev7-orders-clarification-f2-04"
+      ],
+      "category": "clarification",
+      "domain": "orders",
+      "eval24_slot": null,
+      "family": 2,
+      "fault_subtype": "missing_id_plus_1timeout",
+      "partition": "dev_InDomain_candidate_pool",
+      "template_group": "iter7-orders-clarification-f2"
+    },
+    {
+      "case_ids": [
+        "gdev7-orders-clarification-f3-01",
+        "gdev7-orders-clarification-f3-02",
+        "gdev7-orders-clarification-f3-03",
+        "gdev7-orders-clarification-f3-04"
+      ],
+      "category": "clarification",
+      "domain": "orders",
+      "eval24_slot": "clarification_compound",
+      "family": 3,
+      "fault_subtype": "missing_id_plus_2timeout",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-orders-clarification-f3"
+    },
+    {
+      "case_ids": [
+        "gdev7-orders-unrecoverable-f1-01",
+        "gdev7-orders-unrecoverable-f1-02",
+        "gdev7-orders-unrecoverable-f1-03",
+        "gdev7-orders-unrecoverable-f1-04"
+      ],
+      "category": "unrecoverable",
+      "domain": "orders",
+      "eval24_slot": "unrecoverable",
+      "family": 1,
+      "fault_subtype": "unavailable_valid_id_f1",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-orders-unrecoverable-f1"
+    },
+    {
+      "case_ids": [
+        "gdev7-orders-unrecoverable-f2-01",
+        "gdev7-orders-unrecoverable-f2-02",
+        "gdev7-orders-unrecoverable-f2-03",
+        "gdev7-orders-unrecoverable-f2-04"
+      ],
+      "category": "unrecoverable",
+      "domain": "orders",
+      "eval24_slot": null,
+      "family": 2,
+      "fault_subtype": "unavailable_alt_id_f2",
+      "partition": "dev_InDomain_candidate_pool",
+      "template_group": "iter7-orders-unrecoverable-f2"
+    },
+    {
+      "case_ids": [
+        "gdev7-orders-unrecoverable-f3-01",
+        "gdev7-orders-unrecoverable-f3-02",
+        "gdev7-orders-unrecoverable-f3-03",
+        "gdev7-orders-unrecoverable-f3-04"
+      ],
+      "category": "unrecoverable",
+      "domain": "orders",
+      "eval24_slot": null,
+      "family": 3,
+      "fault_subtype": "unavailable_archive_id_f3",
+      "partition": "dev_InDomain_candidate_pool",
+      "template_group": "iter7-orders-unrecoverable-f3"
+    },
+    {
+      "case_ids": [
+        "gdev7-files-normal-f1-01",
+        "gdev7-files-normal-f1-02",
+        "gdev7-files-normal-f1-03",
+        "gdev7-files-normal-f1-04"
+      ],
+      "category": "normal",
+      "domain": "files",
+      "eval24_slot": "normal",
+      "family": 1,
+      "fault_subtype": "direct_ok_f1",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-files-normal-f1"
+    },
+    {
+      "case_ids": [
+        "gdev7-files-normal-f2-01",
+        "gdev7-files-normal-f2-02",
+        "gdev7-files-normal-f2-03",
+        "gdev7-files-normal-f2-04"
+      ],
+      "category": "normal",
+      "domain": "files",
+      "eval24_slot": null,
+      "family": 2,
+      "fault_subtype": "direct_ok_f2",
+      "partition": "dev_InDomain_candidate_pool",
+      "template_group": "iter7-files-normal-f2"
+    },
+    {
+      "case_ids": [
+        "gdev7-files-normal-f3-01",
+        "gdev7-files-normal-f3-02",
+        "gdev7-files-normal-f3-03",
+        "gdev7-files-normal-f3-04"
+      ],
+      "category": "normal",
+      "domain": "files",
+      "eval24_slot": null,
+      "family": 3,
+      "fault_subtype": "direct_ok_f3",
+      "partition": "dev_InDomain_candidate_pool",
+      "template_group": "iter7-files-normal-f3"
+    },
+    {
+      "case_ids": [
+        "gdev7-files-recoverable-f1-01",
+        "gdev7-files-recoverable-f1-02",
+        "gdev7-files-recoverable-f1-03",
+        "gdev7-files-recoverable-f1-04"
+      ],
+      "category": "recoverable",
+      "domain": "files",
+      "eval24_slot": "recoverable_stale_id_locate",
+      "family": 1,
+      "fault_subtype": "stale_id_locate",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-files-recoverable-f1"
+    },
+    {
+      "case_ids": [
+        "gdev7-files-recoverable-f2-01",
+        "gdev7-files-recoverable-f2-02",
+        "gdev7-files-recoverable-f2-03",
+        "gdev7-files-recoverable-f2-04"
+      ],
+      "category": "recoverable",
+      "domain": "files",
+      "eval24_slot": "recoverable_compound",
+      "family": 2,
+      "fault_subtype": "stale_id_locate_plus_1timeout",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-files-recoverable-f2"
+    },
+    {
+      "case_ids": [
+        "gdev7-files-recoverable-f3-01",
+        "gdev7-files-recoverable-f3-02",
+        "gdev7-files-recoverable-f3-03",
+        "gdev7-files-recoverable-f3-04"
+      ],
+      "category": "recoverable",
+      "domain": "files",
+      "eval24_slot": null,
+      "family": 3,
+      "fault_subtype": "stale_id_locate_plus_2timeout",
+      "partition": "dev_InDomain_candidate_pool",
+      "template_group": "iter7-files-recoverable-f3"
+    },
+    {
+      "case_ids": [
+        "gdev7-files-retry_required-f1-01",
+        "gdev7-files-retry_required-f1-02",
+        "gdev7-files-retry_required-f1-03",
+        "gdev7-files-retry_required-f1-04"
+      ],
+      "category": "retry_required",
+      "domain": "files",
+      "eval24_slot": "retry_required_1_step",
+      "family": 1,
+      "fault_subtype": "transient_1_retry",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-files-retry_required-f1"
+    },
+    {
+      "case_ids": [
+        "gdev7-files-retry_required-f2-01",
+        "gdev7-files-retry_required-f2-02",
+        "gdev7-files-retry_required-f2-03",
+        "gdev7-files-retry_required-f2-04"
+      ],
+      "category": "retry_required",
+      "domain": "files",
+      "eval24_slot": "retry_required_boundary",
+      "family": 2,
+      "fault_subtype": "transient_2_retries_boundary",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-files-retry_required-f2"
+    },
+    {
+      "case_ids": [
+        "gdev7-files-retry_required-f3-01",
+        "gdev7-files-retry_required-f3-02",
+        "gdev7-files-retry_required-f3-03",
+        "gdev7-files-retry_required-f3-04"
+      ],
+      "category": "retry_required",
+      "domain": "files",
+      "eval24_slot": null,
+      "family": 3,
+      "fault_subtype": "transient_1_retry_alt_schema",
+      "partition": "dev_InDomain_candidate_pool",
+      "template_group": "iter7-files-retry_required-f3"
+    },
+    {
+      "case_ids": [
+        "gdev7-files-clarification-f1-01",
+        "gdev7-files-clarification-f1-02",
+        "gdev7-files-clarification-f1-03",
+        "gdev7-files-clarification-f1-04"
+      ],
+      "category": "clarification",
+      "domain": "files",
+      "eval24_slot": "clarification_direct",
+      "family": 1,
+      "fault_subtype": "missing_id_direct",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-files-clarification-f1"
+    },
+    {
+      "case_ids": [
+        "gdev7-files-clarification-f2-01",
+        "gdev7-files-clarification-f2-02",
+        "gdev7-files-clarification-f2-03",
+        "gdev7-files-clarification-f2-04"
+      ],
+      "category": "clarification",
+      "domain": "files",
+      "eval24_slot": null,
+      "family": 2,
+      "fault_subtype": "missing_id_plus_1timeout",
+      "partition": "dev_InDomain_candidate_pool",
+      "template_group": "iter7-files-clarification-f2"
+    },
+    {
+      "case_ids": [
+        "gdev7-files-clarification-f3-01",
+        "gdev7-files-clarification-f3-02",
+        "gdev7-files-clarification-f3-03",
+        "gdev7-files-clarification-f3-04"
+      ],
+      "category": "clarification",
+      "domain": "files",
+      "eval24_slot": "clarification_compound",
+      "family": 3,
+      "fault_subtype": "missing_id_plus_2timeout",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-files-clarification-f3"
+    },
+    {
+      "case_ids": [
+        "gdev7-files-unrecoverable-f1-01",
+        "gdev7-files-unrecoverable-f1-02",
+        "gdev7-files-unrecoverable-f1-03",
+        "gdev7-files-unrecoverable-f1-04"
+      ],
+      "category": "unrecoverable",
+      "domain": "files",
+      "eval24_slot": "unrecoverable",
+      "family": 1,
+      "fault_subtype": "unavailable_valid_id_f1",
+      "partition": "dev_InDomain_selection",
+      "template_group": "iter7-files-unrecoverable-f1"
+    },
+    {
+      "case_ids": [
+        "gdev7-files-unrecoverable-f2-01",
+        "gdev7-files-unrecoverable-f2-02",
+        "gdev7-files-unrecoverable-f2-03",
+        "gdev7-files-unrecoverable-f2-04"
+      ],
+      "category": "unrecoverable",
+      "domain": "files",
+      "eval24_slot": null,
+      "family": 2,
+      "fault_subtype": "unavailable_alt_id_f2",
+      "partition": "dev_InDomain_candidate_pool",
+      "template_group": "iter7-files-unrecoverable-f2"
+    },
+    {
+      "case_ids": [
+        "gdev7-files-unrecoverable-f3-01",
+        "gdev7-files-unrecoverable-f3-02",
+        "gdev7-files-unrecoverable-f3-03",
+        "gdev7-files-unrecoverable-f3-04"
+      ],
+      "category": "unrecoverable",
+      "domain": "files",
+      "eval24_slot": null,
+      "family": 3,
+      "fault_subtype": "unavailable_archive_id_f3",
+      "partition": "dev_InDomain_candidate_pool",
+      "template_group": "iter7-files-unrecoverable-f3"
+    },
+    {
+      "case_ids": [
+        "gdev7-jobs-normal-f1-01",
+        "gdev7-jobs-normal-f1-02",
+        "gdev7-jobs-normal-f1-03",
+        "gdev7-jobs-normal-f1-04"
+      ],
+      "category": "normal",
+      "domain": "jobs",
+      "eval24_slot": "normal",
+      "family": 1,
+      "fault_subtype": "direct_ok_f1",
+      "partition": "dev_CrossDomain_diagnostic",
+      "template_group": "iter7-jobs-normal-f1"
+    },
+    {
+      "case_ids": [
+        "gdev7-jobs-normal-f2-01",
+        "gdev7-jobs-normal-f2-02",
+        "gdev7-jobs-normal-f2-03",
+        "gdev7-jobs-normal-f2-04"
+      ],
+      "category": "normal",
+      "domain": "jobs",
+      "eval24_slot": null,
+      "family": 2,
+      "fault_subtype": "direct_ok_f2",
+      "partition": "dev_CrossDomain_reserved",
+      "template_group": "iter7-jobs-normal-f2"
+    },
+    {
+      "case_ids": [
+        "gdev7-jobs-normal-f3-01",
+        "gdev7-jobs-normal-f3-02",
+        "gdev7-jobs-normal-f3-03",
+        "gdev7-jobs-normal-f3-04"
+      ],
+      "category": "normal",
+      "domain": "jobs",
+      "eval24_slot": null,
+      "family": 3,
+      "fault_subtype": "direct_ok_f3",
+      "partition": "dev_CrossDomain_reserved",
+      "template_group": "iter7-jobs-normal-f3"
+    },
+    {
+      "case_ids": [
+        "gdev7-jobs-recoverable-f1-01",
+        "gdev7-jobs-recoverable-f1-02",
+        "gdev7-jobs-recoverable-f1-03",
+        "gdev7-jobs-recoverable-f1-04"
+      ],
+      "category": "recoverable",
+      "domain": "jobs",
+      "eval24_slot": "recoverable_stale_id_locate",
+      "family": 1,
+      "fault_subtype": "stale_id_locate",
+      "partition": "dev_CrossDomain_diagnostic",
+      "template_group": "iter7-jobs-recoverable-f1"
+    },
+    {
+      "case_ids": [
+        "gdev7-jobs-recoverable-f2-01",
+        "gdev7-jobs-recoverable-f2-02",
+        "gdev7-jobs-recoverable-f2-03",
+        "gdev7-jobs-recoverable-f2-04"
+      ],
+      "category": "recoverable",
+      "domain": "jobs",
+      "eval24_slot": null,
+      "family": 2,
+      "fault_subtype": "stale_id_locate_plus_1timeout",
+      "partition": "dev_CrossDomain_reserved",
+      "template_group": "iter7-jobs-recoverable-f2"
+    },
+    {
+      "case_ids": [
+        "gdev7-jobs-recoverable-f3-01",
+        "gdev7-jobs-recoverable-f3-02",
+        "gdev7-jobs-recoverable-f3-03",
+        "gdev7-jobs-recoverable-f3-04"
+      ],
+      "category": "recoverable",
+      "domain": "jobs",
+      "eval24_slot": "recoverable_compound",
+      "family": 3,
+      "fault_subtype": "stale_id_locate_plus_1poll",
+      "partition": "dev_CrossDomain_diagnostic",
+      "template_group": "iter7-jobs-recoverable-f3"
+    },
+    {
+      "case_ids": [
+        "gdev7-jobs-retry_required-f1-01",
+        "gdev7-jobs-retry_required-f1-02",
+        "gdev7-jobs-retry_required-f1-03",
+        "gdev7-jobs-retry_required-f1-04"
+      ],
+      "category": "retry_required",
+      "domain": "jobs",
+      "eval24_slot": "retry_required_1_step",
+      "family": 1,
+      "fault_subtype": "job_poll_1_step",
+      "partition": "dev_CrossDomain_diagnostic",
+      "template_group": "iter7-jobs-retry_required-f1"
+    },
+    {
+      "case_ids": [
+        "gdev7-jobs-retry_required-f2-01",
+        "gdev7-jobs-retry_required-f2-02",
+        "gdev7-jobs-retry_required-f2-03",
+        "gdev7-jobs-retry_required-f2-04"
+      ],
+      "category": "retry_required",
+      "domain": "jobs",
+      "eval24_slot": null,
+      "family": 2,
+      "fault_subtype": "job_poll_2_steps",
+      "partition": "dev_CrossDomain_reserved",
+      "template_group": "iter7-jobs-retry_required-f2"
+    },
+    {
+      "case_ids": [
+        "gdev7-jobs-retry_required-f3-01",
+        "gdev7-jobs-retry_required-f3-02",
+        "gdev7-jobs-retry_required-f3-03",
+        "gdev7-jobs-retry_required-f3-04"
+      ],
+      "category": "retry_required",
+      "domain": "jobs",
+      "eval24_slot": "retry_required_boundary",
+      "family": 3,
+      "fault_subtype": "job_poll_3_steps_boundary",
+      "partition": "dev_CrossDomain_diagnostic",
+      "template_group": "iter7-jobs-retry_required-f3"
+    },
+    {
+      "case_ids": [
+        "gdev7-jobs-clarification-f1-01",
+        "gdev7-jobs-clarification-f1-02",
+        "gdev7-jobs-clarification-f1-03",
+        "gdev7-jobs-clarification-f1-04"
+      ],
+      "category": "clarification",
+      "domain": "jobs",
+      "eval24_slot": "clarification_direct",
+      "family": 1,
+      "fault_subtype": "missing_id_direct",
+      "partition": "dev_CrossDomain_diagnostic",
+      "template_group": "iter7-jobs-clarification-f1"
+    },
+    {
+      "case_ids": [
+        "gdev7-jobs-clarification-f2-01",
+        "gdev7-jobs-clarification-f2-02",
+        "gdev7-jobs-clarification-f2-03",
+        "gdev7-jobs-clarification-f2-04"
+      ],
+      "category": "clarification",
+      "domain": "jobs",
+      "eval24_slot": null,
+      "family": 2,
+      "fault_subtype": "missing_id_plus_1timeout",
+      "partition": "dev_CrossDomain_reserved",
+      "template_group": "iter7-jobs-clarification-f2"
+    },
+    {
+      "case_ids": [
+        "gdev7-jobs-clarification-f3-01",
+        "gdev7-jobs-clarification-f3-02",
+        "gdev7-jobs-clarification-f3-03",
+        "gdev7-jobs-clarification-f3-04"
+      ],
+      "category": "clarification",
+      "domain": "jobs",
+      "eval24_slot": "clarification_compound",
+      "family": 3,
+      "fault_subtype": "missing_id_plus_1poll",
+      "partition": "dev_CrossDomain_diagnostic",
+      "template_group": "iter7-jobs-clarification-f3"
+    },
+    {
+      "case_ids": [
+        "gdev7-jobs-unrecoverable-f1-01",
+        "gdev7-jobs-unrecoverable-f1-02",
+        "gdev7-jobs-unrecoverable-f1-03",
+        "gdev7-jobs-unrecoverable-f1-04"
+      ],
+      "category": "unrecoverable",
+      "domain": "jobs",
+      "eval24_slot": "unrecoverable",
+      "family": 1,
+      "fault_subtype": "unavailable_valid_id_f1",
+      "partition": "dev_CrossDomain_diagnostic",
+      "template_group": "iter7-jobs-unrecoverable-f1"
+    },
+    {
+      "case_ids": [
+        "gdev7-jobs-unrecoverable-f2-01",
+        "gdev7-jobs-unrecoverable-f2-02",
+        "gdev7-jobs-unrecoverable-f2-03",
+        "gdev7-jobs-unrecoverable-f2-04"
+      ],
+      "category": "unrecoverable",
+      "domain": "jobs",
+      "eval24_slot": null,
+      "family": 2,
+      "fault_subtype": "unavailable_alt_id_f2",
+      "partition": "dev_CrossDomain_reserved",
+      "template_group": "iter7-jobs-unrecoverable-f2"
+    },
+    {
+      "case_ids": [
+        "gdev7-jobs-unrecoverable-f3-01",
+        "gdev7-jobs-unrecoverable-f3-02",
+        "gdev7-jobs-unrecoverable-f3-03",
+        "gdev7-jobs-unrecoverable-f3-04"
+      ],
+      "category": "unrecoverable",
+      "domain": "jobs",
+      "eval24_slot": null,
+      "family": 3,
+      "fault_subtype": "unavailable_archive_id_f3",
+      "partition": "dev_CrossDomain_reserved",
+      "template_group": "iter7-jobs-unrecoverable-f3"
+    }
+  ],
+  "training_eligible": false
+}

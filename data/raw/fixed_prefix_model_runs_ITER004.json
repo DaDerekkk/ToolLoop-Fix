@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "iteration": "ITER-004",
+  "created_at_utc": "2026-11-16T08:01:52.204323+00:00",
+  "evidence_type": "model_inference_fixed_prefix_index",
+  "runs": [
+    {
+      "run_id": "EXP-20261116-025",
+      "wording_profile": "legacy",
+      "comparison_arm": "B0",
+      "manifest_sha256": "65a9a56055266c47195896a775dbd2844fe7b5056f12f10a973488fe3af8f66a",
+      "status": "completed",
+      "evidence_valid": true,
+      "case_count": 6,
+      "fresh_generations": 9,
+      "historical_prefix_exposures": 8,
+      "files": {
+        "generations.jsonl": {
+          "path": "experiments/EXP-20261116-025/generations.jsonl",
+          "sha256": "85f06577b5f68d9d8549ee2844436432e7e571e41829a42abb1a6f20ddbfc93a"
+        },
+        "trajectories.jsonl": {
+          "path": "experiments/EXP-20261116-025/trajectories.jsonl",
+          "sha256": "0a8acbf255916eb3cdca61f7eb904286894ab1e6b60538eaf9ba01580dbf34e3"
+        },
+        "prefix_contexts.jsonl": {
+          "path": "experiments/EXP-20261116-025/prefix_contexts.jsonl",
+          "sha256": "b133ff37c5aae279246824606762397f30353cc94e21376a32a97d8347e57c9c"
+        },
+        "case_results.jsonl": {
+          "path": "experiments/EXP-20261116-025/case_results.jsonl",
+          "sha256": "7ad0ec82243b6d8dd7b0a2f0ab022937e94dc8de79416db5f0382682957ecfcb"
+        },
+        "metrics.json": {
+          "path": "experiments/EXP-20261116-025/metrics.json",
+          "sha256": "6adbfb6aed6c7a211d4ccba92024b6846a8ae4cb77eef9723b03ef97d85b19c0"
+        },
+        "model_provenance.json": {
+          "path": "experiments/EXP-20261116-025/model_provenance.json",
+          "sha256": "1a331971ea91fb4eb06ffd8bc8bb38d8164c9d93b33c9b489e33829e0ecfe86c"
+        }
+      }
+    },
+    {
+      "run_id": "EXP-20261116-026",
+      "wording_profile": "legacy",
+      "comparison_arm": "B1",
+      "manifest_sha256": "dd28651597aa9673c52c2347e0320bc426b88c6f59e8b23a99fbcab61736328e",
+      "status": "completed",
+      "evidence_valid": true,
+      "case_count": 6,
+      "fresh_generations": 11,
+      "historical_prefix_exposures": 8,
+      "files": {
+        "generations.jsonl": {
+          "path": "experiments/EXP-20261116-026/generations.jsonl",
+          "sha256": "282e669e74d46f602ce1259b72faa3ef8243f927ec665326a96343128cba25f2"
+        },
+        "trajectories.jsonl": {
+          "path": "experiments/EXP-20261116-026/trajectories.jsonl",
+          "sha256": "edc01811a94b4f9d9ecdcd0d6122e0609c2cb36341eba651abc6c7f66a173694"
+        },
+        "prefix_contexts.jsonl": {
+          "path": "experiments/EXP-20261116-026/prefix_contexts.jsonl",
+          "sha256": "c7f0de6db9b4ef9f90b05b6d15b8c59782961ce1772b99671a12a908acdb8ef2"
+        },
+        "case_results.jsonl": {
+          "path": "experiments/EXP-20261116-026/case_results.jsonl",
+          "sha256": "2dd83839b7b216bef61bbb7c8f110d5ae9100b29b2741c5bcfacb882f3ed86cf"
+        },
+        "metrics.json": {
+          "path": "experiments/EXP-20261116-026/metrics.json",
+          "sha256": "409818e00316e349684068c75828fdbb7ab5941dbdadb9734f4ad27f5b9ef15e"
+        },
+        "model_provenance.json": {
+          "path": "experiments/EXP-20261116-026/model_provenance.json",
+          "sha256": "0b4a430b8663dc52d16b54c7ddeba392542c4f7f3d9b2f998278a7f8a29df7e6"
+        }
+      }
+    },
+    {
+      "run_id": "EXP-20261116-027",
+      "wording_profile": "legacy",
+      "comparison_arm": "B2",
+      "manifest_sha256": "3984ed8b02ea5896e544e5c1f17adda19e54d04f91db6ad0c01e6c59577bb9cc",
+      "status": "completed",
+      "evidence_valid": true,
+      "case_count": 6,
+      "fresh_generations": 9,
+      "historical_prefix_exposures": 8,
+      "files": {
+        "generations.jsonl": {
+          "path": "experiments/EXP-20261116-027/generations.jsonl",
+          "sha256": "d6029dd8e99cbc57faded256aa3b4364e9f9758dfdb3984558178b7ddd8d6f24"
+        },
+        "trajectories.jsonl": {
+          "path": "experiments/EXP-20261116-027/trajectories.jsonl",
+          "sha256": "9b8ba22172c66ad716975872e49ae8e9312a8178431d579bfc7d9eebc90d2e6a"
+        },
+        "prefix_contexts.jsonl": {
+          "path": "experiments/EXP-20261116-027/prefix_contexts.jsonl",
+          "sha256": "8714ec58318a016fd2ae2bb25b507e02379db8bf8d332b8c2876e0d3a1ea6e98"
+        },
+        "case_results.jsonl": {
+          "path": "experiments/EXP-20261116-027/case_results.jsonl",
+          "sha256": "fee1f5032c602d7b1fb3f66c4245957693de8c07d8500cf25f40e2e174bf7381"
+        },
+        "metrics.json": {
+          "path": "experiments/EXP-20261116-027/metrics.json",
+          "sha256": "2d55b98400faf727ca0ddf3d97c97851d12a4375da83f73eaf5eb1bec2caf25e"
+        },
+        "model_provenance.json": {
+          "path": "experiments/EXP-20261116-027/model_provenance.json",
+          "sha256": "be6181493344463c9ef17219c70b822e17cd2ef4930ddb30d737aba5a1de617a"
+        }
+      }
+    },
+    {
+      "run_id": "EXP-20261116-028",
+      "wording_profile": "explicit",
+      "comparison_arm": "B0",
+      "manifest_sha256": "2830dea9019d9b030e381fa42926b1a1c9bb4c44c9e693de8f69d1e839610718",
+      "status": "completed",
+      "evidence_valid": true,
+      "case_count": 6,
+      "fresh_generations": 9,
+      "historical_prefix_exposures": 8,
+      "files": {
+        "generations.jsonl": {
+          "path": "experiments/EXP-20261116-028/generations.jsonl",
+          "sha256": "b815bd17a106f5c829293ce9c7d69fd9c12cb9b8e8ce57de0957d154b9aaa00f"
+        },
+        "trajectories.jsonl": {
+          "path": "experiments/EXP-20261116-028/trajectories.jsonl",
+          "sha256": "23327bf456983515c0abd14e8b5a72a030488e81554d182cd9e9d109dea57563"
+        },
+        "prefix_contexts.jsonl": {
+          "path": "experiments/EXP-20261116-028/prefix_contexts.jsonl",
+          "sha256": "e47daeb6006de24bb52a96d104f93c5901e494ee8283a61f2c582c3926de9417"
+        },
+        "case_results.jsonl": {
+          "path": "experiments/EXP-20261116-028/case_results.jsonl",
+          "sha256": "5d54a30b39ff5af22514e1ab46b224107206fe7467497a806e7e7d7213f36cc1"
+        },
+        "metrics.json": {
+          "path": "experiments/EXP-20261116-028/metrics.json",
+          "sha256": "882976a23ef0a0d188bda58b57fcc2442c22d5f257cc41e01c3c06787c889ddf"
+        },
+        "model_provenance.json": {
+          "path": "experiments/EXP-20261116-028/model_provenance.json",
+          "sha256": "eb44ddff23b2689871f9bd4008487d1df0671eac668c371216b5018aafcd7eda"
+        }
+      }
+    },
+    {
+      "run_id": "EXP-20261116-029",
+      "wording_profile": "explicit",
+      "comparison_arm": "B1",
+      "manifest_sha256": "a27f2bef87e20543909d77524f8dcf2fba3d6419b47aae65b172df52efc397f7",
+      "status": "completed",
+      "evidence_valid": true,
+      "case_count": 6,
+      "fresh_generations": 14,
+      "historical_prefix_exposures": 8,
+      "files": {
+        "generations.jsonl": {
+          "path": "experiments/EXP-20261116-029/generations.jsonl",
+          "sha256": "e1fb7d2bd9ad56185a60a97aa3b51ae874ff03a9dd648fbd447e252be4a6baae"
+        },
+        "trajectories.jsonl": {
+          "path": "experiments/EXP-20261116-029/trajectories.jsonl",
+          "sha256": "5e9e8882aff0933d7e9c17e5832aebcca0805213c7e087aff8d0244cfa25b623"
+        },
+        "prefix_contexts.jsonl": {
+          "path": "experiments/EXP-20261116-029/prefix_contexts.jsonl",
+          "sha256": "28ab8cc9df0f7fe775a0b3e4cd65d084442c187a043648887c70014366823686"
+        },
+        "case_results.jsonl": {
+          "path": "experiments/EXP-20261116-029/case_results.jsonl",
+          "sha256": "752de9f011f3b47cfce75249653f44313cc79a4e342eb6f3d0cf4c7246a4ccb5"
+        },
+        "metrics.json": {
+          "path": "experiments/EXP-20261116-029/metrics.json",
+          "sha256": "70e1d9dad268e97b386838ea6141a32bd4113e81697c00cf6d5305958f361f07"
+        },
+        "model_provenance.json": {
+          "path": "experiments/EXP-20261116-029/model_provenance.json",
+          "sha256": "1ec0ba1710bf78ee664306a4999e77968370054db332d1ca102a731e2fca279e"
+        }
+      }
+    },
+    {
+      "run_id": "EXP-20261116-030",
+      "wording_profile": "explicit",
+      "comparison_arm": "B2",
+      "manifest_sha256": "c363b5ca088acac7ad977b6601b24c7d536e67b5e62de37185b328a1bcaa539a",
+      "status": "completed",
+      "evidence_valid": true,
+      "case_count": 6,
+      "fresh_generations": 10,
+      "historical_prefix_exposures": 8,
+      "files": {
+        "generations.jsonl": {
+          "path": "experiments/EXP-20261116-030/generations.jsonl",
+          "sha256": "de0c40f6c1cff5cf939020b733cbef739ebe5f6d63a04f9db450dd1213dad63a"
+        },
+        "trajectories.jsonl": {
+          "path": "experiments/EXP-20261116-030/trajectories.jsonl",
+          "sha256": "783cb31590ace333d1be69c1904f8900b4064c6f5c9d5bbdd3c8f95637797f4c"
+        },
+        "prefix_contexts.jsonl": {
+          "path": "experiments/EXP-20261116-030/prefix_contexts.jsonl",
+          "sha256": "30bfa5ca4c7e61c0f60ba81a618350eaad5be75081d54dd4301f246a56c64016"
+        },
+        "case_results.jsonl": {
+          "path": "experiments/EXP-20261116-030/case_results.jsonl",
+          "sha256": "599a717a5f173bbb1fa6689a7213e1e075b9aeacb71ecc548a6a6d845634459d"
+        },
+        "metrics.json": {
+          "path": "experiments/EXP-20261116-030/metrics.json",
+          "sha256": "8e6ed4f925d74ace524c75f1460670f02689a3fa3da7402cb66c666dae5a145e"
+        },
+        "model_provenance.json": {
+          "path": "experiments/EXP-20261116-030/model_provenance.json",
+          "sha256": "8f90c84372c99bfad8e87a45b3874b80170d72183e1fa7ae37f815184b2dce0a"
+        }
+      }
+    }
+  ],
+  "unique_historical_prefix_tool_turns": 8,
+  "fresh_generations": 62,
+  "note": "Six selected authentic prefixes transposed into sixcells. 48prefix exposures are historical reuse, not freshgeneration. No training or heldoutresults."
+}

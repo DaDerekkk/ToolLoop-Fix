@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-021/inputs/scripts/archive_review.py", line 61, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-021/inputs/scripts/archive_review.py", line 24, in main
+    if target.exists():raise FileExistsError('review target exists')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: review target exists

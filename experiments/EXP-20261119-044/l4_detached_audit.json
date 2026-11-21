@@ -1,0 +1,37 @@
+{
+  "evidence_class": "analysis",
+  "operation": "COLAB-20261119-004",
+  "local_generations": 0,
+  "model_evidence_source": "remote model_inference",
+  "remote_output_verified": true,
+  "remote_expected_proposal": true,
+  "source_count": 12,
+  "received_remote_status": "completed",
+  "received_remote_stage": "completed",
+  "remote_stages": [
+    "install_transformers",
+    "not_observed_or_unrecognized",
+    "local_model_load",
+    "receipt_published_completed"
+  ],
+  "received_receipt_sha256": "f5b94cce271fbcac8baee2bd4dc485c04166a35981bec4c015c5493d0db29e6f",
+  "two_transport_sentinel_verified": true,
+  "worker_activation_confirmed": true,
+  "original_assignments_unchanged": true,
+  "owned_released": true,
+  "account_assignments": [
+    0.0,
+    1.0,
+    0.0
+  ],
+  "account_rates_cu_hr": [
+    0.0,
+    1.94,
+    0.0
+  ],
+  "gross_client_elapsed_s": 191.9,
+  "exact_session_bill": null,
+  "tool_dispatched": false,
+  "training_performed": false,
+  "collector_error": null
+}

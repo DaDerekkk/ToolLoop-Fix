@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "evidence_class": "model_inference",
+  "evidence_kind": "model_inference",
+  "artifact_contract": "model_evaluation",
+  "policy_name": "qwen3.5-0.8b_raw_xml_preflight",
+  "mode": "end_to_end",
+  "cases_path": "data/dev/pilot_cases.jsonl",
+  "case_ids": ["orders-normal-001"],
+  "tool_budget": 12,
+  "turn_budget": 16,
+  "max_context_tokens": 8192,
+  "model": {
+    "model_id": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "backend": "transformers",
+    "model_path": "/UNCONFIGURED/model_path_required",
+    "device": "cpu",
+    "dtype": "float32"
+  },
+  "sampling": {
+    "enable_thinking": false,
+    "do_sample": true,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 2.0,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 256,
+    "seed": 0
+  },
+  "external_inputs": [
+    {
+      "name": "model_manifest",
+      "path": "/UNCONFIGURED/model_manifest_required.json",
+      "sha256": "UNCONFIGURED"
+    }
+  ],
+  "notes": "Root must fill verified model path and manifest before execution. Explicit finish_task/stop_task and strict single-call XML adapter; not native benchmark performance."
+}

@@ -1,0 +1,185 @@
+{
+  "adapter_id": "B5_s101",
+  "case_id": "g4h9-jobs-recoverable-h1-01",
+  "case_seed": 90384,
+  "category": "recoverable",
+  "comparison_arm": "B0",
+  "domain": "jobs",
+  "evaluated_arm": "B5",
+  "events": [
+    {
+      "action": {
+        "arguments": {
+          "identifier": "JOB-GH3-76303"
+        },
+        "tool": "get_result",
+        "type": "tool"
+      },
+      "actual_tool_dispatch": true,
+      "event_kind": "replayed_curated_tool_response",
+      "executed": true,
+      "guard": {
+        "blocked": false,
+        "feedback": null,
+        "matched_history_index": null,
+        "prior_response_code": null,
+        "reason": null,
+        "rule_version": "nonretryable_no_new_observation_v2"
+      },
+      "guard_blocked": false,
+      "phase": "curated_prefix",
+      "response": {
+        "code": "INVALID_IDENTIFIER",
+        "retryable": false
+      },
+      "snapshot_after_sha256": "46928fa926aa3c4935b0a048a5c1cffbe1e9ae5490371535c56e78a0618a5065",
+      "snapshot_before_sha256": "2ca58c86092d326bdcf6b5c6b9ae058b019c76f263bc0424ec186be540a70475",
+      "state_after": "477d0a8411abc657e647569f4c88e968b06f9c870badba0d7ad7701011ff3670",
+      "state_before": "477d0a8411abc657e647569f4c88e968b06f9c870badba0d7ad7701011ff3670",
+      "turn": 1
+    },
+    {
+      "action": {
+        "arguments": {
+          "identifier": "This should work if it's an empty string representing an identifier."
+        },
+        "tool": "get_result",
+        "type": "tool"
+      },
+      "actual_tool_dispatch": true,
+      "continuation_turn": 1,
+      "event_kind": "actual_tool_response",
+      "executed": true,
+      "guard": {
+        "blocked": false,
+        "feedback": null,
+        "matched_history_index": null,
+        "prior_response_code": null,
+        "reason": null,
+        "rule_version": "nonretryable_no_new_observation_v2"
+      },
+      "guard_blocked": false,
+      "model_generated_terminal_tool": false,
+      "parser_error": null,
+      "phase": "fresh_continuation",
+      "response": {
+        "code": "INVALID_IDENTIFIER",
+        "retryable": false
+      },
+      "snapshot_after_sha256": "6e7348eb40c0775cdb4348465687b746b756b163196fdf55dfada34966cbfe24",
+      "snapshot_before_sha256": "46928fa926aa3c4935b0a048a5c1cffbe1e9ae5490371535c56e78a0618a5065",
+      "state_after": "477d0a8411abc657e647569f4c88e968b06f9c870badba0d7ad7701011ff3670",
+      "state_before": "477d0a8411abc657e647569f4c88e968b06f9c870badba0d7ad7701011ff3670",
+      "turn": 2
+    },
+    {
+      "action": {
+        "arguments": {
+          "identifier": "JOB-EXAMPLE1"
+        },
+        "tool": "poll_job",
+        "type": "tool"
+      },
+      "actual_tool_dispatch": true,
+      "continuation_turn": 2,
+      "event_kind": "actual_tool_response",
+      "executed": true,
+      "guard": {
+        "blocked": false,
+        "feedback": null,
+        "matched_history_index": null,
+        "prior_response_code": null,
+        "reason": null,
+        "rule_version": "nonretryable_no_new_observation_v2"
+      },
+      "guard_blocked": false,
+      "model_generated_terminal_tool": false,
+      "parser_error": null,
+      "phase": "fresh_continuation",
+      "response": {
+        "code": "INVALID_IDENTIFIER",
+        "retryable": false
+      },
+      "snapshot_after_sha256": "12c9546f7d7ea26bcf7053d59c3e9aac647fcaeefe646c9cca7d3ff90485b298",
+      "snapshot_before_sha256": "6e7348eb40c0775cdb4348465687b746b756b163196fdf55dfada34966cbfe24",
+      "state_after": "477d0a8411abc657e647569f4c88e968b06f9c870badba0d7ad7701011ff3670",
+      "state_before": "477d0a8411abc657e647569f4c88e968b06f9c870badba0d7ad7701011ff3670",
+      "turn": 3
+    }
+  ],
+  "evidence_class": "model_inference",
+  "fault_subtype": "stale_id_locate",
+  "lora_enabled": true,
+  "mode": "fixed_failure_prefix",
+  "original_case_id": "g4h9-jobs-recoverable-h1-01",
+  "policy": "qwen3.5-0.8b_g4_pfx_B5_s101",
+  "prefix_role": "recovery",
+  "prefix_runtime_version": "deterministic_curated_prefix_continuation_v1",
+  "protocol_version": "qwen_xml_or_native_terminal_v1",
+  "split": "closed_holdout_g4",
+  "state": {
+    "evidence": null,
+    "history": [
+      {
+        "action": {
+          "arguments": {
+            "identifier": "JOB-GH3-76303"
+          },
+          "tool": "get_result",
+          "type": "tool"
+        },
+        "response": {
+          "code": "INVALID_IDENTIFIER",
+          "retryable": false
+        }
+      },
+      {
+        "action": {
+          "arguments": {
+            "identifier": "This should work if it's an empty string representing an identifier."
+          },
+          "tool": "get_result",
+          "type": "tool"
+        },
+        "response": {
+          "code": "INVALID_IDENTIFIER",
+          "retryable": false
+        }
+      },
+      {
+        "action": {
+          "arguments": {
+            "identifier": "JOB-EXAMPLE1"
+          },
+          "tool": "poll_job",
+          "type": "tool"
+        },
+        "response": {
+          "code": "INVALID_IDENTIFIER",
+          "retryable": false
+        }
+      }
+    ],
+    "runtime": {
+      "poll_counts": {},
+      "timeout_attempts": {},
+      "user_identifier_supplied": false
+    },
+    "state": {
+      "polls_remaining": 0,
+      "transient_remaining": 0,
+      "unavailable": false,
+      "valid_identifier": "JOB-GH3-75303",
+      "value": "val_g4_job_counts_gh3_77303"
+    },
+    "terminal": null
+  },
+  "status": "running",
+  "task_wording_version": "read_report_literal_target_v1",
+  "template_group": "g4h9-jobs-recoverable-h1",
+  "tool_attempts": 3,
+  "train_seed": 101,
+  "training_arm": "B5",
+  "turns": 3,
+  "wording_profile": "explicit"
+}

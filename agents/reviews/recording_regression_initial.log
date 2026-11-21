@@ -1,0 +1,44 @@
+test_baseline_archive_validates (__main__.RecordingRegression) ... ok
+test_configuration_cannot_escape_integrity_check (__main__.RecordingRegression) ... FAIL
+test_invalid_schema_is_rejected (__main__.RecordingRegression) ... FAIL
+test_live_edit_restore_cannot_falsely_certify_snapshot (__main__.RecordingRegression) ... FAIL
+test_nonobject_manifest_returns_errors (__main__.RecordingRegression) ... ERROR
+
+======================================================================
+ERROR: test_nonobject_manifest_returns_errors (__main__.RecordingRegression)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/agents/reviews/recording_regression.py", line 68, in test_nonobject_manifest_returns_errors
+    errors, _ = validate(self.root)
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/scripts/validate_records.py", line 29, in validate
+    if value.get("run_id") != directory.name:
+AttributeError: 'list' object has no attribute 'get'
+
+======================================================================
+FAIL: test_configuration_cannot_escape_integrity_check (__main__.RecordingRegression)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/agents/reviews/recording_regression.py", line 52, in test_configuration_cannot_escape_integrity_check
+    self.assertTrue(validate(self.root)[0], "unhashed/tampered config was accepted")
+AssertionError: [] is not true : unhashed/tampered config was accepted
+
+======================================================================
+FAIL: test_invalid_schema_is_rejected (__main__.RecordingRegression)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/agents/reviews/recording_regression.py", line 63, in test_invalid_schema_is_rejected
+    self.assertTrue(validate(self.root)[0], "invalid status/kind/provenance accepted")
+AssertionError: [] is not true : invalid status/kind/provenance accepted
+
+======================================================================
+FAIL: test_live_edit_restore_cannot_falsely_certify_snapshot (__main__.RecordingRegression)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/agents/reviews/recording_regression.py", line 86, in test_live_edit_restore_cannot_falsely_certify_snapshot
+    self.assertTrue(
+AssertionError: False is not true : valid=True while archived code is A and executed output is 'executed-B'
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.093s
+
+FAILED (failures=3, errors=1)

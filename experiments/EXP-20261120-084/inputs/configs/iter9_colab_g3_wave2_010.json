@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "description": "ITER-009 Colab L4 Wave 2 (COLAB-20261120-010): Ablation arms (P_no_retry_s101, P_no_normal_s101) + B3 multi-seed replicates (B3_s202, B3_s303) at identical symmetric hyperparameters (epochs=1, grad_accum=8).",
+  "training_bundle_path": "experiments/EXP-20261120-062/public_colab_training_bundle.json",
+  "expected_bundle_sha256": "08d833addafcf94dcd07ff7ad229c82b3616e92cc34b5636d88d6864f6eda637",
+  "controller_sha256": "1dba84bcaca7008d24df8be40d60c0dd859867e6445f73700f8da4dc8470ac1d",
+  "source_sha256": {
+    "lora_adapter.py": "861fb15b746161f505cf79340d95065a0c6c58e23f1ca1d33f5461a8cbdc4dbc",
+    "colab_g3_train_worker.py": "c259f90951a371dc5e7193ba01457d0eef5502cb1b8d6f70b867260f01eb4e05"
+  },
+  "wall_limit_seconds": 3600,
+  "poll_interval_seconds": 4.0,
+  "keepalive_interval_seconds": 120.0,
+  "lora_rank": 4,
+  "lora_alpha": 8.0,
+  "micro_batch_sequences": 16,
+  "eval_batch_sequences": 24,
+  "training_jobs": [
+    {
+      "adapter_id": "P_no_retry_s101",
+      "arm": "P_no_retry",
+      "objective": "dpo",
+      "dataset": "p_ablation_no_legal_retry.jsonl",
+      "seed": 101,
+      "lr": 2.0e-4,
+      "beta": 0.1,
+      "sft_anchor": 0.2,
+      "weight_decay": 0.01,
+      "epochs": 1,
+      "grad_accum": 8
+    },
+    {
+      "adapter_id": "P_no_normal_s101",
+      "arm": "P_no_normal",
+      "objective": "dpo",
+      "dataset": "p_ablation_no_normal_retention.jsonl",
+      "seed": 101,
+      "lr": 2.0e-4,
+      "beta": 0.1,
+      "sft_anchor": 0.2,
+      "weight_decay": 0.01,
+      "epochs": 1,
+      "grad_accum": 8
+    },
+    {
+      "adapter_id": "B3_s202",
+      "arm": "B3",
+      "objective": "sft",
+      "dataset": "b3_error_sft.jsonl",
+      "seed": 202,
+      "lr": 2.5e-4,
+      "weight_decay": 0.01,
+      "epochs": 1,
+      "grad_accum": 8
+    },
+    {
+      "adapter_id": "B3_s303",
+      "arm": "B3",
+      "objective": "sft",
+      "dataset": "b3_error_sft.jsonl",
+      "seed": 303,
+      "lr": 2.5e-4,
+      "weight_decay": 0.01,
+      "epochs": 1,
+      "grad_accum": 8
+    }
+  ]
+}

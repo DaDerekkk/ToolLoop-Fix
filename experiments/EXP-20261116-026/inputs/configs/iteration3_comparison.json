@@ -1,0 +1,18 @@
+{
+  "evidence_kind": "analysis",
+  "purpose": "Pinned descriptive paired comparison and recorded-generation replay audit; no model generation or training",
+  "run_dirs": [
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016",
+      "manifest_sha256": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017",
+      "manifest_sha256": "ad0a479ed2ecdbbafe5a55a251b98434760a3e78e4d5f967ef81a6b2a77e4706"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-018",
+      "manifest_sha256": "c88fc548bac0cdceb62d7802ad15e4c1c72e3fef77dec7c9d46587410b5adfde"
+    }
+  ]
+}

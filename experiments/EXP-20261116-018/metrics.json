@@ -1,0 +1,105 @@
+{
+  "comparison_arm": "B2",
+  "evidence_class": "model_inference",
+  "metrics": {
+    "actual_tool_attempts": 27,
+    "budget_exhausted": {
+      "denominator": 15,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "case_count": 15,
+    "exact_grounded_structured_completion": {
+      "denominator": 12,
+      "numerator": 1,
+      "value": 0.08333333333333333
+    },
+    "exact_stop_reason_code": {
+      "denominator": 3,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "generation_seconds": 179.67826812501517,
+    "guard_blocked_proposals": 2,
+    "has_invalid_loop": {
+      "denominator": 15,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "input_tokens": 39446,
+    "natural_termination_semantics_unknown": {
+      "denominator": 15,
+      "numerator": 12,
+      "value": 0.8
+    },
+    "normal_exact_grounded_structured_completion": {
+      "denominator": 3,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "normal_tool_goal_attainment": {
+      "denominator": 3,
+      "numerator": 2,
+      "value": 0.6666666666666666
+    },
+    "output_tokens": 2047,
+    "parser_error_turn_rate": {
+      "denominator": 46,
+      "numerator": 2,
+      "value": 0.043478260869565216
+    },
+    "parser_error_turns": 2,
+    "premature_stop_without_goal_evidence": {
+      "denominator": 15,
+      "numerator": 8,
+      "value": 0.5333333333333333
+    },
+    "proposal_attempts": 31,
+    "proposed_repeat_count": 2,
+    "proposed_repeat_rate": {
+      "denominator": 31,
+      "numerator": 2,
+      "value": 0.06451612903225806
+    },
+    "retry_required_exact_grounded_structured_completion": {
+      "denominator": 3,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "retry_required_tool_goal_attainment": {
+      "denominator": 3,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "stop_reason_semantics_unknown": {
+      "denominator": 3,
+      "numerator": 3,
+      "value": 1.0
+    },
+    "stopped_after_public_unavailable": {
+      "denominator": 3,
+      "numerator": 2,
+      "value": 0.6666666666666666
+    },
+    "terminal_forms": {
+      "natural_text": 12,
+      "none": 0,
+      "structured_finish": 2,
+      "structured_stop": 1
+    },
+    "tool_goal_attainment": {
+      "denominator": 12,
+      "numerator": 3,
+      "value": 0.25
+    },
+    "turns": 46,
+    "unsupported_finish_wrapper": {
+      "denominator": 15,
+      "numerator": 1,
+      "value": 0.06666666666666667
+    }
+  },
+  "protocol_version": "qwen_xml_or_native_terminal_v1",
+  "score_version": "evidence_and_terminal_form_v1",
+  "warning": "15 known hand-authored development fixtures, one seed schedule; not held-out or training. Tool-goal evidence is not task completion. Natural-language semantics remain unknown. B2 may mechanically suppress execution while model proposals still repeat."
+}

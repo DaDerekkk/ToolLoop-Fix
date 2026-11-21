@@ -1,0 +1,9 @@
+{
+  "evidence_kind": "analysis",
+  "purpose": "Post-timeout local regression: recover an existing public fixture receipt byte-for-byte, reject missing/corrupt/misbound/duplicate frames. No cloud retry and no model.",
+  "parent_operation": "COLAB-20261119-001",
+  "expected_input": "Temporary synthetic JSON only",
+  "training": false,
+  "network": false,
+  "cloud_sessions": 0
+}

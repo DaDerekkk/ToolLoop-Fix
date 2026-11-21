@@ -1,0 +1,6 @@
+legacy B0 [('pfx-orders-timeout', True, 'OK', True), ('pfx-files-timeout', False, None, False)]
+legacy B1 [('pfx-orders-timeout', True, 'OK', True), ('pfx-files-timeout', False, None, False)]
+legacy B2 [('pfx-orders-timeout', True, 'OK', True), ('pfx-files-timeout', False, None, False)]
+explicit B0 [('pfx-orders-timeout', True, 'OK', True), ('pfx-files-timeout', False, None, False)]
+explicit B1 [('pfx-orders-timeout', True, 'OK', True), ('pfx-files-timeout', False, None, False)]
+explicit B2 [('pfx-orders-timeout', True, 'OK', True), ('pfx-files-timeout', False, None, False)]

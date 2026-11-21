@@ -1,0 +1,17 @@
+{"step": "reservation", "utc": "2026-11-20T10:49:05.046629+00:00", "elapsed_s": 0.0, "session": "tlfix-962376e59b09", "receipt_nonce": "962376e59b094bdab87d8ecc326ab972", "training": true, "source_sha256": {"lora_adapter.py": "861fb15b746161f505cf79340d95065a0c6c58e23f1ca1d33f5461a8cbdc4dbc", "colab_g3_train_worker.py": "c259f90951a371dc5e7193ba01457d0eef5502cb1b8d6f70b867260f01eb4e05", "train_job_config.json": "957fc545ae2c019606aa459e29a7fb4c65f32517e4f70376f7373096c9006acb", "controller": "1dba84bcaca7008d24df8be40d60c0dd859867e6445f73700f8da4dc8470ac1d"}, "bundle_sha256": "08d833addafcf94dcd07ff7ad229c82b3616e92cc34b5636d88d6864f6eda637", "bundle_zlib_sha256": "9bf9ad48082db05b7420e3acec90ad25ea1207e3a6a38ab41ecd062c1f7104d4", "bundle_zlib_bytes": 288581, "job_count": 2, "wall_limit_seconds": 3600.0}
+{"step": "baseline_sessions", "utc": "2026-11-20T10:49:06.531183+00:00", "elapsed_s": 1.48, "exit": 0, "reason": null}
+{"step": "baseline_usage", "utc": "2026-11-20T10:49:07.559572+00:00", "elapsed_s": 2.51, "exit": 0, "reason": null}
+{"step": "baseline_usage_observation", "utc": "2026-11-20T10:49:07.561129+00:00", "elapsed_s": 2.51, "balance_cu": 2684.68, "rate_cu_hr": 0.0, "assignments": 0.0}
+{"step": "new", "utc": "2026-11-20T10:49:12.060528+00:00", "elapsed_s": 7.01, "exit": 0, "reason": "Session READY"}
+{"step": "allocated_sessions", "utc": "2026-11-20T10:49:13.062932+00:00", "elapsed_s": 8.02, "exit": 0, "reason": null}
+{"step": "owned_l4", "utc": "2026-11-20T10:49:13.063309+00:00", "elapsed_s": 8.02, "endpoint_sha256": "076810f88e63436b244d0216a5e3b1f98d6ff90ba1ec371ab7e2dd143bcde404"}
+{"step": "allocated_usage", "utc": "2026-11-20T10:49:30.548336+00:00", "elapsed_s": 25.5, "exit": 1, "reason": null}
+{"step": "work_failed", "utc": "2026-11-20T10:49:30.549494+00:00", "elapsed_s": 25.5, "code": "usage_failed"}
+{"step": "release_sessions_check", "utc": "2026-11-20T10:49:31.580425+00:00", "elapsed_s": 26.53, "exit": 0, "reason": null}
+{"step": "stop_owned_only", "utc": "2026-11-20T10:49:33.052272+00:00", "elapsed_s": 28.01, "exit": 0, "reason": "Session terminated"}
+{"step": "stop_ack", "utc": "2026-11-20T10:49:33.052516+00:00", "elapsed_s": 28.01, "confirmed": true}
+{"step": "final_sessions", "utc": "2026-11-20T10:49:34.015406+00:00", "elapsed_s": 28.97, "exit": 0, "reason": null}
+{"step": "final_usage", "utc": "2026-11-20T10:49:35.202863+00:00", "elapsed_s": 30.16, "exit": 0, "reason": null}
+{"step": "final_usage_observation", "utc": "2026-11-20T10:49:35.203174+00:00", "elapsed_s": 30.16, "balance_cu": 2684.68, "rate_cu_hr": 0.0, "assignments": 0.0}
+{"step": "cleanup_observed", "utc": "2026-11-20T10:49:35.203251+00:00", "elapsed_s": 30.16, "owned_absent": true, "original_set_unchanged": true, "active_count": 0}
+{"step": "finished", "utc": "2026-11-20T10:49:35.203292+00:00", "elapsed_s": 30.16, "received_completed_training": false, "adapters_reassembled": false, "owned_released": true, "allocation_refused": false}

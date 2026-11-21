@@ -1,0 +1,54 @@
+{"step": "reservation", "utc": "2026-11-20T09:32:15.215725+00:00", "elapsed_s": 0.0, "session": "tlfix-a5ef8bae279d", "receipt_nonce": "a5ef8bae279d43628a53cf07a95ed783", "training": true, "source_sha256": {"lora_adapter.py": "861fb15b746161f505cf79340d95065a0c6c58e23f1ca1d33f5461a8cbdc4dbc", "colab_g3_train_worker.py": "c259f90951a371dc5e7193ba01457d0eef5502cb1b8d6f70b867260f01eb4e05", "train_job_config.json": "c9580827c1d22e170c43ecb567f529f04a6c74c04b22549bae41b7e8d2a0b06a", "controller": "1dba84bcaca7008d24df8be40d60c0dd859867e6445f73700f8da4dc8470ac1d"}, "bundle_sha256": "08d833addafcf94dcd07ff7ad229c82b3616e92cc34b5636d88d6864f6eda637", "bundle_zlib_sha256": "9bf9ad48082db05b7420e3acec90ad25ea1207e3a6a38ab41ecd062c1f7104d4", "bundle_zlib_bytes": 288581, "job_count": 4, "wall_limit_seconds": 3600.0}
+{"step": "baseline_sessions", "utc": "2026-11-20T09:32:16.155495+00:00", "elapsed_s": 0.94, "exit": 0, "reason": null}
+{"step": "baseline_usage", "utc": "2026-11-20T09:32:17.322104+00:00", "elapsed_s": 2.11, "exit": 0, "reason": null}
+{"step": "baseline_usage_observation", "utc": "2026-11-20T09:32:17.322492+00:00", "elapsed_s": 2.11, "balance_cu": 2690.01, "rate_cu_hr": 0.0, "assignments": 0.0}
+{"step": "new", "utc": "2026-11-20T09:32:21.304467+00:00", "elapsed_s": 6.09, "exit": 0, "reason": "Session READY"}
+{"step": "allocated_sessions", "utc": "2026-11-20T09:32:22.346815+00:00", "elapsed_s": 7.13, "exit": 0, "reason": null}
+{"step": "owned_l4", "utc": "2026-11-20T09:32:22.347076+00:00", "elapsed_s": 7.13, "endpoint_sha256": "341181d82c486beae092fae65eb63a1836a2f5a168b26dc7dd5aed3f6137b6f4"}
+{"step": "allocated_usage", "utc": "2026-11-20T09:32:23.936881+00:00", "elapsed_s": 8.72, "exit": 0, "reason": null}
+{"step": "allocated_usage_observation", "utc": "2026-11-20T09:32:23.937142+00:00", "elapsed_s": 8.72, "balance_cu": 2690.01, "rate_cu_hr": 1.94, "assignments": 1.0}
+{"step": "status", "utc": "2026-11-20T09:32:25.308170+00:00", "elapsed_s": 10.09, "exit": 0, "reason": null}
+{"step": "warm", "utc": "2026-11-20T09:32:32.794767+00:00", "elapsed_s": 17.58, "exit": 0, "stdout_bytes": 10, "cell_sha256": "f68703b7eed76b3423158ada8ddca6018570a626562e67539eb4bd6e40602868"}
+{"step": "bootstrap_no_model_until_armed", "utc": "2026-11-20T09:32:36.763788+00:00", "elapsed_s": 21.55, "exit": 0, "stdout_bytes": 322, "cell_sha256": "a5f3cb4e1dbcacfda3c3633f579d26088346a4fb798e98a607f38a2ac8b8ff54"}
+{"step": "two_way_sentinel", "utc": "2026-11-20T09:32:38.442040+00:00", "elapsed_s": 23.23, "identical": true, "bytes": 150}
+{"step": "upload_bundle_attempt_1", "utc": "2026-11-20T09:32:42.273192+00:00", "elapsed_s": 27.06, "exit": 0, "reason": "Uploaded"}
+{"step": "arm_single_worker", "utc": "2026-11-20T09:32:43.762844+00:00", "elapsed_s": 28.55, "exit": 0, "reason": "Uploaded"}
+{"step": "worker_stage", "utc": "2026-11-20T09:32:44.778872+00:00", "elapsed_s": 29.56, "stage": "install_transformers"}
+{"step": "worker_stage", "utc": "2026-11-20T09:33:01.502012+00:00", "elapsed_s": 46.29, "stage": "runtime_check"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T09:34:57.940826+00:00", "elapsed_s": 162.72, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "worker_stage", "utc": "2026-11-20T09:35:03.602489+00:00", "elapsed_s": 168.38, "stage": "anonymous_public_download"}
+{"step": "worker_stage", "utc": "2026-11-20T09:35:14.760603+00:00", "elapsed_s": 179.53, "stage": "verify_public_snapshot"}
+{"step": "worker_stage", "utc": "2026-11-20T09:35:20.415360+00:00", "elapsed_s": 185.19, "stage": "load_base_model"}
+{"step": "worker_stage", "utc": "2026-11-20T09:35:51.563205+00:00", "elapsed_s": 216.33, "stage": "tokenize_and_precompute_ref"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T09:37:40.561211+00:00", "elapsed_s": 325.33, "exit": null, "stdout_bytes": 0, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "worker_stage", "utc": "2026-11-20T09:38:43.584834+00:00", "elapsed_s": 388.35, "stage": "train_B3_s101"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T09:39:45.111289+00:00", "elapsed_s": 449.88, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T09:41:53.837000+00:00", "elapsed_s": 578.6, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "worker_stage", "utc": "2026-11-20T09:43:42.620925+00:00", "elapsed_s": 687.39, "stage": "train_B4_s101"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T09:44:15.956792+00:00", "elapsed_s": 720.72, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T09:46:20.615413+00:00", "elapsed_s": 845.38, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "worker_stage", "utc": "2026-11-20T09:47:25.912618+00:00", "elapsed_s": 910.68, "stage": "train_B5_s101"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T09:48:29.231192+00:00", "elapsed_s": 974.0, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T09:50:38.398176+00:00", "elapsed_s": 1103.16, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T09:53:10.208124+00:00", "elapsed_s": 1254.97, "exit": null, "stdout_bytes": 0, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "worker_stage", "utc": "2026-11-20T09:54:43.363693+00:00", "elapsed_s": 1348.13, "stage": "train_P_s101"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T09:55:15.583701+00:00", "elapsed_s": 1380.35, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T09:57:21.585463+00:00", "elapsed_s": 1506.35, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T09:59:30.644582+00:00", "elapsed_s": 1635.41, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "kernel_keepalive", "utc": "2026-11-20T10:01:40.542580+00:00", "elapsed_s": 1765.3, "exit": 0, "stdout_bytes": 10, "cell_sha256": "af775e27dcc6375dcd13ae6fdc42fedf2cd276741c4cb64d3d82fba770361f84"}
+{"step": "worker_stage", "utc": "2026-11-20T10:02:38.751924+00:00", "elapsed_s": 1823.51, "stage": "pack_chunks"}
+{"step": "worker_stage", "utc": "2026-11-20T10:02:44.316303+00:00", "elapsed_s": 1829.08, "stage": "receipt_published_completed"}
+{"step": "local_receipt", "utc": "2026-11-20T10:02:46.001370+00:00", "elapsed_s": 1830.76, "status": "completed", "stage": "completed", "error_type": null, "adapter_count": 4, "base_weights_unchanged": true, "sha256": "7d723f7a7ff879a5fc47254ea64fc4e1f35b0bda55f7e2001fa2f140bee1fdef"}
+{"step": "adapter_reassembled", "utc": "2026-11-20T10:03:42.804721+00:00", "elapsed_s": 1887.56, "adapter_id": "B3_s101", "chunk_count": 13, "size_bytes": 5452424, "safetensors_sha256": "63bdb82cf36e70e2bd4534abdce9fdd7c2a01d9bff7ef4e352aff3366c22f03c"}
+{"step": "adapter_reassembled", "utc": "2026-11-20T10:04:27.868586+00:00", "elapsed_s": 1932.63, "adapter_id": "B4_s101", "chunk_count": 13, "size_bytes": 5452480, "safetensors_sha256": "fdfcf2ddf81273873e94383337c36088ab0ee05fabb259a1a990ec70c3e491d1"}
+{"step": "adapter_reassembled", "utc": "2026-11-20T10:04:55.158081+00:00", "elapsed_s": 1959.92, "adapter_id": "B5_s101", "chunk_count": 13, "size_bytes": 5452464, "safetensors_sha256": "b0deb879e93c3aad8d6836cefaafbc8f858fa570ecd516f990dcd0c08850032a"}
+{"step": "adapter_reassembled", "utc": "2026-11-20T10:06:10.141253+00:00", "elapsed_s": 2034.9, "adapter_id": "P_s101", "chunk_count": 13, "size_bytes": 5452456, "safetensors_sha256": "3d70f104dd7b64f168185d6c027db77c8a94748ee6194dd38bd6a3dec2cd1574"}
+{"step": "adapter_manifests_written", "utc": "2026-11-20T10:06:10.143221+00:00", "elapsed_s": 2034.9, "adapter_count": 4, "g3_adapters_manifest_sha256": "5d0676b6125c280818b6fd5967e4b484cc482a18215222c12534fa481e74b325"}
+{"step": "release_sessions_check", "utc": "2026-11-20T10:06:11.330034+00:00", "elapsed_s": 2036.09, "exit": 0, "reason": null}
+{"step": "stop_owned_only", "utc": "2026-11-20T10:06:12.833058+00:00", "elapsed_s": 2037.59, "exit": 0, "reason": "Session terminated"}
+{"step": "stop_ack", "utc": "2026-11-20T10:06:12.833239+00:00", "elapsed_s": 2037.59, "confirmed": true}
+{"step": "final_sessions", "utc": "2026-11-20T10:06:14.055080+00:00", "elapsed_s": 2038.81, "exit": 0, "reason": null}
+{"step": "final_usage", "utc": "2026-11-20T10:06:15.394635+00:00", "elapsed_s": 2040.15, "exit": 0, "reason": null}
+{"step": "final_usage_observation", "utc": "2026-11-20T10:06:15.395123+00:00", "elapsed_s": 2040.15, "balance_cu": 2688.44, "rate_cu_hr": 10.82, "assignments": 2.0}
+{"step": "cleanup_observed", "utc": "2026-11-20T10:06:15.395337+00:00", "elapsed_s": 2040.15, "owned_absent": true, "original_set_unchanged": false, "active_count": 2}
+{"step": "finished", "utc": "2026-11-20T10:06:15.395391+00:00", "elapsed_s": 2040.15, "received_completed_training": true, "adapters_reassembled": true, "owned_released": true, "allocation_refused": false}

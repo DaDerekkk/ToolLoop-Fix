@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261120-REVIEW-009/inputs/scripts/audit_iter9_runs.py", line 274, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261120-REVIEW-009/inputs/scripts/audit_iter9_runs.py", line 216, in main
+    res = replay_and_audit_run(arch / "experiments" / rid)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261120-REVIEW-009/inputs/scripts/audit_iter9_runs.py", line 117, in replay_and_audit_run
+    parsed, err = parse_calibrated_output(raw_text, env.public_view()["tools"])
+    ^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)

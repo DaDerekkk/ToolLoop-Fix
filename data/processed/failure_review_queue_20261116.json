@@ -1,0 +1,419 @@
+{
+  "schema_version": 1,
+  "source_run": "EXP-20261116-013",
+  "source_case_results_sha256": "f6ba0f7b0847b0cf4df6e7a0704402507134c7765cd16f5a48ece27fc5ea9c23",
+  "source_trajectories_sha256": "e389fff516bdd2ce38fd25c21492f51511bea43ec1ebb66850fb7f7ec0dce8f1",
+  "purpose": "Failure review queue only; no chosen/rejected actions or training labels. Strict stop-code mismatches need separate semantic review. Hidden evaluator categories present: never pass whole object to a model.",
+  "priority_case": "jobs-retry_required-001",
+  "priority_reason": "Inspect PRECONDITION -> repeated get_result before later parser feedback; source audit found public poll_job alternative. Candidate action still needs same-snapshot validation.",
+  "items": [
+    {
+      "case_id": "orders-recoverable-001",
+      "source_run": "EXP-20261116-013",
+      "domain": "orders",
+      "category": "recoverable",
+      "strict_outcome_pass": false,
+      "detector_flag": false,
+      "detector_status": "prototype_not_human_validated",
+      "first_loop_event_index_0based": null,
+      "first_loop_event": null,
+      "preceding_event": null,
+      "parser_error_turns": 1,
+      "false_success": false,
+      "budget_exhausted": false,
+      "terminal": {
+        "reason": "Tool returned errors, identified as INVALID_IDENTIFIER and NOT_FOUND which indicates limited tool capability for finding orders",
+        "type": "stop"
+      },
+      "review_status": "pending_human_review",
+      "training_eligible": false
+    },
+    {
+      "case_id": "orders-retry_required-001",
+      "source_run": "EXP-20261116-013",
+      "domain": "orders",
+      "category": "retry_required",
+      "strict_outcome_pass": false,
+      "detector_flag": false,
+      "detector_status": "prototype_not_human_validated",
+      "first_loop_event_index_0based": null,
+      "first_loop_event": null,
+      "preceding_event": null,
+      "parser_error_turns": 1,
+      "false_success": true,
+      "budget_exhausted": false,
+      "terminal": {
+        "answer": "{\"code\": \"NOT_FOUND\", \"identifier\": \"ORD-101\"}",
+        "identifier": "ORD-101",
+        "type": "final"
+      },
+      "review_status": "pending_human_review",
+      "training_eligible": false
+    },
+    {
+      "case_id": "orders-unrecoverable-001",
+      "source_run": "EXP-20261116-013",
+      "domain": "orders",
+      "category": "unrecoverable",
+      "strict_outcome_pass": false,
+      "detector_flag": false,
+      "detector_status": "prototype_not_human_validated",
+      "first_loop_event_index_0based": null,
+      "first_loop_event": null,
+      "preceding_event": null,
+      "parser_error_turns": 0,
+      "false_success": false,
+      "budget_exhausted": false,
+      "terminal": {
+        "reason": "RESOURCE_UNAVAILABLE or REQUESTS_REQUIRED: The requested resources, identifiers (\"ORD-101\", \"latest order\"), domain (\"orders\") are unavailable. No further action can be performed on unavailable resources.",
+        "type": "stop"
+      },
+      "review_status": "pending_human_review",
+      "training_eligible": false
+    },
+    {
+      "case_id": "files-normal-001",
+      "source_run": "EXP-20261116-013",
+      "domain": "files",
+      "category": "normal",
+      "strict_outcome_pass": false,
+      "detector_flag": false,
+      "detector_status": "prototype_not_human_validated",
+      "first_loop_event_index_0based": null,
+      "first_loop_event": null,
+      "preceding_event": null,
+      "parser_error_turns": 1,
+      "false_success": false,
+      "budget_exhausted": false,
+      "terminal": {
+        "reason": "adapter_protocol_error; expected exactly one tool call - failed to acquire request",
+        "type": "stop"
+      },
+      "review_status": "pending_human_review",
+      "training_eligible": false
+    },
+    {
+      "case_id": "files-recoverable-001",
+      "source_run": "EXP-20261116-013",
+      "domain": "files",
+      "category": "recoverable",
+      "strict_outcome_pass": false,
+      "detector_flag": true,
+      "detector_status": "prototype_not_human_validated",
+      "first_loop_event_index_0based": 2,
+      "first_loop_event": {
+        "action": {
+          "arguments": {
+            "field": "identifier"
+          },
+          "tool": "ask_user",
+          "type": "tool"
+        },
+        "parser_error": null,
+        "phase": "continuation",
+        "requested_tool_call_count": 1,
+        "response": {
+          "code": "UNNECESSARY_CLARIFICATION",
+          "retryable": false
+        },
+        "state_after": "55b7810b35b3b19911ce0d91cc6c5a045d62be6345f7f528f3f0bca8b46827e8",
+        "state_before": "55b7810b35b3b19911ce0d91cc6c5a045d62be6345f7f528f3f0bca8b46827e8",
+        "turn": 3
+      },
+      "preceding_event": {
+        "action": {
+          "arguments": {
+            "field": "identifier"
+          },
+          "tool": "ask_user",
+          "type": "tool"
+        },
+        "parser_error": null,
+        "phase": "continuation",
+        "requested_tool_call_count": 1,
+        "response": {
+          "code": "UNNECESSARY_CLARIFICATION",
+          "retryable": false
+        },
+        "state_after": "55b7810b35b3b19911ce0d91cc6c5a045d62be6345f7f528f3f0bca8b46827e8",
+        "state_before": "55b7810b35b3b19911ce0d91cc6c5a045d62be6345f7f528f3f0bca8b46827e8",
+        "turn": 2
+      },
+      "parser_error_turns": 0,
+      "false_success": false,
+      "budget_exhausted": true,
+      "terminal": null,
+      "review_status": "pending_human_review",
+      "training_eligible": false
+    },
+    {
+      "case_id": "files-retry_required-001",
+      "source_run": "EXP-20261116-013",
+      "domain": "files",
+      "category": "retry_required",
+      "strict_outcome_pass": false,
+      "detector_flag": false,
+      "detector_status": "prototype_not_human_validated",
+      "first_loop_event_index_0based": null,
+      "first_loop_event": null,
+      "preceding_event": null,
+      "parser_error_turns": 0,
+      "false_success": true,
+      "budget_exhausted": false,
+      "terminal": {
+        "answer": "NOT_FOUND",
+        "identifier": "records/report.txt",
+        "type": "final"
+      },
+      "review_status": "pending_human_review",
+      "training_eligible": false
+    },
+    {
+      "case_id": "files-clarification-001",
+      "source_run": "EXP-20261116-013",
+      "domain": "files",
+      "category": "clarification",
+      "strict_outcome_pass": false,
+      "detector_flag": true,
+      "detector_status": "prototype_not_human_validated",
+      "first_loop_event_index_0based": 8,
+      "first_loop_event": {
+        "action": {
+          "arguments": {
+            "field": "identifier"
+          },
+          "tool": "ask_user",
+          "type": "tool"
+        },
+        "parser_error": null,
+        "phase": "continuation",
+        "requested_tool_call_count": 1,
+        "response": {
+          "code": "UNNECESSARY_CLARIFICATION",
+          "retryable": false
+        },
+        "state_after": "55b7810b35b3b19911ce0d91cc6c5a045d62be6345f7f528f3f0bca8b46827e8",
+        "state_before": "55b7810b35b3b19911ce0d91cc6c5a045d62be6345f7f528f3f0bca8b46827e8",
+        "turn": 9
+      },
+      "preceding_event": {
+        "action": {
+          "arguments": {
+            "field": "identifier"
+          },
+          "tool": "ask_user",
+          "type": "tool"
+        },
+        "parser_error": null,
+        "phase": "continuation",
+        "requested_tool_call_count": 1,
+        "response": {
+          "code": "UNNECESSARY_CLARIFICATION",
+          "retryable": false
+        },
+        "state_after": "55b7810b35b3b19911ce0d91cc6c5a045d62be6345f7f528f3f0bca8b46827e8",
+        "state_before": "55b7810b35b3b19911ce0d91cc6c5a045d62be6345f7f528f3f0bca8b46827e8",
+        "turn": 8
+      },
+      "parser_error_turns": 4,
+      "false_success": true,
+      "budget_exhausted": false,
+      "terminal": {
+        "answer": "{\"domain\": \"files\", \"target\": \"report.txt\"}",
+        "identifier": "read_file()",
+        "type": "final"
+      },
+      "review_status": "pending_human_review",
+      "training_eligible": false
+    },
+    {
+      "case_id": "files-unrecoverable-001",
+      "source_run": "EXP-20261116-013",
+      "domain": "files",
+      "category": "unrecoverable",
+      "strict_outcome_pass": false,
+      "detector_flag": false,
+      "detector_status": "prototype_not_human_validated",
+      "first_loop_event_index_0based": null,
+      "first_loop_event": null,
+      "preceding_event": null,
+      "parser_error_turns": 0,
+      "false_success": false,
+      "budget_exhausted": false,
+      "terminal": {
+        "reason": "file path /records/report.txt is not accessible as a physical directory, and no specific instruction was given to create or copy the file before providing the target path.",
+        "type": "stop"
+      },
+      "review_status": "pending_human_review",
+      "training_eligible": false
+    },
+    {
+      "case_id": "jobs-normal-001",
+      "source_run": "EXP-20261116-013",
+      "domain": "jobs",
+      "category": "normal",
+      "strict_outcome_pass": false,
+      "detector_flag": true,
+      "detector_status": "prototype_not_human_validated",
+      "first_loop_event_index_0based": 6,
+      "first_loop_event": {
+        "action": {
+          "arguments": {
+            "field": "identifier"
+          },
+          "tool": "ask_user",
+          "type": "tool"
+        },
+        "parser_error": null,
+        "phase": "continuation",
+        "requested_tool_call_count": 1,
+        "response": {
+          "code": "UNNECESSARY_CLARIFICATION",
+          "retryable": false
+        },
+        "state_after": "fb9f37584462f8194345903a94e77b6104091bc9bf1befe978eb9c688bf9d356",
+        "state_before": "fb9f37584462f8194345903a94e77b6104091bc9bf1befe978eb9c688bf9d356",
+        "turn": 7
+      },
+      "preceding_event": {
+        "action": {
+          "arguments": {
+            "field": "identifier"
+          },
+          "tool": "ask_user",
+          "type": "tool"
+        },
+        "parser_error": null,
+        "phase": "continuation",
+        "requested_tool_call_count": 1,
+        "response": {
+          "code": "UNNECESSARY_CLARIFICATION",
+          "retryable": false
+        },
+        "state_after": "fb9f37584462f8194345903a94e77b6104091bc9bf1befe978eb9c688bf9d356",
+        "state_before": "fb9f37584462f8194345903a94e77b6104091bc9bf1befe978eb9c688bf9d356",
+        "turn": 6
+      },
+      "parser_error_turns": 2,
+      "false_success": false,
+      "budget_exhausted": true,
+      "terminal": null,
+      "review_status": "pending_human_review",
+      "training_eligible": false
+    },
+    {
+      "case_id": "jobs-recoverable-001",
+      "source_run": "EXP-20261116-013",
+      "domain": "jobs",
+      "category": "recoverable",
+      "strict_outcome_pass": false,
+      "detector_flag": false,
+      "detector_status": "prototype_not_human_validated",
+      "first_loop_event_index_0based": null,
+      "first_loop_event": null,
+      "preceding_event": null,
+      "parser_error_turns": 0,
+      "false_success": true,
+      "budget_exhausted": false,
+      "terminal": {
+        "answer": "JOB-OLD was not found. The tool returned a code of \"NOT_FOUND\" for find_job and an \"INVALID_IDENTIFIER\" status, suggesting the identifier might be invalid or there's a mismatch in the expected format.",
+        "identifier": "JOB-OLD",
+        "type": "final"
+      },
+      "review_status": "pending_human_review",
+      "training_eligible": false
+    },
+    {
+      "case_id": "jobs-retry_required-001",
+      "source_run": "EXP-20261116-013",
+      "domain": "jobs",
+      "category": "retry_required",
+      "strict_outcome_pass": false,
+      "detector_flag": true,
+      "detector_status": "prototype_not_human_validated",
+      "first_loop_event_index_0based": 2,
+      "first_loop_event": {
+        "action": {
+          "arguments": {
+            "identifier": "JOB-101"
+          },
+          "tool": "get_result",
+          "type": "tool"
+        },
+        "parser_error": null,
+        "phase": "continuation",
+        "requested_tool_call_count": 1,
+        "response": {
+          "code": "PRECONDITION",
+          "detail": "poll_job before get_result",
+          "retryable": false
+        },
+        "state_after": "82895bfcc807fd46430b940b240a68e79b7f958b94f859d0cfad5ec33218c51c",
+        "state_before": "82895bfcc807fd46430b940b240a68e79b7f958b94f859d0cfad5ec33218c51c",
+        "turn": 3
+      },
+      "preceding_event": {
+        "action": {
+          "arguments": {
+            "identifier": "JOB-101"
+          },
+          "tool": "get_result",
+          "type": "tool"
+        },
+        "parser_error": null,
+        "phase": "continuation",
+        "requested_tool_call_count": 1,
+        "response": {
+          "code": "PRECONDITION",
+          "detail": "poll_job before get_result",
+          "retryable": false
+        },
+        "state_after": "82895bfcc807fd46430b940b240a68e79b7f958b94f859d0cfad5ec33218c51c",
+        "state_before": "82895bfcc807fd46430b940b240a68e79b7f958b94f859d0cfad5ec33218c51c",
+        "turn": 2
+      },
+      "parser_error_turns": 6,
+      "false_success": false,
+      "budget_exhausted": true,
+      "terminal": null,
+      "review_status": "pending_human_review",
+      "training_eligible": false
+    },
+    {
+      "case_id": "jobs-clarification-001",
+      "source_run": "EXP-20261116-013",
+      "domain": "jobs",
+      "category": "clarification",
+      "strict_outcome_pass": false,
+      "detector_flag": false,
+      "detector_status": "prototype_not_human_validated",
+      "first_loop_event_index_0based": null,
+      "first_loop_event": null,
+      "preceding_event": null,
+      "parser_error_turns": 9,
+      "false_success": false,
+      "budget_exhausted": true,
+      "terminal": null,
+      "review_status": "pending_human_review",
+      "training_eligible": false
+    },
+    {
+      "case_id": "jobs-unrecoverable-001",
+      "source_run": "EXP-20261116-013",
+      "domain": "jobs",
+      "category": "unrecoverable",
+      "strict_outcome_pass": false,
+      "detector_flag": false,
+      "detector_status": "prototype_not_human_validated",
+      "first_loop_event_index_0based": null,
+      "first_loop_event": null,
+      "preceding_event": null,
+      "parser_error_turns": 5,
+      "false_success": false,
+      "budget_exhausted": true,
+      "terminal": null,
+      "review_status": "pending_human_review",
+      "training_eligible": false
+    }
+  ]
+}

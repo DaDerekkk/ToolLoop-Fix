@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "description": "ITER-009 Colab L4 Wave 1 (COLAB-20261120-009): Core 4 main training arms (B3_s101, B4_s101, B5_s101, P_s101) at symmetric 50 optimizer steps (epochs=1, grad_accum=8) so wave finishes safely in ~22 minutes well under wall_limit=3600s without risking mid-batch timeout.",
+  "training_bundle_path": "experiments/EXP-20261120-062/public_colab_training_bundle.json",
+  "expected_bundle_sha256": "08d833addafcf94dcd07ff7ad229c82b3616e92cc34b5636d88d6864f6eda637",
+  "controller_sha256": "1dba84bcaca7008d24df8be40d60c0dd859867e6445f73700f8da4dc8470ac1d",
+  "source_sha256": {
+    "lora_adapter.py": "861fb15b746161f505cf79340d95065a0c6c58e23f1ca1d33f5461a8cbdc4dbc",
+    "colab_g3_train_worker.py": "c259f90951a371dc5e7193ba01457d0eef5502cb1b8d6f70b867260f01eb4e05"
+  },
+  "wall_limit_seconds": 3600,
+  "poll_interval_seconds": 4.0,
+  "keepalive_interval_seconds": 120.0,
+  "lora_rank": 4,
+  "lora_alpha": 8.0,
+  "micro_batch_sequences": 16,
+  "eval_batch_sequences": 24,
+  "training_jobs": [
+    {
+      "adapter_id": "B3_s101",
+      "arm": "B3",
+      "objective": "sft",
+      "dataset": "b3_error_sft.jsonl",
+      "seed": 101,
+      "lr": 2.5e-4,
+      "weight_decay": 0.01,
+      "epochs": 1,
+      "grad_accum": 8
+    },
+    {
+      "adapter_id": "B4_s101",
+      "arm": "B4",
+      "objective": "single_token_dpo",
+      "dataset": "b4_single_token_ftpo_style.jsonl",
+      "seed": 101,
+      "lr": 2.5e-4,
+      "beta": 0.2,
+      "sft_anchor": 0.1,
+      "weight_decay": 0.01,
+      "epochs": 1,
+      "grad_accum": 8
+    },
+    {
+      "adapter_id": "B5_s101",
+      "arm": "B5",
+      "objective": "dpo",
+      "dataset": "b5_general_expert_dpo.jsonl",
+      "seed": 101,
+      "lr": 2.0e-4,
+      "beta": 0.1,
+      "sft_anchor": 0.2,
+      "weight_decay": 0.01,
+      "epochs": 1,
+      "grad_accum": 8
+    },
+    {
+      "adapter_id": "P_s101",
+      "arm": "P",
+      "objective": "dpo",
+      "dataset": "p_toolloop_fix_dpo.jsonl",
+      "seed": 101,
+      "lr": 2.0e-4,
+      "beta": 0.1,
+      "sft_anchor": 0.2,
+      "weight_decay": 0.01,
+      "epochs": 1,
+      "grad_accum": 8
+    }
+  ]
+}

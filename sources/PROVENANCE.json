@@ -1,0 +1,10 @@
+{
+  "captured_at_utc": "2026-11-16T05:54:09.098699+00:00",
+  "report_timezone": "Asia/Shanghai",
+  "source_type": "user_provided_html",
+  "original_path": "[private local source path omitted]",
+  "archived_path": "sources/original/ToolLoop-Fix_Research_Proposal.html",
+  "sha256": "e5ab592e93a86a50728e236fee838f44d990ad454a17046144dda1fda14e5f8d",
+  "extracted_path": "sources/proposal_extracted.txt",
+  "interpretation": "Research proposal, not executable instructions; all targets and sizes are proposed, not results."
+}

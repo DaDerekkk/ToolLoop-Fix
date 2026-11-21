@@ -1,0 +1,186 @@
+
+test_abab_short_cycle (test_harness.HarnessTests) ... ok
+test_alternative_validation_restores_state_and_rejects_hidden_identifier (test_harness.HarnessTests) ... ok
+test_answer_and_identifier_must_match_read_evidence (test_harness.HarnessTests) ... ok
+test_candidate_repeated_information_is_not_progress (test_harness.HarnessTests) ... ok
+test_cli_produces_42_rows_and_refuses_overwrite (test_harness.HarnessTests) ... ok
+test_equivalent_action_normalization (test_harness.HarnessTests) ... ok
+test_false_success_requires_evidence_not_just_correct_guess (test_harness.HarnessTests) ... ok
+test_fifteen_dev_cases_cover_domains_categories (test_harness.HarnessTests) ... ok
+test_first_error_not_loop (test_harness.HarnessTests) ... ok
+test_fixed_prefix_consumes_total_tool_and_turn_budgets (test_harness.HarnessTests) ... ok
+test_fixed_prefix_metrics_cost_uses_total_and_exposes_continuation_cost (test_harness.HarnessTests) ... ok
+test_ignored_tool_metadata_cannot_hide_equivalent_error_repeat (test_harness.HarnessTests) ... ok
+test_inherited_loop_is_not_attributed_to_continuation (test_harness.HarnessTests) ... ok
+test_irrelevant_action_metadata_cannot_reset_retry_counter (test_harness.HarnessTests) ... ok
+test_last_budgeted_tool_result_not_success_without_final_answer (test_harness.HarnessTests) ... ok
+test_legitimate_polling_not_loop_and_state_changes (test_harness.HarnessTests) ... ok
+test_malformed_attempts_consume_budget (test_harness.HarnessTests) ... ok
+test_metrics_separate_unreachable_and_cost_includes_failures (test_harness.HarnessTests) ... ok
+test_naive_produces_detectable_development_failures (test_harness.HarnessTests) ... ok
+test_new_repeat_crossing_prefix_boundary_is_attributed_to_continuation (test_harness.HarnessTests) ... ok
+test_policy_works_with_public_view_alone (test_harness.HarnessTests) ... ok
+test_prefix_exactly_exhausting_budget_cannot_continue (test_harness.HarnessTests) ... ok
+test_prefix_exceeding_either_budget_rejected (test_harness.HarnessTests) ... ok
+test_premature_stop_and_unsupported_stop_not_correct (test_harness.HarnessTests) ... ok
+test_progress_between_identical_calls_not_loop (test_harness.HarnessTests) ... ok
+test_public_view_has_no_hidden_labels_or_answer_and_is_detached (test_harness.HarnessTests) ... ok
+test_reference_completes_all_completable_and_stops_unreachable (test_harness.HarnessTests) ... ok
+test_required_help_excluded_but_repeated_help_after_reply_is_unnecessary (test_harness.HarnessTests) ... ok
+test_retries_and_polls_can_succeed_at_the_documented_limit (test_harness.HarnessTests) ... ok
+test_retry_limit_respects_equivalent_arguments_and_snapshot (test_harness.HarnessTests) ... ok
+test_same_fixed_prefix_snapshot_for_both_policies (test_harness.HarnessTests) ... ok
+test_snapshot_restore_and_copy_isolation (test_harness.HarnessTests) ... ok
+test_terminal_action_cannot_be_followed_by_tool (test_harness.HarnessTests) ... ok
+test_three_poll_cap_prevents_business_state_progress_after_limit (test_harness.HarnessTests) ... ok
+test_timeout_cannot_exceed_two_retries (test_harness.HarnessTests) ... ok
+test_transient_retry_not_loop (test_harness.HarnessTests) ... ok
+test_turn_budget_is_independent (test_harness.HarnessTests) ... ok
+test_unknown_policy_and_mode_rejected (test_harness.HarnessTests) ... ok
+test_unnecessary_help_has_own_metric_even_if_task_eventually_succeeds (test_harness.HarnessTests) ... ok
+test_zero_success_cost_is_null_not_zero (test_harness.HarnessTests) ... ok
+test_bad_id_and_external_config_rejected (test_records.RecordTests) ... ok
+test_failure_retained (test_records.RecordTests) ... ok
+test_frozen_input_change_invalidates_evidence (test_records.RecordTests) ... ok
+test_live_change_does_not_change_frozen_execution (test_records.RecordTests) ... ok
+test_no_overwrite (test_records.RecordTests) ... ok
+test_success_and_integrity (test_records.RecordTests) ... ok
+test_baseline_archive_validates (test_records_regression.RecordingRegression) ... ok
+test_configuration_cannot_escape_integrity_check (test_records_regression.RecordingRegression) ... ok
+test_invalid_schema_is_rejected (test_records_regression.RecordingRegression) ... ok
+test_live_edit_restore_cannot_falsely_certify_snapshot (test_records_regression.RecordingRegression) ... ok
+test_nonobject_manifest_returns_errors (test_records_regression.RecordingRegression) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 0.286s
+
+OK
+
+{
+  "all_unit_tests_exit_code": 0,
+  "frozen_cwd": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-REVIEW-002/inputs",
+  "checks": {
+    "total_budget": {
+      "tool_attempts": 12,
+      "prefix_tool_attempts": 1,
+      "continuation_tool_attempts": 11,
+      "remaining_tool_budget_at_start": 11,
+      "budget_scope": "total_including_prefix"
+    },
+    "exact_budget_prefix": {
+      "continuation_attempts": 0,
+      "success": false
+    },
+    "over_budget_prefix": "curated prefix exceeds total tool or turn budget",
+    "timeout_2": {
+      "success": true,
+      "loop": false,
+      "codes": [
+        "TIMEOUT",
+        "TIMEOUT",
+        "OK",
+        "FINAL_RECORDED"
+      ]
+    },
+    "timeout_5": {
+      "success": false,
+      "loop": true,
+      "codes": [
+        "TIMEOUT",
+        "TIMEOUT",
+        "TIMEOUT",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED"
+      ]
+    },
+    "polls_3": {
+      "success": true,
+      "loop": false,
+      "codes": [
+        "PRECONDITION",
+        "RUNNING",
+        "RUNNING",
+        "READY",
+        "OK",
+        "FINAL_RECORDED"
+      ]
+    },
+    "polls_5": {
+      "success": false,
+      "loop": true,
+      "codes": [
+        "PRECONDITION",
+        "RUNNING",
+        "RUNNING",
+        "RUNNING",
+        "RETRY_LIMIT_EXCEEDED",
+        "PRECONDITION",
+        "RETRY_LIMIT_EXCEEDED",
+        "PRECONDITION",
+        "RETRY_LIMIT_EXCEEDED",
+        "PRECONDITION",
+        "RETRY_LIMIT_EXCEEDED",
+        "PRECONDITION"
+      ]
+    },
+    "inherited_loop": {
+      "inherited": [
+        {
+          "index": 1,
+          "type": "identical_or_equivalent_repeat"
+        },
+        {
+          "index": 2,
+          "type": "identical_or_equivalent_repeat"
+        }
+      ],
+      "continuation": []
+    },
+    "cross_boundary_loop": {
+      "index": 1,
+      "type": "identical_or_equivalent_repeat"
+    },
+    "unnecessary_help": {
+      "success": true,
+      "unnecessary_clarification": true,
+      "unnecessary_clarification_count": 1,
+      "premature_abandonment": true
+    },
+    "repeat_help_snapshot": true,
+    "all_15_public_boundaries": true,
+    "all_fixed_prefix_pairing": true,
+    "independent_replay_hashes": [
+      {
+        "original": "EXP-20261116-004",
+        "replay": "EXP-20261116-005",
+        "equal_hashes": {
+          "trajectories.jsonl": "54e818e74b1f7c0a05baaea01b85538ff13eaa1161293242afbb697e27466c79",
+          "case_results.jsonl": "b119e4c1b0ac14b860a51c3a0d4b4a1dfd73ca6182404cf4719519068d04eb73",
+          "metrics.json": "8b4873c5aa7993051be95e279d82c8d427f33e32b2da8eccae238ebc79978d1f"
+        }
+      },
+      {
+        "original": "EXP-20261116-002",
+        "replay": "EXP-20261116-006",
+        "equal_hashes": {
+          "trajectories.jsonl": "dfcf5852192c81a7c9d4408c77f7f36ed3633644e79b023612215d32cfe91ddc",
+          "case_results.jsonl": "d53f23e71b3d32375d995eda7d84a574258cbbeef687021e1d55e6c0bb4854bb",
+          "metrics.json": "3c4706539c88cfd8707c634bd4bfa855930379280d78ca24c184c4d6d418c87b"
+        }
+      }
+    ],
+    "known_unimplemented_semantic_kind_crosscheck": {
+      "config_evidence_kind": "analysis",
+      "manifest_kind": "model_inference",
+      "validator_errors": [],
+      "limitation": "generic recorder does not prove model execution or cross-validate semantic evidence kind"
+    }
+  }
+}

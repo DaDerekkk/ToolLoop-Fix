@@ -1,0 +1,16 @@
+{
+  "semantic_unique_items": 166,
+  "semantic_total_occurrences": 237,
+  "detector_unique_segments": 358,
+  "detector_counts_by_stratum": {
+    "flagged_identical_or_equivalent_repeat": 74,
+    "flagged_short_cycle_abab": 35,
+    "flagged_retry_limit_violation": 35,
+    "unflagged_legal_timeout_retry": 50,
+    "unflagged_legal_job_polling": 35,
+    "unflagged_genuine_progress_or_first_error": 129
+  },
+  "zero_leakage_passed": true,
+  "human_review_completed": false,
+  "training_eligible": false
+}

@@ -1,0 +1,29 @@
+{
+  "evidence_kind": "analysis",
+  "probe_source_sha256": "99172529772f33e31d955c9f5dacfee448aa6f15326b3c030c6dbf3c8832401b",
+  "receipt_sha256": "f5b94cce271fbcac8baee2bd4dc485c04166a35981bec4c015c5493d0db29e6f",
+  "verified": true,
+  "scope": "receipt_consistency_and_tokenizer_replay_only",
+  "gpu_reported": "NVIDIA L4",
+  "dtype_reported": "torch.bfloat16",
+  "model_id": "Qwen/Qwen3.5-0.8B",
+  "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "verified_files_reported": 9,
+  "input_tokens": 302,
+  "output_tokens": 32,
+  "generation_seconds": 2.962807964000035,
+  "stop_reason": "eos",
+  "parser_version": "qwen_xml_single_call_v1",
+  "parse_valid": true,
+  "parse_error": null,
+  "parsed_call": {
+    "name": "lookup_demo",
+    "arguments": {
+      "identifier": "DEMO-001"
+    }
+  },
+  "expected_call": true,
+  "tool_executed": false,
+  "training_performed": false,
+  "local_model_generations": 0
+}

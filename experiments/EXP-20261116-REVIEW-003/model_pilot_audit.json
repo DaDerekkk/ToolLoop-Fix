@@ -1,0 +1,761 @@
+{
+  "review_kind": "analysis_not_new_model_inference",
+  "source_runs": [
+    {
+      "run_id": "EXP-20261116-011",
+      "process_status": "completed",
+      "exit_code": 0,
+      "evidence_valid": true,
+      "model": {
+        "backend": "transformers",
+        "device": "cpu",
+        "dtype": "float32",
+        "model_id": "Qwen/Qwen3.5-0.8B",
+        "model_path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17",
+        "revision": "2fc06364715b967f1860aea9cf38778875588b17"
+      },
+      "packages": {
+        "safetensors": "0.8.0",
+        "tokenizers": "0.23.3",
+        "torch": "2.15.0",
+        "transformers": "5.23.0"
+      },
+      "case_count": 1,
+      "generation_count": 2,
+      "metrics": {
+        "budget_exhaustion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "case_count": 1,
+        "continuation_tool_attempts_per_success": {
+          "denominator": 0,
+          "numerator": 1,
+          "value": null
+        },
+        "correct_termination": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "cost_scope": "total_including_prefix; tool_attempts_not_tokens_or_money",
+        "error_recovery": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "false_success": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "generation_seconds": 219.69873374999952,
+        "input_tokens": 1426,
+        "invalid_loop_rate": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "mode": "end_to_end",
+        "necessary_retry_success": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "normal_completion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "output_tokens": 70,
+        "parser_error_turn_rate": {
+          "denominator": 2,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "policy": "qwen3.5-0.8b_raw_xml_preflight",
+        "premature_abandonment": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "task_completion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "tokens_per_success": {
+          "denominator": 0,
+          "numerator": 1496,
+          "value": null
+        },
+        "tool_attempts_per_success": {
+          "denominator": 0,
+          "numerator": 1,
+          "value": null
+        },
+        "unnecessary_clarification": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "case_checks": [
+        {
+          "case_id": "orders-normal-001",
+          "category": "normal",
+          "success": false,
+          "correct_termination": false,
+          "false_success": true,
+          "budget_exhausted": false,
+          "invalid_loop": false,
+          "parser_errors": 0,
+          "turns": 2,
+          "tool_attempts": 1,
+          "terminal_action": {
+            "type": "final",
+            "answer": "shipped",
+            "identifier": "completed"
+          },
+          "response_codes": [
+            "OK",
+            "FINAL_RECORDED"
+          ]
+        }
+      ],
+      "checked_raw_parse_events": 2,
+      "checked_public_prompts": 2
+    },
+    {
+      "run_id": "EXP-20261116-012",
+      "process_status": "completed",
+      "exit_code": 0,
+      "evidence_valid": true,
+      "model": {
+        "backend": "transformers",
+        "device": "mps",
+        "dtype": "bfloat16",
+        "model_id": "Qwen/Qwen3.5-0.8B",
+        "model_path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17",
+        "revision": "2fc06364715b967f1860aea9cf38778875588b17"
+      },
+      "packages": {
+        "safetensors": "0.8.0",
+        "tokenizers": "0.23.3",
+        "torch": "2.15.0",
+        "transformers": "5.23.0"
+      },
+      "case_count": 1,
+      "generation_count": 2,
+      "metrics": {
+        "budget_exhaustion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "case_count": 1,
+        "continuation_tool_attempts_per_success": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "correct_termination": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "cost_scope": "total_including_prefix; tool_attempts_not_tokens_or_money",
+        "error_recovery": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "false_success": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "generation_seconds": 10.62082887500037,
+        "input_tokens": 1426,
+        "invalid_loop_rate": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "mode": "end_to_end",
+        "necessary_retry_success": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "normal_completion": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "output_tokens": 74,
+        "parser_error_turn_rate": {
+          "denominator": 2,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "policy": "qwen3.5-0.8b_raw_xml_preflight",
+        "premature_abandonment": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "task_completion": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "tokens_per_success": {
+          "denominator": 1,
+          "numerator": 1500,
+          "value": 1500.0
+        },
+        "tool_attempts_per_success": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "unnecessary_clarification": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "case_checks": [
+        {
+          "case_id": "orders-normal-001",
+          "category": "normal",
+          "success": true,
+          "correct_termination": false,
+          "false_success": false,
+          "budget_exhausted": false,
+          "invalid_loop": false,
+          "parser_errors": 0,
+          "turns": 2,
+          "tool_attempts": 1,
+          "terminal_action": {
+            "type": "final",
+            "answer": "shipped",
+            "identifier": "ORD-101"
+          },
+          "response_codes": [
+            "OK",
+            "FINAL_RECORDED"
+          ]
+        }
+      ],
+      "checked_raw_parse_events": 2,
+      "checked_public_prompts": 2
+    },
+    {
+      "run_id": "EXP-20261116-013",
+      "process_status": "completed",
+      "exit_code": 0,
+      "evidence_valid": true,
+      "model": {
+        "backend": "transformers",
+        "device": "mps",
+        "dtype": "bfloat16",
+        "model_id": "Qwen/Qwen3.5-0.8B",
+        "model_path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17",
+        "revision": "2fc06364715b967f1860aea9cf38778875588b17"
+      },
+      "packages": {
+        "safetensors": "0.8.0",
+        "tokenizers": "0.23.3",
+        "torch": "2.15.0",
+        "transformers": "5.23.0"
+      },
+      "case_count": 15,
+      "generation_count": 103,
+      "metrics": {
+        "budget_exhaustion": {
+          "denominator": 15,
+          "numerator": 5,
+          "value": 0.3333333333333333
+        },
+        "case_count": 15,
+        "continuation_tool_attempts_per_success": {
+          "denominator": 2,
+          "numerator": 75,
+          "value": 37.5
+        },
+        "correct_termination": {
+          "denominator": 3,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "cost_scope": "total_including_prefix; tool_attempts_not_tokens_or_money",
+        "error_recovery": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "false_success": {
+          "denominator": 15,
+          "numerator": 4,
+          "value": 0.26666666666666666
+        },
+        "generation_seconds": 491.1066464189862,
+        "input_tokens": 111370,
+        "invalid_loop_rate": {
+          "denominator": 15,
+          "numerator": 4,
+          "value": 0.26666666666666666
+        },
+        "mode": "end_to_end",
+        "necessary_retry_success": {
+          "denominator": 3,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "normal_completion": {
+          "denominator": 3,
+          "numerator": 1,
+          "value": 0.3333333333333333
+        },
+        "output_tokens": 5801,
+        "parser_error_turn_rate": {
+          "denominator": 103,
+          "numerator": 29,
+          "value": 0.2815533980582524
+        },
+        "policy": "qwen3.5-0.8b_raw_xml_preflight",
+        "premature_abandonment": {
+          "denominator": 12,
+          "numerator": 5,
+          "value": 0.4166666666666667
+        },
+        "task_completion": {
+          "denominator": 12,
+          "numerator": 2,
+          "value": 0.16666666666666666
+        },
+        "tokens_per_success": {
+          "denominator": 2,
+          "numerator": 95507,
+          "value": 47753.5
+        },
+        "tool_attempts_per_success": {
+          "denominator": 2,
+          "numerator": 75,
+          "value": 37.5
+        },
+        "unnecessary_clarification": {
+          "denominator": 15,
+          "numerator": 4,
+          "value": 0.26666666666666666
+        }
+      },
+      "case_checks": [
+        {
+          "case_id": "orders-normal-001",
+          "category": "normal",
+          "success": true,
+          "correct_termination": false,
+          "false_success": false,
+          "budget_exhausted": false,
+          "invalid_loop": false,
+          "parser_errors": 0,
+          "turns": 2,
+          "tool_attempts": 1,
+          "terminal_action": {
+            "type": "final",
+            "answer": "shipped",
+            "identifier": "ORD-101"
+          },
+          "response_codes": [
+            "OK",
+            "FINAL_RECORDED"
+          ]
+        },
+        {
+          "case_id": "orders-recoverable-001",
+          "category": "recoverable",
+          "success": false,
+          "correct_termination": false,
+          "false_success": false,
+          "budget_exhausted": false,
+          "invalid_loop": false,
+          "parser_errors": 1,
+          "turns": 5,
+          "tool_attempts": 4,
+          "terminal_action": {
+            "type": "stop",
+            "reason": "Tool returned errors, identified as INVALID_IDENTIFIER and NOT_FOUND which indicates limited tool capability for finding orders"
+          },
+          "response_codes": [
+            "INVALID_IDENTIFIER",
+            "FORMAT_ERROR",
+            "INVALID_IDENTIFIER",
+            "NOT_FOUND",
+            "STOP_RECORDED"
+          ]
+        },
+        {
+          "case_id": "orders-retry_required-001",
+          "category": "retry_required",
+          "success": false,
+          "correct_termination": false,
+          "false_success": true,
+          "budget_exhausted": false,
+          "invalid_loop": false,
+          "parser_errors": 1,
+          "turns": 4,
+          "tool_attempts": 3,
+          "terminal_action": {
+            "type": "final",
+            "answer": "{\"code\": \"NOT_FOUND\", \"identifier\": \"ORD-101\"}",
+            "identifier": "ORD-101"
+          },
+          "response_codes": [
+            "TIMEOUT",
+            "NOT_FOUND",
+            "FORMAT_ERROR",
+            "FINAL_RECORDED"
+          ]
+        },
+        {
+          "case_id": "orders-clarification-001",
+          "category": "clarification",
+          "success": true,
+          "correct_termination": false,
+          "false_success": false,
+          "budget_exhausted": false,
+          "invalid_loop": false,
+          "parser_errors": 0,
+          "turns": 3,
+          "tool_attempts": 2,
+          "terminal_action": {
+            "type": "final",
+            "answer": "shipped",
+            "identifier": "ORD-101"
+          },
+          "response_codes": [
+            "USER_INFORMATION",
+            "OK",
+            "FINAL_RECORDED"
+          ]
+        },
+        {
+          "case_id": "orders-unrecoverable-001",
+          "category": "unrecoverable",
+          "success": false,
+          "correct_termination": false,
+          "false_success": false,
+          "budget_exhausted": false,
+          "invalid_loop": false,
+          "parser_errors": 0,
+          "turns": 6,
+          "tool_attempts": 5,
+          "terminal_action": {
+            "type": "stop",
+            "reason": "RESOURCE_UNAVAILABLE or REQUESTS_REQUIRED: The requested resources, identifiers (\"ORD-101\", \"latest order\"), domain (\"orders\") are unavailable. No further action can be performed on unavailable resources."
+          },
+          "response_codes": [
+            "RESOURCE_UNAVAILABLE",
+            "UNNECESSARY_CLARIFICATION",
+            "RESOURCE_UNAVAILABLE",
+            "UNNECESSARY_CLARIFICATION",
+            "RESOURCE_UNAVAILABLE",
+            "STOP_RECORDED"
+          ]
+        },
+        {
+          "case_id": "files-normal-001",
+          "category": "normal",
+          "success": false,
+          "correct_termination": false,
+          "false_success": false,
+          "budget_exhausted": false,
+          "invalid_loop": false,
+          "parser_errors": 1,
+          "turns": 3,
+          "tool_attempts": 2,
+          "terminal_action": {
+            "type": "stop",
+            "reason": "adapter_protocol_error; expected exactly one tool call - failed to acquire request"
+          },
+          "response_codes": [
+            "INVALID_IDENTIFIER",
+            "FORMAT_ERROR",
+            "STOP_RECORDED"
+          ]
+        },
+        {
+          "case_id": "files-recoverable-001",
+          "category": "recoverable",
+          "success": false,
+          "correct_termination": false,
+          "false_success": false,
+          "budget_exhausted": true,
+          "invalid_loop": true,
+          "parser_errors": 0,
+          "turns": 12,
+          "tool_attempts": 12,
+          "terminal_action": null,
+          "response_codes": [
+            "INVALID_IDENTIFIER",
+            "UNNECESSARY_CLARIFICATION",
+            "UNNECESSARY_CLARIFICATION",
+            "UNNECESSARY_CLARIFICATION",
+            "UNNECESSARY_CLARIFICATION",
+            "UNNECESSARY_CLARIFICATION",
+            "UNNECESSARY_CLARIFICATION",
+            "UNNECESSARY_CLARIFICATION",
+            "UNNECESSARY_CLARIFICATION",
+            "UNNECESSARY_CLARIFICATION",
+            "UNNECESSARY_CLARIFICATION",
+            "UNNECESSARY_CLARIFICATION"
+          ]
+        },
+        {
+          "case_id": "files-retry_required-001",
+          "category": "retry_required",
+          "success": false,
+          "correct_termination": false,
+          "false_success": true,
+          "budget_exhausted": false,
+          "invalid_loop": false,
+          "parser_errors": 0,
+          "turns": 2,
+          "tool_attempts": 1,
+          "terminal_action": {
+            "type": "final",
+            "answer": "NOT_FOUND",
+            "identifier": "records/report.txt"
+          },
+          "response_codes": [
+            "NOT_FOUND",
+            "FINAL_RECORDED"
+          ]
+        },
+        {
+          "case_id": "files-clarification-001",
+          "category": "clarification",
+          "success": false,
+          "correct_termination": false,
+          "false_success": true,
+          "budget_exhausted": false,
+          "invalid_loop": true,
+          "parser_errors": 4,
+          "turns": 10,
+          "tool_attempts": 9,
+          "terminal_action": {
+            "type": "final",
+            "answer": "{\"domain\": \"files\", \"target\": \"report.txt\"}",
+            "identifier": "read_file()"
+          },
+          "response_codes": [
+            "INVALID_IDENTIFIER",
+            "FORMAT_ERROR",
+            "INVALID_IDENTIFIER",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "USER_INFORMATION",
+            "UNNECESSARY_CLARIFICATION",
+            "UNNECESSARY_CLARIFICATION",
+            "FINAL_RECORDED"
+          ]
+        },
+        {
+          "case_id": "files-unrecoverable-001",
+          "category": "unrecoverable",
+          "success": false,
+          "correct_termination": false,
+          "false_success": false,
+          "budget_exhausted": false,
+          "invalid_loop": false,
+          "parser_errors": 0,
+          "turns": 2,
+          "tool_attempts": 1,
+          "terminal_action": {
+            "type": "stop",
+            "reason": "file path /records/report.txt is not accessible as a physical directory, and no specific instruction was given to create or copy the file before providing the target path."
+          },
+          "response_codes": [
+            "RESOURCE_UNAVAILABLE",
+            "STOP_RECORDED"
+          ]
+        },
+        {
+          "case_id": "jobs-normal-001",
+          "category": "normal",
+          "success": false,
+          "correct_termination": false,
+          "false_success": false,
+          "budget_exhausted": true,
+          "invalid_loop": true,
+          "parser_errors": 2,
+          "turns": 12,
+          "tool_attempts": 12,
+          "terminal_action": null,
+          "response_codes": [
+            "OK",
+            "INVALID_IDENTIFIER",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "OK",
+            "UNNECESSARY_CLARIFICATION",
+            "UNNECESSARY_CLARIFICATION",
+            "UNNECESSARY_CLARIFICATION",
+            "OK",
+            "UNNECESSARY_CLARIFICATION",
+            "UNNECESSARY_CLARIFICATION",
+            "UNNECESSARY_CLARIFICATION"
+          ]
+        },
+        {
+          "case_id": "jobs-recoverable-001",
+          "category": "recoverable",
+          "success": false,
+          "correct_termination": false,
+          "false_success": true,
+          "budget_exhausted": false,
+          "invalid_loop": false,
+          "parser_errors": 0,
+          "turns": 6,
+          "tool_attempts": 5,
+          "terminal_action": {
+            "type": "final",
+            "answer": "JOB-OLD was not found. The tool returned a code of \"NOT_FOUND\" for find_job and an \"INVALID_IDENTIFIER\" status, suggesting the identifier might be invalid or there's a mismatch in the expected format.",
+            "identifier": "JOB-OLD"
+          },
+          "response_codes": [
+            "NOT_FOUND",
+            "INVALID_IDENTIFIER",
+            "INVALID_ARGUMENTS",
+            "NOT_FOUND",
+            "INVALID_ARGUMENTS",
+            "FINAL_RECORDED"
+          ]
+        },
+        {
+          "case_id": "jobs-retry_required-001",
+          "category": "retry_required",
+          "success": false,
+          "correct_termination": false,
+          "false_success": false,
+          "budget_exhausted": true,
+          "invalid_loop": true,
+          "parser_errors": 6,
+          "turns": 12,
+          "tool_attempts": 12,
+          "terminal_action": null,
+          "response_codes": [
+            "LOCATED",
+            "PRECONDITION",
+            "PRECONDITION",
+            "PRECONDITION",
+            "FORMAT_ERROR",
+            "PRECONDITION",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "NOT_FOUND"
+          ]
+        },
+        {
+          "case_id": "jobs-clarification-001",
+          "category": "clarification",
+          "success": false,
+          "correct_termination": false,
+          "false_success": false,
+          "budget_exhausted": true,
+          "invalid_loop": false,
+          "parser_errors": 9,
+          "turns": 12,
+          "tool_attempts": 12,
+          "terminal_action": null,
+          "response_codes": [
+            "MISSING_IDENTIFIER",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "NOT_FOUND",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "INVALID_IDENTIFIER"
+          ]
+        },
+        {
+          "case_id": "jobs-unrecoverable-001",
+          "category": "unrecoverable",
+          "success": false,
+          "correct_termination": false,
+          "false_success": false,
+          "budget_exhausted": true,
+          "invalid_loop": false,
+          "parser_errors": 5,
+          "turns": 12,
+          "tool_attempts": 12,
+          "terminal_action": null,
+          "response_codes": [
+            "NOT_FOUND",
+            "FORMAT_ERROR",
+            "NOT_FOUND",
+            "FORMAT_ERROR",
+            "NOT_FOUND",
+            "NOT_FOUND",
+            "NOT_FOUND",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "FORMAT_ERROR",
+            "RESOURCE_UNAVAILABLE",
+            "RESOURCE_UNAVAILABLE"
+          ]
+        }
+      ],
+      "checked_raw_parse_events": 103,
+      "checked_public_prompts": 103
+    }
+  ],
+  "checks": [
+    {
+      "run_id": "EXP-20261116-008",
+      "status": "failed",
+      "exit_code": 1,
+      "evidence_valid": false
+    },
+    {
+      "run_id": "EXP-20261116-009",
+      "status": "failed",
+      "exit_code": 1,
+      "evidence_valid": false
+    },
+    {
+      "run_id": "EXP-20261116-010",
+      "status": "completed",
+      "exit_code": 0,
+      "evidence_valid": true
+    }
+  ],
+  "archive_validation_excluding_active_review": {
+    "run_count": 16,
+    "errors": []
+  },
+  "decision": "accept_auditable_model_pilot_not_research_gate",
+  "limitations": [
+    "15 hand-authored dev cases only",
+    "single index-dependent seed schedule",
+    "custom single-call XML/finish/stop adaptation",
+    "MPS bfloat16 vs CPU float32 not a paired quality experiment",
+    "29/103 protocol errors limit model-loop attribution",
+    "no new generation or tokenizer decode verification performed",
+    "metadata and hashes are not cryptographic attestation",
+    "failed and partial historical runs retained"
+  ]
+}

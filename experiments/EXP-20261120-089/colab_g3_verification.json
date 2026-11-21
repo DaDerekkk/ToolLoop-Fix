@@ -1,0 +1,167 @@
+{
+  "adapters_dir": "/Users/derek/Documents/ChatGPT/LLM 作业/models/adapters/iter9_g3_wave3",
+  "archived_operation_sources": {
+    "armed.txt": "78d4ed985940f2c343796457bbe2e9026a3fa3103857d2bf1011a120d976c66d",
+    "g3_training_receipt.json": "367d8c2a6ecc154b1858c0588d4916fc2a29e5810e92ff04d2af5eae9c4cdabe",
+    "lifecycle.jsonl": "07629746d3cd8c3ea3362ecd94ba45974897e32fb028e65861e996faae41e00b",
+    "sentinel.json": "5a23a4d5f0d750f756be583fc03105449d043d4d5084d123f4d3afda06da3156",
+    "sources__train_job_config.json": "957fc545ae2c019606aa459e29a7fb4c65f32517e4f70376f7373096c9006acb"
+  },
+  "evidence_class": "analysis",
+  "lifecycle_audit": {
+    "account_assignments": [
+      0.0,
+      1.0,
+      2.0
+    ],
+    "account_balances_cu": [
+      2684.52,
+      2684.52,
+      2681.03
+    ],
+    "account_rates_cu_hr": [
+      0.0,
+      1.94,
+      10.82
+    ],
+    "gross_elapsed_seconds": 1448.74,
+    "observed_worker_stages": [
+      "install_transformers",
+      "runtime_check",
+      "load_base_model",
+      "tokenize_and_precompute_ref",
+      "train_P_s202",
+      "train_P_s303",
+      "pack_chunks",
+      "receipt_published_completed"
+    ],
+    "original_set_unchanged": true,
+    "owned_absent": true,
+    "owned_released": true,
+    "reassembled_event_count": 2,
+    "receipt_nonce": "dedba406d4a64b3091fe5c4704b7aae5",
+    "recorded_receipt_sha256": "367d8c2a6ecc154b1858c0588d4916fc2a29e5810e92ff04d2af5eae9c4cdabe",
+    "session_name": "tlfix-dedba406d4a6",
+    "two_way_sentinel_identical": true
+  },
+  "local_model_manifest_sha256": "049c3d159e86cf1492a8020d5a95f8d0b92c13091fc82891ce12979c26899d2d",
+  "operation_dir": "/Users/derek/Documents/ChatGPT/LLM 作业/operations/COLAB-20261120-011R1",
+  "receipt_and_adapter_audit": {
+    "adapter_count": 2,
+    "adapters": [
+      {
+        "adapter_id": "P_s202",
+        "adapter_manifest_sha256": "62ce9712389d9884b8c024ef01b2bb7e3a7533099096f0553a392a4c7511ed19",
+        "arm": "P",
+        "dataset": "p_toolloop_fix_dpo.jsonl",
+        "epoch_mean_losses": [
+          0.173217
+        ],
+        "example_count": 400,
+        "final_loss": 0.045522,
+        "initial_loss": 0.724354,
+        "local_load_verified": true,
+        "loss_decreased": true,
+        "max_memory_allocated_bytes": 5940008960,
+        "max_memory_allocated_mib": 5664.83,
+        "nonzero_lora_b_modules": 186,
+        "objective": "dpo",
+        "optimizer_steps": 50,
+        "post_train_mean_reward_margin": 9.09321,
+        "post_train_reward_accuracy": 0.98,
+        "probe_first_line": "<tool_call>",
+        "probe_output_tokens": 37,
+        "probe_tokenizer_verified": true,
+        "safetensors_sha256": "2e0c020422f603a7333bc2c7172c51f330e1e588833bf9d78bfcbf4dccde6572",
+        "safetensors_size_bytes": 5452456,
+        "seed": 202,
+        "tensor_count": 372,
+        "total_completion_tokens": 28399,
+        "total_train_tokens": 742391,
+        "train_wall_seconds": 459.1165
+      },
+      {
+        "adapter_id": "P_s303",
+        "adapter_manifest_sha256": "94343f4788aaa3b88e8ed28f804c4d0ce557d1fb66e52d1a64a16f2df4044d4c",
+        "arm": "P",
+        "dataset": "p_toolloop_fix_dpo.jsonl",
+        "epoch_mean_losses": [
+          0.188914
+        ],
+        "example_count": 400,
+        "final_loss": 0.017031,
+        "initial_loss": 0.724354,
+        "local_load_verified": true,
+        "loss_decreased": true,
+        "max_memory_allocated_bytes": 5932482560,
+        "max_memory_allocated_mib": 5657.66,
+        "nonzero_lora_b_modules": 186,
+        "objective": "dpo",
+        "optimizer_steps": 50,
+        "post_train_mean_reward_margin": 7.979777,
+        "post_train_reward_accuracy": 1.0,
+        "probe_first_line": "<tool_call>",
+        "probe_output_tokens": 37,
+        "probe_tokenizer_verified": true,
+        "safetensors_sha256": "24380892e4d8e4aea16af0eb263dda30c3ac9407b4498269689ab20895bf3d4b",
+        "safetensors_size_bytes": 5452456,
+        "seed": 303,
+        "tensor_count": 372,
+        "total_completion_tokens": 28399,
+        "total_train_tokens": 742391,
+        "train_wall_seconds": 373.6568
+      }
+    ],
+    "base_weights_unchanged": true,
+    "final_base_weight_digest": "b8cb99011cc6c0ce9097ad8b40bceacbe3e4131bfed6f10f863073b7b42bd241",
+    "gpu": {
+      "compute_capability": [
+        8,
+        9
+      ],
+      "memory_bytes": 23659151360,
+      "name": "NVIDIA L4"
+    },
+    "initial_base_weight_digest": "b8cb99011cc6c0ce9097ad8b40bceacbe3e4131bfed6f10f863073b7b42bd241",
+    "lora_injection": {
+      "adapter_version": "pure_pytorch_qwen35_text_lora_v1",
+      "alpha": 8.0,
+      "matched_module_count": 186,
+      "module_prefix": "model.language_model.",
+      "rank": 4,
+      "trainable_param_count": 2705664
+    },
+    "receipt_sha256": "367d8c2a6ecc154b1858c0588d4916fc2a29e5810e92ff04d2af5eae9c4cdabe",
+    "runtime": {
+      "cuda_version": "13.0",
+      "execution_mode": "colab_l4_cuda_bf16",
+      "fla_triton_enabled": true,
+      "packages": {
+        "fla-core": "0.6.0",
+        "flash-linear-attention": "0.6.0",
+        "huggingface-hub": "1.33.0",
+        "safetensors": "0.8.0",
+        "tokenizers": "0.23.3",
+        "torch": "2.14.1+cu130",
+        "transformers": "5.23.0"
+      },
+      "python": "3.13.16",
+      "tf32_enabled": true
+    },
+    "training_bundle": {
+      "bundle_sha256": "08d833addafcf94dcd07ff7ad229c82b3616e92cc34b5636d88d6864f6eda637",
+      "bundle_size_bytes": 13305451,
+      "bundle_zlib_sha256": "9bf9ad48082db05b7420e3acec90ad25ea1207e3a6a38ab41ecd062c1f7104d4",
+      "bundle_zlib_size_bytes": 288581,
+      "dataset_governance_tier": "user_delegated_triple_blind_silver_adjudication_v1",
+      "g2_frozen_verdict_sha256": "678c59e7604957c12fde10fe22318a1996bbc7e22d3c553198945052f8ab610a",
+      "g3_dataset_ready": true,
+      "schema_version": "iter8_g3_action_preference_v1"
+    },
+    "worker_wall_seconds": 1312.397
+  },
+  "remote_evidence_source": "remote_colab_l4_model_training",
+  "schema_version": "iter9_colab_g3_verification_v1",
+  "verified": true,
+  "verify_local_load_performed": true
+}

@@ -1,0 +1,912 @@
+{
+  "evidence_class": "analysis",
+  "protocol_version": "qwen_xml_or_native_terminal_v1",
+  "row_count": 103,
+  "transitions": {
+    "valid_tool_or_wrapper -> valid_tool": 64,
+    "valid_tool_or_wrapper -> structured_finish": 6,
+    "EXPECTED_EXACTLY_ONE_TOOL_CALL -> natural_text": 29,
+    "valid_tool_or_wrapper -> structured_stop": 4
+  },
+  "first_calibrated_terminal": {
+    "orders-normal-001": {
+      "turn": 2,
+      "form": "structured_finish"
+    },
+    "orders-recoverable-001": {
+      "turn": 2,
+      "form": "natural_text"
+    },
+    "orders-retry_required-001": {
+      "turn": 3,
+      "form": "natural_text"
+    },
+    "orders-clarification-001": {
+      "turn": 3,
+      "form": "structured_finish"
+    },
+    "orders-unrecoverable-001": {
+      "turn": 6,
+      "form": "structured_stop"
+    },
+    "files-normal-001": {
+      "turn": 2,
+      "form": "natural_text"
+    },
+    "files-retry_required-001": {
+      "turn": 2,
+      "form": "structured_finish"
+    },
+    "files-clarification-001": {
+      "turn": 2,
+      "form": "natural_text"
+    },
+    "files-unrecoverable-001": {
+      "turn": 2,
+      "form": "structured_stop"
+    },
+    "jobs-normal-001": {
+      "turn": 3,
+      "form": "natural_text"
+    },
+    "jobs-recoverable-001": {
+      "turn": 6,
+      "form": "structured_finish"
+    },
+    "jobs-retry_required-001": {
+      "turn": 5,
+      "form": "natural_text"
+    },
+    "jobs-clarification-001": {
+      "turn": 2,
+      "form": "natural_text"
+    },
+    "jobs-unrecoverable-001": {
+      "turn": 2,
+      "form": "natural_text"
+    }
+  },
+  "rows": [
+    {
+      "case_id": "orders-normal-001",
+      "turn": 1,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "orders-normal-001",
+      "turn": 2,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": "structured_finish",
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "orders-recoverable-001",
+      "turn": 1,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "orders-recoverable-001",
+      "turn": 2,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "orders-recoverable-001",
+      "turn": 3,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "orders-recoverable-001",
+      "turn": 4,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "orders-recoverable-001",
+      "turn": 5,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": "structured_stop",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "orders-retry_required-001",
+      "turn": 1,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "orders-retry_required-001",
+      "turn": 2,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "orders-retry_required-001",
+      "turn": 3,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "orders-retry_required-001",
+      "turn": 4,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": "structured_finish",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "orders-clarification-001",
+      "turn": 1,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "orders-clarification-001",
+      "turn": 2,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "orders-clarification-001",
+      "turn": 3,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": "structured_finish",
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "orders-unrecoverable-001",
+      "turn": 1,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "orders-unrecoverable-001",
+      "turn": 2,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "orders-unrecoverable-001",
+      "turn": 3,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "orders-unrecoverable-001",
+      "turn": 4,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "orders-unrecoverable-001",
+      "turn": 5,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "orders-unrecoverable-001",
+      "turn": 6,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": "structured_stop",
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-normal-001",
+      "turn": 1,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-normal-001",
+      "turn": 2,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-normal-001",
+      "turn": 3,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": "structured_stop",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "files-recoverable-001",
+      "turn": 1,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-recoverable-001",
+      "turn": 2,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-recoverable-001",
+      "turn": 3,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-recoverable-001",
+      "turn": 4,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-recoverable-001",
+      "turn": 5,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-recoverable-001",
+      "turn": 6,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-recoverable-001",
+      "turn": 7,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-recoverable-001",
+      "turn": 8,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-recoverable-001",
+      "turn": 9,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-recoverable-001",
+      "turn": 10,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-recoverable-001",
+      "turn": 11,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-recoverable-001",
+      "turn": 12,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-retry_required-001",
+      "turn": 1,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-retry_required-001",
+      "turn": 2,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": "structured_finish",
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-clarification-001",
+      "turn": 1,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-clarification-001",
+      "turn": 2,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-clarification-001",
+      "turn": 3,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "files-clarification-001",
+      "turn": 4,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "files-clarification-001",
+      "turn": 5,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "files-clarification-001",
+      "turn": 6,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "files-clarification-001",
+      "turn": 7,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "files-clarification-001",
+      "turn": 8,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "files-clarification-001",
+      "turn": 9,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "files-clarification-001",
+      "turn": 10,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": "structured_finish",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "files-unrecoverable-001",
+      "turn": 1,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "files-unrecoverable-001",
+      "turn": 2,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": "structured_stop",
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-normal-001",
+      "turn": 1,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-normal-001",
+      "turn": 2,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-normal-001",
+      "turn": 3,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-normal-001",
+      "turn": 4,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-normal-001",
+      "turn": 5,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-normal-001",
+      "turn": 6,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-normal-001",
+      "turn": 7,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-normal-001",
+      "turn": 8,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-normal-001",
+      "turn": 9,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-normal-001",
+      "turn": 10,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-normal-001",
+      "turn": 11,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-normal-001",
+      "turn": 12,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-recoverable-001",
+      "turn": 1,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-recoverable-001",
+      "turn": 2,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-recoverable-001",
+      "turn": 3,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-recoverable-001",
+      "turn": 4,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-recoverable-001",
+      "turn": 5,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-recoverable-001",
+      "turn": 6,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": "structured_finish",
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-retry_required-001",
+      "turn": 1,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-retry_required-001",
+      "turn": 2,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-retry_required-001",
+      "turn": 3,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-retry_required-001",
+      "turn": 4,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-retry_required-001",
+      "turn": 5,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-retry_required-001",
+      "turn": 6,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-retry_required-001",
+      "turn": 7,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-retry_required-001",
+      "turn": 8,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-retry_required-001",
+      "turn": 9,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-retry_required-001",
+      "turn": 10,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-retry_required-001",
+      "turn": 11,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-retry_required-001",
+      "turn": 12,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-clarification-001",
+      "turn": 1,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-clarification-001",
+      "turn": 2,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-clarification-001",
+      "turn": 3,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-clarification-001",
+      "turn": 4,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-clarification-001",
+      "turn": 5,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-clarification-001",
+      "turn": 6,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-clarification-001",
+      "turn": 7,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-clarification-001",
+      "turn": 8,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-clarification-001",
+      "turn": 9,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-clarification-001",
+      "turn": 10,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-clarification-001",
+      "turn": 11,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-clarification-001",
+      "turn": 12,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-unrecoverable-001",
+      "turn": 1,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-unrecoverable-001",
+      "turn": 2,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": false
+    },
+    {
+      "case_id": "jobs-unrecoverable-001",
+      "turn": 3,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-unrecoverable-001",
+      "turn": 4,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-unrecoverable-001",
+      "turn": 5,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-unrecoverable-001",
+      "turn": 6,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-unrecoverable-001",
+      "turn": 7,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-unrecoverable-001",
+      "turn": 8,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-unrecoverable-001",
+      "turn": 9,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-unrecoverable-001",
+      "turn": 10,
+      "legacy_error": "EXPECTED_EXACTLY_ONE_TOOL_CALL",
+      "new_valid": true,
+      "new_terminal_form": "natural_text",
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-unrecoverable-001",
+      "turn": 11,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    },
+    {
+      "case_id": "jobs-unrecoverable-001",
+      "turn": 12,
+      "legacy_error": null,
+      "new_valid": true,
+      "new_terminal_form": null,
+      "after_first_calibrated_terminal": true
+    }
+  ],
+  "warning": "All rows reparsed as diagnostics. After the first calibrated terminal, later old rows cannot be used as counterfactual calibrated outcomes. No new model inference, semantic grading, action repair, old score overwrite or training.",
+  "source_refs": [
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-013/generations.jsonl",
+      "sha256": "0c534a5f7302c708085b22948339ac62b8ad5c6b17a6996c18b92477950aaad8"
+    }
+  ],
+  "preserved_manifest_count": 17,
+  "template_render_check": {
+    "evidence_class": "analysis",
+    "type": "local_tokenizer_template_render_only",
+    "blocked_assistant_eos_count": 1,
+    "chat_template_sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+    "rendered_prompt_sha256": "c4d7f47e8b324d89d5ca127b24d5759da94cf490d1afce732289430afda6500d",
+    "raw_generation_unchanged": true,
+    "no_model_loaded": true
+  }
+}

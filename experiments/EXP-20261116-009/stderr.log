@@ -1,0 +1,64 @@
+test_final_claim_without_tool_evidence_is_false_success (test_model_adapter.ModelLoopTests.test_final_claim_without_tool_evidence_is_false_success) ... ok
+test_full_failure_history_reaches_next_model_turn (test_model_adapter.ModelLoopTests.test_full_failure_history_reaches_next_model_turn) ... ok
+test_generation_error_retains_partial_and_never_falls_back (test_model_adapter.ModelLoopTests.test_generation_error_retains_partial_and_never_falls_back) ... ok
+test_grounded_success_retains_raw_generation_and_public_only_inputs (test_model_adapter.ModelLoopTests.test_grounded_success_retains_raw_generation_and_public_only_inputs) ... ok
+test_invalid_config_modes_and_thinking_fail_early (test_model_adapter.ModelLoopTests.test_invalid_config_modes_and_thinking_fail_early) ... ok
+test_multi_call_turn_is_one_invalid_protocol_attempt_no_calls_executed (test_model_adapter.ModelLoopTests.test_multi_call_turn_is_one_invalid_protocol_attempt_no_calls_executed) ... ok
+test_output_token_limit_marks_failure_and_keeps_raw_record (test_model_adapter.ModelLoopTests.test_output_token_limit_marks_failure_and_keeps_raw_record) ... ok
+test_real_metrics_do_not_retain_synthetic_label (test_model_adapter.ModelLoopTests.test_real_metrics_do_not_retain_synthetic_label) ... ok
+test_unparsed_model_output_consumes_attempt_budget (test_model_adapter.ModelLoopTests.test_unparsed_model_output_consumes_attempt_budget) ... ok
+test_manifest_hash_mismatch_rejected (test_model_adapter.ModelProvenanceTests.test_manifest_hash_mismatch_rejected) ... ok
+test_manifest_identity_and_actual_file_hashes_verified (test_model_adapter.ModelProvenanceTests.test_manifest_identity_and_actual_file_hashes_verified) ... ok
+test_manifest_path_escape_rejected (test_model_adapter.ModelProvenanceTests.test_manifest_path_escape_rejected) ... ok
+test_missing_weight_set_still_raises_checkpoint_error_not_json_type_error (test_model_adapter.ModelProvenanceTests.test_missing_weight_set_still_raises_checkpoint_error_not_json_type_error) ... ERROR
+test_presence_penalty_generated_unique_tokens_not_prompt_or_frequency (test_model_adapter.ModelProvenanceTests.test_presence_penalty_generated_unique_tokens_not_prompt_or_frequency) ... ok
+test_randomly_initialized_missing_text_weights_rejected (test_model_adapter.ModelProvenanceTests.test_randomly_initialized_missing_text_weights_rejected) ... ok
+test_transformers_set_metadata_normalized_without_losing_fields (test_model_adapter.ModelProvenanceTests.test_transformers_set_metadata_normalized_without_losing_fields) ... ERROR
+test_unmanifested_model_files_rejected (test_model_adapter.ModelProvenanceTests.test_unmanifested_model_files_rejected) ... ok
+test_duplicate_unclosed_nested_or_foreign_xml_rejected (test_model_adapter.ProtocolTests.test_duplicate_unclosed_nested_or_foreign_xml_rejected) ... ok
+test_finish_and_stop_are_explicit_wrappers (test_model_adapter.ProtocolTests.test_finish_and_stop_are_explicit_wrappers) ... ok
+test_history_length_mismatch_rejected_not_silently_dropped (test_model_adapter.ProtocolTests.test_history_length_mismatch_rejected_not_silently_dropped) ... ok
+test_matching_tool_history_uses_mapping_arguments_and_preserves_errors (test_model_adapter.ProtocolTests.test_matching_tool_history_uses_mapping_arguments_and_preserves_errors) ... ok
+test_multiple_calls_rejected_without_first_call_salvage (test_model_adapter.ProtocolTests.test_multiple_calls_rejected_without_first_call_salvage) ... ok
+test_official_xml_tool_call_parses_and_keeps_commentary (test_model_adapter.ProtocolTests.test_official_xml_tool_call_parses_and_keeps_commentary) ... ok
+test_parse_error_history_retains_raw_assistant_and_explicit_error (test_model_adapter.ProtocolTests.test_parse_error_history_retains_raw_assistant_and_explicit_error) ... ok
+test_plain_json_and_plain_answers_are_not_fabricated_into_calls (test_model_adapter.ProtocolTests.test_plain_json_and_plain_answers_are_not_fabricated_into_calls) ... ok
+test_suffix_prose_rejected_instead_of_moved_before_call (test_model_adapter.ProtocolTests.test_suffix_prose_rejected_instead_of_moved_before_call) ... ok
+test_token_limit_never_executes_even_a_complete_looking_call (test_model_adapter.ProtocolTests.test_token_limit_never_executes_even_a_complete_looking_call) ... ok
+test_tool_schemas_contain_only_public_docs_and_terminal_wrappers (test_model_adapter.ProtocolTests.test_tool_schemas_contain_only_public_docs_and_terminal_wrappers) ... ok
+
+======================================================================
+ERROR: test_missing_weight_set_still_raises_checkpoint_error_not_json_type_error (test_model_adapter.ModelProvenanceTests.test_missing_weight_set_still_raises_checkpoint_error_not_json_type_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-009/inputs/tests/test_model_adapter.py", line 313, in test_missing_weight_set_still_raises_checkpoint_error_not_json_type_error
+    check_loading_info(info)
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-009/inputs/toolloop_fix/model_backend.py", line 73, in check_loading_info
+    raise RuntimeError("checkpoint loading was not a complete text-model load: " + json.dumps(info))
+                                                                                   ^^^^^^^^^^^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/runtime/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/runtime/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/runtime/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/runtime/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type set is not JSON serializable
+
+======================================================================
+ERROR: test_transformers_set_metadata_normalized_without_losing_fields (test_model_adapter.ModelProvenanceTests.test_transformers_set_metadata_normalized_without_losing_fields)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-009/inputs/tests/test_model_adapter.py", line 303, in test_transformers_set_metadata_normalized_without_losing_fields
+    normalized = model_backend.normalize_loading_info(info)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'toolloop_fix.model_backend' has no attribute 'normalize_loading_info'
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.012s
+
+FAILED (errors=2)

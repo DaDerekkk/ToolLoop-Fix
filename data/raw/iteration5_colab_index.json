@@ -1,0 +1,73 @@
+{
+  "iteration": "ITER-005",
+  "type": "derived_evidence_index",
+  "created_at_utc": "2026-11-19T08:04:30.010863+00:00",
+  "cloud_model_receipt_obtained": false,
+  "cloud_actual_generations": null,
+  "cloud_probe_cli_invocations": 1,
+  "cloud_cleanup_confirmed": true,
+  "cloud_retries": 0,
+  "trained": false,
+  "artifacts": [
+    {
+      "path": "operations/COLAB-20261119-001/lifecycle.jsonl",
+      "sha256": "2a15ba9fd7fc7a1021fb6cf48c96dadc82936540c23b35dd91bf0899f0f5cf1e"
+    },
+    {
+      "path": "operations/COLAB-20261119-001/lifecycle.py",
+      "sha256": "34d37ff12069f1136ed1a6c01ba5c23ed4a15e5d41463654402366a0ba0f9cde"
+    },
+    {
+      "path": "experiments/EXP-20261119-035/receipt_audit.json",
+      "sha256": "f80d8867d22dffd25343c72c51e1b3c9a4a82fe29cb70c52aea5bf8b42e6adf3"
+    },
+    {
+      "path": "experiments/EXP-20261119-036/stderr.log",
+      "sha256": "e246a6a9538caece78f0380e341f1df7fd17b52269d2eb99d6dea3bc8b978873"
+    },
+    {
+      "path": "experiments/EXP-20261119-037/stderr.log",
+      "sha256": "801dd6407e119190ab549c93949a053e67683f4d03feb8114e0cd788f99f2a49"
+    },
+    {
+      "path": "experiments/EXP-20261119-037R1/timeout_pair.json",
+      "sha256": "b769e5c00d13eddc7c86439ee7f4a2d5cc7c68e94c221bf408b61cd7bb83d4d0"
+    },
+    {
+      "path": "agents/reviews/iteration5_colab_boundary.md",
+      "sha256": "043ef63dcea4dd340bc597a9b3da30d024b8b8365d0b968b539a88f5f34aac11"
+    },
+    {
+      "path": "agents/reviews/iteration5_receipt_transport.md",
+      "sha256": "8e34d847fe322bc87acaf35a1e00f49357b84df1184a878c015e30156fd72a4a"
+    },
+    {
+      "path": "iterations/ITER-005_colab_l4_smoke.md",
+      "sha256": "e6d4c57aaed3362f6a41921b3c379a30ab7295e04f4ddb0d1c75f5bff3ce6912"
+    },
+    {
+      "path": "agents/handoffs/ITER005_colab.md",
+      "sha256": "5bd1a3fa5b8eed82cd9a13a5e43b509dafbb5803256c12a73badc28fd012f3a5"
+    },
+    {
+      "path": "experiments/EXP-20261119-034/manifest.json",
+      "sha256": "a83071eae8d833764175ee37ade042abf861ce04c41f06ddf1f85c129a591ef3"
+    },
+    {
+      "path": "experiments/EXP-20261119-035/manifest.json",
+      "sha256": "0ea94d0e8c2595d118e9fc79b711b6c3fc61debb9084edadd8c3566e3fa8311d"
+    },
+    {
+      "path": "experiments/EXP-20261119-036/manifest.json",
+      "sha256": "73c1a1a2bfae6e22e3352aa0dbc514810de5053d39ca553e2bb68319b95d583c"
+    },
+    {
+      "path": "experiments/EXP-20261119-037/manifest.json",
+      "sha256": "a38160a63a5312c9888da085c3fb6c7489a0c95224b73f8d4327939380a0f5e3"
+    },
+    {
+      "path": "experiments/EXP-20261119-037R1/manifest.json",
+      "sha256": "8317c985ae3a58bbc389047526fab893624035ccb3713b9676302443ae6c38a4"
+    }
+  ]
+}

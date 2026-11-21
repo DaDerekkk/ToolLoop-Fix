@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "description": "ITER-009 final end-of-project full repository regression test suite inside frozen inputs/ after all G3 training, G4 closed-holdout evaluations, statistical comparison, and independent CPU replay audit."
+}

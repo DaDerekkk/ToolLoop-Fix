@@ -1,0 +1,484 @@
+{
+  "evidence_class": "analysis",
+  "scope": "retrospective_first_action_only",
+  "hypothesis_tested": false,
+  "unique_original_prefixes": 2,
+  "paired_conditions": 6,
+  "new_model_generations": 0,
+  "rescored": false,
+  "cells": [
+    {
+      "wording": "legacy",
+      "arm": "B0",
+      "source_run": "EXP-20261116-025",
+      "paired_cases": [
+        {
+          "case_id": "pfx-orders-timeout",
+          "prefix_call": {
+            "arguments": {
+              "identifier": "ORD-101"
+            },
+            "tool": "get_order",
+            "type": "tool"
+          },
+          "prefix_source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016",
+          "prefix_snapshot_sha256": "aaa22663aaaaac8df06a83b5edf2bff6c4f3c2e107d5396269201b4936e212c8",
+          "first_fresh_seed": 1001,
+          "first_proposed_action": {
+            "arguments": {
+              "identifier": "ORD-101"
+            },
+            "tool": "get_order",
+            "type": "tool"
+          },
+          "parse_valid": true,
+          "parser_error": null,
+          "first_event_response_code": "OK",
+          "terminal_form": null,
+          "same_tool_and_arguments": true,
+          "actual_business_dispatch": true,
+          "same_call_executed": true,
+          "first_business_response_code": "OK",
+          "first_business_response_OK": true,
+          "guard_blocked": false,
+          "final_new_goal_evidence_archived": true,
+          "source_lines_1based": {
+            "prefix_contexts": 1,
+            "generations": 1,
+            "execution_events": 1,
+            "case_results": 1
+          }
+        },
+        {
+          "case_id": "pfx-files-timeout",
+          "prefix_call": {
+            "arguments": {
+              "identifier": "/records/report.txt"
+            },
+            "tool": "read_file",
+            "type": "tool"
+          },
+          "prefix_source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017",
+          "prefix_snapshot_sha256": "3c2efd997162d8385f6249595b18371bf8f2a1fcaf1e64b64d19b631332df0da",
+          "first_fresh_seed": 1033,
+          "first_proposed_action": {
+            "reason": "accessed file /records/report.txt encountered TIMEOUT error, unable to retrieve content due to time-out limit.",
+            "type": "stop"
+          },
+          "parse_valid": true,
+          "parser_error": null,
+          "first_event_response_code": "STOP_RECORDED",
+          "terminal_form": "structured_stop",
+          "same_tool_and_arguments": false,
+          "actual_business_dispatch": false,
+          "same_call_executed": false,
+          "first_business_response_code": null,
+          "first_business_response_OK": false,
+          "guard_blocked": false,
+          "final_new_goal_evidence_archived": false,
+          "source_lines_1based": {
+            "prefix_contexts": 2,
+            "generations": 3,
+            "execution_events": 3,
+            "case_results": 2
+          }
+        }
+      ]
+    },
+    {
+      "wording": "legacy",
+      "arm": "B1",
+      "source_run": "EXP-20261116-026",
+      "paired_cases": [
+        {
+          "case_id": "pfx-orders-timeout",
+          "prefix_call": {
+            "arguments": {
+              "identifier": "ORD-101"
+            },
+            "tool": "get_order",
+            "type": "tool"
+          },
+          "prefix_source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016",
+          "prefix_snapshot_sha256": "aaa22663aaaaac8df06a83b5edf2bff6c4f3c2e107d5396269201b4936e212c8",
+          "first_fresh_seed": 1001,
+          "first_proposed_action": {
+            "arguments": {
+              "identifier": "ORD-101"
+            },
+            "tool": "get_order",
+            "type": "tool"
+          },
+          "parse_valid": true,
+          "parser_error": null,
+          "first_event_response_code": "OK",
+          "terminal_form": null,
+          "same_tool_and_arguments": true,
+          "actual_business_dispatch": true,
+          "same_call_executed": true,
+          "first_business_response_code": "OK",
+          "first_business_response_OK": true,
+          "guard_blocked": false,
+          "final_new_goal_evidence_archived": true,
+          "source_lines_1based": {
+            "prefix_contexts": 1,
+            "generations": 1,
+            "execution_events": 1,
+            "case_results": 1
+          }
+        },
+        {
+          "case_id": "pfx-files-timeout",
+          "prefix_call": {
+            "arguments": {
+              "identifier": "/records/report.txt"
+            },
+            "tool": "read_file",
+            "type": "tool"
+          },
+          "prefix_source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017",
+          "prefix_snapshot_sha256": "3c2efd997162d8385f6249595b18371bf8f2a1fcaf1e64b64d19b631332df0da",
+          "first_fresh_seed": 1033,
+          "first_proposed_action": {
+            "raw_text": "The file `/records/report.txt` was accessed but encountered a `TIMEOUT` error. According to the tool response, this is transient (`retryable: true`) so it requires retries. The result of retrying this specific request remains as specified by the system's internal storage or retrieval failure message.<|im_end|>",
+            "reason": "NATURAL_LANGUAGE_TERMINAL",
+            "type": "stop"
+          },
+          "parse_valid": true,
+          "parser_error": null,
+          "first_event_response_code": "STOP_RECORDED",
+          "terminal_form": "natural_text",
+          "same_tool_and_arguments": false,
+          "actual_business_dispatch": false,
+          "same_call_executed": false,
+          "first_business_response_code": null,
+          "first_business_response_OK": false,
+          "guard_blocked": false,
+          "final_new_goal_evidence_archived": false,
+          "source_lines_1based": {
+            "prefix_contexts": 2,
+            "generations": 3,
+            "execution_events": 3,
+            "case_results": 2
+          }
+        }
+      ]
+    },
+    {
+      "wording": "legacy",
+      "arm": "B2",
+      "source_run": "EXP-20261116-027",
+      "paired_cases": [
+        {
+          "case_id": "pfx-orders-timeout",
+          "prefix_call": {
+            "arguments": {
+              "identifier": "ORD-101"
+            },
+            "tool": "get_order",
+            "type": "tool"
+          },
+          "prefix_source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016",
+          "prefix_snapshot_sha256": "aaa22663aaaaac8df06a83b5edf2bff6c4f3c2e107d5396269201b4936e212c8",
+          "first_fresh_seed": 1001,
+          "first_proposed_action": {
+            "arguments": {
+              "identifier": "ORD-101"
+            },
+            "tool": "get_order",
+            "type": "tool"
+          },
+          "parse_valid": true,
+          "parser_error": null,
+          "first_event_response_code": "OK",
+          "terminal_form": null,
+          "same_tool_and_arguments": true,
+          "actual_business_dispatch": true,
+          "same_call_executed": true,
+          "first_business_response_code": "OK",
+          "first_business_response_OK": true,
+          "guard_blocked": false,
+          "final_new_goal_evidence_archived": true,
+          "source_lines_1based": {
+            "prefix_contexts": 1,
+            "generations": 1,
+            "execution_events": 1,
+            "case_results": 1
+          }
+        },
+        {
+          "case_id": "pfx-files-timeout",
+          "prefix_call": {
+            "arguments": {
+              "identifier": "/records/report.txt"
+            },
+            "tool": "read_file",
+            "type": "tool"
+          },
+          "prefix_source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017",
+          "prefix_snapshot_sha256": "3c2efd997162d8385f6249595b18371bf8f2a1fcaf1e64b64d19b631332df0da",
+          "first_fresh_seed": 1033,
+          "first_proposed_action": {
+            "reason": "accessed file /records/report.txt encountered TIMEOUT error, unable to retrieve content due to time-out limit.",
+            "type": "stop"
+          },
+          "parse_valid": true,
+          "parser_error": null,
+          "first_event_response_code": "STOP_RECORDED",
+          "terminal_form": "structured_stop",
+          "same_tool_and_arguments": false,
+          "actual_business_dispatch": false,
+          "same_call_executed": false,
+          "first_business_response_code": null,
+          "first_business_response_OK": false,
+          "guard_blocked": false,
+          "final_new_goal_evidence_archived": false,
+          "source_lines_1based": {
+            "prefix_contexts": 2,
+            "generations": 3,
+            "execution_events": 3,
+            "case_results": 2
+          }
+        }
+      ]
+    },
+    {
+      "wording": "explicit",
+      "arm": "B0",
+      "source_run": "EXP-20261116-028",
+      "paired_cases": [
+        {
+          "case_id": "pfx-orders-timeout",
+          "prefix_call": {
+            "arguments": {
+              "identifier": "ORD-101"
+            },
+            "tool": "get_order",
+            "type": "tool"
+          },
+          "prefix_source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016",
+          "prefix_snapshot_sha256": "aaa22663aaaaac8df06a83b5edf2bff6c4f3c2e107d5396269201b4936e212c8",
+          "first_fresh_seed": 1001,
+          "first_proposed_action": {
+            "arguments": {
+              "identifier": "ORD-101"
+            },
+            "tool": "get_order",
+            "type": "tool"
+          },
+          "parse_valid": true,
+          "parser_error": null,
+          "first_event_response_code": "OK",
+          "terminal_form": null,
+          "same_tool_and_arguments": true,
+          "actual_business_dispatch": true,
+          "same_call_executed": true,
+          "first_business_response_code": "OK",
+          "first_business_response_OK": true,
+          "guard_blocked": false,
+          "final_new_goal_evidence_archived": true,
+          "source_lines_1based": {
+            "prefix_contexts": 1,
+            "generations": 1,
+            "execution_events": 1,
+            "case_results": 1
+          }
+        },
+        {
+          "case_id": "pfx-files-timeout",
+          "prefix_call": {
+            "arguments": {
+              "identifier": "/records/report.txt"
+            },
+            "tool": "read_file",
+            "type": "tool"
+          },
+          "prefix_source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017",
+          "prefix_snapshot_sha256": "3c2efd997162d8385f6249595b18371bf8f2a1fcaf1e64b64d19b631332df0da",
+          "first_fresh_seed": 1033,
+          "first_proposed_action": {
+            "raw_text": "The resource `/records/report.txt` was accessed. It has a code `\"TIMEOUT\"` and the retryable flag is true, but since there's no response indicating the file content or identifier, I cannot provide that from this tool call. The task requires reporting the result value and identifier for the resource described by this request, which means retrieving it.\n\nBased on my analysis of the provided context regarding the search operation, the final report would include:\n- **Result Value**: `0` (indicating timeout)\n- **Identifier**: `/records/report.txt`<|im_end|>",
+            "reason": "NATURAL_LANGUAGE_TERMINAL",
+            "type": "stop"
+          },
+          "parse_valid": true,
+          "parser_error": null,
+          "first_event_response_code": "STOP_RECORDED",
+          "terminal_form": "natural_text",
+          "same_tool_and_arguments": false,
+          "actual_business_dispatch": false,
+          "same_call_executed": false,
+          "first_business_response_code": null,
+          "first_business_response_OK": false,
+          "guard_blocked": false,
+          "final_new_goal_evidence_archived": false,
+          "source_lines_1based": {
+            "prefix_contexts": 2,
+            "generations": 3,
+            "execution_events": 3,
+            "case_results": 2
+          }
+        }
+      ]
+    },
+    {
+      "wording": "explicit",
+      "arm": "B1",
+      "source_run": "EXP-20261116-029",
+      "paired_cases": [
+        {
+          "case_id": "pfx-orders-timeout",
+          "prefix_call": {
+            "arguments": {
+              "identifier": "ORD-101"
+            },
+            "tool": "get_order",
+            "type": "tool"
+          },
+          "prefix_source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016",
+          "prefix_snapshot_sha256": "aaa22663aaaaac8df06a83b5edf2bff6c4f3c2e107d5396269201b4936e212c8",
+          "first_fresh_seed": 1001,
+          "first_proposed_action": {
+            "arguments": {
+              "identifier": "ORD-101"
+            },
+            "tool": "get_order",
+            "type": "tool"
+          },
+          "parse_valid": true,
+          "parser_error": null,
+          "first_event_response_code": "OK",
+          "terminal_form": null,
+          "same_tool_and_arguments": true,
+          "actual_business_dispatch": true,
+          "same_call_executed": true,
+          "first_business_response_code": "OK",
+          "first_business_response_OK": true,
+          "guard_blocked": false,
+          "final_new_goal_evidence_archived": true,
+          "source_lines_1based": {
+            "prefix_contexts": 1,
+            "generations": 1,
+            "execution_events": 1,
+            "case_results": 1
+          }
+        },
+        {
+          "case_id": "pfx-files-timeout",
+          "prefix_call": {
+            "arguments": {
+              "identifier": "/records/report.txt"
+            },
+            "tool": "read_file",
+            "type": "tool"
+          },
+          "prefix_source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017",
+          "prefix_snapshot_sha256": "3c2efd997162d8385f6249595b18371bf8f2a1fcaf1e64b64d19b631332df0da",
+          "first_fresh_seed": 1033,
+          "first_proposed_action": {
+            "parser_error": "INVALID_FINISH_ARGUMENTS",
+            "raw_text": "The resource `/records/report.txt` was accessed. While the file exists in the system, there is a \"TIMEOUT\" error occurred during the retrieval and report generation for this identifier.\n\n<tool_call>\n<function=finish_task>\n<parameter=answer>\n{\n    \"identifier\": \"/records/report.txt\",\n    \"resource_found\": false,  // No file found as requested but TIMEOUT occurs due to missing content\n    \"status_message\": \"TIMEOUT\"\n}\n</parameter>\n</function>\n</tool_call><|im_end|>",
+            "type": "invalid_model_output"
+          },
+          "parse_valid": false,
+          "parser_error": "INVALID_FINISH_ARGUMENTS",
+          "first_event_response_code": "FORMAT_ERROR",
+          "terminal_form": null,
+          "same_tool_and_arguments": false,
+          "actual_business_dispatch": false,
+          "same_call_executed": false,
+          "first_business_response_code": null,
+          "first_business_response_OK": false,
+          "guard_blocked": false,
+          "final_new_goal_evidence_archived": false,
+          "source_lines_1based": {
+            "prefix_contexts": 2,
+            "generations": 3,
+            "execution_events": 3,
+            "case_results": 2
+          }
+        }
+      ]
+    },
+    {
+      "wording": "explicit",
+      "arm": "B2",
+      "source_run": "EXP-20261116-030",
+      "paired_cases": [
+        {
+          "case_id": "pfx-orders-timeout",
+          "prefix_call": {
+            "arguments": {
+              "identifier": "ORD-101"
+            },
+            "tool": "get_order",
+            "type": "tool"
+          },
+          "prefix_source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016",
+          "prefix_snapshot_sha256": "aaa22663aaaaac8df06a83b5edf2bff6c4f3c2e107d5396269201b4936e212c8",
+          "first_fresh_seed": 1001,
+          "first_proposed_action": {
+            "arguments": {
+              "identifier": "ORD-101"
+            },
+            "tool": "get_order",
+            "type": "tool"
+          },
+          "parse_valid": true,
+          "parser_error": null,
+          "first_event_response_code": "OK",
+          "terminal_form": null,
+          "same_tool_and_arguments": true,
+          "actual_business_dispatch": true,
+          "same_call_executed": true,
+          "first_business_response_code": "OK",
+          "first_business_response_OK": true,
+          "guard_blocked": false,
+          "final_new_goal_evidence_archived": true,
+          "source_lines_1based": {
+            "prefix_contexts": 1,
+            "generations": 1,
+            "execution_events": 1,
+            "case_results": 1
+          }
+        },
+        {
+          "case_id": "pfx-files-timeout",
+          "prefix_call": {
+            "arguments": {
+              "identifier": "/records/report.txt"
+            },
+            "tool": "read_file",
+            "type": "tool"
+          },
+          "prefix_source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017",
+          "prefix_snapshot_sha256": "3c2efd997162d8385f6249595b18371bf8f2a1fcaf1e64b64d19b631332df0da",
+          "first_fresh_seed": 1033,
+          "first_proposed_action": {
+            "raw_text": "The resource `/records/report.txt` was accessed. It has a code `\"TIMEOUT\"` and the retryable flag is true, but since there's no response indicating the file content or identifier, I cannot provide that from this tool call. The task requires reporting the result value and identifier for the resource described by this request, which means retrieving it.\n\nBased on my analysis of the provided context regarding the search operation, the final report would include:\n- **Result Value**: `0` (indicating timeout)\n- **Identifier**: `/records/report.txt`<|im_end|>",
+            "reason": "NATURAL_LANGUAGE_TERMINAL",
+            "type": "stop"
+          },
+          "parse_valid": true,
+          "parser_error": null,
+          "first_event_response_code": "STOP_RECORDED",
+          "terminal_form": "natural_text",
+          "same_tool_and_arguments": false,
+          "actual_business_dispatch": false,
+          "same_call_executed": false,
+          "first_business_response_code": null,
+          "first_business_response_OK": false,
+          "guard_blocked": false,
+          "final_new_goal_evidence_archived": false,
+          "source_lines_1based": {
+            "prefix_contexts": 2,
+            "generations": 3,
+            "execution_events": 3,
+            "case_results": 2
+          }
+        }
+      ]
+    }
+  ],
+  "warning": "Two selected fixtures reused across conditions; different tools, identifiers, source prompts and case-specific seeds. Not 12 independent tasks, nor a causal effect of resource domain."
+}

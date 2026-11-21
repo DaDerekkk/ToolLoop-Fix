@@ -1,0 +1,435 @@
+{
+  "by_category": {
+    "clarification": {
+      "case_count": 6,
+      "completable_count": 6,
+      "exact_grounded_structured_completion": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "has_invalid_loop": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 6,
+        "numerator": 6,
+        "value": 1.0
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 6,
+        "numerator": 6,
+        "value": 1.0
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "tool_goal_attainment": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "unrecoverable_count": 0
+    },
+    "normal": {
+      "case_count": 3,
+      "completable_count": 3,
+      "exact_grounded_structured_completion": {
+        "denominator": 3,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "has_invalid_loop": {
+        "denominator": 3,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 3,
+        "numerator": 3,
+        "value": 1.0
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 3,
+        "numerator": 2,
+        "value": 0.6666666666666666
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "tool_goal_attainment": {
+        "denominator": 3,
+        "numerator": 1,
+        "value": 0.3333333333333333
+      },
+      "unrecoverable_count": 0
+    },
+    "recoverable": {
+      "case_count": 6,
+      "completable_count": 6,
+      "exact_grounded_structured_completion": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "has_invalid_loop": {
+        "denominator": 6,
+        "numerator": 1,
+        "value": 0.16666666666666666
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 6,
+        "numerator": 3,
+        "value": 0.5
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 6,
+        "numerator": 3,
+        "value": 0.5
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "tool_goal_attainment": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "unrecoverable_count": 0
+    },
+    "retry_required": {
+      "case_count": 6,
+      "completable_count": 6,
+      "exact_grounded_structured_completion": {
+        "denominator": 6,
+        "numerator": 1,
+        "value": 0.16666666666666666
+      },
+      "exact_stop_reason_code": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "has_invalid_loop": {
+        "denominator": 6,
+        "numerator": 3,
+        "value": 0.5
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 6,
+        "numerator": 2,
+        "value": 0.3333333333333333
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 6,
+        "numerator": 3,
+        "value": 0.5
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "tool_goal_attainment": {
+        "denominator": 6,
+        "numerator": 1,
+        "value": 0.16666666666666666
+      },
+      "unrecoverable_count": 0
+    },
+    "unrecoverable": {
+      "case_count": 3,
+      "completable_count": 0,
+      "exact_grounded_structured_completion": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "exact_stop_reason_code": {
+        "denominator": 3,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop": {
+        "denominator": 3,
+        "numerator": 1,
+        "value": 0.3333333333333333
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 3,
+        "numerator": 2,
+        "value": 0.6666666666666666
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 3,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 3,
+        "numerator": 2,
+        "value": 0.6666666666666666
+      },
+      "tool_goal_attainment": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "unrecoverable_count": 3
+    }
+  },
+  "by_domain": {
+    "files": {
+      "case_count": 8,
+      "completable_count": 7,
+      "exact_grounded_structured_completion": {
+        "denominator": 7,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop": {
+        "denominator": 8,
+        "numerator": 3,
+        "value": 0.375
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 8,
+        "numerator": 5,
+        "value": 0.625
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 8,
+        "numerator": 5,
+        "value": 0.625
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "tool_goal_attainment": {
+        "denominator": 7,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "unrecoverable_count": 1
+    },
+    "jobs": {
+      "case_count": 8,
+      "completable_count": 7,
+      "exact_grounded_structured_completion": {
+        "denominator": 7,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_stop_reason_code": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop": {
+        "denominator": 8,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 8,
+        "numerator": 6,
+        "value": 0.75
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 8,
+        "numerator": 6,
+        "value": 0.75
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 1,
+        "numerator": 1,
+        "value": 1.0
+      },
+      "tool_goal_attainment": {
+        "denominator": 7,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "unrecoverable_count": 1
+    },
+    "orders": {
+      "case_count": 8,
+      "completable_count": 7,
+      "exact_grounded_structured_completion": {
+        "denominator": 7,
+        "numerator": 1,
+        "value": 0.14285714285714285
+      },
+      "exact_stop_reason_code": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop": {
+        "denominator": 8,
+        "numerator": 2,
+        "value": 0.25
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 8,
+        "numerator": 5,
+        "value": 0.625
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 8,
+        "numerator": 3,
+        "value": 0.375
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 1,
+        "numerator": 1,
+        "value": 1.0
+      },
+      "tool_goal_attainment": {
+        "denominator": 7,
+        "numerator": 2,
+        "value": 0.2857142857142857
+      },
+      "unrecoverable_count": 1
+    }
+  },
+  "comparison_arm": "B1",
+  "decoding_regime": "sampled_pp2",
+  "evidence_class": "model_inference",
+  "iter7_runner_version": "iter7_multiseed_and_templates_v1",
+  "metrics": {
+    "actual_tool_attempts": 56,
+    "budget_exhausted": {
+      "denominator": 24,
+      "numerator": 3,
+      "value": 0.125
+    },
+    "case_count": 24,
+    "exact_grounded_structured_completion": {
+      "denominator": 21,
+      "numerator": 1,
+      "value": 0.047619047619047616
+    },
+    "exact_stop_reason_code": {
+      "denominator": 3,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "generation_seconds": 264.0240814618883,
+    "guard_blocked_proposals": 0,
+    "has_invalid_loop": {
+      "denominator": 24,
+      "numerator": 5,
+      "value": 0.20833333333333334
+    },
+    "input_tokens": 91197,
+    "natural_termination_semantics_unknown": {
+      "denominator": 24,
+      "numerator": 16,
+      "value": 0.6666666666666666
+    },
+    "normal_exact_grounded_structured_completion": {
+      "denominator": 3,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "normal_tool_goal_attainment": {
+      "denominator": 3,
+      "numerator": 1,
+      "value": 0.3333333333333333
+    },
+    "output_tokens": 4676,
+    "parser_error_turn_rate": {
+      "denominator": 84,
+      "numerator": 7,
+      "value": 0.08333333333333333
+    },
+    "parser_error_turns": 7,
+    "premature_stop_without_goal_evidence": {
+      "denominator": 24,
+      "numerator": 14,
+      "value": 0.5833333333333334
+    },
+    "proposal_attempts": 63,
+    "proposed_repeat_count": 20,
+    "proposed_repeat_rate": {
+      "denominator": 63,
+      "numerator": 20,
+      "value": 0.31746031746031744
+    },
+    "retry_required_exact_grounded_structured_completion": {
+      "denominator": 6,
+      "numerator": 1,
+      "value": 0.16666666666666666
+    },
+    "retry_required_tool_goal_attainment": {
+      "denominator": 6,
+      "numerator": 1,
+      "value": 0.16666666666666666
+    },
+    "stop_reason_semantics_unknown": {
+      "denominator": 3,
+      "numerator": 3,
+      "value": 1.0
+    },
+    "stopped_after_public_unavailable": {
+      "denominator": 3,
+      "numerator": 2,
+      "value": 0.6666666666666666
+    },
+    "terminal_forms": {
+      "natural_text": 16,
+      "none": 3,
+      "structured_finish": 3,
+      "structured_stop": 2
+    },
+    "tool_goal_attainment": {
+      "denominator": 21,
+      "numerator": 2,
+      "value": 0.09523809523809523
+    },
+    "turns": 84,
+    "unsupported_finish_wrapper": {
+      "denominator": 24,
+      "numerator": 2,
+      "value": 0.08333333333333333
+    }
+  },
+  "mode": "end_to_end",
+  "protocol_version": "qwen_xml_or_native_terminal_v1",
+  "runner_subcommand": "explicit-e2e",
+  "score_version": "evidence_and_terminal_form_v1",
+  "task_wording_version": "read_report_literal_target_v1",
+  "warning": "24 development fixtures under frozen explicit read-and-report wording, one seed schedule; not held-out evaluation or training. Tool-goal evidence is not answer correctness; natural-language semantics remain unknown; B2 may mechanically suppress execution.",
+  "wording_profile": "explicit"
+}

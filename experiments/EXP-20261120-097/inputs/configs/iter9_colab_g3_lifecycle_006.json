@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "description": "ITER-009 Colab L4 multi-arm LoRA training lifecycle COLAB-20261120-006 (fixing COLAB-005 Qwen3.5 GatedDeltaNet pure-PyTorch activation OOM via non-reentrant activation checkpointing + exact completion-window lm_head slicing + SDPA + OOM micro-batch backoff; 10 adapters at symmetric 50/40 optimizer steps).",
+  "training_bundle_path": "experiments/EXP-20261120-062/public_colab_training_bundle.json",
+  "expected_bundle_sha256": "08d833addafcf94dcd07ff7ad229c82b3616e92cc34b5636d88d6864f6eda637",
+  "controller_sha256": "449bd317335eb42f2088dc734e24f22e1935019b5fde1eb757434e54339a74de",
+  "source_sha256": {
+    "lora_adapter.py": "861fb15b746161f505cf79340d95065a0c6c58e23f1ca1d33f5461a8cbdc4dbc",
+    "colab_g3_train_worker.py": "86bd588a6ae8e1a0ba309951b5739fa00a7448d8e9bb4d9ca17f4e83fa7a7bb4"
+  },
+  "wall_limit_seconds": 3600,
+  "poll_interval_seconds": 4.0,
+  "lora_rank": 4,
+  "lora_alpha": 8.0,
+  "micro_batch_sequences": 16,
+  "eval_batch_sequences": 24
+}

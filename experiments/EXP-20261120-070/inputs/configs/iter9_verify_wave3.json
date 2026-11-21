@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "description": "Offline provenance, session teardown, base-weight immutability, and 2-adapter Wave 3 (P_s202, P_s303) safetensors + tokenizer probe verification for operations/COLAB-20261120-011.",
+  "operation_dir": "operations/COLAB-20261120-011",
+  "adapters_dir": "models/adapters/iter9_g3_wave3",
+  "expected_bundle_sha256": "08d833addafcf94dcd07ff7ad229c82b3616e92cc34b5636d88d6864f6eda637",
+  "verify_local_load": true,
+  "verify_tokenizer_probes": true,
+  "archive_operation_sources": true
+}

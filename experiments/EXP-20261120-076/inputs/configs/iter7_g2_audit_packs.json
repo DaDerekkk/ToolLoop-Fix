@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "description": "ITER-007 deterministic G2 arm-blinded human semantic review pack and >=220-segment stratified loop-detector human audit pack across ITER-003, ITER-004, ITER-006, and ITER-007.",
+  "shuffle_seed": 20261119,
+  "model_runs": [
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016",
+      "manifest_sha256": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017",
+      "manifest_sha256": "ad0a479ed2ecdbbafe5a55a251b98434760a3e78e4d5f967ef81a6b2a77e4706"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-018",
+      "manifest_sha256": "c88fc548bac0cdceb62d7802ad15e4c1c72e3fef77dec7c9d46587410b5adfde"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-025",
+      "manifest_sha256": "65a9a56055266c47195896a775dbd2844fe7b5056f12f10a973488fe3af8f66a"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-026",
+      "manifest_sha256": "dd28651597aa9673c52c2347e0320bc426b88c6f59e8b23a99fbcab61736328e"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-027",
+      "manifest_sha256": "3984ed8b02ea5896e544e5c1f17adda19e54d04f91db6ad0c01e6c59577bb9cc"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-028",
+      "manifest_sha256": "2830dea9019d9b030e381fa42926b1a1c9bb4c44c9e693de8f69d1e839610718"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-029",
+      "manifest_sha256": "a27f2bef87e20543909d77524f8dcf2fba3d6419b47aae65b172df52efc397f7"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-030",
+      "manifest_sha256": "c363b5ca088acac7ad977b6601b24c7d536e67b5e62de37185b328a1bcaa539a"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-049",
+      "manifest_sha256": "59db9e1b4672b5455c827cc49cc236aeffac36031a456ff7782ce6995062fec5"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-050",
+      "manifest_sha256": "dfc7bfba1a92565495b286dae93a7100a014bfb4b34c445d74b97d23d359dc29"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-051",
+      "manifest_sha256": "ae05ec0502e8872eed20a8853a163ce7daf84593d97459b2b92d1f1df9e9caa2"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-052",
+      "manifest_sha256": "ea651a824f4a1f92e04882ff63e5a4db6cd13eb1715c10aeb2d569169a4169fb"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-053",
+      "manifest_sha256": "38e44917795632c26d33288c6cf444728950241486541f9940f6ac70c80369f1"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-054",
+      "manifest_sha256": "c749cfb7972b9174868db1fc7e0233528ef73ea2b59a437c400d0ccdd7ee2c4d"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-055",
+      "manifest_sha256": "ec20333c835a28d9ec2b7985f2e7886dfd5260b0d310dc1427261bbcc9950fff"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-056",
+      "manifest_sha256": "8a8ae9f503ed486f8f81618c46aebeb1ad5161d7b30f56ccbf7fd5a68dfb69f1"
+    }
+  ],
+  "cpu_first_step_runs": [
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-043",
+      "manifest_sha256": "3e710409bc254e0f091ccc9fde28e6f39ebc49e1ea5fc0195d1593136945111b"
+    }
+  ],
+  "synthetic_runs": [
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-004",
+      "manifest_sha256": "f21099acaaaa6a8ca5968aa0809be174d1334b338d81d48de50ac94510e9f9d3"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-047",
+      "manifest_sha256": "fa3c1d21e23f0c328a8f28c67c46d1a6f6ef7e900223f3b669ebcc0234c9dd77"
+    }
+  ]
+}

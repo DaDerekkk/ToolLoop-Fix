@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "description": "ITER-009 pre-COLAB-006 unit test freeze verifying non-reentrant activation checkpointing + completion-window lm_head parity across all 326 repository tests inside frozen inputs/."
+}

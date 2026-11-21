@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "analysis",
+  "authorization": "2026-11-16 user explicitly requested installation, weights download, and real execution",
+  "uv": "/Users/derek/.local/bin/uv",
+  "python_version": "3.12",
+  "packages": ["torch==2.15.0", "transformers==5.23.0"],
+  "isolation": "project runtime/python + .venv; no global package changes",
+  "model_id": "Qwen/Qwen3.5-0.8B",
+  "revision": "2fc06364715b967f1860aea9cf38778875588b17"
+}

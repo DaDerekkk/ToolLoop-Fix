@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "description": "ITER-008 G2 finalization under explicit user-delegated silver arbitration (zero human-gold spoofing): freezes loop_detector_v2 (100% precision, 98.8% recall, 0% legal retry/poll FPR).",
+  "comparison_run": {
+    "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-060",
+    "manifest_sha256": "e351badf8a7a699fbdc8d715fe5e4ebdda8bd1281cd56a10bd0b9846940b3a1d"
+  },
+  "rulings_sha256": "30619ca8d99feb1fb113c21dbe43f25b6b3ecf11a1a2559070ccd141b8130659",
+  "governance_mode": "user-delegated-silver"
+}

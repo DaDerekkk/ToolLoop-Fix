@@ -1,0 +1,232 @@
+{
+  "adapters_dir": "/Users/derek/Documents/ChatGPT/LLM 作业/models/adapters/iter9_g3_wave2",
+  "archived_operation_sources": {
+    "armed.txt": "927e6baa76b7e728893800e6b2c5db12295afec8cf4dde25e6b29d398ef638d8",
+    "g3_training_receipt.json": "14c8ed8664ab489d0873c8f5a81eb7fca7e7b57c17abc0d199d18499773c338b",
+    "lifecycle.jsonl": "4b43b0b156f745ec28d08d00ff808dc33a84fd2941648451fc4e0ca258dc6789",
+    "sentinel.json": "5a23a4d5f0d750f756be583fc03105449d043d4d5084d123f4d3afda06da3156",
+    "sources__train_job_config.json": "cca8daa0d8593d1788b1315ef46bc88e2bc5f9a7192a3f1b81a9086e9f6044e7"
+  },
+  "evidence_class": "analysis",
+  "lifecycle_audit": {
+    "account_assignments": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "account_balances_cu": [
+      2686.85,
+      2686.85,
+      2684.68
+    ],
+    "account_rates_cu_hr": [
+      8.88,
+      10.82,
+      1.94
+    ],
+    "gross_elapsed_seconds": 1746.12,
+    "observed_worker_stages": [
+      "install_transformers",
+      "runtime_check",
+      "anonymous_public_download",
+      "load_base_model",
+      "tokenize_and_precompute_ref",
+      "train_P_no_retry_s101",
+      "train_P_no_normal_s101",
+      "train_B3_s202",
+      "train_B3_s303",
+      "pack_chunks",
+      "receipt_published_completed"
+    ],
+    "original_set_unchanged": true,
+    "owned_absent": true,
+    "owned_released": true,
+    "reassembled_event_count": 4,
+    "receipt_nonce": "2e73409dc1aa483f99cbde17d394b21c",
+    "recorded_receipt_sha256": "14c8ed8664ab489d0873c8f5a81eb7fca7e7b57c17abc0d199d18499773c338b",
+    "session_name": "tlfix-2e73409dc1aa",
+    "two_way_sentinel_identical": true
+  },
+  "local_model_manifest_sha256": "049c3d159e86cf1492a8020d5a95f8d0b92c13091fc82891ce12979c26899d2d",
+  "operation_dir": "/Users/derek/Documents/ChatGPT/LLM 作业/operations/COLAB-20261120-010",
+  "receipt_and_adapter_audit": {
+    "adapter_count": 4,
+    "adapters": [
+      {
+        "adapter_id": "P_no_retry_s101",
+        "adapter_manifest_sha256": "c1918e9eb863d8ac87b78bec5491f458ca6a42ddd1d256d3b714c064e03e8a67",
+        "arm": "P_no_retry",
+        "dataset": "p_ablation_no_legal_retry.jsonl",
+        "epoch_mean_losses": [
+          0.171036
+        ],
+        "example_count": 320,
+        "final_loss": 0.014953,
+        "initial_loss": 0.724137,
+        "local_load_verified": true,
+        "loss_decreased": true,
+        "max_memory_allocated_bytes": 5940491264,
+        "max_memory_allocated_mib": 5665.29,
+        "nonzero_lora_b_modules": 186,
+        "objective": "dpo",
+        "optimizer_steps": 40,
+        "post_train_mean_reward_margin": 8.665044,
+        "post_train_reward_accuracy": 0.99375,
+        "probe_first_line": "<tool_call>",
+        "probe_output_tokens": 37,
+        "probe_tokenizer_verified": true,
+        "safetensors_sha256": "5f29de60f21673ddc8e3e25c14fb30f53d7b6cf81864a783ba02e31e856fa209",
+        "safetensors_size_bytes": 5452480,
+        "seed": 101,
+        "tensor_count": 372,
+        "total_completion_tokens": 23017,
+        "total_train_tokens": 584581,
+        "train_wall_seconds": 376.6951
+      },
+      {
+        "adapter_id": "P_no_normal_s101",
+        "adapter_manifest_sha256": "84955f441dda5f05ab6797774490dd8f6100607fc3dd8ed8d16d2ef50245e3b3",
+        "arm": "P_no_normal",
+        "dataset": "p_ablation_no_normal_retention.jsonl",
+        "epoch_mean_losses": [
+          0.194744
+        ],
+        "example_count": 320,
+        "final_loss": 0.020566,
+        "initial_loss": 0.72972,
+        "local_load_verified": true,
+        "loss_decreased": true,
+        "max_memory_allocated_bytes": 5539913728,
+        "max_memory_allocated_mib": 5283.27,
+        "nonzero_lora_b_modules": 186,
+        "objective": "dpo",
+        "optimizer_steps": 40,
+        "post_train_mean_reward_margin": 9.072987,
+        "post_train_reward_accuracy": 0.99375,
+        "probe_first_line": "<tool_call>",
+        "probe_output_tokens": 27,
+        "probe_tokenizer_verified": true,
+        "safetensors_sha256": "2a0478ae9e5256f7ffc58a88dea83d53355e962edbad729972d2768cd5670fb2",
+        "safetensors_size_bytes": 5452488,
+        "seed": 101,
+        "tensor_count": 372,
+        "total_completion_tokens": 21115,
+        "total_train_tokens": 592347,
+        "train_wall_seconds": 290.5877
+      },
+      {
+        "adapter_id": "B3_s202",
+        "adapter_manifest_sha256": "f443435f3cd0a79eea43328771806b76172769a68d02730b0a74ea7b85a6e92e",
+        "arm": "B3",
+        "dataset": "b3_error_sft.jsonl",
+        "epoch_mean_losses": [
+          0.011512
+        ],
+        "example_count": 400,
+        "final_loss": 3.4e-05,
+        "initial_loss": 0.156036,
+        "local_load_verified": true,
+        "loss_decreased": true,
+        "max_memory_allocated_bytes": 3833969152,
+        "max_memory_allocated_mib": 3656.36,
+        "nonzero_lora_b_modules": 186,
+        "objective": "sft",
+        "optimizer_steps": 50,
+        "post_train_mean_reward_margin": null,
+        "post_train_reward_accuracy": null,
+        "probe_first_line": "<tool_call>",
+        "probe_output_tokens": 37,
+        "probe_tokenizer_verified": true,
+        "safetensors_sha256": "27232edca47d2adb666038fbac78b2ceac6c902e0e4e627d1c05a88b3a914e74",
+        "safetensors_size_bytes": 5452424,
+        "seed": 202,
+        "tensor_count": 372,
+        "total_completion_tokens": 14567,
+        "total_train_tokens": 371563,
+        "train_wall_seconds": 228.7621
+      },
+      {
+        "adapter_id": "B3_s303",
+        "adapter_manifest_sha256": "91c25aecf324513328ae3ecdbaa54251f0744089ba97163d9b047569d6da7ec7",
+        "arm": "B3",
+        "dataset": "b3_error_sft.jsonl",
+        "epoch_mean_losses": [
+          0.012154
+        ],
+        "example_count": 400,
+        "final_loss": 3.4e-05,
+        "initial_loss": 0.156036,
+        "local_load_verified": true,
+        "loss_decreased": true,
+        "max_memory_allocated_bytes": 3848580096,
+        "max_memory_allocated_mib": 3670.29,
+        "nonzero_lora_b_modules": 186,
+        "objective": "sft",
+        "optimizer_steps": 50,
+        "post_train_mean_reward_margin": null,
+        "post_train_reward_accuracy": null,
+        "probe_first_line": "<tool_call>",
+        "probe_output_tokens": 37,
+        "probe_tokenizer_verified": true,
+        "safetensors_sha256": "a084bf684c1ad16b45ece79ef14da945edb8777f5204b162415898fc13e86f81",
+        "safetensors_size_bytes": 5452424,
+        "seed": 303,
+        "tensor_count": 372,
+        "total_completion_tokens": 14567,
+        "total_train_tokens": 371563,
+        "train_wall_seconds": 176.0847
+      }
+    ],
+    "base_weights_unchanged": true,
+    "final_base_weight_digest": "b8cb99011cc6c0ce9097ad8b40bceacbe3e4131bfed6f10f863073b7b42bd241",
+    "gpu": {
+      "compute_capability": [
+        8,
+        9
+      ],
+      "memory_bytes": 23659151360,
+      "name": "NVIDIA L4"
+    },
+    "initial_base_weight_digest": "b8cb99011cc6c0ce9097ad8b40bceacbe3e4131bfed6f10f863073b7b42bd241",
+    "lora_injection": {
+      "adapter_version": "pure_pytorch_qwen35_text_lora_v1",
+      "alpha": 8.0,
+      "matched_module_count": 186,
+      "module_prefix": "model.language_model.",
+      "rank": 4,
+      "trainable_param_count": 2705664
+    },
+    "receipt_sha256": "14c8ed8664ab489d0873c8f5a81eb7fca7e7b57c17abc0d199d18499773c338b",
+    "runtime": {
+      "cuda_version": "13.0",
+      "execution_mode": "colab_l4_cuda_bf16",
+      "fla_triton_enabled": true,
+      "packages": {
+        "fla-core": "0.6.0",
+        "flash-linear-attention": "0.6.0",
+        "huggingface-hub": "1.33.0",
+        "safetensors": "0.8.0",
+        "tokenizers": "0.23.3",
+        "torch": "2.14.1+cu130",
+        "transformers": "5.23.0"
+      },
+      "python": "3.13.16",
+      "tf32_enabled": true
+    },
+    "training_bundle": {
+      "bundle_sha256": "08d833addafcf94dcd07ff7ad229c82b3616e92cc34b5636d88d6864f6eda637",
+      "bundle_size_bytes": 13305451,
+      "bundle_zlib_sha256": "9bf9ad48082db05b7420e3acec90ad25ea1207e3a6a38ab41ecd062c1f7104d4",
+      "bundle_zlib_size_bytes": 288581,
+      "dataset_governance_tier": "user_delegated_triple_blind_silver_adjudication_v1",
+      "g2_frozen_verdict_sha256": "678c59e7604957c12fde10fe22318a1996bbc7e22d3c553198945052f8ab610a",
+      "g3_dataset_ready": true,
+      "schema_version": "iter8_g3_action_preference_v1"
+    },
+    "worker_wall_seconds": 1609.5478
+  },
+  "remote_evidence_source": "remote_colab_l4_model_training",
+  "schema_version": "iter9_colab_g3_verification_v1",
+  "verified": true,
+  "verify_local_load_performed": true
+}

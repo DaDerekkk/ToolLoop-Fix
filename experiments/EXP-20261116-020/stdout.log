@@ -1,0 +1,126 @@
+{
+  "checks": {
+    "shared_runtime_code_hashes": true,
+    "shared_common_config": true,
+    "paired_case_seeds": true,
+    "all_source_output_hashes": true,
+    "all_source_input_hashes": true,
+    "shared_actual_provenance": true,
+    "shared_case_data_and_metadata": true,
+    "identical_B0_B2_prompt": true
+  },
+  "paired_against_B0": {
+    "B1": {
+      "tool_goal_attainment": {
+        "wins": {
+          "count": 0,
+          "case_ids": []
+        },
+        "ties": {
+          "count": 12,
+          "case_ids": [
+            "orders-normal-001",
+            "orders-recoverable-001",
+            "orders-retry_required-001",
+            "orders-clarification-001",
+            "files-normal-001",
+            "files-recoverable-001",
+            "files-retry_required-001",
+            "files-clarification-001",
+            "jobs-normal-001",
+            "jobs-recoverable-001",
+            "jobs-retry_required-001",
+            "jobs-clarification-001"
+          ]
+        },
+        "losses": {
+          "count": 0,
+          "case_ids": []
+        }
+      },
+      "exact_grounded_structured_completion": {
+        "wins": {
+          "count": 0,
+          "case_ids": []
+        },
+        "ties": {
+          "count": 12,
+          "case_ids": [
+            "orders-normal-001",
+            "orders-recoverable-001",
+            "orders-retry_required-001",
+            "orders-clarification-001",
+            "files-normal-001",
+            "files-recoverable-001",
+            "files-retry_required-001",
+            "files-clarification-001",
+            "jobs-normal-001",
+            "jobs-recoverable-001",
+            "jobs-retry_required-001",
+            "jobs-clarification-001"
+          ]
+        },
+        "losses": {
+          "count": 0,
+          "case_ids": []
+        }
+      }
+    },
+    "B2": {
+      "tool_goal_attainment": {
+        "wins": {
+          "count": 0,
+          "case_ids": []
+        },
+        "ties": {
+          "count": 12,
+          "case_ids": [
+            "orders-normal-001",
+            "orders-recoverable-001",
+            "orders-retry_required-001",
+            "orders-clarification-001",
+            "files-normal-001",
+            "files-recoverable-001",
+            "files-retry_required-001",
+            "files-clarification-001",
+            "jobs-normal-001",
+            "jobs-recoverable-001",
+            "jobs-retry_required-001",
+            "jobs-clarification-001"
+          ]
+        },
+        "losses": {
+          "count": 0,
+          "case_ids": []
+        }
+      },
+      "exact_grounded_structured_completion": {
+        "wins": {
+          "count": 0,
+          "case_ids": []
+        },
+        "ties": {
+          "count": 12,
+          "case_ids": [
+            "orders-normal-001",
+            "orders-recoverable-001",
+            "orders-retry_required-001",
+            "orders-clarification-001",
+            "files-normal-001",
+            "files-recoverable-001",
+            "files-retry_required-001",
+            "files-clarification-001",
+            "jobs-normal-001",
+            "jobs-recoverable-001",
+            "jobs-retry_required-001",
+            "jobs-clarification-001"
+          ]
+        },
+        "losses": {
+          "count": 0,
+          "case_ids": []
+        }
+      }
+    }
+  }
+}

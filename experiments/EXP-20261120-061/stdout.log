@@ -1,0 +1,8 @@
+{
+  "mode": "finalize-g2",
+  "output_dir": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261120-061",
+  "g2_frozen_verdict_sha256": "678c59e7604957c12fde10fe22318a1996bbc7e22d3c553198945052f8ab610a",
+  "g2_passed": true,
+  "frozen_detector_version": "nonretryable_repeat_without_progress_v2",
+  "dataset_governance_tier": "user_delegated_triple_blind_silver_adjudication_v1"
+}

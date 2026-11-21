@@ -1,0 +1,69 @@
+{
+  "evidence_kind": "analysis",
+  "operation": "COLAB-20261119-004",
+  "purpose": "Archive the detached L4 operation regardless of outcome and independently verify the original public receipt; no local generation or remote calls.",
+  "local_model_dir": "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/models/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17",
+  "frozen_checker_sha256": "2495d0ec8aa01251af167b6115ee5680d2b4f9baff004a31e35c94ae228a017d",
+  "sources": [
+    {
+      "name": "lifecycle.py",
+      "path": "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/operations/COLAB-20261119-004/lifecycle.py",
+      "sha256": "a6048faeb8b120d946e0cc54f4cd17e55f3a8ae9b90f60d6d8932b3a0682886d"
+    },
+    {
+      "name": "lifecycle.jsonl",
+      "path": "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/operations/COLAB-20261119-004/lifecycle.jsonl",
+      "sha256": "6a249a07db186b6d6b9ac1ceb62f22cf069699873b3dca57f183e51dc5a1902e"
+    },
+    {
+      "name": "worker.py",
+      "path": "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/operations/COLAB-20261119-004/worker.py",
+      "sha256": "8a4c1b5f54da0c2956b3623e554f49b05ccaee290c152f11687f9852b7669627"
+    },
+    {
+      "name": "sentinel.json",
+      "path": "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/operations/COLAB-20261119-004/sentinel.json",
+      "sha256": "6a1be2b1dd786f63a0e32a5bf3713c89b9d2beb3f31377577adbda91e50f7c35"
+    },
+    {
+      "name": "armed.txt",
+      "path": "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/operations/COLAB-20261119-004/armed.txt",
+      "sha256": "a8e78a871a03c4b59902d37f1b8aa318386a43b4ce7704bc0fe7f339cfecd13c"
+    },
+    {
+      "name": "toolloop_probe.json",
+      "path": "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/operations/COLAB-20261119-004/toolloop_probe.json",
+      "sha256": "f5b94cce271fbcac8baee2bd4dc485c04166a35981bec4c015c5493d0db29e6f"
+    },
+    {
+      "name": "preflight_manifest.json",
+      "path": "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/experiments/EXP-20261119-041/manifest.json",
+      "sha256": "af4582a21c7ba614348cf249bf340b2b7db735eb23bb30300bc40386b10db7d0"
+    },
+    {
+      "name": "preflight_config.json",
+      "path": "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/experiments/EXP-20261119-041/config.json",
+      "sha256": "8231ef8dfd3da05634ac6667d285f19e1920c3b331a83d8e91684d2bfe2885af"
+    },
+    {
+      "name": "probe.py",
+      "path": "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/experiments/EXP-20261119-041/inputs/scripts/colab_inference_probe.py",
+      "sha256": "99172529772f33e31d955c9f5dacfee448aa6f15326b3c030c6dbf3c8832401b"
+    },
+    {
+      "name": "tx.py",
+      "path": "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/experiments/EXP-20261119-041/inputs/scripts/colab_receipt_transport.py",
+      "sha256": "4deb6bef46d5b011239b6a6e26ff55b66070443abb6a080bb9cac5c0283c8b64"
+    },
+    {
+      "name": "session_helpers.py",
+      "path": "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/experiments/EXP-20261119-035/operation_sources/lifecycle.py",
+      "sha256": "34d37ff12069f1136ed1a6c01ba5c23ed4a15e5d41463654402366a0ba0f9cde"
+    },
+    {
+      "name": "iteration6_l4_execution.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM \u4f5c\u4e1a/agents/reviews/iteration6_l4_execution.md",
+      "sha256": "6e54887118db2079f11e39752d4f11b80c1dd7c5d0ea63cc069e44cf23eaffdf"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "evidence_kind": "analysis",
+  "purpose": "Official tokenizer rendering and matched prefix conditions before model generation",
+  "inference_configs": [
+    "configs/prefix_legacy_b0.json",
+    "configs/prefix_legacy_b1.json",
+    "configs/prefix_legacy_b2.json",
+    "configs/prefix_explicit_b0.json",
+    "configs/prefix_explicit_b1.json",
+    "configs/prefix_explicit_b2.json"
+  ]
+}

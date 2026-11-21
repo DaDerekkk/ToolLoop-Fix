@@ -1,0 +1,182 @@
+[
+  {
+    "source_line": 1,
+    "case_id": "iter6-cross-01",
+    "tool": "get_order",
+    "identifier": "R-17",
+    "code": "TIMEOUT",
+    "observed_form": "natural_text",
+    "action": {
+      "type": "stop",
+      "reason": "NATURAL_LANGUAGE_TERMINAL",
+      "raw_text": "The record for identifier \"R-17\" was not found. The tool returned a timeout error with a retryable status.<|im_end|>"
+    },
+    "parser_error": null,
+    "result": "natural_semantics_unknown"
+  },
+  {
+    "source_line": 2,
+    "case_id": "iter6-cross-02",
+    "tool": "get_order",
+    "identifier": "R-17",
+    "code": "OK",
+    "observed_form": "natural_text",
+    "action": {
+      "type": "stop",
+      "reason": "NATURAL_LANGUAGE_TERMINAL",
+      "raw_text": "The record for identifier R-17 has the value \"amber\".<|im_end|>"
+    },
+    "parser_error": null,
+    "result": "natural_semantics_unknown"
+  },
+  {
+    "source_line": 3,
+    "case_id": "iter6-cross-03",
+    "tool": "get_order",
+    "identifier": "R-17",
+    "code": "RESOURCE_UNAVAILABLE",
+    "observed_form": "natural_text",
+    "action": {
+      "type": "stop",
+      "reason": "NATURAL_LANGUAGE_TERMINAL",
+      "raw_text": "The record for identifier \"R-17\" has the following value and identifier:\n- **Value**: RESOURCE_UNAVAILABLE\n- **Identifier**: R-17<|im_end|>"
+    },
+    "parser_error": null,
+    "result": "natural_semantics_unknown"
+  },
+  {
+    "source_line": 4,
+    "case_id": "iter6-cross-04",
+    "tool": "get_order",
+    "identifier": "R-42",
+    "code": "TIMEOUT",
+    "observed_form": "natural_text",
+    "action": {
+      "type": "stop",
+      "reason": "NATURAL_LANGUAGE_TERMINAL",
+      "raw_text": "The record with identifier \"R-42\" has a timeout error.<|im_end|>"
+    },
+    "parser_error": null,
+    "result": "natural_semantics_unknown"
+  },
+  {
+    "source_line": 5,
+    "case_id": "iter6-cross-05",
+    "tool": "get_order",
+    "identifier": "R-42",
+    "code": "OK",
+    "observed_form": "natural_text",
+    "action": {
+      "type": "stop",
+      "reason": "NATURAL_LANGUAGE_TERMINAL",
+      "raw_text": "The record R-42 has the value \"amber\".<|im_end|>"
+    },
+    "parser_error": null,
+    "result": "natural_semantics_unknown"
+  },
+  {
+    "source_line": 6,
+    "case_id": "iter6-cross-06",
+    "tool": "get_order",
+    "identifier": "R-42",
+    "code": "RESOURCE_UNAVAILABLE",
+    "observed_form": "natural_text",
+    "action": {
+      "type": "stop",
+      "reason": "NATURAL_LANGUAGE_TERMINAL",
+      "raw_text": "The record for identifier \"R-42\" has the value \"RESOURCE_UNAVAILABLE\" and the code is \"RESOURCE_UNAVAILABLE\".<|im_end|>"
+    },
+    "parser_error": null,
+    "result": "natural_semantics_unknown"
+  },
+  {
+    "source_line": 7,
+    "case_id": "iter6-cross-07",
+    "tool": "read_file",
+    "identifier": "R-17",
+    "code": "TIMEOUT",
+    "observed_form": "natural_text",
+    "action": {
+      "type": "stop",
+      "reason": "NATURAL_LANGUAGE_TERMINAL",
+      "raw_text": "The record R-17 has a timeout error.<|im_end|>"
+    },
+    "parser_error": null,
+    "result": "natural_semantics_unknown"
+  },
+  {
+    "source_line": 8,
+    "case_id": "iter6-cross-08",
+    "tool": "read_file",
+    "identifier": "R-17",
+    "code": "OK",
+    "observed_form": "natural_text",
+    "action": {
+      "type": "stop",
+      "reason": "NATURAL_LANGUAGE_TERMINAL",
+      "raw_text": "The record R-17 has the value \"amber\".<|im_end|>"
+    },
+    "parser_error": null,
+    "result": "natural_semantics_unknown"
+  },
+  {
+    "source_line": 9,
+    "case_id": "iter6-cross-09",
+    "tool": "read_file",
+    "identifier": "R-17",
+    "code": "RESOURCE_UNAVAILABLE",
+    "observed_form": "natural_text",
+    "action": {
+      "type": "stop",
+      "reason": "NATURAL_LANGUAGE_TERMINAL",
+      "raw_text": "The record R-17 has the value \"RESOURCE_UNAVAILABLE\" and the identifier is \"R-17\".<|im_end|>"
+    },
+    "parser_error": null,
+    "result": "natural_semantics_unknown"
+  },
+  {
+    "source_line": 10,
+    "case_id": "iter6-cross-10",
+    "tool": "read_file",
+    "identifier": "R-42",
+    "code": "TIMEOUT",
+    "observed_form": "natural_text",
+    "action": {
+      "type": "stop",
+      "reason": "NATURAL_LANGUAGE_TERMINAL",
+      "raw_text": "The record R-42 has a timeout error.<|im_end|>"
+    },
+    "parser_error": null,
+    "result": "natural_semantics_unknown"
+  },
+  {
+    "source_line": 11,
+    "case_id": "iter6-cross-11",
+    "tool": "read_file",
+    "identifier": "R-42",
+    "code": "OK",
+    "observed_form": "natural_text",
+    "action": {
+      "type": "stop",
+      "reason": "NATURAL_LANGUAGE_TERMINAL",
+      "raw_text": "The record R-42 has the value \"amber\".<|im_end|>"
+    },
+    "parser_error": null,
+    "result": "natural_semantics_unknown"
+  },
+  {
+    "source_line": 12,
+    "case_id": "iter6-cross-12",
+    "tool": "read_file",
+    "identifier": "R-42",
+    "code": "RESOURCE_UNAVAILABLE",
+    "observed_form": "natural_text",
+    "action": {
+      "type": "stop",
+      "reason": "NATURAL_LANGUAGE_TERMINAL",
+      "raw_text": "The record R-42 has the value \"RESOURCE_UNAVAILABLE\" and the identifier is \"R-42\".<|im_end|>"
+    },
+    "parser_error": null,
+    "result": "natural_semantics_unknown"
+  }
+]

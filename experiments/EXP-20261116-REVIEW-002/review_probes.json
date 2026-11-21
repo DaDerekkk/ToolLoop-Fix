@@ -1,0 +1,128 @@
+{
+  "all_unit_tests_exit_code": 0,
+  "frozen_cwd": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-REVIEW-002/inputs",
+  "checks": {
+    "total_budget": {
+      "tool_attempts": 12,
+      "prefix_tool_attempts": 1,
+      "continuation_tool_attempts": 11,
+      "remaining_tool_budget_at_start": 11,
+      "budget_scope": "total_including_prefix"
+    },
+    "exact_budget_prefix": {
+      "continuation_attempts": 0,
+      "success": false
+    },
+    "over_budget_prefix": "curated prefix exceeds total tool or turn budget",
+    "timeout_2": {
+      "success": true,
+      "loop": false,
+      "codes": [
+        "TIMEOUT",
+        "TIMEOUT",
+        "OK",
+        "FINAL_RECORDED"
+      ]
+    },
+    "timeout_5": {
+      "success": false,
+      "loop": true,
+      "codes": [
+        "TIMEOUT",
+        "TIMEOUT",
+        "TIMEOUT",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED",
+        "RETRY_LIMIT_EXCEEDED"
+      ]
+    },
+    "polls_3": {
+      "success": true,
+      "loop": false,
+      "codes": [
+        "PRECONDITION",
+        "RUNNING",
+        "RUNNING",
+        "READY",
+        "OK",
+        "FINAL_RECORDED"
+      ]
+    },
+    "polls_5": {
+      "success": false,
+      "loop": true,
+      "codes": [
+        "PRECONDITION",
+        "RUNNING",
+        "RUNNING",
+        "RUNNING",
+        "RETRY_LIMIT_EXCEEDED",
+        "PRECONDITION",
+        "RETRY_LIMIT_EXCEEDED",
+        "PRECONDITION",
+        "RETRY_LIMIT_EXCEEDED",
+        "PRECONDITION",
+        "RETRY_LIMIT_EXCEEDED",
+        "PRECONDITION"
+      ]
+    },
+    "inherited_loop": {
+      "inherited": [
+        {
+          "index": 1,
+          "type": "identical_or_equivalent_repeat"
+        },
+        {
+          "index": 2,
+          "type": "identical_or_equivalent_repeat"
+        }
+      ],
+      "continuation": []
+    },
+    "cross_boundary_loop": {
+      "index": 1,
+      "type": "identical_or_equivalent_repeat"
+    },
+    "unnecessary_help": {
+      "success": true,
+      "unnecessary_clarification": true,
+      "unnecessary_clarification_count": 1,
+      "premature_abandonment": true
+    },
+    "repeat_help_snapshot": true,
+    "all_15_public_boundaries": true,
+    "all_fixed_prefix_pairing": true,
+    "independent_replay_hashes": [
+      {
+        "original": "EXP-20261116-004",
+        "replay": "EXP-20261116-005",
+        "equal_hashes": {
+          "trajectories.jsonl": "54e818e74b1f7c0a05baaea01b85538ff13eaa1161293242afbb697e27466c79",
+          "case_results.jsonl": "b119e4c1b0ac14b860a51c3a0d4b4a1dfd73ca6182404cf4719519068d04eb73",
+          "metrics.json": "8b4873c5aa7993051be95e279d82c8d427f33e32b2da8eccae238ebc79978d1f"
+        }
+      },
+      {
+        "original": "EXP-20261116-002",
+        "replay": "EXP-20261116-006",
+        "equal_hashes": {
+          "trajectories.jsonl": "dfcf5852192c81a7c9d4408c77f7f36ed3633644e79b023612215d32cfe91ddc",
+          "case_results.jsonl": "d53f23e71b3d32375d995eda7d84a574258cbbeef687021e1d55e6c0bb4854bb",
+          "metrics.json": "3c4706539c88cfd8707c634bd4bfa855930379280d78ca24c184c4d6d418c87b"
+        }
+      }
+    ],
+    "known_unimplemented_semantic_kind_crosscheck": {
+      "config_evidence_kind": "analysis",
+      "manifest_kind": "model_inference",
+      "validator_errors": [],
+      "limitation": "generic recorder does not prove model execution or cross-validate semantic evidence kind"
+    }
+  }
+}

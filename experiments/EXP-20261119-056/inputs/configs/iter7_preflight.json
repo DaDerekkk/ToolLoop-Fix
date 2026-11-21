@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "description": "ITER-007 pre-execution joint unit test gate and grouped split determinism verification; zero model inference or training."
+}

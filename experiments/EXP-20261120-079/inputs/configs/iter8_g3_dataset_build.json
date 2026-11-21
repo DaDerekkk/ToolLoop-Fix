@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "description": "ITER-008 G3 dataset generation strictly from dev_InDomain_candidate_pool (orders+files, 14 template_groups, N=400 verified decision points): P, B3, B4, B5 + 2 ablations + cloud-safe public_colab_training_bundle.json.",
+  "g2_verdict_path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261120-061/g2_frozen_verdict.json",
+  "g2_verdict_sha256": "678c59e7604957c12fde10fe22318a1996bbc7e22d3c553198945052f8ab610a",
+  "split_manifest_relpath": "data/processed/grouped_split_manifest_ITER007.json",
+  "tokenizer_mode": "transformers",
+  "model_path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17",
+  "shuffle_seed": 20261120
+}

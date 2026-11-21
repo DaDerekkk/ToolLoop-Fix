@@ -1,0 +1,9 @@
+{
+  "evidence_kind": "model_inference",
+  "exit_code": 0,
+  "started_at_utc": "2026-11-19T08:19:37.569217+00:00",
+  "ended_at_utc": "2026-11-19T08:22:58.732369+00:00",
+  "elapsed_seconds": 201.1627384169842,
+  "training": false,
+  "business_dispatches": 0
+}

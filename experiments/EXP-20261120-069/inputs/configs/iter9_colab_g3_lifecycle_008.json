@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "description": "ITER-009 Colab L4 multi-arm LoRA training lifecycle COLAB-20261120-008 (installing fla-core==0.6.0 + flash-linear-attention==0.6.0 + einops pure-Python Triton kernels with Qwen3.5 head_dim=128 CUDA smoke verification and explicit runtime_check_fla_on/off stage reporting; preserving COLAB-005..007 untouched).",
+  "training_bundle_path": "experiments/EXP-20261120-062/public_colab_training_bundle.json",
+  "expected_bundle_sha256": "08d833addafcf94dcd07ff7ad229c82b3616e92cc34b5636d88d6864f6eda637",
+  "controller_sha256": "1dba84bcaca7008d24df8be40d60c0dd859867e6445f73700f8da4dc8470ac1d",
+  "source_sha256": {
+    "lora_adapter.py": "861fb15b746161f505cf79340d95065a0c6c58e23f1ca1d33f5461a8cbdc4dbc",
+    "colab_g3_train_worker.py": "c259f90951a371dc5e7193ba01457d0eef5502cb1b8d6f70b867260f01eb4e05"
+  },
+  "wall_limit_seconds": 3600,
+  "poll_interval_seconds": 4.0,
+  "keepalive_interval_seconds": 120.0,
+  "lora_rank": 4,
+  "lora_alpha": 8.0,
+  "micro_batch_sequences": 16,
+  "eval_batch_sequences": 24
+}

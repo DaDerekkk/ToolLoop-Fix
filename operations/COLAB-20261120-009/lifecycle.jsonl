@@ -1,0 +1,25 @@
+{"step": "reservation", "utc": "2026-11-20T09:29:38.829487+00:00", "elapsed_s": 0.0, "session": "tlfix-c3525f6cd0db", "receipt_nonce": "c3525f6cd0db44cb8a9338f4917db6d7", "training": true, "source_sha256": {"lora_adapter.py": "861fb15b746161f505cf79340d95065a0c6c58e23f1ca1d33f5461a8cbdc4dbc", "colab_g3_train_worker.py": "c259f90951a371dc5e7193ba01457d0eef5502cb1b8d6f70b867260f01eb4e05", "train_job_config.json": "c9580827c1d22e170c43ecb567f529f04a6c74c04b22549bae41b7e8d2a0b06a", "controller": "1dba84bcaca7008d24df8be40d60c0dd859867e6445f73700f8da4dc8470ac1d"}, "bundle_sha256": "08d833addafcf94dcd07ff7ad229c82b3616e92cc34b5636d88d6864f6eda637", "bundle_zlib_sha256": "9bf9ad48082db05b7420e3acec90ad25ea1207e3a6a38ab41ecd062c1f7104d4", "bundle_zlib_bytes": 288581, "job_count": 4, "wall_limit_seconds": 3600.0}
+{"step": "baseline_sessions", "utc": "2026-11-20T09:29:39.949227+00:00", "elapsed_s": 1.12, "exit": 0, "reason": null}
+{"step": "baseline_usage", "utc": "2026-11-20T09:29:41.085585+00:00", "elapsed_s": 2.26, "exit": 0, "reason": null}
+{"step": "baseline_usage_observation", "utc": "2026-11-20T09:29:41.086050+00:00", "elapsed_s": 2.26, "balance_cu": 2690.01, "rate_cu_hr": 0.0, "assignments": 0.0}
+{"step": "new", "utc": "2026-11-20T09:29:44.903144+00:00", "elapsed_s": 6.07, "exit": 0, "reason": "Session READY"}
+{"step": "allocated_sessions", "utc": "2026-11-20T09:29:46.347436+00:00", "elapsed_s": 7.52, "exit": 0, "reason": null}
+{"step": "owned_l4", "utc": "2026-11-20T09:29:46.347849+00:00", "elapsed_s": 7.52, "endpoint_sha256": "79ce7a09ebce7dc2895a68437f1684e5762b0f018e8a8c3e4344c75fd3073335"}
+{"step": "allocated_usage", "utc": "2026-11-20T09:29:47.704809+00:00", "elapsed_s": 8.88, "exit": 0, "reason": null}
+{"step": "allocated_usage_observation", "utc": "2026-11-20T09:29:47.705092+00:00", "elapsed_s": 8.88, "balance_cu": 2690.01, "rate_cu_hr": 1.94, "assignments": 1.0}
+{"step": "status", "utc": "2026-11-20T09:29:49.274616+00:00", "elapsed_s": 10.45, "exit": 0, "reason": null}
+{"step": "warm", "utc": "2026-11-20T09:29:53.791907+00:00", "elapsed_s": 14.96, "exit": 0, "stdout_bytes": 10, "cell_sha256": "f68703b7eed76b3423158ada8ddca6018570a626562e67539eb4bd6e40602868"}
+{"step": "bootstrap_no_model_until_armed", "utc": "2026-11-20T09:30:46.798900+00:00", "elapsed_s": 67.97, "exit": null, "stdout_bytes": 0, "cell_sha256": "ccecad15369f0baf027b4df2522f9d7e3b37fc2a12e9b492a53cdd585a2f1ff5"}
+{"step": "idempotent_bootstrap_no_model", "utc": "2026-11-20T09:31:16.044676+00:00", "elapsed_s": 97.22, "exit": 0, "stdout_bytes": 322, "cell_sha256": "ccecad15369f0baf027b4df2522f9d7e3b37fc2a12e9b492a53cdd585a2f1ff5"}
+{"step": "two_way_sentinel", "utc": "2026-11-20T09:31:17.769971+00:00", "elapsed_s": 98.94, "identical": true, "bytes": 150}
+{"step": "upload_bundle_attempt_1", "utc": "2026-11-20T09:31:22.150081+00:00", "elapsed_s": 103.32, "exit": 0, "reason": "Uploaded"}
+{"step": "arm_single_worker", "utc": "2026-11-20T09:31:47.155113+00:00", "elapsed_s": 128.33, "exit": null, "error": "client_wall_timeout"}
+{"step": "work_failed", "utc": "2026-11-20T09:31:47.155476+00:00", "elapsed_s": 128.33, "code": "client_wall_timeout"}
+{"step": "release_sessions_check", "utc": "2026-11-20T09:31:48.630621+00:00", "elapsed_s": 129.8, "exit": 0, "reason": null}
+{"step": "stop_owned_only", "utc": "2026-11-20T09:31:50.516420+00:00", "elapsed_s": 131.69, "exit": 0, "reason": "Session terminated"}
+{"step": "stop_ack", "utc": "2026-11-20T09:31:50.516646+00:00", "elapsed_s": 131.69, "confirmed": true}
+{"step": "final_sessions", "utc": "2026-11-20T09:31:51.448227+00:00", "elapsed_s": 132.62, "exit": 0, "reason": null}
+{"step": "final_usage", "utc": "2026-11-20T09:31:52.493400+00:00", "elapsed_s": 133.66, "exit": 0, "reason": null}
+{"step": "final_usage_observation", "utc": "2026-11-20T09:31:52.493647+00:00", "elapsed_s": 133.66, "balance_cu": 2690.01, "rate_cu_hr": 0.0, "assignments": 0.0}
+{"step": "cleanup_observed", "utc": "2026-11-20T09:31:52.493712+00:00", "elapsed_s": 133.66, "owned_absent": true, "original_set_unchanged": true, "active_count": 0}
+{"step": "finished", "utc": "2026-11-20T09:31:52.493757+00:00", "elapsed_s": 133.66, "received_completed_training": false, "adapters_reassembled": false, "owned_released": true, "allocation_refused": false}

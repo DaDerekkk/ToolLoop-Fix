@@ -1,0 +1,15 @@
+test_duplicate_names_rejected_before_copying (test_review_archive.ReviewArchiveTests) ... FAIL
+test_unique_review_sources_archived_as_agent_only (test_review_archive.ReviewArchiveTests) ... ok
+
+======================================================================
+FAIL: test_duplicate_names_rejected_before_copying (test_review_archive.ReviewArchiveTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/tests/test_review_archive.py", line 18, in test_duplicate_names_rejected_before_copying
+    self.assertFalse((out/'review_sources').exists())
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.049s
+
+FAILED (failures=1)

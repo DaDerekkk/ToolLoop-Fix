@@ -1,0 +1,34 @@
+{
+  "adapter_count": 2,
+  "adapter_version": "pure_pytorch_qwen35_text_lora_v1",
+  "adapters": [
+    {
+      "adapter_id": "P_s202",
+      "adapter_manifest_path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/adapters/iter9_g3_wave3/P_s202/adapter_manifest.json",
+      "adapter_manifest_sha256": "62ce9712389d9884b8c024ef01b2bb7e3a7533099096f0553a392a4c7511ed19",
+      "objective": "dpo",
+      "safetensors_path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/adapters/iter9_g3_wave3/P_s202/adapter.safetensors",
+      "safetensors_sha256": "2e0c020422f603a7333bc2c7172c51f330e1e588833bf9d78bfcbf4dccde6572",
+      "size_bytes": 5452456,
+      "train_seed": 202,
+      "training_arm": "P"
+    },
+    {
+      "adapter_id": "P_s303",
+      "adapter_manifest_path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/adapters/iter9_g3_wave3/P_s303/adapter_manifest.json",
+      "adapter_manifest_sha256": "94343f4788aaa3b88e8ed28f804c4d0ce557d1fb66e52d1a64a16f2df4044d4c",
+      "objective": "dpo",
+      "safetensors_path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/adapters/iter9_g3_wave3/P_s303/adapter.safetensors",
+      "safetensors_sha256": "24380892e4d8e4aea16af0eb263dda30c3ac9407b4498269689ab20895bf3d4b",
+      "size_bytes": 5452456,
+      "train_seed": 303,
+      "training_arm": "P"
+    }
+  ],
+  "base_model_revision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "model_id": "Qwen/Qwen3.5-0.8B",
+  "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "schema_version": 1,
+  "source_operation_dir": "/Users/derek/Documents/ChatGPT/LLM 作业/operations/COLAB-20261120-011R1",
+  "training_receipt_sha256": "367d8c2a6ecc154b1858c0588d4916fc2a29e5810e92ff04d2af5eae9c4cdabe"
+}

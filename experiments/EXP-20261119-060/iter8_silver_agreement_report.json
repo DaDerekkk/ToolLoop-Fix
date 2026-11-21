@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "mode": "compare-silver",
+  "dataset_governance_tier": "dual_blind_silver_plus_human_disagreement_adjudication_v1",
+  "pure_manual_human_gold_claimed": false,
+  "anti_spoofing_checks": {
+    "passed": true,
+    "required_silver_reviewer_type": "blind_subagent_silver",
+    "zero_human_impersonation_in_silver": true,
+    "distinct_reviewer_ids_semantic": true,
+    "distinct_reviewer_ids_detector": true,
+    "all_public_payload_sha256_verified": true
+  },
+  "input_hashes": {
+    "blank_semantic": "91a3e1a9eddf79f33f2948acc47b6ce0004ff9b9a653691078f955da22500685",
+    "silver_sem_a": "e6a2105a0b03f73908366dc48f75c84032439535eb368ecf5b481210e5d89361",
+    "silver_sem_b": "9c9c103f720da21c033022dfaa36bc9f91c407006298c2a801d812890a98f940",
+    "blank_detector": "0dc13124448bd90996d30a433e116431a79d504aa9d18e12ba196fdfebeedd32",
+    "silver_det_a": "440dc357a4a09320d801b1c6bc64e3f46db895aa8a1e9f7e58c4f88fdc24186e",
+    "silver_det_b": "62575b88fd5112c4fda1b3c6c5b22aa6bc1a0de08d33e2c0df5246810487ca22",
+    "semantic_key": "b7950bd13deb17a7a1d9f7d768b3fbd379980f80e0d6ec255cee9f95236be2f9",
+    "detector_key": "1ab59bf47e6988557b747247043c6979161152c1b90fc00f63be6c030ee5aca1"
+  },
+  "silver_reviewer_ids": {
+    "semantic_a": [
+      "blind_subagent_silver_A"
+    ],
+    "semantic_b": [
+      "blind_subagent_silver_B"
+    ],
+    "detector_a": [
+      "blind_subagent_silver_A"
+    ],
+    "detector_b": [
+      "blind_subagent_silver_B"
+    ]
+  },
+  "semantic_agreement": {
+    "pack_id": "G2-SEM-150c85da5c48ff88",
+    "total": 166,
+    "agreed": 159,
+    "disagreed": 7,
+    "exact_agreement_rate": {
+      "numerator": 159,
+      "denominator": 166,
+      "value": 0.9578313253012049
+    },
+    "p_o": 0.9578313253012049,
+    "p_e": 0.21632312382058352,
+    "cohens_kappa": 0.9461912479740681,
+    "categories": [
+      "grounded_correct_delivery",
+      "truthful_inability_or_timeout_stop",
+      "error_code_as_record_value",
+      "unobserved_execution_claim",
+      "unsupported_success_claim",
+      "unsupported_absence_or_cause_claim",
+      "incomplete_or_ambiguous"
+    ],
+    "marginals_a": {
+      "grounded_correct_delivery": 23,
+      "truthful_inability_or_timeout_stop": 24,
+      "error_code_as_record_value": 17,
+      "unobserved_execution_claim": 5,
+      "unsupported_success_claim": 15,
+      "unsupported_absence_or_cause_claim": 62,
+      "incomplete_or_ambiguous": 20
+    },
+    "marginals_b": {
+      "grounded_correct_delivery": 23,
+      "truthful_inability_or_timeout_stop": 28,
+      "error_code_as_record_value": 17,
+      "unobserved_execution_claim": 4,
+      "unsupported_success_claim": 15,
+      "unsupported_absence_or_cause_claim": 63,
+      "incomplete_or_ambiguous": 16
+    },
+    "confusion_matrix": {
+      "grounded_correct_delivery": {
+        "grounded_correct_delivery": 23,
+        "truthful_inability_or_timeout_stop": 0,
+        "error_code_as_record_value": 0,
+        "unobserved_execution_claim": 0,
+        "unsupported_success_claim": 0,
+        "unsupported_absence_or_cause_claim": 0,
+        "incomplete_or_ambiguous": 0
+      },
+      "truthful_inability_or_timeout_stop": {
+        "grounded_correct_delivery": 0,
+        "truthful_inability_or_timeout_stop": 24,
+        "error_code_as_record_value": 0,
+        "unobserved_execution_claim": 0,
+        "unsupported_success_claim": 0,
+        "unsupported_absence_or_cause_claim": 0,
+        "incomplete_or_ambiguous": 0
+      },
+      "error_code_as_record_value": {
+        "grounded_correct_delivery": 0,
+        "truthful_inability_or_timeout_stop": 0,
+        "error_code_as_record_value": 17,
+        "unobserved_execution_claim": 0,
+        "unsupported_success_claim": 0,
+        "unsupported_absence_or_cause_claim": 0,
+        "incomplete_or_ambiguous": 0
+      },
+      "unobserved_execution_claim": {
+        "grounded_correct_delivery": 0,
+        "truthful_inability_or_timeout_stop": 1,
+        "error_code_as_record_value": 0,
+        "unobserved_execution_claim": 4,
+        "unsupported_success_claim": 0,
+        "unsupported_absence_or_cause_claim": 0,
+        "incomplete_or_ambiguous": 0
+      },
+      "unsupported_success_claim": {
+        "grounded_correct_delivery": 0,
+        "truthful_inability_or_timeout_stop": 0,
+        "error_code_as_record_value": 0,
+        "unobserved_execution_claim": 0,
+        "unsupported_success_claim": 15,
+        "unsupported_absence_or_cause_claim": 0,
+        "incomplete_or_ambiguous": 0
+      },
+      "unsupported_absence_or_cause_claim": {
+        "grounded_correct_delivery": 0,
+        "truthful_inability_or_timeout_stop": 2,
+        "error_code_as_record_value": 0,
+        "unobserved_execution_claim": 0,
+        "unsupported_success_claim": 0,
+        "unsupported_absence_or_cause_claim": 60,
+        "incomplete_or_ambiguous": 0
+      },
+      "incomplete_or_ambiguous": {
+        "grounded_correct_delivery": 0,
+        "truthful_inability_or_timeout_stop": 1,
+        "error_code_as_record_value": 0,
+        "unobserved_execution_claim": 0,
+        "unsupported_success_claim": 0,
+        "unsupported_absence_or_cause_claim": 3,
+        "incomplete_or_ambiguous": 16
+      }
+    },
+    "positive_control_silver_mismatch_count": 0,
+    "extracted_for_human_count": 7
+  },
+  "detector_agreement": {
+    "pack_id": "G2-DET-32057bb391f00e90",
+    "total": 358,
+    "agreed": 358,
+    "disagreed": 0,
+    "exact_agreement_rate": {
+      "numerator": 358,
+      "denominator": 358,
+      "value": 1.0
+    },
+    "p_o": 1.0,
+    "p_e": 0.5035111263693393,
+    "cohens_kappa": 1.0,
+    "categories": [
+      "true",
+      "false"
+    ],
+    "marginals_a": {
+      "true": 164,
+      "false": 194
+    },
+    "marginals_b": {
+      "true": 164,
+      "false": 194
+    },
+    "confusion_matrix": {
+      "true": {
+        "true": 164,
+        "false": 0
+      },
+      "false": {
+        "true": 0,
+        "false": 194
+      }
+    },
+    "table_2x2": {
+      "true_true": 164,
+      "true_false": 0,
+      "false_true": 0,
+      "false_false": 194
+    },
+    "detector_v1_version": "prototype_adjacent_abab_retry_limit_v1",
+    "detector_v2_version": "nonretryable_repeat_without_progress_v2",
+    "detector_v1_flagged_count": 144,
+    "detector_v2_flagged_count": 162,
+    "detector_v1_vs_v2_delta_count": 18,
+    "preliminary_on_silver_consensus_only": {
+      "consensus_segment_count": 358,
+      "detector_v1": {
+        "total": 358,
+        "TP": 144,
+        "FP": 0,
+        "FN": 20,
+        "TN": 194,
+        "precision": {
+          "numerator": 144,
+          "denominator": 144,
+          "value": 1.0
+        },
+        "recall": {
+          "numerator": 144,
+          "denominator": 164,
+          "value": 0.8780487804878049
+        },
+        "fpr": {
+          "numerator": 0,
+          "denominator": 194,
+          "value": 0.0
+        },
+        "fnr": {
+          "numerator": 20,
+          "denominator": 164,
+          "value": 0.12195121951219512
+        }
+      },
+      "detector_v2": {
+        "total": 358,
+        "TP": 162,
+        "FP": 0,
+        "FN": 2,
+        "TN": 194,
+        "precision": {
+          "numerator": 162,
+          "denominator": 162,
+          "value": 1.0
+        },
+        "recall": {
+          "numerator": 162,
+          "denominator": 164,
+          "value": 0.9878048780487805
+        },
+        "fpr": {
+          "numerator": 0,
+          "denominator": 194,
+          "value": 0.0
+        },
+        "fnr": {
+          "numerator": 2,
+          "denominator": 164,
+          "value": 0.012195121951219513
+        }
+      }
+    },
+    "extracted_for_human_count": 18
+  },
+  "human_tiebreaker_completed": false,
+  "g2_passed": false,
+  "comparison_artifacts": {
+    "iter8_disagreements_for_human.json": "ae6f166f74bffd41fd534cf84441ae3b5b339c72256775a67a9255f09599abb1",
+    "iter8_disagreements_for_human.md": "7f4ee2749b004fd57b449f1efe5f680773e40cc91b8676d0e339c4f4a9d5c4e4",
+    "iter8_verified_silver_state.json": "f7d17081379fc7c6bce9e30bae5a410315a598be4cfabffb2ceb10f78898dd47"
+  }
+}

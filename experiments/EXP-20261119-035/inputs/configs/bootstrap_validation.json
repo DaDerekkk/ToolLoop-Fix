@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "analysis",
+  "purpose": "Python standard-library unit and integration validation; not model evaluation",
+  "test_command": ["python3", "-m", "unittest", "discover", "-s", "tests", "-v"]
+}

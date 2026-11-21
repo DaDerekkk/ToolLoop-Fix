@@ -1,0 +1,1254 @@
+{
+  "dataset_evidence_class": "synthetic_harness",
+  "dataset_path": "data/dev/g4_closed_holdout_iter9.jsonl",
+  "dataset_sha256": "b968e360999a6836e68013ffaffcb6cc889431f44f766cab6bdd175bfd878460",
+  "detector_v2_version": "nonretryable_repeat_without_progress_v2",
+  "disjointness_checks": {
+    "exp062_b5_dpo_records_checked": 400,
+    "exp062_b5_general_expert_dpo_sha256": "8b994415d6387da4273bc7da3754220441bab7fe520f6580e0bee90b61103fbc",
+    "exp062_p_dpo_records_checked": 400,
+    "exp062_p_toolloop_fix_dpo_sha256": "51a4e441a0c952761cc5a74ffab18e43259eeb33cdb22b0d4ecaee15dc3d2a32",
+    "fixed_prefix_cases_iter4_sha256": "503af73359679e57f7522b37334fba8b342f2a95e916bc55b5a095f4782a3441",
+    "grouped_dev_suite_iter7_sha256": "d34b717b6872d9e5645a1bc65fc749215b3c61878083209f1db63eb0ef7f2c58",
+    "pilot_cases_sha256": "6797958d66b9fe6022e04141d6736774b3c2e899f16d5f16dc70311b86a2f03c",
+    "timeout_crossed_iter6_sha256": "f74ea540ffe77c9ff05af922c20b859529872ab5bd045122e23e9a6c29afe461",
+    "zero_case_id_overlap_with_all_prior": true,
+    "zero_identifier_overlap_with_all_prior": true,
+    "zero_raw_substring_overlap_with_exp062_dpo_records": true,
+    "zero_target_overlap_with_all_prior": true,
+    "zero_template_group_overlap_with_all_prior": true,
+    "zero_value_overlap_with_all_prior": true
+  },
+  "e2e_seed_schedules": [
+    {
+      "case_count": 36,
+      "case_seeds": {
+        "g4h9-files-clarification-h1-01": 80640,
+        "g4h9-files-clarification-h2-01": 80672,
+        "g4h9-files-normal-h1-01": 80384,
+        "g4h9-files-normal-h2-01": 80416,
+        "g4h9-files-recoverable-h1-01": 80448,
+        "g4h9-files-recoverable-h2-01": 80480,
+        "g4h9-files-recoverable-h3-01": 80512,
+        "g4h9-files-recoverable-h4-01": 80544,
+        "g4h9-files-retry_required-h1-01": 80576,
+        "g4h9-files-retry_required-h2-01": 80608,
+        "g4h9-files-unrecoverable-h1-01": 80704,
+        "g4h9-files-unrecoverable-h2-01": 80736,
+        "g4h9-jobs-clarification-h1-01": 81024,
+        "g4h9-jobs-clarification-h2-01": 81056,
+        "g4h9-jobs-normal-h1-01": 80768,
+        "g4h9-jobs-normal-h2-01": 80800,
+        "g4h9-jobs-recoverable-h1-01": 80832,
+        "g4h9-jobs-recoverable-h2-01": 80864,
+        "g4h9-jobs-recoverable-h3-01": 80896,
+        "g4h9-jobs-recoverable-h4-01": 80928,
+        "g4h9-jobs-retry_required-h1-01": 80960,
+        "g4h9-jobs-retry_required-h2-01": 80992,
+        "g4h9-jobs-unrecoverable-h1-01": 81088,
+        "g4h9-jobs-unrecoverable-h2-01": 81120,
+        "g4h9-orders-clarification-h1-01": 80256,
+        "g4h9-orders-clarification-h2-01": 80288,
+        "g4h9-orders-normal-h1-01": 80000,
+        "g4h9-orders-normal-h2-01": 80032,
+        "g4h9-orders-recoverable-h1-01": 80064,
+        "g4h9-orders-recoverable-h2-01": 80096,
+        "g4h9-orders-recoverable-h3-01": 80128,
+        "g4h9-orders-recoverable-h4-01": 80160,
+        "g4h9-orders-retry_required-h1-01": 80192,
+        "g4h9-orders-retry_required-h2-01": 80224,
+        "g4h9-orders-unrecoverable-h1-01": 80320,
+        "g4h9-orders-unrecoverable-h2-01": 80352
+      },
+      "schedule_id": "g4_e2e_s1",
+      "seed_end": 81120,
+      "seed_start": 80000,
+      "seed_step": 32,
+      "turn_budget": 16
+    },
+    {
+      "case_count": 36,
+      "case_seeds": {
+        "g4h9-files-clarification-h1-01": 82640,
+        "g4h9-files-clarification-h2-01": 82672,
+        "g4h9-files-normal-h1-01": 82384,
+        "g4h9-files-normal-h2-01": 82416,
+        "g4h9-files-recoverable-h1-01": 82448,
+        "g4h9-files-recoverable-h2-01": 82480,
+        "g4h9-files-recoverable-h3-01": 82512,
+        "g4h9-files-recoverable-h4-01": 82544,
+        "g4h9-files-retry_required-h1-01": 82576,
+        "g4h9-files-retry_required-h2-01": 82608,
+        "g4h9-files-unrecoverable-h1-01": 82704,
+        "g4h9-files-unrecoverable-h2-01": 82736,
+        "g4h9-jobs-clarification-h1-01": 83024,
+        "g4h9-jobs-clarification-h2-01": 83056,
+        "g4h9-jobs-normal-h1-01": 82768,
+        "g4h9-jobs-normal-h2-01": 82800,
+        "g4h9-jobs-recoverable-h1-01": 82832,
+        "g4h9-jobs-recoverable-h2-01": 82864,
+        "g4h9-jobs-recoverable-h3-01": 82896,
+        "g4h9-jobs-recoverable-h4-01": 82928,
+        "g4h9-jobs-retry_required-h1-01": 82960,
+        "g4h9-jobs-retry_required-h2-01": 82992,
+        "g4h9-jobs-unrecoverable-h1-01": 83088,
+        "g4h9-jobs-unrecoverable-h2-01": 83120,
+        "g4h9-orders-clarification-h1-01": 82256,
+        "g4h9-orders-clarification-h2-01": 82288,
+        "g4h9-orders-normal-h1-01": 82000,
+        "g4h9-orders-normal-h2-01": 82032,
+        "g4h9-orders-recoverable-h1-01": 82064,
+        "g4h9-orders-recoverable-h2-01": 82096,
+        "g4h9-orders-recoverable-h3-01": 82128,
+        "g4h9-orders-recoverable-h4-01": 82160,
+        "g4h9-orders-retry_required-h1-01": 82192,
+        "g4h9-orders-retry_required-h2-01": 82224,
+        "g4h9-orders-unrecoverable-h1-01": 82320,
+        "g4h9-orders-unrecoverable-h2-01": 82352
+      },
+      "schedule_id": "g4_e2e_s2",
+      "seed_end": 83120,
+      "seed_start": 82000,
+      "seed_step": 32,
+      "turn_budget": 16
+    },
+    {
+      "case_count": 36,
+      "case_seeds": {
+        "g4h9-files-clarification-h1-01": 84640,
+        "g4h9-files-clarification-h2-01": 84672,
+        "g4h9-files-normal-h1-01": 84384,
+        "g4h9-files-normal-h2-01": 84416,
+        "g4h9-files-recoverable-h1-01": 84448,
+        "g4h9-files-recoverable-h2-01": 84480,
+        "g4h9-files-recoverable-h3-01": 84512,
+        "g4h9-files-recoverable-h4-01": 84544,
+        "g4h9-files-retry_required-h1-01": 84576,
+        "g4h9-files-retry_required-h2-01": 84608,
+        "g4h9-files-unrecoverable-h1-01": 84704,
+        "g4h9-files-unrecoverable-h2-01": 84736,
+        "g4h9-jobs-clarification-h1-01": 85024,
+        "g4h9-jobs-clarification-h2-01": 85056,
+        "g4h9-jobs-normal-h1-01": 84768,
+        "g4h9-jobs-normal-h2-01": 84800,
+        "g4h9-jobs-recoverable-h1-01": 84832,
+        "g4h9-jobs-recoverable-h2-01": 84864,
+        "g4h9-jobs-recoverable-h3-01": 84896,
+        "g4h9-jobs-recoverable-h4-01": 84928,
+        "g4h9-jobs-retry_required-h1-01": 84960,
+        "g4h9-jobs-retry_required-h2-01": 84992,
+        "g4h9-jobs-unrecoverable-h1-01": 85088,
+        "g4h9-jobs-unrecoverable-h2-01": 85120,
+        "g4h9-orders-clarification-h1-01": 84256,
+        "g4h9-orders-clarification-h2-01": 84288,
+        "g4h9-orders-normal-h1-01": 84000,
+        "g4h9-orders-normal-h2-01": 84032,
+        "g4h9-orders-recoverable-h1-01": 84064,
+        "g4h9-orders-recoverable-h2-01": 84096,
+        "g4h9-orders-recoverable-h3-01": 84128,
+        "g4h9-orders-recoverable-h4-01": 84160,
+        "g4h9-orders-retry_required-h1-01": 84192,
+        "g4h9-orders-retry_required-h2-01": 84224,
+        "g4h9-orders-unrecoverable-h1-01": 84320,
+        "g4h9-orders-unrecoverable-h2-01": 84352
+      },
+      "schedule_id": "g4_e2e_s3",
+      "seed_end": 85120,
+      "seed_start": 84000,
+      "seed_step": 32,
+      "turn_budget": 16
+    }
+  ],
+  "e2e_seed_schedules_by_id": {
+    "g4_e2e_s1": {
+      "case_count": 36,
+      "case_seeds": {
+        "g4h9-files-clarification-h1-01": 80640,
+        "g4h9-files-clarification-h2-01": 80672,
+        "g4h9-files-normal-h1-01": 80384,
+        "g4h9-files-normal-h2-01": 80416,
+        "g4h9-files-recoverable-h1-01": 80448,
+        "g4h9-files-recoverable-h2-01": 80480,
+        "g4h9-files-recoverable-h3-01": 80512,
+        "g4h9-files-recoverable-h4-01": 80544,
+        "g4h9-files-retry_required-h1-01": 80576,
+        "g4h9-files-retry_required-h2-01": 80608,
+        "g4h9-files-unrecoverable-h1-01": 80704,
+        "g4h9-files-unrecoverable-h2-01": 80736,
+        "g4h9-jobs-clarification-h1-01": 81024,
+        "g4h9-jobs-clarification-h2-01": 81056,
+        "g4h9-jobs-normal-h1-01": 80768,
+        "g4h9-jobs-normal-h2-01": 80800,
+        "g4h9-jobs-recoverable-h1-01": 80832,
+        "g4h9-jobs-recoverable-h2-01": 80864,
+        "g4h9-jobs-recoverable-h3-01": 80896,
+        "g4h9-jobs-recoverable-h4-01": 80928,
+        "g4h9-jobs-retry_required-h1-01": 80960,
+        "g4h9-jobs-retry_required-h2-01": 80992,
+        "g4h9-jobs-unrecoverable-h1-01": 81088,
+        "g4h9-jobs-unrecoverable-h2-01": 81120,
+        "g4h9-orders-clarification-h1-01": 80256,
+        "g4h9-orders-clarification-h2-01": 80288,
+        "g4h9-orders-normal-h1-01": 80000,
+        "g4h9-orders-normal-h2-01": 80032,
+        "g4h9-orders-recoverable-h1-01": 80064,
+        "g4h9-orders-recoverable-h2-01": 80096,
+        "g4h9-orders-recoverable-h3-01": 80128,
+        "g4h9-orders-recoverable-h4-01": 80160,
+        "g4h9-orders-retry_required-h1-01": 80192,
+        "g4h9-orders-retry_required-h2-01": 80224,
+        "g4h9-orders-unrecoverable-h1-01": 80320,
+        "g4h9-orders-unrecoverable-h2-01": 80352
+      },
+      "schedule_id": "g4_e2e_s1",
+      "seed_end": 81120,
+      "seed_start": 80000,
+      "seed_step": 32,
+      "turn_budget": 16
+    },
+    "g4_e2e_s2": {
+      "case_count": 36,
+      "case_seeds": {
+        "g4h9-files-clarification-h1-01": 82640,
+        "g4h9-files-clarification-h2-01": 82672,
+        "g4h9-files-normal-h1-01": 82384,
+        "g4h9-files-normal-h2-01": 82416,
+        "g4h9-files-recoverable-h1-01": 82448,
+        "g4h9-files-recoverable-h2-01": 82480,
+        "g4h9-files-recoverable-h3-01": 82512,
+        "g4h9-files-recoverable-h4-01": 82544,
+        "g4h9-files-retry_required-h1-01": 82576,
+        "g4h9-files-retry_required-h2-01": 82608,
+        "g4h9-files-unrecoverable-h1-01": 82704,
+        "g4h9-files-unrecoverable-h2-01": 82736,
+        "g4h9-jobs-clarification-h1-01": 83024,
+        "g4h9-jobs-clarification-h2-01": 83056,
+        "g4h9-jobs-normal-h1-01": 82768,
+        "g4h9-jobs-normal-h2-01": 82800,
+        "g4h9-jobs-recoverable-h1-01": 82832,
+        "g4h9-jobs-recoverable-h2-01": 82864,
+        "g4h9-jobs-recoverable-h3-01": 82896,
+        "g4h9-jobs-recoverable-h4-01": 82928,
+        "g4h9-jobs-retry_required-h1-01": 82960,
+        "g4h9-jobs-retry_required-h2-01": 82992,
+        "g4h9-jobs-unrecoverable-h1-01": 83088,
+        "g4h9-jobs-unrecoverable-h2-01": 83120,
+        "g4h9-orders-clarification-h1-01": 82256,
+        "g4h9-orders-clarification-h2-01": 82288,
+        "g4h9-orders-normal-h1-01": 82000,
+        "g4h9-orders-normal-h2-01": 82032,
+        "g4h9-orders-recoverable-h1-01": 82064,
+        "g4h9-orders-recoverable-h2-01": 82096,
+        "g4h9-orders-recoverable-h3-01": 82128,
+        "g4h9-orders-recoverable-h4-01": 82160,
+        "g4h9-orders-retry_required-h1-01": 82192,
+        "g4h9-orders-retry_required-h2-01": 82224,
+        "g4h9-orders-unrecoverable-h1-01": 82320,
+        "g4h9-orders-unrecoverable-h2-01": 82352
+      },
+      "schedule_id": "g4_e2e_s2",
+      "seed_end": 83120,
+      "seed_start": 82000,
+      "seed_step": 32,
+      "turn_budget": 16
+    },
+    "g4_e2e_s3": {
+      "case_count": 36,
+      "case_seeds": {
+        "g4h9-files-clarification-h1-01": 84640,
+        "g4h9-files-clarification-h2-01": 84672,
+        "g4h9-files-normal-h1-01": 84384,
+        "g4h9-files-normal-h2-01": 84416,
+        "g4h9-files-recoverable-h1-01": 84448,
+        "g4h9-files-recoverable-h2-01": 84480,
+        "g4h9-files-recoverable-h3-01": 84512,
+        "g4h9-files-recoverable-h4-01": 84544,
+        "g4h9-files-retry_required-h1-01": 84576,
+        "g4h9-files-retry_required-h2-01": 84608,
+        "g4h9-files-unrecoverable-h1-01": 84704,
+        "g4h9-files-unrecoverable-h2-01": 84736,
+        "g4h9-jobs-clarification-h1-01": 85024,
+        "g4h9-jobs-clarification-h2-01": 85056,
+        "g4h9-jobs-normal-h1-01": 84768,
+        "g4h9-jobs-normal-h2-01": 84800,
+        "g4h9-jobs-recoverable-h1-01": 84832,
+        "g4h9-jobs-recoverable-h2-01": 84864,
+        "g4h9-jobs-recoverable-h3-01": 84896,
+        "g4h9-jobs-recoverable-h4-01": 84928,
+        "g4h9-jobs-retry_required-h1-01": 84960,
+        "g4h9-jobs-retry_required-h2-01": 84992,
+        "g4h9-jobs-unrecoverable-h1-01": 85088,
+        "g4h9-jobs-unrecoverable-h2-01": 85120,
+        "g4h9-orders-clarification-h1-01": 84256,
+        "g4h9-orders-clarification-h2-01": 84288,
+        "g4h9-orders-normal-h1-01": 84000,
+        "g4h9-orders-normal-h2-01": 84032,
+        "g4h9-orders-recoverable-h1-01": 84064,
+        "g4h9-orders-recoverable-h2-01": 84096,
+        "g4h9-orders-recoverable-h3-01": 84128,
+        "g4h9-orders-recoverable-h4-01": 84160,
+        "g4h9-orders-retry_required-h1-01": 84192,
+        "g4h9-orders-retry_required-h2-01": 84224,
+        "g4h9-orders-unrecoverable-h1-01": 84320,
+        "g4h9-orders-unrecoverable-h2-01": 84352
+      },
+      "schedule_id": "g4_e2e_s3",
+      "seed_end": 85120,
+      "seed_start": 84000,
+      "seed_step": 32,
+      "turn_budget": 16
+    }
+  },
+  "evidence_class": "analysis",
+  "g4_e2e_case_ids": [
+    "g4h9-orders-normal-h1-01",
+    "g4h9-orders-normal-h2-01",
+    "g4h9-orders-recoverable-h1-01",
+    "g4h9-orders-recoverable-h2-01",
+    "g4h9-orders-recoverable-h3-01",
+    "g4h9-orders-recoverable-h4-01",
+    "g4h9-orders-retry_required-h1-01",
+    "g4h9-orders-retry_required-h2-01",
+    "g4h9-orders-clarification-h1-01",
+    "g4h9-orders-clarification-h2-01",
+    "g4h9-orders-unrecoverable-h1-01",
+    "g4h9-orders-unrecoverable-h2-01",
+    "g4h9-files-normal-h1-01",
+    "g4h9-files-normal-h2-01",
+    "g4h9-files-recoverable-h1-01",
+    "g4h9-files-recoverable-h2-01",
+    "g4h9-files-recoverable-h3-01",
+    "g4h9-files-recoverable-h4-01",
+    "g4h9-files-retry_required-h1-01",
+    "g4h9-files-retry_required-h2-01",
+    "g4h9-files-clarification-h1-01",
+    "g4h9-files-clarification-h2-01",
+    "g4h9-files-unrecoverable-h1-01",
+    "g4h9-files-unrecoverable-h2-01",
+    "g4h9-jobs-normal-h1-01",
+    "g4h9-jobs-normal-h2-01",
+    "g4h9-jobs-recoverable-h1-01",
+    "g4h9-jobs-recoverable-h2-01",
+    "g4h9-jobs-recoverable-h3-01",
+    "g4h9-jobs-recoverable-h4-01",
+    "g4h9-jobs-retry_required-h1-01",
+    "g4h9-jobs-retry_required-h2-01",
+    "g4h9-jobs-clarification-h1-01",
+    "g4h9-jobs-clarification-h2-01",
+    "g4h9-jobs-unrecoverable-h1-01",
+    "g4h9-jobs-unrecoverable-h2-01"
+  ],
+  "g4_prefix_case_ids": [
+    "g4h9-orders-recoverable-h1-01",
+    "g4h9-orders-recoverable-h2-01",
+    "g4h9-orders-recoverable-h3-01",
+    "g4h9-orders-recoverable-h4-01",
+    "g4h9-orders-retry_required-h1-01",
+    "g4h9-orders-retry_required-h2-01",
+    "g4h9-files-recoverable-h1-01",
+    "g4h9-files-recoverable-h2-01",
+    "g4h9-files-recoverable-h3-01",
+    "g4h9-files-recoverable-h4-01",
+    "g4h9-files-retry_required-h1-01",
+    "g4h9-files-retry_required-h2-01",
+    "g4h9-jobs-recoverable-h1-01",
+    "g4h9-jobs-recoverable-h2-01",
+    "g4h9-jobs-recoverable-h3-01",
+    "g4h9-jobs-recoverable-h4-01",
+    "g4h9-jobs-retry_required-h1-01",
+    "g4h9-jobs-retry_required-h2-01"
+  ],
+  "generator_script": "scripts/build_g4_closed_holdout.py",
+  "governance": {
+    "entity_namespace_floor": 75000,
+    "forbidden_arm_substrings_excluded": [
+      "b0",
+      "b1",
+      "b2",
+      "b3",
+      "b4",
+      "b5",
+      "cb1",
+      "cb2",
+      "exp-"
+    ],
+    "jobs_domain_excluded_from_g3_training": true,
+    "note": "Formal G4 closed holdout suite under EVALUATION_SPEC.md §5 and Proposal §7-§8. 36 pairwise-disjoint unseen template_groups (24 in-domain orders+files + 12 cross-domain zero-shot held-out jobs), containing 36 E2E cases and 18 curated 1-step fixed_failure_prefix cases (12 recoverable + 6 retry_required). Strictly prohibited from training, prompt iteration, or hyperparameter selection.",
+    "single_shot_closed_holdout": true
+  },
+  "iteration": "ITER-009",
+  "manifest_id": "g4_holdout_manifest_ITER009",
+  "partitions": {
+    "g4_cross_domain_heldout_jobs": {
+      "case_ids": [
+        "g4h9-jobs-normal-h1-01",
+        "g4h9-jobs-normal-h2-01",
+        "g4h9-jobs-recoverable-h1-01",
+        "g4h9-jobs-recoverable-h2-01",
+        "g4h9-jobs-recoverable-h3-01",
+        "g4h9-jobs-recoverable-h4-01",
+        "g4h9-jobs-retry_required-h1-01",
+        "g4h9-jobs-retry_required-h2-01",
+        "g4h9-jobs-clarification-h1-01",
+        "g4h9-jobs-clarification-h2-01",
+        "g4h9-jobs-unrecoverable-h1-01",
+        "g4h9-jobs-unrecoverable-h2-01"
+      ],
+      "domains": [
+        "jobs"
+      ],
+      "e2e_case_count": 12,
+      "excluded_from_g3_training": true,
+      "prefix_case_count": 6,
+      "prefix_case_ids": [
+        "g4h9-jobs-recoverable-h1-01",
+        "g4h9-jobs-recoverable-h2-01",
+        "g4h9-jobs-recoverable-h3-01",
+        "g4h9-jobs-recoverable-h4-01",
+        "g4h9-jobs-retry_required-h1-01",
+        "g4h9-jobs-retry_required-h2-01"
+      ],
+      "role": "formal_closed_holdout_cross_domain_zero_shot_jobs",
+      "template_group_count": 12,
+      "template_groups": [
+        "g4h9-jobs-normal-h1",
+        "g4h9-jobs-normal-h2",
+        "g4h9-jobs-recoverable-h1",
+        "g4h9-jobs-recoverable-h2",
+        "g4h9-jobs-recoverable-h3",
+        "g4h9-jobs-recoverable-h4",
+        "g4h9-jobs-retry_required-h1",
+        "g4h9-jobs-retry_required-h2",
+        "g4h9-jobs-clarification-h1",
+        "g4h9-jobs-clarification-h2",
+        "g4h9-jobs-unrecoverable-h1",
+        "g4h9-jobs-unrecoverable-h2"
+      ],
+      "training_eligible": false
+    },
+    "g4_in_domain_unseen_templates": {
+      "case_ids": [
+        "g4h9-orders-normal-h1-01",
+        "g4h9-orders-normal-h2-01",
+        "g4h9-orders-recoverable-h1-01",
+        "g4h9-orders-recoverable-h2-01",
+        "g4h9-orders-recoverable-h3-01",
+        "g4h9-orders-recoverable-h4-01",
+        "g4h9-orders-retry_required-h1-01",
+        "g4h9-orders-retry_required-h2-01",
+        "g4h9-orders-clarification-h1-01",
+        "g4h9-orders-clarification-h2-01",
+        "g4h9-orders-unrecoverable-h1-01",
+        "g4h9-orders-unrecoverable-h2-01",
+        "g4h9-files-normal-h1-01",
+        "g4h9-files-normal-h2-01",
+        "g4h9-files-recoverable-h1-01",
+        "g4h9-files-recoverable-h2-01",
+        "g4h9-files-recoverable-h3-01",
+        "g4h9-files-recoverable-h4-01",
+        "g4h9-files-retry_required-h1-01",
+        "g4h9-files-retry_required-h2-01",
+        "g4h9-files-clarification-h1-01",
+        "g4h9-files-clarification-h2-01",
+        "g4h9-files-unrecoverable-h1-01",
+        "g4h9-files-unrecoverable-h2-01"
+      ],
+      "domains": [
+        "orders",
+        "files"
+      ],
+      "e2e_case_count": 24,
+      "prefix_case_count": 12,
+      "prefix_case_ids": [
+        "g4h9-orders-recoverable-h1-01",
+        "g4h9-orders-recoverable-h2-01",
+        "g4h9-orders-recoverable-h3-01",
+        "g4h9-orders-recoverable-h4-01",
+        "g4h9-orders-retry_required-h1-01",
+        "g4h9-orders-retry_required-h2-01",
+        "g4h9-files-recoverable-h1-01",
+        "g4h9-files-recoverable-h2-01",
+        "g4h9-files-recoverable-h3-01",
+        "g4h9-files-recoverable-h4-01",
+        "g4h9-files-retry_required-h1-01",
+        "g4h9-files-retry_required-h2-01"
+      ],
+      "role": "formal_closed_holdout_in_domain_unseen_templates",
+      "template_group_count": 24,
+      "template_groups": [
+        "g4h9-orders-normal-h1",
+        "g4h9-orders-normal-h2",
+        "g4h9-orders-recoverable-h1",
+        "g4h9-orders-recoverable-h2",
+        "g4h9-orders-recoverable-h3",
+        "g4h9-orders-recoverable-h4",
+        "g4h9-orders-retry_required-h1",
+        "g4h9-orders-retry_required-h2",
+        "g4h9-orders-clarification-h1",
+        "g4h9-orders-clarification-h2",
+        "g4h9-orders-unrecoverable-h1",
+        "g4h9-orders-unrecoverable-h2",
+        "g4h9-files-normal-h1",
+        "g4h9-files-normal-h2",
+        "g4h9-files-recoverable-h1",
+        "g4h9-files-recoverable-h2",
+        "g4h9-files-recoverable-h3",
+        "g4h9-files-recoverable-h4",
+        "g4h9-files-retry_required-h1",
+        "g4h9-files-retry_required-h2",
+        "g4h9-files-clarification-h1",
+        "g4h9-files-clarification-h2",
+        "g4h9-files-unrecoverable-h1",
+        "g4h9-files-unrecoverable-h2"
+      ],
+      "training_eligible": false
+    }
+  },
+  "prefix_seed_schedules": [
+    {
+      "case_count": 18,
+      "case_seeds": {
+        "g4h9-files-recoverable-h1-01": 90192,
+        "g4h9-files-recoverable-h2-01": 90224,
+        "g4h9-files-recoverable-h3-01": 90256,
+        "g4h9-files-recoverable-h4-01": 90288,
+        "g4h9-files-retry_required-h1-01": 90320,
+        "g4h9-files-retry_required-h2-01": 90352,
+        "g4h9-jobs-recoverable-h1-01": 90384,
+        "g4h9-jobs-recoverable-h2-01": 90416,
+        "g4h9-jobs-recoverable-h3-01": 90448,
+        "g4h9-jobs-recoverable-h4-01": 90480,
+        "g4h9-jobs-retry_required-h1-01": 90512,
+        "g4h9-jobs-retry_required-h2-01": 90544,
+        "g4h9-orders-recoverable-h1-01": 90000,
+        "g4h9-orders-recoverable-h2-01": 90032,
+        "g4h9-orders-recoverable-h3-01": 90064,
+        "g4h9-orders-recoverable-h4-01": 90096,
+        "g4h9-orders-retry_required-h1-01": 90128,
+        "g4h9-orders-retry_required-h2-01": 90160
+      },
+      "schedule_id": "g4_pfx_s1",
+      "seed_end": 90544,
+      "seed_start": 90000,
+      "seed_step": 32,
+      "turn_budget": 16
+    },
+    {
+      "case_count": 18,
+      "case_seeds": {
+        "g4h9-files-recoverable-h1-01": 92192,
+        "g4h9-files-recoverable-h2-01": 92224,
+        "g4h9-files-recoverable-h3-01": 92256,
+        "g4h9-files-recoverable-h4-01": 92288,
+        "g4h9-files-retry_required-h1-01": 92320,
+        "g4h9-files-retry_required-h2-01": 92352,
+        "g4h9-jobs-recoverable-h1-01": 92384,
+        "g4h9-jobs-recoverable-h2-01": 92416,
+        "g4h9-jobs-recoverable-h3-01": 92448,
+        "g4h9-jobs-recoverable-h4-01": 92480,
+        "g4h9-jobs-retry_required-h1-01": 92512,
+        "g4h9-jobs-retry_required-h2-01": 92544,
+        "g4h9-orders-recoverable-h1-01": 92000,
+        "g4h9-orders-recoverable-h2-01": 92032,
+        "g4h9-orders-recoverable-h3-01": 92064,
+        "g4h9-orders-recoverable-h4-01": 92096,
+        "g4h9-orders-retry_required-h1-01": 92128,
+        "g4h9-orders-retry_required-h2-01": 92160
+      },
+      "schedule_id": "g4_pfx_s2",
+      "seed_end": 92544,
+      "seed_start": 92000,
+      "seed_step": 32,
+      "turn_budget": 16
+    },
+    {
+      "case_count": 18,
+      "case_seeds": {
+        "g4h9-files-recoverable-h1-01": 94192,
+        "g4h9-files-recoverable-h2-01": 94224,
+        "g4h9-files-recoverable-h3-01": 94256,
+        "g4h9-files-recoverable-h4-01": 94288,
+        "g4h9-files-retry_required-h1-01": 94320,
+        "g4h9-files-retry_required-h2-01": 94352,
+        "g4h9-jobs-recoverable-h1-01": 94384,
+        "g4h9-jobs-recoverable-h2-01": 94416,
+        "g4h9-jobs-recoverable-h3-01": 94448,
+        "g4h9-jobs-recoverable-h4-01": 94480,
+        "g4h9-jobs-retry_required-h1-01": 94512,
+        "g4h9-jobs-retry_required-h2-01": 94544,
+        "g4h9-orders-recoverable-h1-01": 94000,
+        "g4h9-orders-recoverable-h2-01": 94032,
+        "g4h9-orders-recoverable-h3-01": 94064,
+        "g4h9-orders-recoverable-h4-01": 94096,
+        "g4h9-orders-retry_required-h1-01": 94128,
+        "g4h9-orders-retry_required-h2-01": 94160
+      },
+      "schedule_id": "g4_pfx_s3",
+      "seed_end": 94544,
+      "seed_start": 94000,
+      "seed_step": 32,
+      "turn_budget": 16
+    }
+  ],
+  "prefix_seed_schedules_by_id": {
+    "g4_pfx_s1": {
+      "case_count": 18,
+      "case_seeds": {
+        "g4h9-files-recoverable-h1-01": 90192,
+        "g4h9-files-recoverable-h2-01": 90224,
+        "g4h9-files-recoverable-h3-01": 90256,
+        "g4h9-files-recoverable-h4-01": 90288,
+        "g4h9-files-retry_required-h1-01": 90320,
+        "g4h9-files-retry_required-h2-01": 90352,
+        "g4h9-jobs-recoverable-h1-01": 90384,
+        "g4h9-jobs-recoverable-h2-01": 90416,
+        "g4h9-jobs-recoverable-h3-01": 90448,
+        "g4h9-jobs-recoverable-h4-01": 90480,
+        "g4h9-jobs-retry_required-h1-01": 90512,
+        "g4h9-jobs-retry_required-h2-01": 90544,
+        "g4h9-orders-recoverable-h1-01": 90000,
+        "g4h9-orders-recoverable-h2-01": 90032,
+        "g4h9-orders-recoverable-h3-01": 90064,
+        "g4h9-orders-recoverable-h4-01": 90096,
+        "g4h9-orders-retry_required-h1-01": 90128,
+        "g4h9-orders-retry_required-h2-01": 90160
+      },
+      "schedule_id": "g4_pfx_s1",
+      "seed_end": 90544,
+      "seed_start": 90000,
+      "seed_step": 32,
+      "turn_budget": 16
+    },
+    "g4_pfx_s2": {
+      "case_count": 18,
+      "case_seeds": {
+        "g4h9-files-recoverable-h1-01": 92192,
+        "g4h9-files-recoverable-h2-01": 92224,
+        "g4h9-files-recoverable-h3-01": 92256,
+        "g4h9-files-recoverable-h4-01": 92288,
+        "g4h9-files-retry_required-h1-01": 92320,
+        "g4h9-files-retry_required-h2-01": 92352,
+        "g4h9-jobs-recoverable-h1-01": 92384,
+        "g4h9-jobs-recoverable-h2-01": 92416,
+        "g4h9-jobs-recoverable-h3-01": 92448,
+        "g4h9-jobs-recoverable-h4-01": 92480,
+        "g4h9-jobs-retry_required-h1-01": 92512,
+        "g4h9-jobs-retry_required-h2-01": 92544,
+        "g4h9-orders-recoverable-h1-01": 92000,
+        "g4h9-orders-recoverable-h2-01": 92032,
+        "g4h9-orders-recoverable-h3-01": 92064,
+        "g4h9-orders-recoverable-h4-01": 92096,
+        "g4h9-orders-retry_required-h1-01": 92128,
+        "g4h9-orders-retry_required-h2-01": 92160
+      },
+      "schedule_id": "g4_pfx_s2",
+      "seed_end": 92544,
+      "seed_start": 92000,
+      "seed_step": 32,
+      "turn_budget": 16
+    },
+    "g4_pfx_s3": {
+      "case_count": 18,
+      "case_seeds": {
+        "g4h9-files-recoverable-h1-01": 94192,
+        "g4h9-files-recoverable-h2-01": 94224,
+        "g4h9-files-recoverable-h3-01": 94256,
+        "g4h9-files-recoverable-h4-01": 94288,
+        "g4h9-files-retry_required-h1-01": 94320,
+        "g4h9-files-retry_required-h2-01": 94352,
+        "g4h9-jobs-recoverable-h1-01": 94384,
+        "g4h9-jobs-recoverable-h2-01": 94416,
+        "g4h9-jobs-recoverable-h3-01": 94448,
+        "g4h9-jobs-recoverable-h4-01": 94480,
+        "g4h9-jobs-retry_required-h1-01": 94512,
+        "g4h9-jobs-retry_required-h2-01": 94544,
+        "g4h9-orders-recoverable-h1-01": 94000,
+        "g4h9-orders-recoverable-h2-01": 94032,
+        "g4h9-orders-recoverable-h3-01": 94064,
+        "g4h9-orders-recoverable-h4-01": 94096,
+        "g4h9-orders-retry_required-h1-01": 94128,
+        "g4h9-orders-retry_required-h2-01": 94160
+      },
+      "schedule_id": "g4_pfx_s3",
+      "seed_end": 94544,
+      "seed_start": 94000,
+      "seed_step": 32,
+      "turn_budget": 16
+    }
+  },
+  "schema_version": 1,
+  "split": "closed_holdout_g4",
+  "summary": {
+    "categories": [
+      "normal",
+      "recoverable",
+      "retry_required",
+      "clarification",
+      "unrecoverable"
+    ],
+    "category_counts": {
+      "clarification": 6,
+      "normal": 6,
+      "recoverable": 12,
+      "retry_required": 6,
+      "unrecoverable": 6
+    },
+    "completable_e2e_cases": 30,
+    "cross_domain_e2e_cases": 12,
+    "cross_domain_held_out_domain": "jobs",
+    "cross_domain_prefix_cases": 6,
+    "domain_counts": {
+      "files": 12,
+      "jobs": 12,
+      "orders": 12
+    },
+    "domains": [
+      "orders",
+      "files",
+      "jobs"
+    ],
+    "in_domain_domains": [
+      "orders",
+      "files"
+    ],
+    "in_domain_e2e_cases": 24,
+    "in_domain_prefix_cases": 12,
+    "per_domain_category_counts": {
+      "files": {
+        "clarification": 2,
+        "normal": 2,
+        "recoverable": 4,
+        "retry_required": 2,
+        "unrecoverable": 2
+      },
+      "jobs": {
+        "clarification": 2,
+        "normal": 2,
+        "recoverable": 4,
+        "retry_required": 2,
+        "unrecoverable": 2
+      },
+      "orders": {
+        "clarification": 2,
+        "normal": 2,
+        "recoverable": 4,
+        "retry_required": 2,
+        "unrecoverable": 2
+      }
+    },
+    "prefix_recoverable_cases": 12,
+    "prefix_retry_required_cases": 6,
+    "total_e2e_cases": 36,
+    "total_prefix_cases": 18,
+    "total_template_groups": 36,
+    "unrecoverable_e2e_cases": 6
+  },
+  "template_groups": [
+    {
+      "case_id": "g4h9-orders-normal-h1-01",
+      "case_ids": [
+        "g4h9-orders-normal-h1-01"
+      ],
+      "category": "normal",
+      "completable": true,
+      "domain": "orders",
+      "fault_subtype": "direct_ok_h1",
+      "has_fixed_prefix": false,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h1",
+      "template_group": "g4h9-orders-normal-h1"
+    },
+    {
+      "case_id": "g4h9-orders-normal-h2-01",
+      "case_ids": [
+        "g4h9-orders-normal-h2-01"
+      ],
+      "category": "normal",
+      "completable": true,
+      "domain": "orders",
+      "fault_subtype": "direct_ok_h2",
+      "has_fixed_prefix": false,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h2",
+      "template_group": "g4h9-orders-normal-h2"
+    },
+    {
+      "case_id": "g4h9-orders-recoverable-h1-01",
+      "case_ids": [
+        "g4h9-orders-recoverable-h1-01"
+      ],
+      "category": "recoverable",
+      "completable": true,
+      "domain": "orders",
+      "fault_subtype": "stale_id_locate",
+      "has_fixed_prefix": true,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h1",
+      "template_group": "g4h9-orders-recoverable-h1"
+    },
+    {
+      "case_id": "g4h9-orders-recoverable-h2-01",
+      "case_ids": [
+        "g4h9-orders-recoverable-h2-01"
+      ],
+      "category": "recoverable",
+      "completable": true,
+      "domain": "orders",
+      "fault_subtype": "stale_id_locate",
+      "has_fixed_prefix": true,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h2",
+      "template_group": "g4h9-orders-recoverable-h2"
+    },
+    {
+      "case_id": "g4h9-orders-recoverable-h3-01",
+      "case_ids": [
+        "g4h9-orders-recoverable-h3-01"
+      ],
+      "category": "recoverable",
+      "completable": true,
+      "domain": "orders",
+      "fault_subtype": "stale_id_locate_plus_1timeout",
+      "has_fixed_prefix": true,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h3",
+      "template_group": "g4h9-orders-recoverable-h3"
+    },
+    {
+      "case_id": "g4h9-orders-recoverable-h4-01",
+      "case_ids": [
+        "g4h9-orders-recoverable-h4-01"
+      ],
+      "category": "recoverable",
+      "completable": true,
+      "domain": "orders",
+      "fault_subtype": "stale_id_locate_plus_2timeout",
+      "has_fixed_prefix": true,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h4",
+      "template_group": "g4h9-orders-recoverable-h4"
+    },
+    {
+      "case_id": "g4h9-orders-retry_required-h1-01",
+      "case_ids": [
+        "g4h9-orders-retry_required-h1-01"
+      ],
+      "category": "retry_required",
+      "completable": true,
+      "domain": "orders",
+      "fault_subtype": "transient_1_retry",
+      "has_fixed_prefix": true,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h1",
+      "template_group": "g4h9-orders-retry_required-h1"
+    },
+    {
+      "case_id": "g4h9-orders-retry_required-h2-01",
+      "case_ids": [
+        "g4h9-orders-retry_required-h2-01"
+      ],
+      "category": "retry_required",
+      "completable": true,
+      "domain": "orders",
+      "fault_subtype": "transient_2_retries_boundary",
+      "has_fixed_prefix": true,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h2",
+      "template_group": "g4h9-orders-retry_required-h2"
+    },
+    {
+      "case_id": "g4h9-orders-clarification-h1-01",
+      "case_ids": [
+        "g4h9-orders-clarification-h1-01"
+      ],
+      "category": "clarification",
+      "completable": true,
+      "domain": "orders",
+      "fault_subtype": "missing_id_direct",
+      "has_fixed_prefix": false,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h1",
+      "template_group": "g4h9-orders-clarification-h1"
+    },
+    {
+      "case_id": "g4h9-orders-clarification-h2-01",
+      "case_ids": [
+        "g4h9-orders-clarification-h2-01"
+      ],
+      "category": "clarification",
+      "completable": true,
+      "domain": "orders",
+      "fault_subtype": "missing_id_plus_1timeout",
+      "has_fixed_prefix": false,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h2",
+      "template_group": "g4h9-orders-clarification-h2"
+    },
+    {
+      "case_id": "g4h9-orders-unrecoverable-h1-01",
+      "case_ids": [
+        "g4h9-orders-unrecoverable-h1-01"
+      ],
+      "category": "unrecoverable",
+      "completable": false,
+      "domain": "orders",
+      "fault_subtype": "unavailable_valid_id_h1",
+      "has_fixed_prefix": false,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h1",
+      "template_group": "g4h9-orders-unrecoverable-h1"
+    },
+    {
+      "case_id": "g4h9-orders-unrecoverable-h2-01",
+      "case_ids": [
+        "g4h9-orders-unrecoverable-h2-01"
+      ],
+      "category": "unrecoverable",
+      "completable": false,
+      "domain": "orders",
+      "fault_subtype": "unavailable_alt_id_h2",
+      "has_fixed_prefix": false,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h2",
+      "template_group": "g4h9-orders-unrecoverable-h2"
+    },
+    {
+      "case_id": "g4h9-files-normal-h1-01",
+      "case_ids": [
+        "g4h9-files-normal-h1-01"
+      ],
+      "category": "normal",
+      "completable": true,
+      "domain": "files",
+      "fault_subtype": "direct_ok_h1",
+      "has_fixed_prefix": false,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h1",
+      "template_group": "g4h9-files-normal-h1"
+    },
+    {
+      "case_id": "g4h9-files-normal-h2-01",
+      "case_ids": [
+        "g4h9-files-normal-h2-01"
+      ],
+      "category": "normal",
+      "completable": true,
+      "domain": "files",
+      "fault_subtype": "direct_ok_h2",
+      "has_fixed_prefix": false,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h2",
+      "template_group": "g4h9-files-normal-h2"
+    },
+    {
+      "case_id": "g4h9-files-recoverable-h1-01",
+      "case_ids": [
+        "g4h9-files-recoverable-h1-01"
+      ],
+      "category": "recoverable",
+      "completable": true,
+      "domain": "files",
+      "fault_subtype": "stale_id_locate",
+      "has_fixed_prefix": true,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h1",
+      "template_group": "g4h9-files-recoverable-h1"
+    },
+    {
+      "case_id": "g4h9-files-recoverable-h2-01",
+      "case_ids": [
+        "g4h9-files-recoverable-h2-01"
+      ],
+      "category": "recoverable",
+      "completable": true,
+      "domain": "files",
+      "fault_subtype": "stale_id_locate",
+      "has_fixed_prefix": true,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h2",
+      "template_group": "g4h9-files-recoverable-h2"
+    },
+    {
+      "case_id": "g4h9-files-recoverable-h3-01",
+      "case_ids": [
+        "g4h9-files-recoverable-h3-01"
+      ],
+      "category": "recoverable",
+      "completable": true,
+      "domain": "files",
+      "fault_subtype": "stale_id_locate_plus_1timeout",
+      "has_fixed_prefix": true,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h3",
+      "template_group": "g4h9-files-recoverable-h3"
+    },
+    {
+      "case_id": "g4h9-files-recoverable-h4-01",
+      "case_ids": [
+        "g4h9-files-recoverable-h4-01"
+      ],
+      "category": "recoverable",
+      "completable": true,
+      "domain": "files",
+      "fault_subtype": "stale_id_locate_plus_2timeout",
+      "has_fixed_prefix": true,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h4",
+      "template_group": "g4h9-files-recoverable-h4"
+    },
+    {
+      "case_id": "g4h9-files-retry_required-h1-01",
+      "case_ids": [
+        "g4h9-files-retry_required-h1-01"
+      ],
+      "category": "retry_required",
+      "completable": true,
+      "domain": "files",
+      "fault_subtype": "transient_1_retry",
+      "has_fixed_prefix": true,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h1",
+      "template_group": "g4h9-files-retry_required-h1"
+    },
+    {
+      "case_id": "g4h9-files-retry_required-h2-01",
+      "case_ids": [
+        "g4h9-files-retry_required-h2-01"
+      ],
+      "category": "retry_required",
+      "completable": true,
+      "domain": "files",
+      "fault_subtype": "transient_2_retries_boundary",
+      "has_fixed_prefix": true,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h2",
+      "template_group": "g4h9-files-retry_required-h2"
+    },
+    {
+      "case_id": "g4h9-files-clarification-h1-01",
+      "case_ids": [
+        "g4h9-files-clarification-h1-01"
+      ],
+      "category": "clarification",
+      "completable": true,
+      "domain": "files",
+      "fault_subtype": "missing_id_direct",
+      "has_fixed_prefix": false,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h1",
+      "template_group": "g4h9-files-clarification-h1"
+    },
+    {
+      "case_id": "g4h9-files-clarification-h2-01",
+      "case_ids": [
+        "g4h9-files-clarification-h2-01"
+      ],
+      "category": "clarification",
+      "completable": true,
+      "domain": "files",
+      "fault_subtype": "missing_id_plus_1timeout",
+      "has_fixed_prefix": false,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h2",
+      "template_group": "g4h9-files-clarification-h2"
+    },
+    {
+      "case_id": "g4h9-files-unrecoverable-h1-01",
+      "case_ids": [
+        "g4h9-files-unrecoverable-h1-01"
+      ],
+      "category": "unrecoverable",
+      "completable": false,
+      "domain": "files",
+      "fault_subtype": "unavailable_valid_id_h1",
+      "has_fixed_prefix": false,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h1",
+      "template_group": "g4h9-files-unrecoverable-h1"
+    },
+    {
+      "case_id": "g4h9-files-unrecoverable-h2-01",
+      "case_ids": [
+        "g4h9-files-unrecoverable-h2-01"
+      ],
+      "category": "unrecoverable",
+      "completable": false,
+      "domain": "files",
+      "fault_subtype": "unavailable_alt_id_h2",
+      "has_fixed_prefix": false,
+      "partition": "g4_in_domain_unseen_templates",
+      "slot_code": "h2",
+      "template_group": "g4h9-files-unrecoverable-h2"
+    },
+    {
+      "case_id": "g4h9-jobs-normal-h1-01",
+      "case_ids": [
+        "g4h9-jobs-normal-h1-01"
+      ],
+      "category": "normal",
+      "completable": true,
+      "domain": "jobs",
+      "fault_subtype": "direct_ok_h1",
+      "has_fixed_prefix": false,
+      "partition": "g4_cross_domain_heldout_jobs",
+      "slot_code": "h1",
+      "template_group": "g4h9-jobs-normal-h1"
+    },
+    {
+      "case_id": "g4h9-jobs-normal-h2-01",
+      "case_ids": [
+        "g4h9-jobs-normal-h2-01"
+      ],
+      "category": "normal",
+      "completable": true,
+      "domain": "jobs",
+      "fault_subtype": "direct_ok_h2",
+      "has_fixed_prefix": false,
+      "partition": "g4_cross_domain_heldout_jobs",
+      "slot_code": "h2",
+      "template_group": "g4h9-jobs-normal-h2"
+    },
+    {
+      "case_id": "g4h9-jobs-recoverable-h1-01",
+      "case_ids": [
+        "g4h9-jobs-recoverable-h1-01"
+      ],
+      "category": "recoverable",
+      "completable": true,
+      "domain": "jobs",
+      "fault_subtype": "stale_id_locate",
+      "has_fixed_prefix": true,
+      "partition": "g4_cross_domain_heldout_jobs",
+      "slot_code": "h1",
+      "template_group": "g4h9-jobs-recoverable-h1"
+    },
+    {
+      "case_id": "g4h9-jobs-recoverable-h2-01",
+      "case_ids": [
+        "g4h9-jobs-recoverable-h2-01"
+      ],
+      "category": "recoverable",
+      "completable": true,
+      "domain": "jobs",
+      "fault_subtype": "stale_id_locate",
+      "has_fixed_prefix": true,
+      "partition": "g4_cross_domain_heldout_jobs",
+      "slot_code": "h2",
+      "template_group": "g4h9-jobs-recoverable-h2"
+    },
+    {
+      "case_id": "g4h9-jobs-recoverable-h3-01",
+      "case_ids": [
+        "g4h9-jobs-recoverable-h3-01"
+      ],
+      "category": "recoverable",
+      "completable": true,
+      "domain": "jobs",
+      "fault_subtype": "stale_id_locate_plus_1poll",
+      "has_fixed_prefix": true,
+      "partition": "g4_cross_domain_heldout_jobs",
+      "slot_code": "h3",
+      "template_group": "g4h9-jobs-recoverable-h3"
+    },
+    {
+      "case_id": "g4h9-jobs-recoverable-h4-01",
+      "case_ids": [
+        "g4h9-jobs-recoverable-h4-01"
+      ],
+      "category": "recoverable",
+      "completable": true,
+      "domain": "jobs",
+      "fault_subtype": "stale_id_locate_plus_1poll",
+      "has_fixed_prefix": true,
+      "partition": "g4_cross_domain_heldout_jobs",
+      "slot_code": "h4",
+      "template_group": "g4h9-jobs-recoverable-h4"
+    },
+    {
+      "case_id": "g4h9-jobs-retry_required-h1-01",
+      "case_ids": [
+        "g4h9-jobs-retry_required-h1-01"
+      ],
+      "category": "retry_required",
+      "completable": true,
+      "domain": "jobs",
+      "fault_subtype": "job_poll_1_step",
+      "has_fixed_prefix": true,
+      "partition": "g4_cross_domain_heldout_jobs",
+      "slot_code": "h1",
+      "template_group": "g4h9-jobs-retry_required-h1"
+    },
+    {
+      "case_id": "g4h9-jobs-retry_required-h2-01",
+      "case_ids": [
+        "g4h9-jobs-retry_required-h2-01"
+      ],
+      "category": "retry_required",
+      "completable": true,
+      "domain": "jobs",
+      "fault_subtype": "job_poll_2_steps",
+      "has_fixed_prefix": true,
+      "partition": "g4_cross_domain_heldout_jobs",
+      "slot_code": "h2",
+      "template_group": "g4h9-jobs-retry_required-h2"
+    },
+    {
+      "case_id": "g4h9-jobs-clarification-h1-01",
+      "case_ids": [
+        "g4h9-jobs-clarification-h1-01"
+      ],
+      "category": "clarification",
+      "completable": true,
+      "domain": "jobs",
+      "fault_subtype": "missing_id_direct",
+      "has_fixed_prefix": false,
+      "partition": "g4_cross_domain_heldout_jobs",
+      "slot_code": "h1",
+      "template_group": "g4h9-jobs-clarification-h1"
+    },
+    {
+      "case_id": "g4h9-jobs-clarification-h2-01",
+      "case_ids": [
+        "g4h9-jobs-clarification-h2-01"
+      ],
+      "category": "clarification",
+      "completable": true,
+      "domain": "jobs",
+      "fault_subtype": "missing_id_plus_1poll",
+      "has_fixed_prefix": false,
+      "partition": "g4_cross_domain_heldout_jobs",
+      "slot_code": "h2",
+      "template_group": "g4h9-jobs-clarification-h2"
+    },
+    {
+      "case_id": "g4h9-jobs-unrecoverable-h1-01",
+      "case_ids": [
+        "g4h9-jobs-unrecoverable-h1-01"
+      ],
+      "category": "unrecoverable",
+      "completable": false,
+      "domain": "jobs",
+      "fault_subtype": "unavailable_valid_id_h1",
+      "has_fixed_prefix": false,
+      "partition": "g4_cross_domain_heldout_jobs",
+      "slot_code": "h1",
+      "template_group": "g4h9-jobs-unrecoverable-h1"
+    },
+    {
+      "case_id": "g4h9-jobs-unrecoverable-h2-01",
+      "case_ids": [
+        "g4h9-jobs-unrecoverable-h2-01"
+      ],
+      "category": "unrecoverable",
+      "completable": false,
+      "domain": "jobs",
+      "fault_subtype": "unavailable_alt_id_h2",
+      "has_fixed_prefix": false,
+      "partition": "g4_cross_domain_heldout_jobs",
+      "slot_code": "h2",
+      "template_group": "g4h9-jobs-unrecoverable-h2"
+    }
+  ],
+  "training_eligible": false,
+  "tuning_eligible": false
+}

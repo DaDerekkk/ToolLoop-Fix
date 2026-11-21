@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "description": "ITER-009 authorized single Colab L4 multi-arm LoRA training lifecycle (10 adapters: B3, B4, B5, P, P_no_retry, P_no_normal at s101 + P and B3 at s202, s303) with 2-way sentinel gate, zero-leakage bundle.zlib upload, <480KB chunk transport, and mandatory session teardown.",
+  "training_bundle_path": "experiments/EXP-20261120-062/public_colab_training_bundle.json",
+  "expected_bundle_sha256": "08d833addafcf94dcd07ff7ad229c82b3616e92cc34b5636d88d6864f6eda637",
+  "controller_sha256": "449bd317335eb42f2088dc734e24f22e1935019b5fde1eb757434e54339a74de",
+  "source_sha256": {
+    "lora_adapter.py": "861fb15b746161f505cf79340d95065a0c6c58e23f1ca1d33f5461a8cbdc4dbc",
+    "colab_g3_train_worker.py": "c605666c5d60b2f50a106c075765624971959a6008e3e8779cfc89c648e26b1e"
+  },
+  "wall_limit_seconds": 1800,
+  "poll_interval_seconds": 4.0,
+  "lora_rank": 4,
+  "lora_alpha": 8.0,
+  "micro_batch_sequences": 4,
+  "eval_batch_sequences": 8
+}

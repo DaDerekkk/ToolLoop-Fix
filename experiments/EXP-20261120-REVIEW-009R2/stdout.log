@@ -1,0 +1,1 @@
+{"audit_passed": true, "model_inference_runs_audited": 32, "total_episodes_replayed": 846, "total_generations_checked": 4029, "total_exact_replay_mismatches": 0, "total_colab_adapters_verified": 10}

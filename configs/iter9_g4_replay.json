@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "source_run": "EXP-20261120-065",
+  "description": "Byte-for-byte archive replay verification of EXP-20261120-065 (G4 closed-holdout synthetic harness verification) from frozen inputs."
+}

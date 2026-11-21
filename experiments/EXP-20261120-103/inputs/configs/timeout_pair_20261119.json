@@ -1,0 +1,73 @@
+{
+  "evidence_kind": "analysis",
+  "design": "Retrospective paired first-action diagnostic of two selected public retryable TIMEOUT prefixes. Endpoints scoped before this extraction; cases and prior results are already known. Not randomized or blinded.",
+  "case_ids": [
+    "pfx-orders-timeout",
+    "pfx-files-timeout"
+  ],
+  "selection": "First fresh continuation turn exactly 1; compare same published tool name and argument object, with no normalization/fallback. Tool dispatch is actual_tool_dispatch, never lifecycle executed. Final new_goal_evidence is the existing score unchanged. Cross case seeds may differ.",
+  "stop_conditions": "Abort if source hashes, repeated TIMEOUT histories, absolute turns, parse/event alignment or full six-cell pairing cannot be verified.",
+  "source_runs": [
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-025",
+      "manifest_sha256": "65a9a56055266c47195896a775dbd2844fe7b5056f12f10a973488fe3af8f66a",
+      "artifact_sha256": {
+        "prefix_contexts.jsonl": "b133ff37c5aae279246824606762397f30353cc94e21376a32a97d8347e57c9c",
+        "case_results.jsonl": "7ad0ec82243b6d8dd7b0a2f0ab022937e94dc8de79416db5f0382682957ecfcb",
+        "generations.jsonl": "85f06577b5f68d9d8549ee2844436432e7e571e41829a42abb1a6f20ddbfc93a",
+        "execution_events.jsonl": "11a8b504a55aa9eb0880368d224eabe18a11a14812a4f26b3025b2c108d7c20b"
+      }
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-026",
+      "manifest_sha256": "dd28651597aa9673c52c2347e0320bc426b88c6f59e8b23a99fbcab61736328e",
+      "artifact_sha256": {
+        "prefix_contexts.jsonl": "c7f0de6db9b4ef9f90b05b6d15b8c59782961ce1772b99671a12a908acdb8ef2",
+        "case_results.jsonl": "2dd83839b7b216bef61bbb7c8f110d5ae9100b29b2741c5bcfacb882f3ed86cf",
+        "generations.jsonl": "282e669e74d46f602ce1259b72faa3ef8243f927ec665326a96343128cba25f2",
+        "execution_events.jsonl": "4c12a61f8341d8634d5951c32ea662ace8ad77cf4fb909d298350760558d9bd9"
+      }
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-027",
+      "manifest_sha256": "3984ed8b02ea5896e544e5c1f17adda19e54d04f91db6ad0c01e6c59577bb9cc",
+      "artifact_sha256": {
+        "prefix_contexts.jsonl": "8714ec58318a016fd2ae2bb25b507e02379db8bf8d332b8c2876e0d3a1ea6e98",
+        "case_results.jsonl": "fee1f5032c602d7b1fb3f66c4245957693de8c07d8500cf25f40e2e174bf7381",
+        "generations.jsonl": "d6029dd8e99cbc57faded256aa3b4364e9f9758dfdb3984558178b7ddd8d6f24",
+        "execution_events.jsonl": "effd1df00db15948d0f42adbdb2b20a8f24443dcc67b36be910a11f5bc9a273e"
+      }
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-028",
+      "manifest_sha256": "2830dea9019d9b030e381fa42926b1a1c9bb4c44c9e693de8f69d1e839610718",
+      "artifact_sha256": {
+        "prefix_contexts.jsonl": "e47daeb6006de24bb52a96d104f93c5901e494ee8283a61f2c582c3926de9417",
+        "case_results.jsonl": "5d54a30b39ff5af22514e1ab46b224107206fe7467497a806e7e7d7213f36cc1",
+        "generations.jsonl": "b815bd17a106f5c829293ce9c7d69fd9c12cb9b8e8ce57de0957d154b9aaa00f",
+        "execution_events.jsonl": "5e9f279f234028524fb218870ae52ea73522a5b0a0366904b504ba5f8af50a4b"
+      }
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-029",
+      "manifest_sha256": "a27f2bef87e20543909d77524f8dcf2fba3d6419b47aae65b172df52efc397f7",
+      "artifact_sha256": {
+        "prefix_contexts.jsonl": "28ab8cc9df0f7fe775a0b3e4cd65d084442c187a043648887c70014366823686",
+        "case_results.jsonl": "752de9f011f3b47cfce75249653f44313cc79a4e342eb6f3d0cf4c7246a4ccb5",
+        "generations.jsonl": "e1fb7d2bd9ad56185a60a97aa3b51ae874ff03a9dd648fbd447e252be4a6baae",
+        "execution_events.jsonl": "2830e2f19dd07b192a9de98f22fd62c5b5c16906e2b57665a0ff67648c0e1cc8"
+      }
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-030",
+      "manifest_sha256": "c363b5ca088acac7ad977b6601b24c7d536e67b5e62de37185b328a1bcaa539a",
+      "artifact_sha256": {
+        "prefix_contexts.jsonl": "30bfa5ca4c7e61c0f60ba81a618350eaad5be75081d54dd4301f246a56c64016",
+        "case_results.jsonl": "599a717a5f173bbb1fa6689a7213e1e075b9aeacb71ecc548a6a6d845634459d",
+        "generations.jsonl": "de0c40f6c1cff5cf939020b733cbef739ebe5f6d63a04f9db450dd1213dad63a",
+        "execution_events.jsonl": "1013649df660bf5c729348e4bdc53c59c1a159227fb2739d16787e32862180a4"
+      }
+    }
+  ],
+  "method_amendment": "EXP-20261119-037 preserved as failed: extractor wrongly required parse.valid for every first turn. R1 validates the archived invalid_model_output sentinel against original raw bytes/text and parser error; counts it as the first decision with no dispatch and no retry. No case/endpoint/turn changes; do not reparse/relabel."
+}

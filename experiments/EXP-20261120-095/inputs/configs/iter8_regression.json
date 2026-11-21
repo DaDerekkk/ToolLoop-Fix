@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "description": "ITER-008 final joint unit test suite (including loop_detector_v2, silver/delegated adjudication, and G3 preference dataset tests)."
+}

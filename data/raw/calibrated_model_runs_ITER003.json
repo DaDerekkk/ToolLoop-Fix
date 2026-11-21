@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-16T07:28:38.407625+00:00",
+  "iteration": "ITER-003",
+  "evidence_type": "model_inference_run_index",
+  "warning": "Immutable source references only. Known dev, not training labels; tool evidence is not final answer correctness. Old ITER002 index preserved.",
+  "runs": [
+    {
+      "run_id": "EXP-20261116-016",
+      "arm": "B0",
+      "status": "completed",
+      "evidence_valid": true,
+      "manifest_sha256": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20",
+      "config_sha256": "bb21ae7e7cce9741aee136252cd0ec44142934c7d9f0c7ed594e1aa5710b992a",
+      "generation_count": 41,
+      "case_count": 15,
+      "files": {
+        "generations.jsonl": {
+          "path": "experiments/EXP-20261116-016/generations.jsonl",
+          "sha256": "a5902f6c698961eed670b6df55255a8cce71ce13676ff7828005b626c0621408"
+        },
+        "execution_events.jsonl": {
+          "path": "experiments/EXP-20261116-016/execution_events.jsonl",
+          "sha256": "ad61fccdece284c5c01d41da31378897aebe2d380056c09d8cce1dfaa6fd93b9"
+        },
+        "trajectories.jsonl": {
+          "path": "experiments/EXP-20261116-016/trajectories.jsonl",
+          "sha256": "48246c8232a0e7396b4d5a49381c76ab0df2f51c8720e8786427284940bc1388"
+        },
+        "case_results.jsonl": {
+          "path": "experiments/EXP-20261116-016/case_results.jsonl",
+          "sha256": "6cc9b51cb78b1d2bc00edba61073fd1a483206f0452828380f7100634691d92f"
+        },
+        "metrics.json": {
+          "path": "experiments/EXP-20261116-016/metrics.json",
+          "sha256": "80f6be3b4c9f5f9c835e57f8ac94997e2e9c6cd5b756319a577dd19ac69fcf1c"
+        },
+        "model_provenance.json": {
+          "path": "experiments/EXP-20261116-016/model_provenance.json",
+          "sha256": "3135a390a23dac1e41b11a703a9182cf5ea5dd152c764ad8e3333dad1bed8cde"
+        }
+      }
+    },
+    {
+      "run_id": "EXP-20261116-017",
+      "arm": "B1",
+      "status": "completed",
+      "evidence_valid": true,
+      "manifest_sha256": "ad0a479ed2ecdbbafe5a55a251b98434760a3e78e4d5f967ef81a6b2a77e4706",
+      "config_sha256": "960557f2e3ce9d60100fd84535293300475edb78ea17f4a3be8a64033f02a1d5",
+      "generation_count": 47,
+      "case_count": 15,
+      "files": {
+        "generations.jsonl": {
+          "path": "experiments/EXP-20261116-017/generations.jsonl",
+          "sha256": "b618354e6ba2e8245fa5be6dfcadf7e49c1316033397509fcdad374df9385774"
+        },
+        "execution_events.jsonl": {
+          "path": "experiments/EXP-20261116-017/execution_events.jsonl",
+          "sha256": "9d43f1988274ada5372f64b2e0608a31709147980235cd51d5971920afb25988"
+        },
+        "trajectories.jsonl": {
+          "path": "experiments/EXP-20261116-017/trajectories.jsonl",
+          "sha256": "de6f19ffa906b19543dc5657de41ce852e72b6ac090f952eedd2054f4369e422"
+        },
+        "case_results.jsonl": {
+          "path": "experiments/EXP-20261116-017/case_results.jsonl",
+          "sha256": "aa2d0e943a7236e5a369578d2bd8cc57b21e5222532d3bf8ba33fc4f50ec43a4"
+        },
+        "metrics.json": {
+          "path": "experiments/EXP-20261116-017/metrics.json",
+          "sha256": "471ccac05c807d6d6aafc088993c55826eb0d4bd002abf9a1c72ad095aac4067"
+        },
+        "model_provenance.json": {
+          "path": "experiments/EXP-20261116-017/model_provenance.json",
+          "sha256": "5efc04c8aa6d3dafe7e7777006a304ef88df2ae47a86dba683e34e06219a05cd"
+        }
+      }
+    },
+    {
+      "run_id": "EXP-20261116-018",
+      "arm": "B2",
+      "status": "completed",
+      "evidence_valid": true,
+      "manifest_sha256": "c88fc548bac0cdceb62d7802ad15e4c1c72e3fef77dec7c9d46587410b5adfde",
+      "config_sha256": "ff3c76887e792f2766de4b9fac81c4deeecc9f8ebd337ef4ef39a65fd3d3d84b",
+      "generation_count": 46,
+      "case_count": 15,
+      "files": {
+        "generations.jsonl": {
+          "path": "experiments/EXP-20261116-018/generations.jsonl",
+          "sha256": "58d29fe561e627d66cc6193d7323fe66f4aba9cac9d552c4b13c958ed86b9626"
+        },
+        "execution_events.jsonl": {
+          "path": "experiments/EXP-20261116-018/execution_events.jsonl",
+          "sha256": "89b2bc2715b728f5bd21e6bc950faa311f3b4312ed4fe8119faad93accb4950a"
+        },
+        "trajectories.jsonl": {
+          "path": "experiments/EXP-20261116-018/trajectories.jsonl",
+          "sha256": "469ad21a89091948c107984ac237b936bd943c4a9eb244a236a999798e4f2f45"
+        },
+        "case_results.jsonl": {
+          "path": "experiments/EXP-20261116-018/case_results.jsonl",
+          "sha256": "081d1645cde813d0d2ce66e6f421b70b8cfcf7a8e0247600851f870365ba4107"
+        },
+        "metrics.json": {
+          "path": "experiments/EXP-20261116-018/metrics.json",
+          "sha256": "32d8a827f0acee3ee74129d4c26558dd2eda84a549dbe3e24edb442628928d48"
+        },
+        "model_provenance.json": {
+          "path": "experiments/EXP-20261116-018/model_provenance.json",
+          "sha256": "506aebf296e2c0163b8b45ba49b7ad651f1f4f47d30022038c40d162b707ad5b"
+        }
+      }
+    }
+  ]
+}

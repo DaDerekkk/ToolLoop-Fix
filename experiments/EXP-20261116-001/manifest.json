@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "run_id": "EXP-20261116-001",
+  "kind": "analysis",
+  "owner": "root",
+  "parent_run": null,
+  "status": "completed",
+  "acceptance_status": "not_reviewed",
+  "hypothesis": "首版标准库测试可验证记录器和模拟环境的已实现行为",
+  "acceptance_criteria": "全部已编写测试正常退出；此验收不代表研究假设成立",
+  "started_at_utc": "2026-11-16T05:55:38.496940+00:00",
+  "report_timezone": "Asia/Shanghai",
+  "environment": {
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+    "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64"
+  },
+  "inputs": {
+    "configs/bootstrap_validation.json": "ff8f39d36270014b77d21ef1483cdd21e989ba6dd0fe735676e6fd9503e9ea6e",
+    "configs/smoke.json": "fff6ffeec5eff129678a08178593f926cd557205e9deb2becfc97faacbdb89a2",
+    "data/dev/pilot_cases.jsonl": "6797958d66b9fe6022e04141d6736774b3c2e899f16d5f16dc70311b86a2f03c",
+    "docs/protocols/EVALUATION_SPEC.md": "bc1c833892bf0829dc2febcb51226b62a6cc64613a50c9a41a26b817777d64e7",
+    "docs/protocols/EXPERIMENT_TEMPLATE.md": "203fc74e8c59f85b9f7ad41db63c410ce188732dcd5a4f964ee2748791ae06a1",
+    "docs/protocols/EXPERIMENT_WORKFLOW.md": "e8432303e0501610637ab6e171bd592c47095aa727c330d1b6264862b6bf1307",
+    "scripts/record_run.py": "4bc28adabd5492e4f81d97b89ed9bd6ab858fa81b57d70b390608e0b509babdc",
+    "scripts/validate_records.py": "e249478c1e0568a90f8d7f483c1abcb8c2b1729903b188cee54a8a34a4c15d25",
+    "tests/test_harness.py": "973b87fb66662dcf57eb3696d1c40bcd18b2eaac6f623cccd8ce46abde3ab611",
+    "tests/test_records.py": "b93733ae8311c9cf21bbc2a5c997d8bb5d86a3f36284e707c9fd24eb9f954ef9",
+    "toolloop_fix/__init__.py": "8dc1cdcb07f200e4533636a53a48c24700aaafb826ff21e862071ec678996545",
+    "toolloop_fix/harness.py": "47a723da345a7d7e149566717f6987daa97b459d1dccbd59097b7731a3399849",
+    "toolloop_fix/run.py": "27ff2580aaa552b1a3ab88cca2ea07dc46cb41a8ef5c4a0061dee8caaa8a76dd"
+  },
+  "outputs": {
+    "config.json": "ff8f39d36270014b77d21ef1483cdd21e989ba6dd0fe735676e6fd9503e9ea6e",
+    "stderr.log": "4e4e2079af613dccd2153e65d84c941e6a205e203609ae53996916eec11ec012",
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "exit_code": 0,
+  "evidence_valid": true,
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "cwd": "/Users/derek/Documents/ChatGPT/LLM 作业",
+  "config_sha256": "ff8f39d36270014b77d21ef1483cdd21e989ba6dd0fe735676e6fd9503e9ea6e",
+  "ended_at_utc": "2026-11-16T05:55:38.925747+00:00",
+  "elapsed_seconds": 0.413139,
+  "inputs_changed_during_run": []
+}

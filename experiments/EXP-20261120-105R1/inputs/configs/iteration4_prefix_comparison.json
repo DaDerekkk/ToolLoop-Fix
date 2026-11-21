@@ -1,0 +1,34 @@
+{
+  "evidence_kind": "analysis",
+  "purpose": "Matched six-cell fixed-prefix analysis and recorded-generation CPU audit; no training",
+  "run_dirs": [
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-025",
+      "manifest_sha256": "65a9a56055266c47195896a775dbd2844fe7b5056f12f10a973488fe3af8f66a"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-026",
+      "manifest_sha256": "dd28651597aa9673c52c2347e0320bc426b88c6f59e8b23a99fbcab61736328e"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-027",
+      "manifest_sha256": "3984ed8b02ea5896e544e5c1f17adda19e54d04f91db6ad0c01e6c59577bb9cc"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-028",
+      "manifest_sha256": "2830dea9019d9b030e381fa42926b1a1c9bb4c44c9e693de8f69d1e839610718"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-029",
+      "manifest_sha256": "a27f2bef87e20543909d77524f8dcf2fba3d6419b47aae65b172df52efc397f7"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-030",
+      "manifest_sha256": "c363b5ca088acac7ad977b6601b24c7d536e67b5e62de37185b328a1bcaa539a"
+    }
+  ],
+  "preflight_context_run": {
+    "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-024",
+    "manifest_sha256": "51ff3282a227851dbb3786bf709fe0a751f90cf5cd72836851adcbcfa1f3d48b"
+  }
+}

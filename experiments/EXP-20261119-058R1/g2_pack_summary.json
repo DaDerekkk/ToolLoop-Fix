@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "shuffle_seed": 20261119,
+  "verified_sources": {
+    "model_runs": [
+      {
+        "run_id": "EXP-20261116-016",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016",
+        "manifest_sha256": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20",
+        "prefix_contexts_verified": false
+      },
+      {
+        "run_id": "EXP-20261116-017",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017",
+        "manifest_sha256": "ad0a479ed2ecdbbafe5a55a251b98434760a3e78e4d5f967ef81a6b2a77e4706",
+        "prefix_contexts_verified": false
+      },
+      {
+        "run_id": "EXP-20261116-018",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-018",
+        "manifest_sha256": "c88fc548bac0cdceb62d7802ad15e4c1c72e3fef77dec7c9d46587410b5adfde",
+        "prefix_contexts_verified": false
+      },
+      {
+        "run_id": "EXP-20261116-025",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-025",
+        "manifest_sha256": "65a9a56055266c47195896a775dbd2844fe7b5056f12f10a973488fe3af8f66a",
+        "prefix_contexts_verified": true
+      },
+      {
+        "run_id": "EXP-20261116-026",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-026",
+        "manifest_sha256": "dd28651597aa9673c52c2347e0320bc426b88c6f59e8b23a99fbcab61736328e",
+        "prefix_contexts_verified": true
+      },
+      {
+        "run_id": "EXP-20261116-027",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-027",
+        "manifest_sha256": "3984ed8b02ea5896e544e5c1f17adda19e54d04f91db6ad0c01e6c59577bb9cc",
+        "prefix_contexts_verified": true
+      },
+      {
+        "run_id": "EXP-20261116-028",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-028",
+        "manifest_sha256": "2830dea9019d9b030e381fa42926b1a1c9bb4c44c9e693de8f69d1e839610718",
+        "prefix_contexts_verified": true
+      },
+      {
+        "run_id": "EXP-20261116-029",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-029",
+        "manifest_sha256": "a27f2bef87e20543909d77524f8dcf2fba3d6419b47aae65b172df52efc397f7",
+        "prefix_contexts_verified": true
+      },
+      {
+        "run_id": "EXP-20261116-030",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-030",
+        "manifest_sha256": "c363b5ca088acac7ad977b6601b24c7d536e67b5e62de37185b328a1bcaa539a",
+        "prefix_contexts_verified": true
+      },
+      {
+        "run_id": "EXP-20261119-049",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-049",
+        "manifest_sha256": "59db9e1b4672b5455c827cc49cc236aeffac36031a456ff7782ce6995062fec5",
+        "prefix_contexts_verified": true
+      },
+      {
+        "run_id": "EXP-20261119-050",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-050",
+        "manifest_sha256": "dfc7bfba1a92565495b286dae93a7100a014bfb4b34c445d74b97d23d359dc29",
+        "prefix_contexts_verified": true
+      },
+      {
+        "run_id": "EXP-20261119-051",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-051",
+        "manifest_sha256": "ae05ec0502e8872eed20a8853a163ce7daf84593d97459b2b92d1f1df9e9caa2",
+        "prefix_contexts_verified": true
+      },
+      {
+        "run_id": "EXP-20261119-052",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-052",
+        "manifest_sha256": "ea651a824f4a1f92e04882ff63e5a4db6cd13eb1715c10aeb2d569169a4169fb",
+        "prefix_contexts_verified": true
+      },
+      {
+        "run_id": "EXP-20261119-053",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-053",
+        "manifest_sha256": "38e44917795632c26d33288c6cf444728950241486541f9940f6ac70c80369f1",
+        "prefix_contexts_verified": true
+      },
+      {
+        "run_id": "EXP-20261119-054",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-054",
+        "manifest_sha256": "c749cfb7972b9174868db1fc7e0233528ef73ea2b59a437c400d0ccdd7ee2c4d",
+        "prefix_contexts_verified": false
+      },
+      {
+        "run_id": "EXP-20261119-055",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-055",
+        "manifest_sha256": "ec20333c835a28d9ec2b7985f2e7886dfd5260b0d310dc1427261bbcc9950fff",
+        "prefix_contexts_verified": false
+      },
+      {
+        "run_id": "EXP-20261119-056",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-056",
+        "manifest_sha256": "8a8ae9f503ed486f8f81618c46aebeb1ad5161d7b30f56ccbf7fd5a68dfb69f1",
+        "prefix_contexts_verified": false
+      }
+    ],
+    "cpu_first_step_runs": [
+      {
+        "run_id": "EXP-20261119-043",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-043",
+        "manifest_sha256": "3e710409bc254e0f091ccc9fde28e6f39ebc49e1ea5fc0195d1593136945111b"
+      }
+    ],
+    "synthetic_runs": [
+      {
+        "run_id": "EXP-20261116-004",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-004",
+        "manifest_sha256": "f21099acaaaa6a8ca5968aa0809be174d1334b338d81d48de50ac94510e9f9d3"
+      },
+      {
+        "run_id": "EXP-20261119-047",
+        "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-047",
+        "manifest_sha256": "fa3c1d21e23f0c328a8f28c67c46d1a6f6ef7e900223f3b669ebcc0234c9dd77"
+      }
+    ]
+  },
+  "semantic_pack": {
+    "pack_id": "G2-SEM-150c85da5c48ff88",
+    "unique_blind_items": 166,
+    "total_source_occurrences": 237,
+    "excluded_exact_stop_episodes": 0,
+    "unique_counts_by_inclusion_category": {
+      "structured_stop_non_exact": 16,
+      "grounded_structured_positive_control": 4,
+      "truncated_or_unparsed_terminal": 7,
+      "natural_text_terminal": 115,
+      "unsupported_finish_wrapper": 24
+    },
+    "occurrence_counts_by_inclusion_category": {
+      "structured_stop_non_exact": 21,
+      "grounded_structured_positive_control": 11,
+      "truncated_or_unparsed_terminal": 8,
+      "natural_text_terminal": 156,
+      "unsupported_finish_wrapper": 41
+    },
+    "occurrence_counts_by_comparison_arm": {
+      "B1": 72,
+      "B0": 90,
+      "B2": 75
+    },
+    "occurrence_counts_by_source_cohort": {
+      "fixed_failure_prefix_explicit": 94,
+      "end_to_end": 113,
+      "fixed_failure_prefix_legacy": 18,
+      "cpu_first_step": 12
+    }
+  },
+  "detector_pack": {
+    "pack_id": "G2-DET-32057bb391f00e90",
+    "unique_blind_segments": 358,
+    "total_bound_occurrences": 903,
+    "counts_by_stratum": {
+      "flagged_identical_or_equivalent_repeat": 74,
+      "flagged_short_cycle_abab": 35,
+      "flagged_retry_limit_violation": 35,
+      "unflagged_legal_timeout_retry": 50,
+      "unflagged_legal_job_polling": 35,
+      "unflagged_genuine_progress_or_first_error": 129
+    },
+    "counts_by_source_evidence_class": {
+      "synthetic_harness_boundary": 70,
+      "synthetic_harness": 76,
+      "model_inference": 212
+    },
+    "counts_by_stratum_and_evidence_class": {
+      "flagged_identical_or_equivalent_repeat": {
+        "model_inference": 74
+      },
+      "flagged_short_cycle_abab": {
+        "synthetic_harness_boundary": 32,
+        "model_inference": 3
+      },
+      "flagged_retry_limit_violation": {
+        "synthetic_harness_boundary": 35
+      },
+      "unflagged_legal_timeout_retry": {
+        "synthetic_harness": 46,
+        "model_inference": 4
+      },
+      "unflagged_legal_job_polling": {
+        "synthetic_harness": 30,
+        "synthetic_harness_boundary": 3,
+        "model_inference": 2
+      },
+      "unflagged_genuine_progress_or_first_error": {
+        "model_inference": 129
+      }
+    },
+    "sampling_warning": "Stratified non-uniform audit sample across 6 mandatory strata; sample proportions MUST NOT be interpreted as natural model loop rates."
+  },
+  "zero_leakage_check": {
+    "passed": true,
+    "arm_token_boundary_regex": "(?<![A-Za-z0-9])B[012](?![A-Za-z0-9])",
+    "checked_forbidden_substrings": [
+      "B0",
+      "B1",
+      "B2",
+      "EXP-",
+      "comparison_arm",
+      "agent_judgment",
+      "template_group",
+      "hidden",
+      "detector_flagged",
+      "stratum",
+      "Runtime guard notice",
+      "guard_blocked",
+      "synthetic_harness",
+      "model_inference",
+      "scripted_naive",
+      "scripted_reference",
+      "CPU-202",
+      "wording_profile",
+      "prefix_role"
+    ],
+    "checked_detector_extra_substrings": [
+      "identical_or_equivalent_repeat",
+      "short_cycle_abab",
+      "retry_limit_violation",
+      "loop_flags",
+      "flagged_identical_or_equivalent_repeat",
+      "flagged_short_cycle_abab",
+      "flagged_retry_limit_violation",
+      "unflagged_legal_timeout_retry",
+      "unflagged_legal_job_polling",
+      "unflagged_genuine_progress_or_first_error"
+    ],
+    "semantic_items_checked": 166,
+    "semantic_worksheet_checked": true,
+    "detector_items_checked": 358,
+    "undisclosed_oracle_value_leaks": 0,
+    "violations": []
+  },
+  "human_review_completed": false,
+  "training_eligible": false,
+  "artifacts": {
+    "blind_semantic_review_pack.json": "91a3e1a9eddf79f33f2948acc47b6ce0004ff9b9a653691078f955da22500685",
+    "blind_semantic_worksheet.md": "c4dd5344dcdc34ac80583b5eb16502d3688b7aed3a38ea098d0a5bc55dfb60fd",
+    "blind_semantic_key.json": "b7950bd13deb17a7a1d9f7d768b3fbd379980f80e0d6ec255cee9f95236be2f9",
+    "blind_detector_audit_pack.json": "0dc13124448bd90996d30a433e116431a79d504aa9d18e12ba196fdfebeedd32",
+    "blind_detector_key.json": "1ab59bf47e6988557b747247043c6979161152c1b90fc00f63be6c030ee5aca1"
+  }
+}

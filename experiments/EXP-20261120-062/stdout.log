@@ -1,0 +1,13 @@
+{
+  "output_dir": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261120-062",
+  "g3_dataset_ready": true,
+  "N": 400,
+  "group_counts": {
+    "group1_post_feedback_recovery": 180,
+    "group2_legal_retry_retention": 80,
+    "group3_unrecoverable_truthful_stop": 60,
+    "group4_normal_and_grounded_finish": 80
+  },
+  "cloud_zero_leakage_passed": true,
+  "public_colab_training_bundle_sha256": "08d833addafcf94dcd07ff7ad229c82b3616e92cc34b5636d88d6864f6eda637"
+}

@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261120-105/inputs/scripts/compare_g3_g4_results.py", line 1969, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261120-105/inputs/scripts/compare_g3_g4_results.py", line 1940, in main
+    report = compare_g3_g4_results(config, workspace_root=ROOT)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261120-105/inputs/scripts/compare_g3_g4_results.py", line 1771, in compare_g3_g4_results
+    dev_bundles = collections.OrderedDict(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261120-105/inputs/scripts/compare_g3_g4_results.py", line 1772, in <genexpr>
+    (arm, _load_arm_bundle(arm, config["dev_selection_runs"][arm], "end_to_end", workspace_root))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261120-105/inputs/scripts/compare_g3_g4_results.py", line 534, in _load_arm_bundle
+    default_sid = ref.get("schedule_id", f"s{idx}" if len(refs) > 1 else "s0")
+                  ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'

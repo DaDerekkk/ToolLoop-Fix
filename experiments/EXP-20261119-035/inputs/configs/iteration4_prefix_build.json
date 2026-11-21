@@ -1,0 +1,54 @@
+{
+  "evidence_kind": "analysis",
+  "purpose": "Preregistered immutable authentic prefix extraction; no model calls",
+  "selections": [
+    {
+      "case_id": "pfx-orders-timeout",
+      "source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016",
+      "source_manifest_sha256": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20",
+      "source_case_id": "orders-retry_required-001",
+      "prefix_turns": 1,
+      "role": "recovery"
+    },
+    {
+      "case_id": "pfx-files-timeout",
+      "source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017",
+      "source_manifest_sha256": "ad0a479ed2ecdbbafe5a55a251b98434760a3e78e4d5f967ef81a6b2a77e4706",
+      "source_case_id": "files-retry_required-001",
+      "prefix_turns": 1,
+      "role": "recovery"
+    },
+    {
+      "case_id": "pfx-jobs-precondition",
+      "source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-013",
+      "source_manifest_sha256": "6434789979bb6d7687497405a22e393b629d966b335a5b4d899f57693d53134e",
+      "source_case_id": "jobs-retry_required-001",
+      "prefix_turns": 2,
+      "role": "recovery"
+    },
+    {
+      "case_id": "pfx-orders-invalid",
+      "source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016",
+      "source_manifest_sha256": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20",
+      "source_case_id": "orders-recoverable-001",
+      "prefix_turns": 1,
+      "role": "recovery"
+    },
+    {
+      "case_id": "pfx-orders-unavailable",
+      "source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-018",
+      "source_manifest_sha256": "c88fc548bac0cdceb62d7802ad15e4c1c72e3fef77dec7c9d46587410b5adfde",
+      "source_case_id": "orders-unrecoverable-001",
+      "prefix_turns": 2,
+      "role": "unavailable_stop_control"
+    },
+    {
+      "case_id": "pfx-orders-ok",
+      "source_run": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016",
+      "source_manifest_sha256": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20",
+      "source_case_id": "orders-normal-001",
+      "prefix_turns": 1,
+      "role": "normal_completion_control"
+    }
+  ]
+}

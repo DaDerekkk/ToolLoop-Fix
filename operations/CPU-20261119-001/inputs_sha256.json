@@ -1,0 +1,11 @@
+{
+  "config.json": "de24f52bf8367d395a8fecdcb0778ba439164b8953400a63672d8d2185190133",
+  "inputs/scripts/cpu_crossed_iter6.py": "aedc4dfaa98d8fdc6615ad46be16f6922b64a77b74e8d99606725e5f82da2786",
+  "inputs/toolloop_fix/__init__.py": "8dc1cdcb07f200e4533636a53a48c24700aaafb826ff21e862071ec678996545",
+  "inputs/toolloop_fix/calibrated_protocol.py": "ba4b1ef50fbfe69d652e890c1bd231a08c623a1cdfa7db7fab611bb7960368de",
+  "inputs/toolloop_fix/model_backend.py": "51ac5593ef4204a56535b6f92d6521b6c21b24f996be69571e985e1a340aad31",
+  "inputs/toolloop_fix/model_protocol.py": "9e7926601883574b6b98ae26f9adbb6787de4b28248215e94993a8ffbe9cf751",
+  "preregistration.md": "fe7f642c906c2e2ef6280f9a6700517eafe743ecad0736431de051d3b1fb76bc",
+  "public_payloads.jsonl": "5e6ef17e6136e6fbb42f85c62f6dd7cafe714c2c816486f78fe32be1fb8cf563",
+  "weight_manifest.json": "049c3d159e86cf1492a8020d5a95f8d0b92c13091fc82891ce12979c26899d2d"
+}

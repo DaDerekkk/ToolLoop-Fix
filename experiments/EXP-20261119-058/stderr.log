@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-058/inputs/scripts/build_g2_audit_packs.py", line 1613, in <module>
+    main()
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-058/inputs/scripts/build_g2_audit_packs.py", line 1588, in main
+    built = build_audit_packs(config, output_dir=Path(args.output))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-058/inputs/scripts/build_g2_audit_packs.py", line 1476, in build_audit_packs
+    leakage_report = verify_zero_leakage(
+                     ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-058/inputs/scripts/build_g2_audit_packs.py", line 1369, in verify_zero_leakage
+    raise ValueError("Zero-leakage check failed: " + "; ".join(violations[:5]))
+ValueError: Zero-leakage check failed: semantic_pack contains forbidden substring: B1; semantic_worksheet contains forbidden substring: B1; semantic_pack contains forbidden substring: B2; semantic_worksheet contains forbidden substring: B2; BLIND-SEM-0003 contains forbidden substring: B1

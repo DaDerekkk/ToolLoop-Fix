@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "evidence_class": "model_inference",
+  "evidence_kind": "model_inference",
+  "artifact_contract": "model_evaluation",
+  "policy_name": "qwen3.5-0.8b_prefix_explicit_B2_s1_to_s4",
+  "mode": "fixed_failure_prefix",
+  "cases_path": "data/dev/fixed_prefix_cases_iter4.jsonl",
+  "case_ids": [
+    "pfx-orders-timeout",
+    "pfx-files-timeout",
+    "pfx-jobs-precondition",
+    "pfx-orders-invalid",
+    "pfx-orders-unavailable",
+    "pfx-orders-ok"
+  ],
+  "tool_budget": 12,
+  "turn_budget": 16,
+  "max_context_tokens": 8192,
+  "model": {
+    "model_id": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "backend": "transformers",
+    "model_path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17",
+    "device": "mps",
+    "dtype": "bfloat16"
+  },
+  "sampling": {
+    "enable_thinking": false,
+    "do_sample": true,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 2.0,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 256,
+    "seed": 0
+  },
+  "external_inputs": [
+    {
+      "name": "model_manifest",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/manifests/Qwen3.5-0.8B-2fc06364715b967f1860aea9cf38778875588b17.json",
+      "sha256": "049c3d159e86cf1492a8020d5a95f8d0b92c13091fc82891ce12979c26899d2d"
+    },
+    {
+      "name": "runtime_install_manifest",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/operations/SETUP-20261116-001/manifest.json",
+      "sha256": "60df3c860e6bf7fe578756e8471cd84320c68465246aa5ac3bddd9146e778baa"
+    }
+  ],
+  "notes": "ITER-007 preregistered 4 new independent seed schedules (s1..s4, 24 trials) on 6 authentic prefixes, explicit contract, B2, MPS BF16; pairs with s0 (EXP-028..030) for 5-seed matrix; no training.",
+  "run_purpose": "iter7_prefix_multiseed_s1_to_s4",
+  "comparison_arm": "B2",
+  "protocol_version": "qwen_xml_or_native_terminal_v1",
+  "wording_profile": "explicit",
+  "task_wording_version": "read_report_literal_target_v1",
+  "prefix_schema_version": "authentic_tool_prefix_v1",
+  "decoding_regime": "sampled_pp2",
+  "seed_schedules": [
+    {
+      "schedule_id": "s1",
+      "case_seeds": {
+        "pfx-orders-timeout": 2000,
+        "pfx-files-timeout": 2032,
+        "pfx-jobs-precondition": 2064,
+        "pfx-orders-invalid": 2096,
+        "pfx-orders-unavailable": 2128,
+        "pfx-orders-ok": 2160
+      }
+    },
+    {
+      "schedule_id": "s2",
+      "case_seeds": {
+        "pfx-orders-timeout": 3000,
+        "pfx-files-timeout": 3032,
+        "pfx-jobs-precondition": 3064,
+        "pfx-orders-invalid": 3096,
+        "pfx-orders-unavailable": 3128,
+        "pfx-orders-ok": 3160
+      }
+    },
+    {
+      "schedule_id": "s3",
+      "case_seeds": {
+        "pfx-orders-timeout": 4000,
+        "pfx-files-timeout": 4032,
+        "pfx-jobs-precondition": 4064,
+        "pfx-orders-invalid": 4096,
+        "pfx-orders-unavailable": 4128,
+        "pfx-orders-ok": 4160
+      }
+    },
+    {
+      "schedule_id": "s4",
+      "case_seeds": {
+        "pfx-orders-timeout": 5000,
+        "pfx-files-timeout": 5032,
+        "pfx-jobs-precondition": 5064,
+        "pfx-orders-invalid": 5096,
+        "pfx-orders-unavailable": 5128,
+        "pfx-orders-ok": 5160
+      }
+    }
+  ]
+}

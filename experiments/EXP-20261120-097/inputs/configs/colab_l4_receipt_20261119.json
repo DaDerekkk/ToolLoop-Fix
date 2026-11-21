@@ -1,0 +1,37 @@
+{
+  "evidence_kind": "analysis",
+  "purpose": "Pinned offline audit of one Colab L4 CLI attempt, failed result transfer and owned-instance cleanup; no model execution by this command",
+  "sources": [
+    {
+      "archive_name": "lifecycle.jsonl",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/operations/COLAB-20261119-001/lifecycle.jsonl",
+      "sha256": "2a15ba9fd7fc7a1021fb6cf48c96dadc82936540c23b35dd91bf0899f0f5cf1e"
+    },
+    {
+      "archive_name": "lifecycle.py",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/operations/COLAB-20261119-001/lifecycle.py",
+      "sha256": "34d37ff12069f1136ed1a6c01ba5c23ed4a15e5d41463654402366a0ba0f9cde"
+    },
+    {
+      "archive_name": "colab_inference_probe.py",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-034/inputs/scripts/colab_inference_probe.py",
+      "sha256": "99172529772f33e31d955c9f5dacfee448aa6f15326b3c030c6dbf3c8832401b"
+    },
+    {
+      "archive_name": "iteration5_colab_boundary.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/agents/reviews/iteration5_colab_boundary.md",
+      "sha256": "043ef63dcea4dd340bc597a9b3da30d024b8b8365d0b968b539a88f5f34aac11"
+    },
+    {
+      "archive_name": "preflight_config.json",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-034/config.json",
+      "sha256": "20c36d314e06e34fb3bb7999cf51ee2af522cf74a8ba94aa1267bd38302735d2"
+    },
+    {
+      "archive_name": "preflight_manifest.json",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-034/manifest.json",
+      "sha256": "a83071eae8d833764175ee37ade042abf861ce04c41f06ddf1f85c129a591ef3"
+    }
+  ],
+  "expected_local_receipt": "/Users/derek/Documents/ChatGPT/LLM 作业/operations/COLAB-20261119-001/toolloop_probe.json"
+}

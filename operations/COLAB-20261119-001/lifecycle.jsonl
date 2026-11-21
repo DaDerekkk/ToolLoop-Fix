@@ -1,0 +1,22 @@
+{"step": "reservation", "utc": "2026-11-19T07:55:15.040633+00:00", "elapsed_s": 0.0, "session": "tlfix-11ca2a90f8", "allowlist_sha256": "99172529772f33e31d955c9f5dacfee448aa6f15326b3c030c6dbf3c8832401b", "training": false, "work_deadline_seconds": 509}
+{"step": "baseline_sessions", "utc": "2026-11-19T07:55:16.847314+00:00", "elapsed_s": 1.81, "exit": 0, "reason": null}
+{"step": "baseline_usage", "utc": "2026-11-19T07:55:19.980078+00:00", "elapsed_s": 4.94, "exit": 0, "reason": null}
+{"step": "baseline_usage_observation", "utc": "2026-11-19T07:55:19.980554+00:00", "elapsed_s": 4.94, "balance_cu": 2731.13, "rate_cu_hr": 8.88, "assignments": 1.0}
+{"step": "new", "utc": "2026-11-19T07:55:26.251444+00:00", "elapsed_s": 11.21, "exit": 0, "reason": "Session READY"}
+{"step": "allocated_sessions", "utc": "2026-11-19T07:55:28.618676+00:00", "elapsed_s": 13.58, "exit": 0, "reason": null}
+{"step": "new_endpoint_verified", "utc": "2026-11-19T07:55:28.619000+00:00", "elapsed_s": 13.58, "endpoint_sha256": "f25fb23bbdc796589d8d94395354feade91d24d92302f41ebc3991dae718f702"}
+{"step": "allocated_usage", "utc": "2026-11-19T07:55:29.648034+00:00", "elapsed_s": 14.61, "exit": 0, "reason": null}
+{"step": "allocated_usage_observation", "utc": "2026-11-19T07:55:29.648315+00:00", "elapsed_s": 14.61, "balance_cu": 2730.41, "rate_cu_hr": 10.82, "assignments": 2.0}
+{"step": "status", "utc": "2026-11-19T07:55:32.187203+00:00", "elapsed_s": 17.15, "exit": 0, "reason": null}
+{"step": "version_check", "utc": "2026-11-19T07:55:36.453347+00:00", "elapsed_s": 21.41, "exit": 0, "reason": null}
+{"step": "install_transformers", "utc": "2026-11-19T07:55:42.672014+00:00", "elapsed_s": 27.63, "exit": 0, "reason": "Installation Complete"}
+{"step": "single_inference", "utc": "2026-11-19T07:56:19.343162+00:00", "elapsed_s": 64.3, "exit": 0, "reason": null}
+{"step": "download_receipt", "utc": "2026-11-19T07:56:49.350755+00:00", "elapsed_s": 94.31, "error": "client_wall_timeout"}
+{"step": "work_failed", "utc": "2026-11-19T07:56:49.351175+00:00", "elapsed_s": 94.31, "error": "client_wall_timeout"}
+{"step": "stop_owned_only", "utc": "2026-11-19T07:56:51.699089+00:00", "elapsed_s": 96.66, "exit": 0, "reason": "Session terminated"}
+{"step": "unassign_ack", "utc": "2026-11-19T07:56:51.699354+00:00", "elapsed_s": 96.66, "confirmed": true}
+{"step": "final_sessions", "utc": "2026-11-19T07:56:53.798522+00:00", "elapsed_s": 98.76, "exit": 0, "reason": null}
+{"step": "final_usage", "utc": "2026-11-19T07:56:55.109207+00:00", "elapsed_s": 100.07, "exit": 0, "reason": null}
+{"step": "final_usage_observation", "utc": "2026-11-19T07:56:55.109487+00:00", "elapsed_s": 100.07, "balance_cu": 2730.41, "rate_cu_hr": 8.88, "assignments": 1.0}
+{"step": "cleanup_observed", "utc": "2026-11-19T07:56:55.109647+00:00", "elapsed_s": 100.07, "new_assignment_absent": true, "initial_assignments_unchanged": true, "owned_endpoint_known": true}
+{"step": "finished", "utc": "2026-11-19T07:56:55.109701+00:00", "elapsed_s": 100.07, "fresh_inference_receipt": false, "baseline_assignments_restored": true, "allocation_refused": false}

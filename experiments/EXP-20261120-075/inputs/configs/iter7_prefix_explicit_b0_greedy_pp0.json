@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "evidence_class": "model_inference",
+  "evidence_kind": "model_inference",
+  "artifact_contract": "model_evaluation",
+  "policy_name": "qwen3.5-0.8b_prefix_explicit_B0_greedy_pp0",
+  "mode": "fixed_failure_prefix",
+  "cases_path": "data/dev/fixed_prefix_cases_iter4.jsonl",
+  "case_ids": [
+    "pfx-orders-timeout",
+    "pfx-files-timeout",
+    "pfx-jobs-precondition",
+    "pfx-orders-invalid",
+    "pfx-orders-unavailable",
+    "pfx-orders-ok"
+  ],
+  "tool_budget": 12,
+  "turn_budget": 16,
+  "max_context_tokens": 8192,
+  "model": {
+    "model_id": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "backend": "transformers",
+    "model_path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17",
+    "device": "mps",
+    "dtype": "bfloat16"
+  },
+  "sampling": {
+    "enable_thinking": false,
+    "do_sample": false,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 256,
+    "seed": 0
+  },
+  "external_inputs": [
+    {
+      "name": "model_manifest",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/manifests/Qwen3.5-0.8B-2fc06364715b967f1860aea9cf38778875588b17.json",
+      "sha256": "049c3d159e86cf1492a8020d5a95f8d0b92c13091fc82891ce12979c26899d2d"
+    },
+    {
+      "name": "runtime_install_manifest",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/operations/SETUP-20261116-001/manifest.json",
+      "sha256": "60df3c860e6bf7fe578756e8471cd84320c68465246aa5ac3bddd9146e778baa"
+    }
+  ],
+  "notes": "ITER-007 preregistered decoding control (greedy_pp0) on 6 authentic prefixes, explicit contract, MPS BF16; no training.",
+  "run_purpose": "iter7_prefix_decoding_disentanglement",
+  "comparison_arm": "B0",
+  "protocol_version": "qwen_xml_or_native_terminal_v1",
+  "case_seeds": {
+    "pfx-orders-timeout": 1200,
+    "pfx-files-timeout": 1232,
+    "pfx-jobs-precondition": 1264,
+    "pfx-orders-invalid": 1296,
+    "pfx-orders-unavailable": 1328,
+    "pfx-orders-ok": 1360
+  },
+  "wording_profile": "explicit",
+  "task_wording_version": "read_report_literal_target_v1",
+  "prefix_schema_version": "authentic_tool_prefix_v1",
+  "decoding_regime": "greedy_pp0"
+}

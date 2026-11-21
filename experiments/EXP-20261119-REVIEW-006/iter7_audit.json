@@ -1,0 +1,1813 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "accepted": true,
+  "audit_scope": "iter7_recorded_generation_cpu_replay_no_model_execution",
+  "runs": [
+    {
+      "run_id": "EXP-20261116-028",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-028",
+      "manifest_sha256": "2830dea9019d9b030e381fa42926b1a1c9bb4c44c9e693de8f69d1e839610718",
+      "runner_subcommand": "iter4-prefix",
+      "wording_profile": "explicit",
+      "arm": "B0",
+      "decoding_regime": "sampled_pp2",
+      "case_count": 6,
+      "generation_count": 9,
+      "metrics": {
+        "actual_tool_attempts": 11,
+        "budget_exhausted": {
+          "denominator": 6,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "case_count": 6,
+        "continuation_actual_tool_attempts": 3,
+        "continuation_proposal_attempts": 3,
+        "continuation_turns": 9,
+        "exact_grounded_structured_completion": {
+          "denominator": 5,
+          "numerator": 1,
+          "value": 0.2
+        },
+        "exact_stop_reason_code": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_structured_completion_recovery": {
+          "denominator": 4,
+          "numerator": 1,
+          "value": 0.25
+        },
+        "generation_seconds": 40.98727783200957,
+        "guard_blocked_proposals": 0,
+        "has_invalid_loop": {
+          "denominator": 6,
+          "numerator": 1,
+          "value": 0.16666666666666666
+        },
+        "historical_generation_seconds": 30.499345876000007,
+        "historical_input_tokens": 5918,
+        "historical_output_tokens": 288,
+        "input_tokens": 8245,
+        "natural_termination_semantics_unknown": {
+          "denominator": 6,
+          "numerator": 4,
+          "value": 0.6666666666666666
+        },
+        "new_goal_evidence_recovery": {
+          "denominator": 4,
+          "numerator": 1,
+          "value": 0.25
+        },
+        "normal_completion_control": {
+          "case_count": 1,
+          "exact_structured_completion": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 1,
+            "numerator": 1,
+            "value": 1.0
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          }
+        },
+        "normal_exact_grounded_structured_completion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "normal_tool_goal_attainment": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "output_tokens": 454,
+        "parser_error_turn_rate": {
+          "denominator": 9,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "parser_error_turns": 0,
+        "prefix_goal_already_attained": {
+          "denominator": 6,
+          "numerator": 1,
+          "value": 0.16666666666666666
+        },
+        "prefix_proposed_repeat_count": 0,
+        "prefix_tool_attempts": 8,
+        "prefix_turns": 8,
+        "premature_stop_without_goal_evidence": {
+          "denominator": 6,
+          "numerator": 3,
+          "value": 0.5
+        },
+        "proposal_attempts": 11,
+        "proposed_repeat_count": 1,
+        "proposed_repeat_rate": {
+          "denominator": 3,
+          "numerator": 1,
+          "value": 0.3333333333333333
+        },
+        "retry_required_exact_grounded_structured_completion": {
+          "denominator": 3,
+          "numerator": 1,
+          "value": 0.3333333333333333
+        },
+        "retry_required_tool_goal_attainment": {
+          "denominator": 3,
+          "numerator": 1,
+          "value": 0.3333333333333333
+        },
+        "stop_reason_semantics_unknown": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "terminal_forms": {
+          "natural_text": 4,
+          "none": 0,
+          "structured_finish": 1,
+          "structured_stop": 1
+        },
+        "tool_goal_attainment": {
+          "denominator": 5,
+          "numerator": 2,
+          "value": 0.4
+        },
+        "turns": 17,
+        "unavailable_stop_control": {
+          "case_count": 1,
+          "exact_structured_completion": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 1,
+            "numerator": 1,
+            "value": 1.0
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 1,
+            "numerator": 1,
+            "value": 1.0
+          }
+        },
+        "unsupported_finish_wrapper": {
+          "denominator": 6,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "historical_source_manifests": {
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017": "ad0a479ed2ecdbbafe5a55a251b98434760a3e78e4d5f967ef81a6b2a77e4706",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-013": "6434789979bb6d7687497405a22e393b629d966b335a5b4d899f57693d53134e",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-018": "c88fc548bac0cdceb62d7802ad15e4c1c72e3fef77dec7c9d46587410b5adfde"
+      },
+      "all_cases_replayed": true
+    },
+    {
+      "run_id": "EXP-20261116-029",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-029",
+      "manifest_sha256": "a27f2bef87e20543909d77524f8dcf2fba3d6419b47aae65b172df52efc397f7",
+      "runner_subcommand": "iter4-prefix",
+      "wording_profile": "explicit",
+      "arm": "B1",
+      "decoding_regime": "sampled_pp2",
+      "case_count": 6,
+      "generation_count": 14,
+      "metrics": {
+        "actual_tool_attempts": 15,
+        "budget_exhausted": {
+          "denominator": 6,
+          "numerator": 1,
+          "value": 0.16666666666666666
+        },
+        "case_count": 6,
+        "continuation_actual_tool_attempts": 7,
+        "continuation_proposal_attempts": 9,
+        "continuation_turns": 14,
+        "exact_grounded_structured_completion": {
+          "denominator": 5,
+          "numerator": 1,
+          "value": 0.2
+        },
+        "exact_stop_reason_code": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_structured_completion_recovery": {
+          "denominator": 4,
+          "numerator": 1,
+          "value": 0.25
+        },
+        "generation_seconds": 90.78069495898308,
+        "guard_blocked_proposals": 0,
+        "has_invalid_loop": {
+          "denominator": 6,
+          "numerator": 1,
+          "value": 0.16666666666666666
+        },
+        "historical_generation_seconds": 30.499345876000007,
+        "historical_input_tokens": 5918,
+        "historical_output_tokens": 288,
+        "input_tokens": 15107,
+        "natural_termination_semantics_unknown": {
+          "denominator": 6,
+          "numerator": 3,
+          "value": 0.5
+        },
+        "new_goal_evidence_recovery": {
+          "denominator": 4,
+          "numerator": 1,
+          "value": 0.25
+        },
+        "normal_completion_control": {
+          "case_count": 1,
+          "exact_structured_completion": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 1,
+            "numerator": 1,
+            "value": 1.0
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          }
+        },
+        "normal_exact_grounded_structured_completion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "normal_tool_goal_attainment": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "output_tokens": 905,
+        "parser_error_turn_rate": {
+          "denominator": 14,
+          "numerator": 2,
+          "value": 0.14285714285714285
+        },
+        "parser_error_turns": 2,
+        "prefix_goal_already_attained": {
+          "denominator": 6,
+          "numerator": 1,
+          "value": 0.16666666666666666
+        },
+        "prefix_proposed_repeat_count": 0,
+        "prefix_tool_attempts": 8,
+        "prefix_turns": 8,
+        "premature_stop_without_goal_evidence": {
+          "denominator": 6,
+          "numerator": 2,
+          "value": 0.3333333333333333
+        },
+        "proposal_attempts": 17,
+        "proposed_repeat_count": 1,
+        "proposed_repeat_rate": {
+          "denominator": 9,
+          "numerator": 1,
+          "value": 0.1111111111111111
+        },
+        "retry_required_exact_grounded_structured_completion": {
+          "denominator": 3,
+          "numerator": 1,
+          "value": 0.3333333333333333
+        },
+        "retry_required_tool_goal_attainment": {
+          "denominator": 3,
+          "numerator": 1,
+          "value": 0.3333333333333333
+        },
+        "stop_reason_semantics_unknown": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "terminal_forms": {
+          "natural_text": 3,
+          "none": 1,
+          "structured_finish": 1,
+          "structured_stop": 1
+        },
+        "tool_goal_attainment": {
+          "denominator": 5,
+          "numerator": 2,
+          "value": 0.4
+        },
+        "turns": 22,
+        "unavailable_stop_control": {
+          "case_count": 1,
+          "exact_structured_completion": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 1,
+            "numerator": 1,
+            "value": 1.0
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 1,
+            "numerator": 1,
+            "value": 1.0
+          }
+        },
+        "unsupported_finish_wrapper": {
+          "denominator": 6,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "historical_source_manifests": {
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017": "ad0a479ed2ecdbbafe5a55a251b98434760a3e78e4d5f967ef81a6b2a77e4706",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-013": "6434789979bb6d7687497405a22e393b629d966b335a5b4d899f57693d53134e",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-018": "c88fc548bac0cdceb62d7802ad15e4c1c72e3fef77dec7c9d46587410b5adfde"
+      },
+      "all_cases_replayed": true
+    },
+    {
+      "run_id": "EXP-20261116-030",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-030",
+      "manifest_sha256": "c363b5ca088acac7ad977b6601b24c7d536e67b5e62de37185b328a1bcaa539a",
+      "runner_subcommand": "iter4-prefix",
+      "wording_profile": "explicit",
+      "arm": "B2",
+      "decoding_regime": "sampled_pp2",
+      "case_count": 6,
+      "generation_count": 10,
+      "metrics": {
+        "actual_tool_attempts": 10,
+        "budget_exhausted": {
+          "denominator": 6,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "case_count": 6,
+        "continuation_actual_tool_attempts": 2,
+        "continuation_proposal_attempts": 4,
+        "continuation_turns": 10,
+        "exact_grounded_structured_completion": {
+          "denominator": 5,
+          "numerator": 1,
+          "value": 0.2
+        },
+        "exact_stop_reason_code": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_structured_completion_recovery": {
+          "denominator": 4,
+          "numerator": 1,
+          "value": 0.25
+        },
+        "generation_seconds": 63.554686914998456,
+        "guard_blocked_proposals": 2,
+        "has_invalid_loop": {
+          "denominator": 6,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "historical_generation_seconds": 30.499345876000007,
+        "historical_input_tokens": 5918,
+        "historical_output_tokens": 288,
+        "input_tokens": 9411,
+        "natural_termination_semantics_unknown": {
+          "denominator": 6,
+          "numerator": 4,
+          "value": 0.6666666666666666
+        },
+        "new_goal_evidence_recovery": {
+          "denominator": 4,
+          "numerator": 1,
+          "value": 0.25
+        },
+        "normal_completion_control": {
+          "case_count": 1,
+          "exact_structured_completion": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 1,
+            "numerator": 1,
+            "value": 1.0
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          }
+        },
+        "normal_exact_grounded_structured_completion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "normal_tool_goal_attainment": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "output_tokens": 572,
+        "parser_error_turn_rate": {
+          "denominator": 10,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "parser_error_turns": 0,
+        "prefix_goal_already_attained": {
+          "denominator": 6,
+          "numerator": 1,
+          "value": 0.16666666666666666
+        },
+        "prefix_proposed_repeat_count": 0,
+        "prefix_tool_attempts": 8,
+        "prefix_turns": 8,
+        "premature_stop_without_goal_evidence": {
+          "denominator": 6,
+          "numerator": 3,
+          "value": 0.5
+        },
+        "proposal_attempts": 12,
+        "proposed_repeat_count": 2,
+        "proposed_repeat_rate": {
+          "denominator": 4,
+          "numerator": 2,
+          "value": 0.5
+        },
+        "retry_required_exact_grounded_structured_completion": {
+          "denominator": 3,
+          "numerator": 1,
+          "value": 0.3333333333333333
+        },
+        "retry_required_tool_goal_attainment": {
+          "denominator": 3,
+          "numerator": 1,
+          "value": 0.3333333333333333
+        },
+        "stop_reason_semantics_unknown": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "terminal_forms": {
+          "natural_text": 4,
+          "none": 0,
+          "structured_finish": 1,
+          "structured_stop": 1
+        },
+        "tool_goal_attainment": {
+          "denominator": 5,
+          "numerator": 2,
+          "value": 0.4
+        },
+        "turns": 18,
+        "unavailable_stop_control": {
+          "case_count": 1,
+          "exact_structured_completion": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 1,
+            "numerator": 1,
+            "value": 1.0
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 1,
+            "numerator": 1,
+            "value": 1.0
+          }
+        },
+        "unsupported_finish_wrapper": {
+          "denominator": 6,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "historical_source_manifests": {
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017": "ad0a479ed2ecdbbafe5a55a251b98434760a3e78e4d5f967ef81a6b2a77e4706",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-013": "6434789979bb6d7687497405a22e393b629d966b335a5b4d899f57693d53134e",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-018": "c88fc548bac0cdceb62d7802ad15e4c1c72e3fef77dec7c9d46587410b5adfde"
+      },
+      "all_cases_replayed": true
+    },
+    {
+      "run_id": "EXP-20261119-051",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-051",
+      "manifest_sha256": "ae05ec0502e8872eed20a8853a163ce7daf84593d97459b2b92d1f1df9e9caa2",
+      "runner_subcommand": "prefix-multiseed",
+      "wording_profile": "explicit",
+      "arm": "B0",
+      "decoding_regime": "sampled_pp2",
+      "schedule_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "case_count": 24,
+      "generation_count": 58,
+      "metrics": {
+        "actual_tool_attempts": 66,
+        "budget_exhausted": {
+          "denominator": 24,
+          "numerator": 3,
+          "value": 0.125
+        },
+        "case_count": 24,
+        "continuation_actual_tool_attempts": 34,
+        "continuation_proposal_attempts": 37,
+        "continuation_turns": 58,
+        "exact_grounded_structured_completion": {
+          "denominator": 20,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_stop_reason_code": {
+          "denominator": 4,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_structured_completion_recovery": {
+          "denominator": 16,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "generation_seconds": 125.23650608077878,
+        "guard_blocked_proposals": 0,
+        "has_invalid_loop": {
+          "denominator": 24,
+          "numerator": 3,
+          "value": 0.125
+        },
+        "historical_generation_seconds": 121.99738350400003,
+        "historical_input_tokens": 23672,
+        "historical_output_tokens": 1152,
+        "input_tokens": 61326,
+        "natural_termination_semantics_unknown": {
+          "denominator": 24,
+          "numerator": 14,
+          "value": 0.5833333333333334
+        },
+        "new_goal_evidence_recovery": {
+          "denominator": 16,
+          "numerator": 1,
+          "value": 0.0625
+        },
+        "normal_completion_control": {
+          "case_count": 4,
+          "exact_structured_completion": {
+            "denominator": 4,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 4,
+            "numerator": 4,
+            "value": 1.0
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 4,
+            "numerator": 0,
+            "value": 0.0
+          }
+        },
+        "normal_exact_grounded_structured_completion": {
+          "denominator": 4,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "normal_tool_goal_attainment": {
+          "denominator": 4,
+          "numerator": 4,
+          "value": 1.0
+        },
+        "output_tokens": 3016,
+        "parser_error_turn_rate": {
+          "denominator": 58,
+          "numerator": 3,
+          "value": 0.05172413793103448
+        },
+        "parser_error_turns": 3,
+        "prefix_goal_already_attained": {
+          "denominator": 24,
+          "numerator": 4,
+          "value": 0.16666666666666666
+        },
+        "prefix_proposed_repeat_count": 0,
+        "prefix_tool_attempts": 32,
+        "prefix_turns": 32,
+        "premature_stop_without_goal_evidence": {
+          "denominator": 24,
+          "numerator": 9,
+          "value": 0.375
+        },
+        "proposal_attempts": 69,
+        "proposed_repeat_count": 19,
+        "proposed_repeat_rate": {
+          "denominator": 37,
+          "numerator": 19,
+          "value": 0.5135135135135135
+        },
+        "retry_required_exact_grounded_structured_completion": {
+          "denominator": 12,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "retry_required_tool_goal_attainment": {
+          "denominator": 12,
+          "numerator": 1,
+          "value": 0.08333333333333333
+        },
+        "stop_reason_semantics_unknown": {
+          "denominator": 4,
+          "numerator": 2,
+          "value": 0.5
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 4,
+          "numerator": 2,
+          "value": 0.5
+        },
+        "terminal_forms": {
+          "natural_text": 14,
+          "none": 3,
+          "structured_finish": 5,
+          "structured_stop": 2
+        },
+        "tool_goal_attainment": {
+          "denominator": 20,
+          "numerator": 5,
+          "value": 0.25
+        },
+        "turns": 90,
+        "unavailable_stop_control": {
+          "case_count": 4,
+          "exact_structured_completion": {
+            "denominator": 4,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 4,
+            "numerator": 2,
+            "value": 0.5
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 4,
+            "numerator": 2,
+            "value": 0.5
+          }
+        },
+        "unsupported_finish_wrapper": {
+          "denominator": 24,
+          "numerator": 5,
+          "value": 0.20833333333333334
+        }
+      },
+      "historical_source_manifests": {
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017": "ad0a479ed2ecdbbafe5a55a251b98434760a3e78e4d5f967ef81a6b2a77e4706",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-013": "6434789979bb6d7687497405a22e393b629d966b335a5b4d899f57693d53134e",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-018": "c88fc548bac0cdceb62d7802ad15e4c1c72e3fef77dec7c9d46587410b5adfde"
+      },
+      "all_cases_replayed": true
+    },
+    {
+      "run_id": "EXP-20261119-052",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-052",
+      "manifest_sha256": "ea651a824f4a1f92e04882ff63e5a4db6cd13eb1715c10aeb2d569169a4169fb",
+      "runner_subcommand": "prefix-multiseed",
+      "wording_profile": "explicit",
+      "arm": "B1",
+      "decoding_regime": "sampled_pp2",
+      "schedule_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "case_count": 24,
+      "generation_count": 51,
+      "metrics": {
+        "actual_tool_attempts": 58,
+        "budget_exhausted": {
+          "denominator": 24,
+          "numerator": 1,
+          "value": 0.041666666666666664
+        },
+        "case_count": 24,
+        "continuation_actual_tool_attempts": 26,
+        "continuation_proposal_attempts": 28,
+        "continuation_turns": 51,
+        "exact_grounded_structured_completion": {
+          "denominator": 20,
+          "numerator": 1,
+          "value": 0.05
+        },
+        "exact_stop_reason_code": {
+          "denominator": 4,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_structured_completion_recovery": {
+          "denominator": 16,
+          "numerator": 1,
+          "value": 0.0625
+        },
+        "generation_seconds": 141.80826424597763,
+        "guard_blocked_proposals": 0,
+        "has_invalid_loop": {
+          "denominator": 24,
+          "numerator": 1,
+          "value": 0.041666666666666664
+        },
+        "historical_generation_seconds": 121.99738350400003,
+        "historical_input_tokens": 23672,
+        "historical_output_tokens": 1152,
+        "input_tokens": 56807,
+        "natural_termination_semantics_unknown": {
+          "denominator": 24,
+          "numerator": 15,
+          "value": 0.625
+        },
+        "new_goal_evidence_recovery": {
+          "denominator": 16,
+          "numerator": 2,
+          "value": 0.125
+        },
+        "normal_completion_control": {
+          "case_count": 4,
+          "exact_structured_completion": {
+            "denominator": 4,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 4,
+            "numerator": 4,
+            "value": 1.0
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 4,
+            "numerator": 0,
+            "value": 0.0
+          }
+        },
+        "normal_exact_grounded_structured_completion": {
+          "denominator": 4,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "normal_tool_goal_attainment": {
+          "denominator": 4,
+          "numerator": 4,
+          "value": 1.0
+        },
+        "output_tokens": 2983,
+        "parser_error_turn_rate": {
+          "denominator": 51,
+          "numerator": 2,
+          "value": 0.0392156862745098
+        },
+        "parser_error_turns": 2,
+        "prefix_goal_already_attained": {
+          "denominator": 24,
+          "numerator": 4,
+          "value": 0.16666666666666666
+        },
+        "prefix_proposed_repeat_count": 0,
+        "prefix_tool_attempts": 32,
+        "prefix_turns": 32,
+        "premature_stop_without_goal_evidence": {
+          "denominator": 24,
+          "numerator": 11,
+          "value": 0.4583333333333333
+        },
+        "proposal_attempts": 60,
+        "proposed_repeat_count": 9,
+        "proposed_repeat_rate": {
+          "denominator": 28,
+          "numerator": 9,
+          "value": 0.32142857142857145
+        },
+        "retry_required_exact_grounded_structured_completion": {
+          "denominator": 12,
+          "numerator": 1,
+          "value": 0.08333333333333333
+        },
+        "retry_required_tool_goal_attainment": {
+          "denominator": 12,
+          "numerator": 2,
+          "value": 0.16666666666666666
+        },
+        "stop_reason_semantics_unknown": {
+          "denominator": 4,
+          "numerator": 2,
+          "value": 0.5
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 4,
+          "numerator": 2,
+          "value": 0.5
+        },
+        "terminal_forms": {
+          "natural_text": 15,
+          "none": 1,
+          "structured_finish": 5,
+          "structured_stop": 3
+        },
+        "tool_goal_attainment": {
+          "denominator": 20,
+          "numerator": 6,
+          "value": 0.3
+        },
+        "turns": 83,
+        "unavailable_stop_control": {
+          "case_count": 4,
+          "exact_structured_completion": {
+            "denominator": 4,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 4,
+            "numerator": 2,
+            "value": 0.5
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 4,
+            "numerator": 2,
+            "value": 0.5
+          }
+        },
+        "unsupported_finish_wrapper": {
+          "denominator": 24,
+          "numerator": 4,
+          "value": 0.16666666666666666
+        }
+      },
+      "historical_source_manifests": {
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017": "ad0a479ed2ecdbbafe5a55a251b98434760a3e78e4d5f967ef81a6b2a77e4706",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-013": "6434789979bb6d7687497405a22e393b629d966b335a5b4d899f57693d53134e",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-018": "c88fc548bac0cdceb62d7802ad15e4c1c72e3fef77dec7c9d46587410b5adfde"
+      },
+      "all_cases_replayed": true
+    },
+    {
+      "run_id": "EXP-20261119-053",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-053",
+      "manifest_sha256": "38e44917795632c26d33288c6cf444728950241486541f9940f6ac70c80369f1",
+      "runner_subcommand": "prefix-multiseed",
+      "wording_profile": "explicit",
+      "arm": "B2",
+      "decoding_regime": "sampled_pp2",
+      "schedule_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "case_count": 24,
+      "generation_count": 44,
+      "metrics": {
+        "actual_tool_attempts": 47,
+        "budget_exhausted": {
+          "denominator": 24,
+          "numerator": 2,
+          "value": 0.08333333333333333
+        },
+        "case_count": 24,
+        "continuation_actual_tool_attempts": 15,
+        "continuation_proposal_attempts": 22,
+        "continuation_turns": 44,
+        "exact_grounded_structured_completion": {
+          "denominator": 20,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_stop_reason_code": {
+          "denominator": 4,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_structured_completion_recovery": {
+          "denominator": 16,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "generation_seconds": 141.41259883291787,
+        "guard_blocked_proposals": 3,
+        "has_invalid_loop": {
+          "denominator": 24,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "historical_generation_seconds": 121.99738350400003,
+        "historical_input_tokens": 23672,
+        "historical_output_tokens": 1152,
+        "input_tokens": 42503,
+        "natural_termination_semantics_unknown": {
+          "denominator": 24,
+          "numerator": 15,
+          "value": 0.625
+        },
+        "new_goal_evidence_recovery": {
+          "denominator": 16,
+          "numerator": 2,
+          "value": 0.125
+        },
+        "normal_completion_control": {
+          "case_count": 4,
+          "exact_structured_completion": {
+            "denominator": 4,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 4,
+            "numerator": 4,
+            "value": 1.0
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 4,
+            "numerator": 0,
+            "value": 0.0
+          }
+        },
+        "normal_exact_grounded_structured_completion": {
+          "denominator": 4,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "normal_tool_goal_attainment": {
+          "denominator": 4,
+          "numerator": 4,
+          "value": 1.0
+        },
+        "output_tokens": 3063,
+        "parser_error_turn_rate": {
+          "denominator": 44,
+          "numerator": 4,
+          "value": 0.09090909090909091
+        },
+        "parser_error_turns": 4,
+        "prefix_goal_already_attained": {
+          "denominator": 24,
+          "numerator": 4,
+          "value": 0.16666666666666666
+        },
+        "prefix_proposed_repeat_count": 0,
+        "prefix_tool_attempts": 32,
+        "prefix_turns": 32,
+        "premature_stop_without_goal_evidence": {
+          "denominator": 24,
+          "numerator": 9,
+          "value": 0.375
+        },
+        "proposal_attempts": 54,
+        "proposed_repeat_count": 3,
+        "proposed_repeat_rate": {
+          "denominator": 22,
+          "numerator": 3,
+          "value": 0.13636363636363635
+        },
+        "retry_required_exact_grounded_structured_completion": {
+          "denominator": 12,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "retry_required_tool_goal_attainment": {
+          "denominator": 12,
+          "numerator": 2,
+          "value": 0.16666666666666666
+        },
+        "stop_reason_semantics_unknown": {
+          "denominator": 4,
+          "numerator": 2,
+          "value": 0.5
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 4,
+          "numerator": 2,
+          "value": 0.5
+        },
+        "terminal_forms": {
+          "natural_text": 15,
+          "none": 2,
+          "structured_finish": 5,
+          "structured_stop": 2
+        },
+        "tool_goal_attainment": {
+          "denominator": 20,
+          "numerator": 6,
+          "value": 0.3
+        },
+        "turns": 76,
+        "unavailable_stop_control": {
+          "case_count": 4,
+          "exact_structured_completion": {
+            "denominator": 4,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 4,
+            "numerator": 2,
+            "value": 0.5
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 4,
+            "numerator": 2,
+            "value": 0.5
+          }
+        },
+        "unsupported_finish_wrapper": {
+          "denominator": 24,
+          "numerator": 5,
+          "value": 0.20833333333333334
+        }
+      },
+      "historical_source_manifests": {
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017": "ad0a479ed2ecdbbafe5a55a251b98434760a3e78e4d5f967ef81a6b2a77e4706",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-013": "6434789979bb6d7687497405a22e393b629d966b335a5b4d899f57693d53134e",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-018": "c88fc548bac0cdceb62d7802ad15e4c1c72e3fef77dec7c9d46587410b5adfde"
+      },
+      "all_cases_replayed": true
+    },
+    {
+      "run_id": "EXP-20261119-049",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-049",
+      "manifest_sha256": "59db9e1b4672b5455c827cc49cc236aeffac36031a456ff7782ce6995062fec5",
+      "runner_subcommand": "prefix-decoding",
+      "wording_profile": "explicit",
+      "arm": "B0",
+      "decoding_regime": "greedy_pp0",
+      "case_count": 6,
+      "generation_count": 34,
+      "metrics": {
+        "actual_tool_attempts": 39,
+        "budget_exhausted": {
+          "denominator": 6,
+          "numerator": 3,
+          "value": 0.5
+        },
+        "case_count": 6,
+        "continuation_actual_tool_attempts": 31,
+        "continuation_proposal_attempts": 31,
+        "continuation_turns": 34,
+        "exact_grounded_structured_completion": {
+          "denominator": 5,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_stop_reason_code": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_structured_completion_recovery": {
+          "denominator": 4,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "generation_seconds": 50.78627570904791,
+        "guard_blocked_proposals": 0,
+        "has_invalid_loop": {
+          "denominator": 6,
+          "numerator": 3,
+          "value": 0.5
+        },
+        "historical_generation_seconds": 30.499345876000007,
+        "historical_input_tokens": 5918,
+        "historical_output_tokens": 288,
+        "input_tokens": 41528,
+        "natural_termination_semantics_unknown": {
+          "denominator": 6,
+          "numerator": 2,
+          "value": 0.3333333333333333
+        },
+        "new_goal_evidence_recovery": {
+          "denominator": 4,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "normal_completion_control": {
+          "case_count": 1,
+          "exact_structured_completion": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 1,
+            "numerator": 1,
+            "value": 1.0
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          }
+        },
+        "normal_exact_grounded_structured_completion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "normal_tool_goal_attainment": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "output_tokens": 1297,
+        "parser_error_turn_rate": {
+          "denominator": 34,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "parser_error_turns": 0,
+        "prefix_goal_already_attained": {
+          "denominator": 6,
+          "numerator": 1,
+          "value": 0.16666666666666666
+        },
+        "prefix_proposed_repeat_count": 0,
+        "prefix_tool_attempts": 8,
+        "prefix_turns": 8,
+        "premature_stop_without_goal_evidence": {
+          "denominator": 6,
+          "numerator": 1,
+          "value": 0.16666666666666666
+        },
+        "proposal_attempts": 39,
+        "proposed_repeat_count": 29,
+        "proposed_repeat_rate": {
+          "denominator": 31,
+          "numerator": 29,
+          "value": 0.9354838709677419
+        },
+        "retry_required_exact_grounded_structured_completion": {
+          "denominator": 3,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "retry_required_tool_goal_attainment": {
+          "denominator": 3,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "stop_reason_semantics_unknown": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "terminal_forms": {
+          "natural_text": 2,
+          "none": 3,
+          "structured_finish": 1,
+          "structured_stop": 0
+        },
+        "tool_goal_attainment": {
+          "denominator": 5,
+          "numerator": 1,
+          "value": 0.2
+        },
+        "turns": 42,
+        "unavailable_stop_control": {
+          "case_count": 1,
+          "exact_structured_completion": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          }
+        },
+        "unsupported_finish_wrapper": {
+          "denominator": 6,
+          "numerator": 1,
+          "value": 0.16666666666666666
+        }
+      },
+      "historical_source_manifests": {
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017": "ad0a479ed2ecdbbafe5a55a251b98434760a3e78e4d5f967ef81a6b2a77e4706",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-013": "6434789979bb6d7687497405a22e393b629d966b335a5b4d899f57693d53134e",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-018": "c88fc548bac0cdceb62d7802ad15e4c1c72e3fef77dec7c9d46587410b5adfde"
+      },
+      "all_cases_replayed": true
+    },
+    {
+      "run_id": "EXP-20261119-050",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-050",
+      "manifest_sha256": "dfc7bfba1a92565495b286dae93a7100a014bfb4b34c445d74b97d23d359dc29",
+      "runner_subcommand": "prefix-decoding",
+      "wording_profile": "explicit",
+      "arm": "B0",
+      "decoding_regime": "greedy_pp2",
+      "case_count": 6,
+      "generation_count": 24,
+      "metrics": {
+        "actual_tool_attempts": 28,
+        "budget_exhausted": {
+          "denominator": 6,
+          "numerator": 2,
+          "value": 0.3333333333333333
+        },
+        "case_count": 6,
+        "continuation_actual_tool_attempts": 20,
+        "continuation_proposal_attempts": 20,
+        "continuation_turns": 24,
+        "exact_grounded_structured_completion": {
+          "denominator": 5,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_stop_reason_code": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_structured_completion_recovery": {
+          "denominator": 4,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "generation_seconds": 30.58650054014288,
+        "guard_blocked_proposals": 0,
+        "has_invalid_loop": {
+          "denominator": 6,
+          "numerator": 2,
+          "value": 0.3333333333333333
+        },
+        "historical_generation_seconds": 30.499345876000007,
+        "historical_input_tokens": 5918,
+        "historical_output_tokens": 288,
+        "input_tokens": 28083,
+        "natural_termination_semantics_unknown": {
+          "denominator": 6,
+          "numerator": 2,
+          "value": 0.3333333333333333
+        },
+        "new_goal_evidence_recovery": {
+          "denominator": 4,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "normal_completion_control": {
+          "case_count": 1,
+          "exact_structured_completion": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 1,
+            "numerator": 1,
+            "value": 1.0
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          }
+        },
+        "normal_exact_grounded_structured_completion": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "normal_tool_goal_attainment": {
+          "denominator": 1,
+          "numerator": 1,
+          "value": 1.0
+        },
+        "output_tokens": 765,
+        "parser_error_turn_rate": {
+          "denominator": 24,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "parser_error_turns": 0,
+        "prefix_goal_already_attained": {
+          "denominator": 6,
+          "numerator": 1,
+          "value": 0.16666666666666666
+        },
+        "prefix_proposed_repeat_count": 0,
+        "prefix_tool_attempts": 8,
+        "prefix_turns": 8,
+        "premature_stop_without_goal_evidence": {
+          "denominator": 6,
+          "numerator": 2,
+          "value": 0.3333333333333333
+        },
+        "proposal_attempts": 28,
+        "proposed_repeat_count": 19,
+        "proposed_repeat_rate": {
+          "denominator": 20,
+          "numerator": 19,
+          "value": 0.95
+        },
+        "retry_required_exact_grounded_structured_completion": {
+          "denominator": 3,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "retry_required_tool_goal_attainment": {
+          "denominator": 3,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "stop_reason_semantics_unknown": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 1,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "terminal_forms": {
+          "natural_text": 2,
+          "none": 2,
+          "structured_finish": 1,
+          "structured_stop": 1
+        },
+        "tool_goal_attainment": {
+          "denominator": 5,
+          "numerator": 1,
+          "value": 0.2
+        },
+        "turns": 32,
+        "unavailable_stop_control": {
+          "case_count": 1,
+          "exact_structured_completion": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "natural_termination_semantics_unknown": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "stopped_after_public_unavailable": {
+            "denominator": 1,
+            "numerator": 0,
+            "value": 0.0
+          }
+        },
+        "unsupported_finish_wrapper": {
+          "denominator": 6,
+          "numerator": 1,
+          "value": 0.16666666666666666
+        }
+      },
+      "historical_source_manifests": {
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017": "ad0a479ed2ecdbbafe5a55a251b98434760a3e78e4d5f967ef81a6b2a77e4706",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-013": "6434789979bb6d7687497405a22e393b629d966b335a5b4d899f57693d53134e",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-018": "c88fc548bac0cdceb62d7802ad15e4c1c72e3fef77dec7c9d46587410b5adfde"
+      },
+      "all_cases_replayed": true
+    },
+    {
+      "run_id": "EXP-20261119-054",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-054",
+      "manifest_sha256": "c749cfb7972b9174868db1fc7e0233528ef73ea2b59a437c400d0ccdd7ee2c4d",
+      "runner_subcommand": "explicit-e2e",
+      "wording_profile": "explicit",
+      "arm": "B0",
+      "decoding_regime": "sampled_pp2",
+      "case_count": 24,
+      "generation_count": 94,
+      "metrics": {
+        "actual_tool_attempts": 71,
+        "budget_exhausted": {
+          "denominator": 24,
+          "numerator": 2,
+          "value": 0.08333333333333333
+        },
+        "case_count": 24,
+        "exact_grounded_structured_completion": {
+          "denominator": 21,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_stop_reason_code": {
+          "denominator": 3,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "generation_seconds": 183.01021862309426,
+        "guard_blocked_proposals": 0,
+        "has_invalid_loop": {
+          "denominator": 24,
+          "numerator": 5,
+          "value": 0.20833333333333334
+        },
+        "input_tokens": 91190,
+        "natural_termination_semantics_unknown": {
+          "denominator": 24,
+          "numerator": 14,
+          "value": 0.5833333333333334
+        },
+        "normal_exact_grounded_structured_completion": {
+          "denominator": 3,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "normal_tool_goal_attainment": {
+          "denominator": 3,
+          "numerator": 1,
+          "value": 0.3333333333333333
+        },
+        "output_tokens": 4168,
+        "parser_error_turn_rate": {
+          "denominator": 94,
+          "numerator": 1,
+          "value": 0.010638297872340425
+        },
+        "parser_error_turns": 1,
+        "premature_stop_without_goal_evidence": {
+          "denominator": 24,
+          "numerator": 12,
+          "value": 0.5
+        },
+        "proposal_attempts": 72,
+        "proposed_repeat_count": 21,
+        "proposed_repeat_rate": {
+          "denominator": 72,
+          "numerator": 21,
+          "value": 0.2916666666666667
+        },
+        "retry_required_exact_grounded_structured_completion": {
+          "denominator": 6,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "retry_required_tool_goal_attainment": {
+          "denominator": 6,
+          "numerator": 1,
+          "value": 0.16666666666666666
+        },
+        "stop_reason_semantics_unknown": {
+          "denominator": 3,
+          "numerator": 3,
+          "value": 1.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 3,
+          "numerator": 1,
+          "value": 0.3333333333333333
+        },
+        "terminal_forms": {
+          "natural_text": 14,
+          "none": 2,
+          "structured_finish": 7,
+          "structured_stop": 1
+        },
+        "tool_goal_attainment": {
+          "denominator": 21,
+          "numerator": 2,
+          "value": 0.09523809523809523
+        },
+        "turns": 94,
+        "unsupported_finish_wrapper": {
+          "denominator": 24,
+          "numerator": 7,
+          "value": 0.2916666666666667
+        }
+      },
+      "all_cases_replayed": true
+    },
+    {
+      "run_id": "EXP-20261119-055",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-055",
+      "manifest_sha256": "ec20333c835a28d9ec2b7985f2e7886dfd5260b0d310dc1427261bbcc9950fff",
+      "runner_subcommand": "explicit-e2e",
+      "wording_profile": "explicit",
+      "arm": "B1",
+      "decoding_regime": "sampled_pp2",
+      "case_count": 24,
+      "generation_count": 84,
+      "metrics": {
+        "actual_tool_attempts": 56,
+        "budget_exhausted": {
+          "denominator": 24,
+          "numerator": 3,
+          "value": 0.125
+        },
+        "case_count": 24,
+        "exact_grounded_structured_completion": {
+          "denominator": 21,
+          "numerator": 1,
+          "value": 0.047619047619047616
+        },
+        "exact_stop_reason_code": {
+          "denominator": 3,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "generation_seconds": 264.0240814618883,
+        "guard_blocked_proposals": 0,
+        "has_invalid_loop": {
+          "denominator": 24,
+          "numerator": 5,
+          "value": 0.20833333333333334
+        },
+        "input_tokens": 91197,
+        "natural_termination_semantics_unknown": {
+          "denominator": 24,
+          "numerator": 16,
+          "value": 0.6666666666666666
+        },
+        "normal_exact_grounded_structured_completion": {
+          "denominator": 3,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "normal_tool_goal_attainment": {
+          "denominator": 3,
+          "numerator": 1,
+          "value": 0.3333333333333333
+        },
+        "output_tokens": 4676,
+        "parser_error_turn_rate": {
+          "denominator": 84,
+          "numerator": 7,
+          "value": 0.08333333333333333
+        },
+        "parser_error_turns": 7,
+        "premature_stop_without_goal_evidence": {
+          "denominator": 24,
+          "numerator": 14,
+          "value": 0.5833333333333334
+        },
+        "proposal_attempts": 63,
+        "proposed_repeat_count": 20,
+        "proposed_repeat_rate": {
+          "denominator": 63,
+          "numerator": 20,
+          "value": 0.31746031746031744
+        },
+        "retry_required_exact_grounded_structured_completion": {
+          "denominator": 6,
+          "numerator": 1,
+          "value": 0.16666666666666666
+        },
+        "retry_required_tool_goal_attainment": {
+          "denominator": 6,
+          "numerator": 1,
+          "value": 0.16666666666666666
+        },
+        "stop_reason_semantics_unknown": {
+          "denominator": 3,
+          "numerator": 3,
+          "value": 1.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 3,
+          "numerator": 2,
+          "value": 0.6666666666666666
+        },
+        "terminal_forms": {
+          "natural_text": 16,
+          "none": 3,
+          "structured_finish": 3,
+          "structured_stop": 2
+        },
+        "tool_goal_attainment": {
+          "denominator": 21,
+          "numerator": 2,
+          "value": 0.09523809523809523
+        },
+        "turns": 84,
+        "unsupported_finish_wrapper": {
+          "denominator": 24,
+          "numerator": 2,
+          "value": 0.08333333333333333
+        }
+      },
+      "all_cases_replayed": true
+    },
+    {
+      "run_id": "EXP-20261119-056",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-056",
+      "manifest_sha256": "8a8ae9f503ed486f8f81618c46aebeb1ad5161d7b30f56ccbf7fd5a68dfb69f1",
+      "runner_subcommand": "explicit-e2e",
+      "wording_profile": "explicit",
+      "arm": "B2",
+      "decoding_regime": "sampled_pp2",
+      "case_count": 24,
+      "generation_count": 87,
+      "metrics": {
+        "actual_tool_attempts": 54,
+        "budget_exhausted": {
+          "denominator": 24,
+          "numerator": 1,
+          "value": 0.041666666666666664
+        },
+        "case_count": 24,
+        "exact_grounded_structured_completion": {
+          "denominator": 21,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_stop_reason_code": {
+          "denominator": 3,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "generation_seconds": 310.20226179709425,
+        "guard_blocked_proposals": 8,
+        "has_invalid_loop": {
+          "denominator": 24,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "input_tokens": 87795,
+        "natural_termination_semantics_unknown": {
+          "denominator": 24,
+          "numerator": 15,
+          "value": 0.625
+        },
+        "normal_exact_grounded_structured_completion": {
+          "denominator": 3,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "normal_tool_goal_attainment": {
+          "denominator": 3,
+          "numerator": 1,
+          "value": 0.3333333333333333
+        },
+        "output_tokens": 5504,
+        "parser_error_turn_rate": {
+          "denominator": 87,
+          "numerator": 2,
+          "value": 0.022988505747126436
+        },
+        "parser_error_turns": 2,
+        "premature_stop_without_goal_evidence": {
+          "denominator": 24,
+          "numerator": 13,
+          "value": 0.5416666666666666
+        },
+        "proposal_attempts": 64,
+        "proposed_repeat_count": 8,
+        "proposed_repeat_rate": {
+          "denominator": 64,
+          "numerator": 8,
+          "value": 0.125
+        },
+        "retry_required_exact_grounded_structured_completion": {
+          "denominator": 6,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "retry_required_tool_goal_attainment": {
+          "denominator": 6,
+          "numerator": 1,
+          "value": 0.16666666666666666
+        },
+        "stop_reason_semantics_unknown": {
+          "denominator": 3,
+          "numerator": 3,
+          "value": 1.0
+        },
+        "stopped_after_public_unavailable": {
+          "denominator": 3,
+          "numerator": 1,
+          "value": 0.3333333333333333
+        },
+        "terminal_forms": {
+          "natural_text": 15,
+          "none": 1,
+          "structured_finish": 7,
+          "structured_stop": 1
+        },
+        "tool_goal_attainment": {
+          "denominator": 21,
+          "numerator": 2,
+          "value": 0.09523809523809523
+        },
+        "turns": 87,
+        "unsupported_finish_wrapper": {
+          "denominator": 24,
+          "numerator": 7,
+          "value": 0.2916666666666667
+        }
+      },
+      "all_cases_replayed": true
+    }
+  ],
+  "run_count": 11,
+  "episodes_replayed": 174,
+  "fresh_generations_replayed": 509,
+  "b0_b2_pre_intervention_checks": [
+    {
+      "b0_run_id": "EXP-20261116-028",
+      "b2_run_id": "EXP-20261116-030",
+      "run_kind": "iter4-prefix",
+      "trials_checked": 6,
+      "pre_intervention_turns_verified": 8,
+      "b2_intervened_trials": [
+        "pfx-orders-unavailable"
+      ]
+    },
+    {
+      "b0_run_id": "EXP-20261119-051",
+      "b2_run_id": "EXP-20261119-053",
+      "run_kind": "prefix-multiseed",
+      "trials_checked": 24,
+      "pre_intervention_turns_verified": 40,
+      "b2_intervened_trials": [
+        "pfx-files-timeout@s2",
+        "pfx-jobs-precondition@s2",
+        "pfx-jobs-precondition@s4"
+      ]
+    },
+    {
+      "b0_run_id": "EXP-20261119-054",
+      "b2_run_id": "EXP-20261119-056",
+      "run_kind": "explicit-e2e",
+      "trials_checked": 24,
+      "pre_intervention_turns_verified": 70,
+      "b2_intervened_trials": [
+        "gdev7-files-clarification-f3-01",
+        "gdev7-files-recoverable-f2-01",
+        "gdev7-files-retry_required-f1-01",
+        "gdev7-files-retry_required-f2-01",
+        "gdev7-orders-recoverable-f2-01",
+        "gdev7-orders-retry_required-f2-01"
+      ]
+    }
+  ],
+  "ml_libraries_loaded": false,
+  "limitations": [
+    "Same versioned parser/guard/environment/scorer replay establishes consistency and zero prompt leakage, not independent semantic truth or cryptographic attestation.",
+    "No PyTorch/Transformers loading, new generation, tokenizer re-encoding, or training was performed.",
+    "Natural-language terminal meanings remain ungraded (unknown) until blind human G2 audit.",
+    "Multi-seed continuations over 4 recovery prefixes are paired diagnostic observations, not held-out confirmatory proof."
+  ]
+}

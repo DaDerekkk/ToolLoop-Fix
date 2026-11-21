@@ -1,0 +1,440 @@
+{
+  "adapter_id": "P_no_normal_s101",
+  "by_category": {
+    "clarification": {
+      "case_count": 0,
+      "exact_structured_completion_recovery": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "has_invalid_loop": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "new_goal_evidence_recovery": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "recovery_eligible_count": 0
+    },
+    "normal": {
+      "case_count": 0,
+      "exact_structured_completion_recovery": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "has_invalid_loop": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "new_goal_evidence_recovery": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "recovery_eligible_count": 0
+    },
+    "recoverable": {
+      "case_count": 12,
+      "exact_structured_completion_recovery": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "new_goal_evidence_recovery": {
+        "denominator": 12,
+        "numerator": 5,
+        "value": 0.4166666666666667
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 12,
+        "numerator": 5,
+        "value": 0.4166666666666667
+      },
+      "recovery_eligible_count": 12
+    },
+    "retry_required": {
+      "case_count": 6,
+      "exact_structured_completion_recovery": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "new_goal_evidence_recovery": {
+        "denominator": 6,
+        "numerator": 4,
+        "value": 0.6666666666666666
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 6,
+        "numerator": 1,
+        "value": 0.16666666666666666
+      },
+      "recovery_eligible_count": 6
+    },
+    "unrecoverable": {
+      "case_count": 0,
+      "exact_structured_completion_recovery": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "has_invalid_loop": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "new_goal_evidence_recovery": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "recovery_eligible_count": 0
+    }
+  },
+  "by_domain": {
+    "files": {
+      "case_count": 6,
+      "exact_structured_completion_recovery": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "new_goal_evidence_recovery": {
+        "denominator": 6,
+        "numerator": 2,
+        "value": 0.3333333333333333
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 6,
+        "numerator": 4,
+        "value": 0.6666666666666666
+      },
+      "recovery_eligible_count": 6
+    },
+    "jobs": {
+      "case_count": 6,
+      "exact_structured_completion_recovery": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "new_goal_evidence_recovery": {
+        "denominator": 6,
+        "numerator": 2,
+        "value": 0.3333333333333333
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 6,
+        "numerator": 2,
+        "value": 0.3333333333333333
+      },
+      "recovery_eligible_count": 6
+    },
+    "orders": {
+      "case_count": 6,
+      "exact_structured_completion_recovery": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "has_invalid_loop_v2": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "new_goal_evidence_recovery": {
+        "denominator": 6,
+        "numerator": 5,
+        "value": 0.8333333333333334
+      },
+      "premature_stop_without_goal_evidence": {
+        "denominator": 6,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "recovery_eligible_count": 6
+    }
+  },
+  "comparison_arm": "B0",
+  "decoding_regime": "sampled_pp2",
+  "detector_v2_version": "nonretryable_repeat_without_progress_v2",
+  "evaluated_arm": "P_no_normal",
+  "evidence_class": "model_inference",
+  "lora_enabled": true,
+  "lora_eval_runner_version": "iter9_lora_and_g4_eval_runner_v1",
+  "metrics": {
+    "actual_tool_attempts": 77,
+    "budget_exhausted": {
+      "denominator": 18,
+      "numerator": 4,
+      "value": 0.2222222222222222
+    },
+    "case_count": 18,
+    "continuation_actual_tool_attempts": 59,
+    "continuation_proposal_attempts": 62,
+    "continuation_turns": 76,
+    "exact_grounded_structured_completion": {
+      "denominator": 18,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "exact_stop_reason_code": {
+      "denominator": 0,
+      "numerator": 0,
+      "value": null
+    },
+    "exact_structured_completion_recovery": {
+      "denominator": 18,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "generation_seconds": 269.7748178790789,
+    "guard_blocked_proposals": 0,
+    "has_invalid_loop": {
+      "denominator": 18,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "has_invalid_loop_v2": {
+      "denominator": 18,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "historical_generation_seconds": 0.0,
+    "historical_input_tokens": 0,
+    "historical_output_tokens": 0,
+    "input_tokens": 82139,
+    "natural_termination_semantics_unknown": {
+      "denominator": 18,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "new_goal_evidence_recovery": {
+      "denominator": 18,
+      "numerator": 9,
+      "value": 0.5
+    },
+    "normal_completion_control": {
+      "case_count": 0,
+      "exact_structured_completion": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      }
+    },
+    "normal_exact_grounded_structured_completion": {
+      "denominator": 0,
+      "numerator": 0,
+      "value": null
+    },
+    "normal_tool_goal_attainment": {
+      "denominator": 0,
+      "numerator": 0,
+      "value": null
+    },
+    "output_tokens": 3225,
+    "parser_error_turn_rate": {
+      "denominator": 76,
+      "numerator": 3,
+      "value": 0.039473684210526314
+    },
+    "parser_error_turns": 3,
+    "prefix_goal_already_attained": {
+      "denominator": 18,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "prefix_proposed_repeat_count": 0,
+    "prefix_tool_attempts": 18,
+    "prefix_turns": 18,
+    "premature_stop_without_goal_evidence": {
+      "denominator": 18,
+      "numerator": 6,
+      "value": 0.3333333333333333
+    },
+    "proposal_attempts": 80,
+    "proposed_repeat_count": 0,
+    "proposed_repeat_rate": {
+      "denominator": 62,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "recoverable_exact_structured_completion_recovery": {
+      "denominator": 12,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "recoverable_new_goal_evidence_recovery": {
+      "denominator": 12,
+      "numerator": 5,
+      "value": 0.4166666666666667
+    },
+    "retry_required_exact_grounded_structured_completion": {
+      "denominator": 6,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "retry_required_exact_structured_completion_recovery": {
+      "denominator": 6,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "retry_required_new_goal_evidence_recovery": {
+      "denominator": 6,
+      "numerator": 4,
+      "value": 0.6666666666666666
+    },
+    "retry_required_tool_goal_attainment": {
+      "denominator": 6,
+      "numerator": 4,
+      "value": 0.6666666666666666
+    },
+    "stop_reason_semantics_unknown": {
+      "denominator": 0,
+      "numerator": 0,
+      "value": null
+    },
+    "stopped_after_public_unavailable": {
+      "denominator": 0,
+      "numerator": 0,
+      "value": null
+    },
+    "terminal_forms": {
+      "natural_text": 0,
+      "none": 4,
+      "structured_finish": 0,
+      "structured_stop": 14
+    },
+    "tool_goal_attainment": {
+      "denominator": 18,
+      "numerator": 9,
+      "value": 0.5
+    },
+    "turns": 94,
+    "unavailable_stop_control": {
+      "case_count": 0,
+      "exact_structured_completion": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "natural_termination_semantics_unknown": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "stopped_after_public_unavailable": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      }
+    },
+    "unsupported_finish_wrapper": {
+      "denominator": 18,
+      "numerator": 0,
+      "value": 0.0
+    }
+  },
+  "mode": "fixed_failure_prefix",
+  "prefix_runtime_version": "deterministic_curated_prefix_continuation_v1",
+  "prefix_schema_version": "curated_fixture_prefix_v1",
+  "protocol_version": "qwen_xml_or_native_terminal_v1",
+  "runner_subcommand": "curated-prefix",
+  "score_version": "evidence_and_terminal_form_v1",
+  "task_wording_version": "read_report_literal_target_v1",
+  "train_seed": 101,
+  "training_arm": "P_no_normal",
+  "warning": "Curated fixed_failure_prefix continuation from identical Environment post-prefix snapshots and canonical <tool_call> history (18 episodes); recoverable and retry_required reported separately.",
+  "wording_profile": "explicit"
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "description": "ITER-009 formal statistical comparison across all 9 arms (B0, B1, B2, B3, B4, B5, P, P_no_retry, P_no_normal) on dev_selection (eval24), G4 Closed Holdout E2E (G=36 unseen template groups), G4 Closed Holdout fixed_failure_prefix (G=18 unseen prefix groups), and 3-training-seed replicates (s101, s202, s303) for P and B3.",
+  "dev_manifest_path": "data/processed/grouped_split_manifest_ITER007.json",
+  "g4_manifest_path": "data/processed/g4_holdout_manifest_ITER009.json",
+  "strict_same_device": true,
+  "enforce_manifest_ids": true,
+  "dev_selection_runs": {
+    "B0": "EXP-20261119-054",
+    "B1": "EXP-20261119-055",
+    "B2": "EXP-20261119-056",
+    "B3": "EXP-20261120-071",
+    "B4": "EXP-20261120-072",
+    "B5": "EXP-20261120-073",
+    "P": "EXP-20261120-074",
+    "P_no_retry": "EXP-20261120-076",
+    "P_no_normal": "EXP-20261120-077"
+  },
+  "g4_e2e_runs": {
+    "B0": "EXP-20261120-078",
+    "B1": "EXP-20261120-079",
+    "B2": "EXP-20261120-080",
+    "B3": "EXP-20261120-081",
+    "B4": "EXP-20261120-082",
+    "B5": "EXP-20261120-083",
+    "P": "EXP-20261120-084",
+    "P_no_retry": "EXP-20261120-085",
+    "P_no_normal": "EXP-20261120-086"
+  },
+  "g4_prefix_runs": {
+    "B0": "EXP-20261120-092",
+    "B1": "EXP-20261120-093",
+    "B2": "EXP-20261120-094",
+    "B3": "EXP-20261120-095",
+    "B4": "EXP-20261120-096",
+    "B5": "EXP-20261120-097R1",
+    "P": "EXP-20261120-098",
+    "P_no_retry": "EXP-20261120-099",
+    "P_no_normal": "EXP-20261120-100"
+  },
+  "multi_train_seed_runs": {
+    "B3": [
+      "EXP-20261120-081",
+      "EXP-20261120-087",
+      "EXP-20261120-088"
+    ],
+    "P": [
+      "EXP-20261120-084",
+      "EXP-20261120-090",
+      "EXP-20261120-091"
+    ]
+  },
+  "multi_train_seed_prefix_runs": {
+    "B3": [
+      "EXP-20261120-095",
+      "EXP-20261120-101",
+      "EXP-20261120-102"
+    ],
+    "P": [
+      "EXP-20261120-098",
+      "EXP-20261120-103",
+      "EXP-20261120-104"
+    ]
+  }
+}

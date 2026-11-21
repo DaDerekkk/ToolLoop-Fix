@@ -1,0 +1,36 @@
+{
+  "evidence_kind": "analysis",
+  "purpose": "Freeze final independent reviews, prefix runtime/audit/comparison handoffs and M6 portability addendum; no model/training",
+  "review_files": [
+    {
+      "name": "agents__reviews__iteration4_prefix_design.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/agents/reviews/iteration4_prefix_design.md",
+      "sha256": "cb299e1ec3d06ddf1141b5fed8c3a959ec506e4dd37b698c12024ab362b9c1dc"
+    },
+    {
+      "name": "agents__reviews__iteration4_results_review.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/agents/reviews/iteration4_results_review.md",
+      "sha256": "8c35b61ab2ff8b492b88d5cd031d792623d69583dfe34835505fd769e3464594"
+    },
+    {
+      "name": "agents__handoffs__iteration4_prefix_audit.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/agents/handoffs/iteration4_prefix_audit.md",
+      "sha256": "4854ac789e6d708c0745168ee68e7fb100fe7d4e4317abf680d6587fe105e180"
+    },
+    {
+      "name": "agents__handoffs__prefix_runtime.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/agents/handoffs/prefix_runtime.md",
+      "sha256": "aee7d0968c67e8c2c49281a27accf70e54317c52680d415a1f70b0066b4cd05e"
+    },
+    {
+      "name": "agents__handoffs__prefix_comparison.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/agents/handoffs/prefix_comparison.md",
+      "sha256": "0a5f1cfb8069e7748a65ec4a01dd3695da4ba0438e530a77d4ba81ff72a2ad36"
+    },
+    {
+      "name": "docs__plans__M6_PORTABILITY_ADDENDUM.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/docs/plans/M6_PORTABILITY_ADDENDUM.md",
+      "sha256": "c98193bc7d837d2b7cf5e22e30bd1361bf05617e8c268c72e8b2206c40bed9a2"
+    }
+  ]
+}

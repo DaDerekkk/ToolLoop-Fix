@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "run_id": "EXP-20261116-REVIEW-002",
+  "kind": "analysis",
+  "owner": "protocol",
+  "parent_run": "EXP-20261116-REVIEW-001",
+  "status": "completed",
+  "acceptance_status": "not_reviewed",
+  "hypothesis": "ITER-001修复四项边界缺口并保留合法行为；归档回放可独立比对",
+  "acceptance_criteria": "全部测试与独立边界断言通过；冻结执行路径正确；两组回放各3个文件哈希相同；未实现的外部输入与模型语义校验明确保留限制",
+  "started_at_utc": "2026-11-16T06:05:02.099463+00:00",
+  "report_timezone": "Asia/Shanghai",
+  "environment": {
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+    "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64"
+  },
+  "inputs": {
+    "configs/bootstrap_validation.json": "ff8f39d36270014b77d21ef1483cdd21e989ba6dd0fe735676e6fd9503e9ea6e",
+    "configs/smoke.json": "fff6ffeec5eff129678a08178593f926cd557205e9deb2becfc97faacbdb89a2",
+    "data/dev/pilot_cases.jsonl": "6797958d66b9fe6022e04141d6736774b3c2e899f16d5f16dc70311b86a2f03c",
+    "docs/protocols/EVALUATION_SPEC.md": "211ce276441e0ecca9abeba6d8f9b8ce0041ba2c1f4e8a9b3cba673a1d265988",
+    "docs/protocols/EXPERIMENT_TEMPLATE.md": "203fc74e8c59f85b9f7ad41db63c410ce188732dcd5a4f964ee2748791ae06a1",
+    "docs/protocols/EXPERIMENT_WORKFLOW.md": "1bd5d58f2c28926f2c0f453c60652c4026e497cf74fbff63af265fd499d48d7f",
+    "scripts/check_replay.py": "b039b05faf1b54d87f53a7bf0f4162c618bda6723954a3b0bcaa125bd7ca28ef",
+    "scripts/record_run.py": "543c5d10d7604e0cfce8d24f519cdc4623ef4e87547f7ed4abaf1d369a873ec3",
+    "scripts/validate_records.py": "d40278a3f5c1c6cb90d5d9dbd6eb65bdceec10fab667ce6b39cabb97824d45d1",
+    "tests/test_harness.py": "5d490e942d94d2af3d9b8fdffa097a97e4a4304a7f7a39d924bcfd3dffc53b45",
+    "tests/test_records.py": "8482c5a8619fddcb9734ca6a8751bf5f10bef036cf02924eda5c686c1fa96244",
+    "tests/test_records_regression.py": "dbf8ec878e31d43d120f72eb6e74ef256c8797926c7fe4dd1fb21bda6f05ad3b",
+    "toolloop_fix/__init__.py": "8dc1cdcb07f200e4533636a53a48c24700aaafb826ff21e862071ec678996545",
+    "toolloop_fix/harness.py": "02aa7a4a4b08e7a1ceac68b25183d957006ef5e3a8db4fb0609647e84b10f444",
+    "toolloop_fix/run.py": "27ff2580aaa552b1a3ab88cca2ea07dc46cb41a8ef5c4a0061dee8caaa8a76dd"
+  },
+  "outputs": {
+    "config.json": "ff8f39d36270014b77d21ef1483cdd21e989ba6dd0fe735676e6fd9503e9ea6e",
+    "review_probes.json": "7565b66264df98c9732e19ad91639e28e81fe3d8e9bb0d536b4cd20cea9bdd41",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "1aeee22c29c8eee92b018b2af4f0918c08bc95147d9aa675d694300e6a22e06a"
+  },
+  "exit_code": 0,
+  "evidence_valid": true,
+  "execution_mode": "frozen_snapshot",
+  "source_workspace": "/Users/derek/Documents/ChatGPT/LLM 作业",
+  "artifact_contract": "command_logs",
+  "command": [
+    "python3",
+    "-c",
+    "\nimport copy,hashlib,json,subprocess,sys,tempfile,contextlib,io\nfrom pathlib import Path\nfrom unittest.mock import patch\nfrom toolloop_fix.harness import Environment,run_case,tool_call,detect_loops,summarize\nfrom scripts.record_run import execute_run\nfrom scripts.validate_records import validate\nout=Path(sys.argv[1]); live=Path(sys.argv[2]); frozen=Path.cwd()\ncases=[json.loads(x) for x in (frozen/\"data/dev/pilot_cases.jsonl\").read_text().splitlines()]\ndef fixture(domain=\"orders\",category=\"recoverable\"):\n return copy.deepcopy(next(x for x in cases if x[\"domain\"]==domain and x[\"category\"]==category))\ncheck=subprocess.run([sys.executable,\"-m\",\"unittest\",\"discover\",\"-s\",\"tests\",\"-v\"],capture_output=True,text=True)\nprint(check.stdout);print(check.stderr);assert check.returncode==0\np={\"all_unit_tests_exit_code\":check.returncode,\"frozen_cwd\":str(frozen),\"checks\":{}}\ndef save(name,value): p[\"checks\"][name]=value\nr,t=run_case(fixture(),\"scripted_naive\",\"fixed_failure_prefix\",tool_budget=12)\nassert r[\"tool_attempts\"]==12 and r[\"continuation_tool_attempts\"]==11 and r[\"prefix_tool_attempts\"]==1 and r[\"budget_exhausted\"] and not r[\"success\"]\nsave(\"total_budget\",{k:r[k] for k in (\"tool_attempts\",\"prefix_tool_attempts\",\"continuation_tool_attempts\",\"remaining_tool_budget_at_start\",\"budget_scope\")})\nc=fixture();c[\"fixed_prefix\"]=[\"malformed\"]*12\nr,t=run_case(c,\"scripted_reference\",\"fixed_failure_prefix\");assert r[\"continuation_tool_attempts\"]==0 and r[\"budget_exhausted\"]\nsave(\"exact_budget_prefix\",{\"continuation_attempts\":r[\"continuation_tool_attempts\"],\"success\":r[\"success\"]})\nc[\"fixed_prefix\"].append(\"malformed\")\ntry:run_case(c,\"scripted_reference\",\"fixed_failure_prefix\")\nexcept ValueError as e:save(\"over_budget_prefix\",str(e))\nelse:raise AssertionError(\"over-budget prefix accepted\")\nfor count in (2,5):\n c=fixture(category=\"retry_required\");c[\"hidden\"][\"transient_remaining\"]=count\n r,t=run_case(c,\"scripted_reference\",\"end_to_end\")\n assert r[\"success\"]==(count==2) and r[\"has_invalid_loop\"]==(count==5)\n save(\"timeout_\"+str(count),{\"success\":r[\"success\"],\"loop\":r[\"has_invalid_loop\"],\"codes\":[x[\"response\"][\"code\"] for x in t[\"events\"]]})\nfor count in (3,5):\n c=fixture(\"jobs\",\"retry_required\");c[\"hidden\"][\"polls_remaining\"]=count\n r,t=run_case(c,\"scripted_reference\",\"end_to_end\")\n assert r[\"success\"]==(count==3) and r[\"has_invalid_loop\"]==(count==5)\n save(\"polls_\"+str(count),{\"success\":r[\"success\"],\"loop\":r[\"has_invalid_loop\"],\"codes\":[x[\"response\"][\"code\"] for x in t[\"events\"]]})\nc=fixture();c[\"fixed_prefix\"]*=3\nr,t=run_case(c,\"scripted_reference\",\"fixed_failure_prefix\")\nassert r[\"success\"] and r[\"has_inherited_loop\"] and not r[\"has_invalid_loop\"]\nsave(\"inherited_loop\",{\"inherited\":t[\"prefix_loop_flags\"],\"continuation\":t[\"continuation_loop_flags\"]})\nr,t=run_case(fixture(),\"scripted_naive\",\"fixed_failure_prefix\")\nassert any(x[\"index\"]==1 for x in t[\"continuation_loop_flags\"])\nsave(\"cross_boundary_loop\",t[\"continuation_loop_flags\"][0])\nactions=[tool_call(\"ask_user\",field=\"identifier\"),tool_call(\"get_order\",identifier=\"ORD-101\"),{\"type\":\"final\",\"answer\":\"shipped\",\"identifier\":\"ORD-101\"}]\nwith patch(\"toolloop_fix.harness.scripted_policy\",side_effect=actions):r,t=run_case(fixture(category=\"normal\"),\"scripted_reference\",\"end_to_end\")\nassert r[\"success\"] and r[\"unnecessary_clarification\"] and r[\"premature_abandonment\"]\nsave(\"unnecessary_help\",{k:r[k] for k in (\"success\",\"unnecessary_clarification\",\"unnecessary_clarification_count\",\"premature_abandonment\")})\ne=Environment(fixture(category=\"clarification\"));a=tool_call(\"ask_user\",field=\"identifier\")\nassert e.execute(a)[\"response\"][\"code\"]==\"USER_INFORMATION\"\ns=e.snapshot();assert e.execute(a)[\"response\"][\"code\"]==\"UNNECESSARY_CLARIFICATION\";e.restore(s);assert e.snapshot()==s\nsave(\"repeat_help_snapshot\",True)\nfor c in cases:\n view=Environment(c).public_view();assert set(view)=={\"request\",\"tools\",\"history\"}\n assert not ({\"hidden\",\"category\",\"valid_identifier\",\"value\",\"runtime\"}&set(view[\"request\"]))\n e=Environment(c);v=e.public_view();v[\"request\"][\"target\"]=\"corrupted\";assert e.public_view()[\"request\"][\"target\"]!=\"corrupted\"\nsave(\"all_15_public_boundaries\",True)\nfor c in cases:\n if c.get(\"fixed_prefix\"):\n  a,_=run_case(c,\"scripted_naive\",\"fixed_failure_prefix\");b,_=run_case(c,\"scripted_reference\",\"fixed_failure_prefix\")\n  for key in (\"prefix_snapshot_sha256\",\"remaining_tool_budget_at_start\",\"remaining_turn_budget_at_start\"):assert a[key]==b[key]\nsave(\"all_fixed_prefix_pairing\",True)\ndef sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()\nreplays=[]\nfor original,replay in ((\"EXP-20261116-004\",\"EXP-20261116-005\"),(\"EXP-20261116-002\",\"EXP-20261116-006\")):\n values={}\n for name in (\"trajectories.jsonl\",\"case_results.jsonl\",\"metrics.json\"):\n  a=sha(live/\"experiments\"/original/name);b=sha(live/\"experiments\"/replay/\"replay\"/name);assert a==b;values[name]=a\n replays.append({\"original\":original,\"replay\":replay,\"equal_hashes\":values})\nsave(\"independent_replay_hashes\",replays)\nwith tempfile.TemporaryDirectory() as tmp:\n root=Path(tmp);(root/\"configs\").mkdir();(root/\"configs/a.json\").write_text(json.dumps({\"evidence_kind\":\"analysis\"}))\n with contextlib.redirect_stdout(io.StringIO()):\n  execute_run(root,\"CHECK-KIND\",\"model_inference\",\"configs/a.json\",\"probe\",\"record limitation\",\"protocol\",[sys.executable,\"-c\",\"pass\"])\n errs,rows=validate(root)\n save(\"known_unimplemented_semantic_kind_crosscheck\",{\"config_evidence_kind\":\"analysis\",\"manifest_kind\":rows[0][\"kind\"],\"validator_errors\":errs,\"limitation\":\"generic recorder does not prove model execution or cross-validate semantic evidence kind\"})\n(out/\"review_probes.json\").write_text(json.dumps(p,ensure_ascii=False,indent=2)+\"\\n\")\nprint(json.dumps(p,ensure_ascii=False,indent=2))\n",
+    "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-REVIEW-002",
+    "/Users/derek/Documents/ChatGPT/LLM 作业"
+  ],
+  "cwd": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-REVIEW-002/inputs",
+  "config_sha256": "ff8f39d36270014b77d21ef1483cdd21e989ba6dd0fe735676e6fd9503e9ea6e",
+  "ended_at_utc": "2026-11-16T06:05:02.555384+00:00",
+  "elapsed_seconds": 0.444281,
+  "inputs_changed_during_run": [],
+  "live_workspace_changes_during_run": []
+}

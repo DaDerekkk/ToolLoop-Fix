@@ -1,0 +1,16 @@
+test_file_integrity_mismatch_stops (test_colab_inference_probe.ColabSmokeTests.test_file_integrity_mismatch_stops) ... ok
+test_known_allowlist_pinned (test_colab_inference_probe.ColabSmokeTests.test_known_allowlist_pinned) ... ok
+test_only_vision_keys_may_be_unused (test_colab_inference_probe.ColabSmokeTests.test_only_vision_keys_may_be_unused) ... ok
+test_output_is_exclusive_and_failure_sanitized (test_colab_inference_probe.ColabSmokeTests.test_output_is_exclusive_and_failure_sanitized) ... ok
+test_success_does_not_claim_task_completion (test_colab_inference_probe.ColabSmokeTests.test_success_does_not_claim_task_completion) ... ok
+test_bounds_and_public_schema (test_colab_receipt_transport.ReceiptTransportTests.test_bounds_and_public_schema) ... ok
+test_changed_content_length_or_hash (test_colab_receipt_transport.ReceiptTransportTests.test_changed_content_length_or_hash) ... ok
+test_lossless_noisy_stream (test_colab_receipt_transport.ReceiptTransportTests.test_lossless_noisy_stream) ... ok
+test_missing_truncated_duplicate_and_foreign (test_colab_receipt_transport.ReceiptTransportTests.test_missing_truncated_duplicate_and_foreign) ... ok
+test_no_overwrite (test_colab_receipt_transport.ReceiptTransportTests.test_no_overwrite) ... ok
+test_offline_cli_pair_and_no_diagnostic_leak (test_colab_receipt_transport.ReceiptTransportTests.test_offline_cli_pair_and_no_diagnostic_leak) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.060s
+
+OK

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "description": "Offline provenance, session teardown, base-weight immutability, and 4-adapter Wave 1 (B3_s101, B4_s101, B5_s101, P_s101) safetensors + tokenizer probe verification for operations/COLAB-20261120-009R1 (truthfully noting unrelated concurrent user A100 session while still enforcing owned_absent=true and stop_ack.confirmed=true).",
+  "operation_dir": "operations/COLAB-20261120-009R1",
+  "adapters_dir": "models/adapters/iter9_g3_wave1",
+  "expected_bundle_sha256": "08d833addafcf94dcd07ff7ad229c82b3616e92cc34b5636d88d6864f6eda637",
+  "verify_local_load": true,
+  "verify_tokenizer_probes": true,
+  "archive_operation_sources": true,
+  "allow_external_concurrent_user_sessions": true
+}

@@ -1,0 +1,65 @@
+{"step": "reservation", "utc": "2026-11-20T09:07:39.636696+00:00", "elapsed_s": 0.0, "session": "tlfix-dabd674cb1de", "receipt_nonce": "dabd674cb1de4d5f9fc10927d9bbccd3", "training": true, "source_sha256": {"lora_adapter.py": "861fb15b746161f505cf79340d95065a0c6c58e23f1ca1d33f5461a8cbdc4dbc", "colab_g3_train_worker.py": "c259f90951a371dc5e7193ba01457d0eef5502cb1b8d6f70b867260f01eb4e05", "train_job_config.json": "29d6b21ec39e553e42b1ed99b5b0f8f19abed64b056a253b4c676a4ea5c93f69", "controller": "1dba84bcaca7008d24df8be40d60c0dd859867e6445f73700f8da4dc8470ac1d"}, "bundle_sha256": "59bbc11e842f7abe71510a1e60449f7ce83f49acb0a11b930af274a775790e49", "bundle_zlib_sha256": "a79feb02b254cdc0f26f99d93c6296e9b524f1c0ab648a407c9601837604438a", "bundle_zlib_bytes": 1791, "job_count": 2, "wall_limit_seconds": 300.0}
+{"step": "baseline_sessions", "utc": "2026-11-20T09:07:39.636871+00:00", "elapsed_s": 0.0, "exit": 0, "reason": null}
+{"step": "baseline_usage", "utc": "2026-11-20T09:07:39.636972+00:00", "elapsed_s": 0.0, "exit": 0, "reason": null}
+{"step": "baseline_usage_observation", "utc": "2026-11-20T09:07:39.637067+00:00", "elapsed_s": 0.0, "balance_cu": 2700.0, "rate_cu_hr": 0.8, "assignments": 1.0}
+{"step": "new", "utc": "2026-11-20T09:07:39.642601+00:00", "elapsed_s": 0.01, "exit": 0, "reason": "Session READY"}
+{"step": "allocated_sessions", "utc": "2026-11-20T09:07:39.642641+00:00", "elapsed_s": 0.01, "exit": 0, "reason": null}
+{"step": "owned_l4", "utc": "2026-11-20T09:07:39.642674+00:00", "elapsed_s": 0.01, "endpoint_sha256": "40e9e0b7e6cb4871a9415892a9a7f8de332676a8649463f5a47bba904bf11ff6"}
+{"step": "allocated_usage", "utc": "2026-11-20T09:07:39.642702+00:00", "elapsed_s": 0.01, "exit": 0, "reason": null}
+{"step": "allocated_usage_observation", "utc": "2026-11-20T09:07:39.642730+00:00", "elapsed_s": 0.01, "balance_cu": 2700.0, "rate_cu_hr": 2.74, "assignments": 2.0}
+{"step": "status", "utc": "2026-11-20T09:07:39.642757+00:00", "elapsed_s": 0.01, "exit": 0, "reason": null}
+{"step": "warm", "utc": "2026-11-20T09:07:39.642783+00:00", "elapsed_s": 0.01, "exit": 0, "stdout_bytes": 10, "cell_sha256": "f68703b7eed76b3423158ada8ddca6018570a626562e67539eb4bd6e40602868"}
+{"step": "bootstrap_no_model_until_armed", "utc": "2026-11-20T09:07:39.650273+00:00", "elapsed_s": 0.01, "exit": 0, "stdout_bytes": 322, "cell_sha256": "cb11620b24fb0c658c720456a1a99fc730cd4dfab7960f38d320531a8094aef7"}
+{"step": "two_way_sentinel", "utc": "2026-11-20T09:07:39.650725+00:00", "elapsed_s": 0.01, "identical": true, "bytes": 150}
+{"step": "upload_bundle_attempt_1", "utc": "2026-11-20T09:07:39.651143+00:00", "elapsed_s": 0.01, "exit": 0, "reason": "Upload complete"}
+{"step": "arm_single_worker", "utc": "2026-11-20T09:07:40.176791+00:00", "elapsed_s": 0.54, "exit": 0, "reason": "Upload complete"}
+{"step": "worker_stage", "utc": "2026-11-20T09:07:40.177281+00:00", "elapsed_s": 0.54, "stage": "receipt_published_completed"}
+{"step": "local_receipt", "utc": "2026-11-20T09:07:40.177842+00:00", "elapsed_s": 0.54, "status": "completed", "stage": "completed", "error_type": null, "adapter_count": 2, "base_weights_unchanged": true, "sha256": "df97167a1461d4d893bf1b6ee1950da336ba4fa68692be519a8e7af3a4ecc275"}
+{"step": "adapter_reassembled", "utc": "2026-11-20T09:07:40.183037+00:00", "elapsed_s": 0.55, "adapter_id": "B3_s101", "chunk_count": 14, "size_bytes": 11016, "safetensors_sha256": "518a4343e9677063b67f5cc7c144c81d84a1216bf823ab1832ce10e431f68742"}
+{"step": "adapter_reassembled", "utc": "2026-11-20T09:07:40.188335+00:00", "elapsed_s": 0.55, "adapter_id": "P_s101", "chunk_count": 15, "size_bytes": 11048, "safetensors_sha256": "892b42795233b4e595a12df891ea26dc5a4c65d7fdeeb1db566c8656f513a1a5"}
+{"step": "adapter_manifests_written", "utc": "2026-11-20T09:07:40.188874+00:00", "elapsed_s": 0.55, "adapter_count": 2, "g3_adapters_manifest_sha256": "221037020552baa953dec1ca1af41cfcf6e1257e4b4fbb3fae534f2c5f5d8fa9"}
+{"step": "release_sessions_check", "utc": "2026-11-20T09:07:40.188916+00:00", "elapsed_s": 0.55, "exit": 0, "reason": null}
+{"step": "stop_owned_only", "utc": "2026-11-20T09:07:40.188959+00:00", "elapsed_s": 0.55, "exit": 0, "reason": "Session terminated"}
+{"step": "stop_ack", "utc": "2026-11-20T09:07:40.189013+00:00", "elapsed_s": 0.55, "confirmed": true}
+{"step": "final_sessions", "utc": "2026-11-20T09:07:40.189046+00:00", "elapsed_s": 0.55, "exit": 0, "reason": null}
+{"step": "final_usage", "utc": "2026-11-20T09:07:40.189081+00:00", "elapsed_s": 0.55, "exit": 0, "reason": null}
+{"step": "final_usage_observation", "utc": "2026-11-20T09:07:40.189114+00:00", "elapsed_s": 0.55, "balance_cu": 2699.95, "rate_cu_hr": 0.8, "assignments": 1.0}
+{"step": "cleanup_observed", "utc": "2026-11-20T09:07:40.189146+00:00", "elapsed_s": 0.55, "owned_absent": true, "original_set_unchanged": true, "active_count": 1}
+{"step": "finished", "utc": "2026-11-20T09:07:40.189175+00:00", "elapsed_s": 0.55, "received_completed_training": true, "adapters_reassembled": true, "owned_released": true, "allocation_refused": false}
+{"verified": true, "adapter_count": 2, "failure_code": null}
+{"step": "reservation", "utc": "2026-11-20T09:07:40.218732+00:00", "elapsed_s": 0.0, "session": "tlfix-f2d1fa073dcf", "receipt_nonce": "f2d1fa073dcf489abbaee0b775594f1a", "training": true, "source_sha256": {"lora_adapter.py": "861fb15b746161f505cf79340d95065a0c6c58e23f1ca1d33f5461a8cbdc4dbc", "colab_g3_train_worker.py": "c259f90951a371dc5e7193ba01457d0eef5502cb1b8d6f70b867260f01eb4e05", "train_job_config.json": "af77453833549f28c230d8e3875285dc6d43ebaf95fb2cdc03e9807ad16ce068", "controller": "1dba84bcaca7008d24df8be40d60c0dd859867e6445f73700f8da4dc8470ac1d"}, "bundle_sha256": "59bbc11e842f7abe71510a1e60449f7ce83f49acb0a11b930af274a775790e49", "bundle_zlib_sha256": "a79feb02b254cdc0f26f99d93c6296e9b524f1c0ab648a407c9601837604438a", "bundle_zlib_bytes": 1791, "job_count": 1, "wall_limit_seconds": 1200.0}
+{"step": "baseline_sessions", "utc": "2026-11-20T09:07:40.218794+00:00", "elapsed_s": 0.0, "exit": 0, "reason": null}
+{"step": "baseline_usage", "utc": "2026-11-20T09:07:40.218834+00:00", "elapsed_s": 0.0, "exit": 0, "reason": null}
+{"step": "baseline_usage_observation", "utc": "2026-11-20T09:07:40.218866+00:00", "elapsed_s": 0.0, "balance_cu": 100.0, "rate_cu_hr": 5.0, "assignments": 1.0}
+{"step": "new", "utc": "2026-11-20T09:07:40.224692+00:00", "elapsed_s": 0.01, "exit": 0, "reason": "Session READY"}
+{"step": "allocated_sessions", "utc": "2026-11-20T09:07:40.224748+00:00", "elapsed_s": 0.01, "exit": 0, "reason": null}
+{"step": "owned_l4", "utc": "2026-11-20T09:07:40.224789+00:00", "elapsed_s": 0.01, "endpoint_sha256": "e463e5e43d32bb73748c08f02f76b2c83f44e9c809adb39a86b5a97ec7c1f827"}
+{"step": "allocated_usage", "utc": "2026-11-20T09:07:40.224820+00:00", "elapsed_s": 0.01, "exit": 0, "reason": null}
+{"step": "allocated_usage_observation", "utc": "2026-11-20T09:07:40.224851+00:00", "elapsed_s": 0.01, "balance_cu": 100.0, "rate_cu_hr": 5.0, "assignments": 2.0}
+{"step": "work_interrupted", "utc": "2026-11-20T09:07:40.224880+00:00", "elapsed_s": 0.01, "code": "KeyboardInterrupt"}
+{"step": "release_sessions_check", "utc": "2026-11-20T09:07:40.224909+00:00", "elapsed_s": 0.01, "exit": 0, "reason": null}
+{"step": "stop_owned_only", "utc": "2026-11-20T09:07:40.224940+00:00", "elapsed_s": 0.01, "exit": 0, "reason": "Session terminated"}
+{"step": "stop_ack", "utc": "2026-11-20T09:07:40.224965+00:00", "elapsed_s": 0.01, "confirmed": true}
+{"step": "final_sessions", "utc": "2026-11-20T09:07:40.224992+00:00", "elapsed_s": 0.01, "exit": 0, "reason": null}
+{"step": "final_usage", "utc": "2026-11-20T09:07:40.225020+00:00", "elapsed_s": 0.01, "exit": 0, "reason": null}
+{"step": "final_usage_observation", "utc": "2026-11-20T09:07:40.225047+00:00", "elapsed_s": 0.01, "balance_cu": 100.0, "rate_cu_hr": 5.0, "assignments": 1.0}
+{"step": "cleanup_observed", "utc": "2026-11-20T09:07:40.225076+00:00", "elapsed_s": 0.01, "owned_absent": true, "original_set_unchanged": true, "active_count": 1}
+{"step": "finished", "utc": "2026-11-20T09:07:40.225100+00:00", "elapsed_s": 0.01, "received_completed_training": false, "adapters_reassembled": false, "owned_released": true, "allocation_refused": false}
+{"status": "failed", "stage": "example_stage"}
+{"status": "completed", "stage": "completed"}
+{"accepted": true, "output": "/var/folders/c4/sch310r503z627tdt4vvh1t80000gn/T/iter7-full-suite-wuuownto/audit_out/iter7_audit.json"}
+{"accepted": false, "output": "/var/folders/c4/sch310r503z627tdt4vvh1t80000gn/T/iter7-full-suite-xu_c5dwc/bad_audit_out/iter7_audit.json"}
+{
+  "checks": {
+    "all_manifests_and_inventories_verified": true,
+    "shared_harness_sha256_verified": true,
+    "disjoint_5_seed_prefix_schedules": true,
+    "ninety_paired_prefix_episodes_verified": true,
+    "greedy_decoding_ablation_paired": true,
+    "unseen_template_e2e_paired": true,
+    "b0_vs_b2_pre_intervention_exact_match_prefix": true,
+    "b0_vs_b2_pre_intervention_exact_match_e2e": true,
+    "public_only_alternatives_leak_free": true,
+    "zero_model_loading": true
+  }
+}

@@ -1,0 +1,6 @@
+{"case_id": "g4h9-files-recoverable-h1-01", "evaluated_arm": "B5", "prefix_role": "recovery", "new_goal_evidence": false, "exact_grounded_structured_completion": false, "has_invalid_loop_v2": true, "continuation_turns": 11}
+{"case_id": "g4h9-files-recoverable-h2-01", "evaluated_arm": "B5", "prefix_role": "recovery", "new_goal_evidence": false, "exact_grounded_structured_completion": false, "has_invalid_loop_v2": true, "continuation_turns": 11}
+{"case_id": "g4h9-files-recoverable-h3-01", "evaluated_arm": "B5", "prefix_role": "recovery", "new_goal_evidence": false, "exact_grounded_structured_completion": false, "has_invalid_loop_v2": false, "continuation_turns": 1}
+{"case_id": "g4h9-files-recoverable-h4-01", "evaluated_arm": "B5", "prefix_role": "recovery", "new_goal_evidence": false, "exact_grounded_structured_completion": false, "has_invalid_loop_v2": false, "continuation_turns": 4}
+{"case_id": "g4h9-files-retry_required-h1-01", "evaluated_arm": "B5", "prefix_role": "recovery", "new_goal_evidence": false, "exact_grounded_structured_completion": false, "has_invalid_loop_v2": false, "continuation_turns": 1}
+{"case_id": "g4h9-files-retry_required-h2-01", "evaluated_arm": "B5", "prefix_role": "recovery", "new_goal_evidence": true, "exact_grounded_structured_completion": true, "has_invalid_loop_v2": false, "continuation_turns": 5}

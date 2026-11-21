@@ -1,0 +1,30 @@
+W1116 14:24:48.508000 32041 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:02<13:12,  2.49s/it]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 128.33it/s]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-008/inputs/toolloop_fix/model_run.py", line 192, in <module>
+    main()
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-008/inputs/toolloop_fix/model_run.py", line 165, in main
+    write_json("model_provenance.json", backend.provenance())
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-008/inputs/toolloop_fix/model_run.py", line 155, in write_json
+    (output / name).write_text(json.dumps(value, ensure_ascii=False, sort_keys=True, indent=2) + "\n")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/runtime/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/runtime/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/runtime/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/runtime/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/runtime/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/runtime/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/Users/derek/Documents/ChatGPT/LLM 作业/runtime/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type set is not JSON serializable

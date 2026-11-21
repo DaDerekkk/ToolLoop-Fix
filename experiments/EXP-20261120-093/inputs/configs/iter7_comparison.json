@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "description": "ITER-007 read-only paired statistical comparison: decoding disentanglement (049/050 vs 028/051), 5-seed prefix recovery (028..030 + 051..053, 90 episodes), unseen 24-template E2E B0/B1/B2 (054..056, 72 episodes), and leak-free same-snapshot validate_alternative check.",
+  "prefix_s0_runs": {
+    "B0": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-028",
+      "manifest_sha256": "2830dea9019d9b030e381fa42926b1a1c9bb4c44c9e693de8f69d1e839610718"
+    },
+    "B1": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-029",
+      "manifest_sha256": "a27f2bef87e20543909d77524f8dcf2fba3d6419b47aae65b172df52efc397f7"
+    },
+    "B2": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-030",
+      "manifest_sha256": "c363b5ca088acac7ad977b6601b24c7d536e67b5e62de37185b328a1bcaa539a"
+    }
+  },
+  "prefix_multiseed_runs": {
+    "B0": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-051",
+      "manifest_sha256": "ae05ec0502e8872eed20a8853a163ce7daf84593d97459b2b92d1f1df9e9caa2"
+    },
+    "B1": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-052",
+      "manifest_sha256": "ea651a824f4a1f92e04882ff63e5a4db6cd13eb1715c10aeb2d569169a4169fb"
+    },
+    "B2": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-053",
+      "manifest_sha256": "38e44917795632c26d33288c6cf444728950241486541f9940f6ac70c80369f1"
+    }
+  },
+  "prefix_decoding_runs": [
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-049",
+      "manifest_sha256": "59db9e1b4672b5455c827cc49cc236aeffac36031a456ff7782ce6995062fec5"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-050",
+      "manifest_sha256": "dfc7bfba1a92565495b286dae93a7100a014bfb4b34c445d74b97d23d359dc29"
+    }
+  ],
+  "e2e_runs": {
+    "B0": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-054",
+      "manifest_sha256": "c749cfb7972b9174868db1fc7e0233528ef73ea2b59a437c400d0ccdd7ee2c4d"
+    },
+    "B1": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-055",
+      "manifest_sha256": "ec20333c835a28d9ec2b7985f2e7886dfd5260b0d310dc1427261bbcc9950fff"
+    },
+    "B2": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261119-056",
+      "manifest_sha256": "8a8ae9f503ed486f8f81618c46aebeb1ad5161d7b30f56ccbf7fd5a68dfb69f1"
+    }
+  }
+}

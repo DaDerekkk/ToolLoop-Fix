@@ -1,0 +1,10 @@
+{
+  "row_count": 103,
+  "transitions": {
+    "valid_tool_or_wrapper -> valid_tool": 64,
+    "valid_tool_or_wrapper -> structured_finish": 6,
+    "EXPECTED_EXACTLY_ONE_TOOL_CALL -> natural_text": 29,
+    "valid_tool_or_wrapper -> structured_stop": 4
+  },
+  "preserved_manifest_count": 17
+}

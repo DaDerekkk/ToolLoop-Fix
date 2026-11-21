@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "evidence_class": "synthetic_harness",
+  "description": "15 hand-authored development fixtures; scripted policies only; no Qwen inference or training",
+  "cases_path": "data/dev/pilot_cases.jsonl",
+  "policies": ["scripted_naive", "scripted_reference"],
+  "modes": ["end_to_end", "fixed_failure_prefix"],
+  "tool_budget": 12,
+  "turn_budget": 16,
+  "seed": 0,
+  "seed_note": "deterministic fixtures and policies; no sampling performed"
+}

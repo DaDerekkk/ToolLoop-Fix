@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "evidence_class": "model_inference",
+  "evidence_kind": "model_inference",
+  "artifact_contract": "model_evaluation",
+  "policy_name": "qwen3.5-0.8b_calibrated_B1",
+  "mode": "end_to_end",
+  "cases_path": "data/dev/pilot_cases.jsonl",
+  "case_ids": [
+    "orders-normal-001",
+    "orders-recoverable-001",
+    "orders-retry_required-001",
+    "orders-clarification-001",
+    "orders-unrecoverable-001",
+    "files-normal-001",
+    "files-recoverable-001",
+    "files-retry_required-001",
+    "files-clarification-001",
+    "files-unrecoverable-001",
+    "jobs-normal-001",
+    "jobs-recoverable-001",
+    "jobs-retry_required-001",
+    "jobs-clarification-001",
+    "jobs-unrecoverable-001"
+  ],
+  "tool_budget": 12,
+  "turn_budget": 16,
+  "max_context_tokens": 8192,
+  "model": {
+    "model_id": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "backend": "transformers",
+    "model_path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17",
+    "device": "mps",
+    "dtype": "bfloat16"
+  },
+  "sampling": {
+    "enable_thinking": false,
+    "do_sample": true,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 2.0,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 256,
+    "seed": 0
+  },
+  "external_inputs": [
+    {
+      "name": "model_manifest",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/manifests/Qwen3.5-0.8B-2fc06364715b967f1860aea9cf38778875588b17.json",
+      "sha256": "049c3d159e86cf1492a8020d5a95f8d0b92c13091fc82891ce12979c26899d2d"
+    },
+    {
+      "name": "runtime_install_manifest",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/operations/SETUP-20261116-001/manifest.json",
+      "sha256": "60df3c860e6bf7fe578756e8471cd84320c68465246aa5ac3bddd9146e778baa"
+    }
+  ],
+  "notes": "ITER-003 preregistered paired E2E development controls; common protocol; natural semantics unknown; NO TRAINING.",
+  "run_purpose": "calibrated_development_control",
+  "comparison_arm": "B1",
+  "protocol_version": "qwen_xml_or_native_terminal_v1",
+  "case_seeds": {
+    "orders-normal-001": 0,
+    "orders-recoverable-001": 16,
+    "orders-retry_required-001": 32,
+    "orders-clarification-001": 48,
+    "orders-unrecoverable-001": 64,
+    "files-normal-001": 80,
+    "files-recoverable-001": 96,
+    "files-retry_required-001": 112,
+    "files-clarification-001": 128,
+    "files-unrecoverable-001": 144,
+    "jobs-normal-001": 160,
+    "jobs-recoverable-001": 176,
+    "jobs-retry_required-001": 192,
+    "jobs-clarification-001": 208,
+    "jobs-unrecoverable-001": 224
+  }
+}

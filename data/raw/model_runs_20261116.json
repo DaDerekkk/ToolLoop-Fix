@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-16T06:44:39.278649+00:00",
+  "evidence_type": "model_inference_run_index",
+  "warning": "References immutable original run artifacts. Failed pre-generation run is retained; completed != task success. Not held-out data or training labels.",
+  "runs": [
+    {
+      "run_id": "EXP-20261116-008",
+      "status": "failed",
+      "evidence_valid": false,
+      "manifest_sha256": "5565f9f0f472f94f596d28f13a7d07dd6a7bee9c07b02543f1b30a9dade055f4",
+      "generation_count": 0,
+      "files": {
+        "model_failure.json": {
+          "path": "experiments/EXP-20261116-008/model_failure.json",
+          "sha256": "77c024c191772a6ff89f65c41a53d31f87af1a5a6a0e213c32880171c73cb2d0"
+        }
+      }
+    },
+    {
+      "run_id": "EXP-20261116-011",
+      "status": "completed",
+      "evidence_valid": true,
+      "manifest_sha256": "287b0630bc91d86627c94a48e528cba6a6d120829d2dd197816f5a8928c175da",
+      "generation_count": 2,
+      "files": {
+        "generations.jsonl": {
+          "path": "experiments/EXP-20261116-011/generations.jsonl",
+          "sha256": "d33ec9a9958b9de5590a8b9edc44826d146427695c49dcf0e82f3cf5f9fca95f"
+        },
+        "trajectories.jsonl": {
+          "path": "experiments/EXP-20261116-011/trajectories.jsonl",
+          "sha256": "fa296ce6d3582c23d5d3c828bbfdb2e485ab6bc8977198887d380d41b039d2b9"
+        },
+        "case_results.jsonl": {
+          "path": "experiments/EXP-20261116-011/case_results.jsonl",
+          "sha256": "978745f1f688dc80d32e7285b6db294369a38bbf96822df020b8e2af90797b13"
+        },
+        "metrics.json": {
+          "path": "experiments/EXP-20261116-011/metrics.json",
+          "sha256": "f320778c4878fac06428d7c393485a84b9628791b4c43eaf9b8fa777f917494f"
+        },
+        "model_provenance.json": {
+          "path": "experiments/EXP-20261116-011/model_provenance.json",
+          "sha256": "405fa511d432784f0fca1bb6aff3da9d35d265e0f51596add5f4eeaeb36a45cd"
+        }
+      }
+    },
+    {
+      "run_id": "EXP-20261116-012",
+      "status": "completed",
+      "evidence_valid": true,
+      "manifest_sha256": "8b9c7518ad5185d8f84864687c0bfcd36987d93f4bd158ff676c154e34739e15",
+      "generation_count": 2,
+      "files": {
+        "generations.jsonl": {
+          "path": "experiments/EXP-20261116-012/generations.jsonl",
+          "sha256": "d31651d21b78b5cd6a600e1b2ec5b564d931b6d814712b8cc2547f4ab95d6dab"
+        },
+        "trajectories.jsonl": {
+          "path": "experiments/EXP-20261116-012/trajectories.jsonl",
+          "sha256": "baf7e86cccfe64e1fe99dc3ef3afe9970a269c17888655b8c9febf99608a0590"
+        },
+        "case_results.jsonl": {
+          "path": "experiments/EXP-20261116-012/case_results.jsonl",
+          "sha256": "6a35a10bff151afe8e3390d2f8372e67292ec43f3d91c315eb2825733746e1be"
+        },
+        "metrics.json": {
+          "path": "experiments/EXP-20261116-012/metrics.json",
+          "sha256": "545aa2b7aea4131fd6713c29bacba3d1d2103db5cfeb22b27024340cdbfbc16e"
+        },
+        "model_provenance.json": {
+          "path": "experiments/EXP-20261116-012/model_provenance.json",
+          "sha256": "92309b6bdafab0bd6694883b40c5699d5fa84b88de80cf8e577903dc87254b18"
+        }
+      }
+    },
+    {
+      "run_id": "EXP-20261116-013",
+      "status": "completed",
+      "evidence_valid": true,
+      "manifest_sha256": "6434789979bb6d7687497405a22e393b629d966b335a5b4d899f57693d53134e",
+      "generation_count": 103,
+      "files": {
+        "generations.jsonl": {
+          "path": "experiments/EXP-20261116-013/generations.jsonl",
+          "sha256": "0c534a5f7302c708085b22948339ac62b8ad5c6b17a6996c18b92477950aaad8"
+        },
+        "trajectories.jsonl": {
+          "path": "experiments/EXP-20261116-013/trajectories.jsonl",
+          "sha256": "e389fff516bdd2ce38fd25c21492f51511bea43ec1ebb66850fb7f7ec0dce8f1"
+        },
+        "case_results.jsonl": {
+          "path": "experiments/EXP-20261116-013/case_results.jsonl",
+          "sha256": "f6ba0f7b0847b0cf4df6e7a0704402507134c7765cd16f5a48ece27fc5ea9c23"
+        },
+        "metrics.json": {
+          "path": "experiments/EXP-20261116-013/metrics.json",
+          "sha256": "385101cf02109515b8747312fd421e6dc49a2ff9d69b4e9b70155b8af5880a0b"
+        },
+        "model_provenance.json": {
+          "path": "experiments/EXP-20261116-013/model_provenance.json",
+          "sha256": "92309b6bdafab0bd6694883b40c5699d5fa84b88de80cf8e577903dc87254b18"
+        }
+      }
+    }
+  ]
+}

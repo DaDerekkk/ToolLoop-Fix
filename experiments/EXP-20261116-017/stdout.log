@@ -1,0 +1,15 @@
+{"case_id": "orders-normal-001", "tool_goal_attainment": true, "exact_grounded_structured_completion": false, "terminal_form": "structured_stop", "turns": 2, "guard_blocked_proposals": 0}
+{"case_id": "orders-recoverable-001", "tool_goal_attainment": false, "exact_grounded_structured_completion": false, "terminal_form": "natural_text", "turns": 2, "guard_blocked_proposals": 0}
+{"case_id": "orders-retry_required-001", "tool_goal_attainment": false, "exact_grounded_structured_completion": false, "terminal_form": "natural_text", "turns": 3, "guard_blocked_proposals": 0}
+{"case_id": "orders-clarification-001", "tool_goal_attainment": true, "exact_grounded_structured_completion": true, "terminal_form": "structured_finish", "turns": 3, "guard_blocked_proposals": 0}
+{"case_id": "orders-unrecoverable-001", "tool_goal_attainment": false, "exact_grounded_structured_completion": false, "terminal_form": "natural_text", "turns": 3, "guard_blocked_proposals": 0}
+{"case_id": "files-normal-001", "tool_goal_attainment": false, "exact_grounded_structured_completion": false, "terminal_form": "natural_text", "turns": 2, "guard_blocked_proposals": 0}
+{"case_id": "files-recoverable-001", "tool_goal_attainment": false, "exact_grounded_structured_completion": false, "terminal_form": "natural_text", "turns": 2, "guard_blocked_proposals": 0}
+{"case_id": "files-retry_required-001", "tool_goal_attainment": false, "exact_grounded_structured_completion": false, "terminal_form": "natural_text", "turns": 3, "guard_blocked_proposals": 0}
+{"case_id": "files-clarification-001", "tool_goal_attainment": false, "exact_grounded_structured_completion": false, "terminal_form": "natural_text", "turns": 2, "guard_blocked_proposals": 0}
+{"case_id": "files-unrecoverable-001", "tool_goal_attainment": false, "exact_grounded_structured_completion": false, "terminal_form": "natural_text", "turns": 2, "guard_blocked_proposals": 0}
+{"case_id": "jobs-normal-001", "tool_goal_attainment": true, "exact_grounded_structured_completion": false, "terminal_form": "natural_text", "turns": 4, "guard_blocked_proposals": 0}
+{"case_id": "jobs-recoverable-001", "tool_goal_attainment": false, "exact_grounded_structured_completion": false, "terminal_form": "structured_finish", "turns": 6, "guard_blocked_proposals": 0}
+{"case_id": "jobs-retry_required-001", "tool_goal_attainment": false, "exact_grounded_structured_completion": false, "terminal_form": "none", "turns": 6, "guard_blocked_proposals": 0}
+{"case_id": "jobs-clarification-001", "tool_goal_attainment": false, "exact_grounded_structured_completion": false, "terminal_form": "none", "turns": 5, "guard_blocked_proposals": 0}
+{"case_id": "jobs-unrecoverable-001", "tool_goal_attainment": false, "exact_grounded_structured_completion": false, "terminal_form": "natural_text", "turns": 2, "guard_blocked_proposals": 0}

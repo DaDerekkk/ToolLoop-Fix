@@ -1,0 +1,44 @@
+{
+  "evidence_kind": "analysis",
+  "purpose": "Archive agent semantics review and deferred M6 plan; validate source refs/header arithmetic, not human correctness or trainingfeasibility",
+  "review_files": [
+    {
+      "name": "semantic_review_ITER004.json",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/data/processed/semantic_review_ITER004.json",
+      "sha256": "2b105cacb5b7cfd303295cb5d726249953fa1dd9a22f15586e2e98ad251fe212"
+    },
+    {
+      "name": "ITER004_SEMANTIC_REVIEW.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/docs/research/ITER004_SEMANTIC_REVIEW.md",
+      "sha256": "ee337ce0cc2df182a614e8f4137cd4975e5270a50eeaa516446962ad035f5a08"
+    },
+    {
+      "name": "review_iteration4_semantics.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/agents/reviews/iteration4_semantics.md",
+      "sha256": "0432b0fcf14f33badd027a2f02e599935224bda63dfe9c8e4d1de7f6ba089c55"
+    },
+    {
+      "name": "handoff_iteration4_semantics.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/agents/handoffs/iteration4_semantics.md",
+      "sha256": "160af67165b8e698aff72f571209fdd6e06cd617b338cf40609f1adea9bfdcfd"
+    },
+    {
+      "name": "M6_24G_TRAINING_HANDOFF.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/docs/plans/M6_24G_TRAINING_HANDOFF.md",
+      "sha256": "25b732f98e5bd47a0d8ee6ebf3546727d4e5b9f1156a664784d2782da47b8eb4"
+    },
+    {
+      "name": "future_training_plan.json",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/configs/future_training_plan.json",
+      "sha256": "0e94a0f381537589b5fce5539f80ce3de379baf78ec4f9a5363e0bd500e654fa"
+    },
+    {
+      "name": "m6_training_plan.md",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/agents/handoffs/m6_training_plan.md",
+      "sha256": "f959d8d9afb5c0a7b731452e962519acabbaee894576c8292dd0d7c0b8ffb7d6"
+    }
+  ],
+  "semantic_review_name": "semantic_review_ITER004.json",
+  "future_plan_name": "future_training_plan.json",
+  "local_weights_path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/model.safetensors-00001-of-00001.safetensors"
+}

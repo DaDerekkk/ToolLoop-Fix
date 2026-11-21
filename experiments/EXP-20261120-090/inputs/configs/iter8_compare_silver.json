@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "description": "ITER-008 dual-blind subagent silver agreement (Cohens kappa) and extraction of arm-blinded disagreements + v1->v2 detector delta segments for human tie-breaker adjudication.",
+  "inputs": {
+    "blank_semantic": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/data/processed/blind_semantic_review_pack_ITER007.json",
+      "sha256": "91a3e1a9eddf79f33f2948acc47b6ce0004ff9b9a653691078f955da22500685"
+    },
+    "silver_sem_a": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/data/processed/iter8_silver_semantic_A.json",
+      "sha256": "e6a2105a0b03f73908366dc48f75c84032439535eb368ecf5b481210e5d89361"
+    },
+    "silver_sem_b": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/data/processed/iter8_silver_semantic_B.json",
+      "sha256": "9c9c103f720da21c033022dfaa36bc9f91c407006298c2a801d812890a98f940"
+    },
+    "blank_detector": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/data/processed/blind_detector_audit_pack_ITER007.json",
+      "sha256": "0dc13124448bd90996d30a433e116431a79d504aa9d18e12ba196fdfebeedd32"
+    },
+    "silver_det_a": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/data/processed/iter8_silver_detector_A.json",
+      "sha256": "440dc357a4a09320d801b1c6bc64e3f46db895aa8a1e9f7e58c4f88fdc24186e"
+    },
+    "silver_det_b": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/data/processed/iter8_silver_detector_B.json",
+      "sha256": "62575b88fd5112c4fda1b3c6c5b22aa6bc1a0de08d33e2c0df5246810487ca22"
+    },
+    "semantic_key": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/data/raw/blind_semantic_key_ITER007.json",
+      "sha256": "b7950bd13deb17a7a1d9f7d768b3fbd379980f80e0d6ec255cee9f95236be2f9"
+    },
+    "detector_key": {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/data/raw/blind_detector_key_ITER007.json",
+      "sha256": "1ab59bf47e6988557b747247043c6979161152c1b90fc00f63be6c030ee5aca1"
+    }
+  }
+}

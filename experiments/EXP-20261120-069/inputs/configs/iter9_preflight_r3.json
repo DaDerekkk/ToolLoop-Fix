@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "description": "ITER-009 pre-COLAB-008 full 326-test freeze locking fla-core==0.6.0 + flash-linear-attention==0.6.0 Triton kernel worker hash."
+}

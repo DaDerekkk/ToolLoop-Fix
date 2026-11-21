@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "audit_id": "SOURCE-AUDIT-20261116",
+  "evidence_class": "analysis",
+  "accessed_date": "2026-11-16",
+  "timezone": "Asia/Shanghai",
+  "owner": "/root/source_audit",
+  "full_webpage_snapshots_stored": false,
+  "external_experiments_reproduced": false,
+  "references": [
+    {
+      "id": "proposal",
+      "kind": "user_provided_document",
+      "title": "ToolLoop-Fix Research Proposal",
+      "local_path": "sources/original/ToolLoop-Fix_Research_Proposal.html",
+      "sha256": "e5ab592e93a86a50728e236fee838f44d990ad454a17046144dda1fda14e5f8d",
+      "status": "read_full",
+      "results_status": "proposed_not_executed"
+    },
+    {
+      "id": "antidoom_blog",
+      "kind": "official_blog",
+      "title": "Reducing Doom Loops with Final Token Preference Optimization",
+      "url": "https://www.liquid.ai/blog/antidoom",
+      "published": "2026-07-07",
+      "status": "verified_page_and_method",
+      "scope": "Text repetition; not target model tool-loop validation"
+    },
+    {
+      "id": "antidoom_repository",
+      "kind": "official_code_repository",
+      "url": "https://github.com/Liquid4All/antidoom",
+      "status": "read_readme_and_dependency_metadata",
+      "observed_revision": "bd6a126476e18554b0cacaea3fd9f258fdde1f97",
+      "revision_url": "https://github.com/Liquid4All/antidoom/commit/bd6a126476e18554b0cacaea3fd9f258fdde1f97",
+      "latest_revision_verified": false,
+      "limitations": [
+        "Commit-history response cached approximately two months; API request inaccessible",
+        "Repository not cloned or executed",
+        "Source compatibility not tested"
+      ],
+      "dependency_metadata_url": "https://github.com/Liquid4All/antidoom/blob/main/pyproject.toml"
+    },
+    {
+      "id": "qwen_model",
+      "kind": "official_model_card",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "metadata_url": "https://huggingface.co/api/models/Qwen/Qwen3.5-0.8B",
+      "observed_revision": "2fc06364715b967f1860aea9cf38778875588b17",
+      "last_modified": "2026-03-02T11:26:58.000Z",
+      "status": "verified_card_and_api_metadata",
+      "weights_downloaded": false,
+      "inference_run": false
+    },
+    {
+      "id": "agentic_dpo",
+      "kind": "primary_preprint",
+      "title": "Agentic-DPO: From Imitation to Agentic Policy Optimization on Expert Trajectories",
+      "url": "https://arxiv.org/html/2607.10601v1",
+      "version": "v1",
+      "published": "2026-07-12",
+      "status": "verified_abstract_and_method_sections"
+    },
+    {
+      "id": "fission_grpo",
+      "kind": "primary_paper_landing",
+      "title": "Robust Tool Use via Fission-GRPO: Learning to Recover from Execution Errors",
+      "url": "https://aclanthology.org/2026.acl-long.1880/",
+      "doi": "10.18653/v1/2026.acl-long.1880",
+      "published": "2026-07",
+      "status": "verified_metadata_and_abstract",
+      "full_pdf_reviewed": false
+    },
+    {
+      "id": "feedback_that_backfires",
+      "kind": "primary_preprint",
+      "title": "Feedback That Backfires: Why Small Language Model Agents Repeat the Call They Just Watched Fail",
+      "url": "https://arxiv.org/abs/2608.23651v1",
+      "version": "v1",
+      "published": "2026-08-24",
+      "status": "verified_metadata_and_abstract",
+      "full_pdf_reviewed": false
+    },
+    {
+      "id": "bfcl_v3",
+      "kind": "official_benchmark_documentation",
+      "title": "BFCL V3: Multi-Turn & Multi-Step Function Calling",
+      "url": "https://gorilla.cs.berkeley.edu/blogs/13_bfcl_v3_multi_turn.html",
+      "status": "verified_execution_and_evaluation_description",
+      "benchmark_revision": null,
+      "benchmark_run": false
+    },
+    {
+      "id": "dpo",
+      "kind": "primary_preprint",
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "url": "https://arxiv.org/abs/2305.18290v3",
+      "version": "v3",
+      "published": "2023-05-29",
+      "revised": "2024-07-29",
+      "status": "verified_metadata_and_abstract"
+    },
+    {
+      "id": "peft_lora",
+      "kind": "official_documentation",
+      "url": "https://huggingface.co/docs/peft/main/en/package_reference/lora",
+      "version": "main_unpinned",
+      "status": "verified_documentation",
+      "installed_or_tested": false
+    },
+    {
+      "id": "tau_bench",
+      "kind": "primary_preprint",
+      "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+      "url": "https://arxiv.org/abs/2406.12045v1",
+      "version": "v1",
+      "published": "2024-06-17",
+      "status": "verified_metadata_and_abstract",
+      "benchmark_run": false
+    },
+    {
+      "id": "toolsandbox",
+      "kind": "named_reference_without_link",
+      "title": "ToolSandbox",
+      "url": null,
+      "status": "not_audited",
+      "limitations": [
+        "Proposal names it but gives no separate reference link; no claim of verification"
+      ]
+    }
+  ],
+  "access_failures": [
+    {
+      "tool": "agent-reach Jina route (parent)",
+      "result": "DNS resolution failure"
+    },
+    {
+      "tool": "gh repo view",
+      "result": "command not found; no installation performed"
+    },
+    {
+      "url": "https://api.github.com/repos/Liquid4All/antidoom/commits/main",
+      "result": "web tool inaccessible"
+    }
+  ]
+}

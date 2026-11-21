@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "evidence_class": "analysis",
+  "evidence_kind": "analysis",
+  "description": "ITER-009 joint pre-training unit test gate across all repository tests (including LoRA adapter/loss, Colab L4 detached lifecycle/verifier, and G4 holdout/statistical comparator) inside frozen inputs snapshot."
+}

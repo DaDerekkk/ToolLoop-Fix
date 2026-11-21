@@ -1,0 +1,19 @@
+{"step": "reservation", "utc": "2026-11-19T08:13:11.371971+00:00", "elapsed_s": 0.0, "session": "tlfix-50f4f500802d", "receipt_nonce": "50f4f500802d4b2f96613ec0ecce1eb9", "probe_sha256": "99172529772f33e31d955c9f5dacfee448aa6f15326b3c030c6dbf3c8832401b", "codec_sha256": "4deb6bef46d5b011239b6a6e26ff55b66070443abb6a080bb9cac5c0283c8b64", "driver_sha256": "497c582900c6798cf5e86f386a98eef1f5d9d2e52152362ce641800895f3eca3", "training": false}
+{"step": "baseline_sessions", "utc": "2026-11-19T08:13:13.771531+00:00", "elapsed_s": 2.4, "exit": 0, "reason": null}
+{"step": "baseline_usage", "utc": "2026-11-19T08:13:17.657837+00:00", "elapsed_s": 6.29, "exit": 0, "reason": null}
+{"step": "baseline_usage_observation", "utc": "2026-11-19T08:13:17.658321+00:00", "elapsed_s": 6.29, "balance_cu": 2728.93, "rate_cu_hr": 0.0, "assignments": 0.0}
+{"step": "new", "utc": "2026-11-19T08:13:22.494023+00:00", "elapsed_s": 11.12, "exit": 0, "reason": "Session READY"}
+{"step": "post_new_sessions", "utc": "2026-11-19T08:13:24.713501+00:00", "elapsed_s": 13.34, "exit": 0, "reason": null}
+{"step": "owned_l4", "utc": "2026-11-19T08:13:24.713830+00:00", "elapsed_s": 13.34, "endpoint_sha256": "288a57c0fca18b5989f595b907b28dd20ff641fda13e093315e32f5ba2fb7daf"}
+{"step": "allocated_usage", "utc": "2026-11-19T08:13:26.687775+00:00", "elapsed_s": 15.32, "exit": 0, "reason": null}
+{"step": "allocated_usage_observation", "utc": "2026-11-19T08:13:26.688104+00:00", "elapsed_s": 15.32, "balance_cu": 2728.93, "rate_cu_hr": 1.94, "assignments": 1.0}
+{"step": "public_transport_sentinel", "utc": "2026-11-19T08:14:16.696637+00:00", "elapsed_s": 65.33, "error": "client_wall_timeout"}
+{"step": "work_failed", "utc": "2026-11-19T08:14:16.697346+00:00", "elapsed_s": 65.33, "code": "sentinel_not_identical"}
+{"step": "release_sessions_check", "utc": "2026-11-19T08:14:18.764083+00:00", "elapsed_s": 67.4, "exit": 0, "reason": null}
+{"step": "stop_owned_only", "utc": "2026-11-19T08:14:20.391743+00:00", "elapsed_s": 69.02, "exit": 0, "reason": "Session terminated"}
+{"step": "stop_ack", "utc": "2026-11-19T08:14:20.391964+00:00", "elapsed_s": 69.02, "confirmed": true}
+{"step": "final_sessions", "utc": "2026-11-19T08:14:21.533523+00:00", "elapsed_s": 70.16, "exit": 0, "reason": null}
+{"step": "final_usage", "utc": "2026-11-19T08:14:22.576474+00:00", "elapsed_s": 71.21, "exit": 0, "reason": null}
+{"step": "final_usage_observation", "utc": "2026-11-19T08:14:22.576710+00:00", "elapsed_s": 71.21, "balance_cu": 2728.93, "rate_cu_hr": 0.0, "assignments": 0.0}
+{"step": "cleanup_observed", "utc": "2026-11-19T08:14:22.576875+00:00", "elapsed_s": 71.21, "owned_absent": true, "original_set_unchanged": true, "active_count": 0}
+{"step": "finished", "utc": "2026-11-19T08:14:22.576928+00:00", "elapsed_s": 71.21, "received_completed_generation": false, "owned_released": true}

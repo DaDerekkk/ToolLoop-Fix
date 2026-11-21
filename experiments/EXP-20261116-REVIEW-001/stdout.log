@@ -1,0 +1,93 @@
+
+test_abab_short_cycle (test_harness.HarnessTests) ... ok
+test_alternative_validation_restores_state_and_rejects_hidden_identifier (test_harness.HarnessTests) ... ok
+test_answer_and_identifier_must_match_read_evidence (test_harness.HarnessTests) ... ok
+test_candidate_repeated_information_is_not_progress (test_harness.HarnessTests) ... ok
+test_cli_produces_42_rows_and_refuses_overwrite (test_harness.HarnessTests) ... ok
+test_equivalent_action_normalization (test_harness.HarnessTests) ... ok
+test_false_success_requires_evidence_not_just_correct_guess (test_harness.HarnessTests) ... ok
+test_fifteen_dev_cases_cover_domains_categories (test_harness.HarnessTests) ... ok
+test_first_error_not_loop (test_harness.HarnessTests) ... ok
+test_last_budgeted_tool_result_not_success_without_final_answer (test_harness.HarnessTests) ... ok
+test_legitimate_polling_not_loop_and_state_changes (test_harness.HarnessTests) ... ok
+test_malformed_attempts_consume_budget (test_harness.HarnessTests) ... ok
+test_metrics_separate_unreachable_and_cost_includes_failures (test_harness.HarnessTests) ... ok
+test_naive_produces_detectable_development_failures (test_harness.HarnessTests) ... ok
+test_policy_works_with_public_view_alone (test_harness.HarnessTests) ... ok
+test_premature_stop_and_unsupported_stop_not_correct (test_harness.HarnessTests) ... ok
+test_progress_between_identical_calls_not_loop (test_harness.HarnessTests) ... ok
+test_public_view_has_no_hidden_labels_or_answer_and_is_detached (test_harness.HarnessTests) ... ok
+test_reference_completes_all_completable_and_stops_unreachable (test_harness.HarnessTests) ... ok
+test_same_fixed_prefix_snapshot_for_both_policies (test_harness.HarnessTests) ... ok
+test_snapshot_restore_and_copy_isolation (test_harness.HarnessTests) ... ok
+test_terminal_action_cannot_be_followed_by_tool (test_harness.HarnessTests) ... ok
+test_transient_retry_not_loop (test_harness.HarnessTests) ... ok
+test_turn_budget_is_independent (test_harness.HarnessTests) ... ok
+test_unknown_policy_and_mode_rejected (test_harness.HarnessTests) ... ok
+test_zero_success_cost_is_null_not_zero (test_harness.HarnessTests) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.171s
+
+OK
+
+{
+  "existing_harness_tests_exit_code": 0,
+  "fixed_budget": {
+    "configured_tool_budget": 12,
+    "prefix_attempts": 1,
+    "continuation_attempts": 12,
+    "actual_total_tool_actions": 13,
+    "budget_exhausted": true
+  },
+  "retry_cap": {
+    "documented_max_retries": 2,
+    "tool_attempts": 6,
+    "success": true,
+    "has_invalid_loop": false,
+    "codes": [
+      "TIMEOUT",
+      "TIMEOUT",
+      "TIMEOUT",
+      "TIMEOUT",
+      "TIMEOUT",
+      "OK",
+      "FINAL_RECORDED"
+    ]
+  },
+  "poll_cap": {
+    "documented_max_polls": 3,
+    "actual_polls": 5,
+    "success": true,
+    "has_invalid_loop": false
+  },
+  "unnecessary_help": {
+    "codes": [
+      "UNNECESSARY_CLARIFICATION",
+      "OK",
+      "FINAL_RECORDED"
+    ],
+    "success": true,
+    "premature_abandonment": false
+  },
+  "inherited_loop": {
+    "prefix_length": 3,
+    "success": true,
+    "has_invalid_loop": true,
+    "loop_flags": [
+      {
+        "index": 1,
+        "type": "identical_or_equivalent_repeat"
+      },
+      {
+        "index": 2,
+        "type": "identical_or_equivalent_repeat"
+      }
+    ],
+    "continuation_codes": [
+      "LOCATED",
+      "OK",
+      "FINAL_RECORDED"
+    ]
+  }
+}

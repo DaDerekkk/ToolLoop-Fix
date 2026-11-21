@@ -1,0 +1,124 @@
+{
+  "iteration": "ITER-006",
+  "type": "derived_evidence_index",
+  "created_at_utc": "2026-11-19T08:33:44.526155+00:00",
+  "verified_remote_generations": 1,
+  "verified_cpu_first_steps": 12,
+  "cloud_operational_attempts": [
+    "002",
+    "003",
+    "004"
+  ],
+  "scientific_training": false,
+  "cloud_output_sha256": "f5b94cce271fbcac8baee2bd4dc485c04166a35981bec4c015c5493d0db29e6f",
+  "artifacts": [
+    {
+      "path": "experiments/EXP-20261119-040/colab_iter6_audit.json",
+      "sha256": "c587bb31ff671a85303893b307fcde1ca9a91da625d0f8e7a77c25e8a85d7c13"
+    },
+    {
+      "path": "experiments/EXP-20261119-042/fixture_results.json",
+      "sha256": "230b64065e025d40143ffb291d01a3892e0ff1ad69b9789ae28d4da0a08893be"
+    },
+    {
+      "path": "experiments/EXP-20261119-043/first_step_summary.json",
+      "sha256": "d3823fc54cc3e0a7f3b61b91c5f650ba13a301449ca34a729af1c9886792485f"
+    },
+    {
+      "path": "experiments/EXP-20261119-043/first_step_decisions.json",
+      "sha256": "0f2a52e50fb9a77533ff1e63187edfefa995729ca17c539f9b95cb89e9b8e47f"
+    },
+    {
+      "path": "operations/CPU-20261119-001/raw_generations.jsonl",
+      "sha256": "755df98132e458082344f367e2cbdc282d4f15c71887c198c373c0b86bf59df3"
+    },
+    {
+      "path": "experiments/EXP-20261119-044/operation_sources/toolloop_probe.json",
+      "sha256": "f5b94cce271fbcac8baee2bd4dc485c04166a35981bec4c015c5493d0db29e6f"
+    },
+    {
+      "path": "experiments/EXP-20261119-044/l4_output_verification.json",
+      "sha256": "df12e3b9f42449e2b34fe45d9b0e4dea821f6604233ed01f374ad05c724f5adc"
+    },
+    {
+      "path": "experiments/EXP-20261119-044/l4_detached_audit.json",
+      "sha256": "7cbb58e2b8fe3bdba965c5159f93d5d20c529451a9ee92e596d70b45cd36eb75"
+    },
+    {
+      "path": "experiments/EXP-20261119-045/stderr.log",
+      "sha256": "21ee2c17b9cf5b14ff341aaf7a268faccba236f24eb700eaaf1ab78395666b4e"
+    },
+    {
+      "path": "agents/reviews/iteration6_l4_execution.md",
+      "sha256": "6e54887118db2079f11e39752d4f11b80c1dd7c5d0ea63cc069e44cf23eaffdf"
+    },
+    {
+      "path": "agents/reviews/iter6_043_semantics.md",
+      "sha256": "253193694f0decf388d67d681aec1548789b7c5dcdf64208c502cdadddbda87c"
+    },
+    {
+      "path": "iterations/ITER-006_l4_verified.md",
+      "sha256": "fcb7dd1a21393abdcc3e4ad4f125b30b1a75c8a81febcd8c62f6e0f1fd0f8cbd"
+    },
+    {
+      "path": "iterations/ITER-006_cpu_first_step_protocol.md",
+      "sha256": "e74de870554ce66df556f74716792eeda2372b0b6643ecde7a835a26e2f97005"
+    },
+    {
+      "path": "agents/handoffs/ITER006_l4_and_timeout.md",
+      "sha256": "d650c3be7ca6db54acf15ed012b31aab85d80c4eb5c80d89a3eb3bf3a53b756c"
+    },
+    {
+      "path": "agents/handoffs/iter6_timeout_design.md",
+      "sha256": "6b42b7af86e9331dd31fe3e5ddd380996c80287acf4f561f778c88f38445e067"
+    },
+    {
+      "path": "docs/protocols/COLAB_RECEIPT_WORKFLOW.md",
+      "sha256": "62ff5eb3786b12e3c99e3c00afff29304915ab6b19919c3bae7b9761eda69eeb"
+    },
+    {
+      "path": "operations/COLAB-20261119-002/lifecycle.jsonl",
+      "sha256": "bd2adf78e85deba0d884c7fbf1394d53edc6945d9d51140f339f2037fbaa3616"
+    },
+    {
+      "path": "operations/COLAB-20261119-003/lifecycle.jsonl",
+      "sha256": "538ad4019bddf6e28048ad622376307f8dcf28f9b5f056fd81a2d1a4d5918b4e"
+    },
+    {
+      "path": "operations/COLAB-20261119-004/lifecycle.jsonl",
+      "sha256": "6a249a07db186b6d6b9ac1ceb62f22cf069699873b3dca57f183e51dc5a1902e"
+    },
+    {
+      "path": "experiments/EXP-20261119-038/manifest.json",
+      "sha256": "b7730662b35da736022018a6f32d4f084994fb45025effa0388a90587dbef68d"
+    },
+    {
+      "path": "experiments/EXP-20261119-039/manifest.json",
+      "sha256": "46d29a45cf3aa919200e68c06dc1f527ceec4380fe0420c2b7a8cb51a7d1b48b"
+    },
+    {
+      "path": "experiments/EXP-20261119-040/manifest.json",
+      "sha256": "4f2df5525729f4fafcc9d4b1d522b1c819fbbe72978217a2e72e4c651abc1058"
+    },
+    {
+      "path": "experiments/EXP-20261119-041/manifest.json",
+      "sha256": "af4582a21c7ba614348cf249bf340b2b7db735eb23bb30300bc40386b10db7d0"
+    },
+    {
+      "path": "experiments/EXP-20261119-042/manifest.json",
+      "sha256": "30a948430b9e2b69e456048e38d331900daa9ea66ee85228e2fd37462952e7e6"
+    },
+    {
+      "path": "experiments/EXP-20261119-043/manifest.json",
+      "sha256": "3e710409bc254e0f091ccc9fde28e6f39ebc49e1ea5fc0195d1593136945111b"
+    },
+    {
+      "path": "experiments/EXP-20261119-044/manifest.json",
+      "sha256": "9464f5a30f053476deedebce6c0b52f7b82ea5e294d9be9f888c10a2bd0c43d1"
+    },
+    {
+      "path": "experiments/EXP-20261119-045/manifest.json",
+      "sha256": "6c631fc558408174f394398ea196695c6cfe5378b1a451c94f2c17a310b81f60"
+    }
+  ]
+}

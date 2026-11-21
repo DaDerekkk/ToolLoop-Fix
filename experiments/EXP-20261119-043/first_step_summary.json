@@ -1,0 +1,51 @@
+{
+  "source_evidence_kind": "model_inference",
+  "analysis_command_model_generations": 0,
+  "source_generations_verified": 12,
+  "business_tool_dispatches": 0,
+  "groups": {
+    "get_order/TIMEOUT": {
+      "n": 2,
+      "exact_proposal": 0,
+      "invalid_or_truncated": 0,
+      "natural_semantics_unknown": 2,
+      "other_structured": 0
+    },
+    "get_order/OK": {
+      "n": 2,
+      "exact_proposal": 0,
+      "invalid_or_truncated": 0,
+      "natural_semantics_unknown": 2,
+      "other_structured": 0
+    },
+    "get_order/RESOURCE_UNAVAILABLE": {
+      "n": 2,
+      "exact_proposal": 0,
+      "invalid_or_truncated": 0,
+      "natural_semantics_unknown": 2,
+      "other_structured": 0
+    },
+    "read_file/TIMEOUT": {
+      "n": 2,
+      "exact_proposal": 0,
+      "invalid_or_truncated": 0,
+      "natural_semantics_unknown": 2,
+      "other_structured": 0
+    },
+    "read_file/OK": {
+      "n": 2,
+      "exact_proposal": 0,
+      "invalid_or_truncated": 0,
+      "natural_semantics_unknown": 2,
+      "other_structured": 0
+    },
+    "read_file/RESOURCE_UNAVAILABLE": {
+      "n": 2,
+      "exact_proposal": 0,
+      "invalid_or_truncated": 0,
+      "natural_semantics_unknown": 2,
+      "other_structured": 0
+    }
+  },
+  "e2e_recovery_not_measured": true
+}

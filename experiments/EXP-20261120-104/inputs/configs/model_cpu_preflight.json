@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "evidence_class": "model_inference",
+  "evidence_kind": "model_inference",
+  "artifact_contract": "model_evaluation",
+  "policy_name": "qwen3.5-0.8b_raw_xml_preflight",
+  "mode": "end_to_end",
+  "cases_path": "data/dev/pilot_cases.jsonl",
+  "case_ids": [
+    "orders-normal-001"
+  ],
+  "tool_budget": 12,
+  "turn_budget": 16,
+  "max_context_tokens": 8192,
+  "model": {
+    "model_id": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "backend": "transformers",
+    "model_path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17",
+    "device": "cpu",
+    "dtype": "float32"
+  },
+  "sampling": {
+    "enable_thinking": false,
+    "do_sample": true,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 2.0,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 256,
+    "seed": 0
+  },
+  "external_inputs": [
+    {
+      "name": "model_manifest",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/manifests/Qwen3.5-0.8B-2fc06364715b967f1860aea9cf38778875588b17.json",
+      "sha256": "049c3d159e86cf1492a8020d5a95f8d0b92c13091fc82891ce12979c26899d2d"
+    },
+    {
+      "name": "runtime_install_manifest",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/operations/SETUP-20261116-001/manifest.json",
+      "sha256": "60df3c860e6bf7fe578756e8471cd84320c68465246aa5ac3bddd9146e778baa"
+    }
+  ],
+  "notes": "Actual raw official-weight inference on one public normal fixture. Custom strict single-call XML finish/stop adapter. Not held-out or training evidence. Offline local_files_only; no automatic CPU fallback.",
+  "run_purpose": "protocol_preflight_cpu"
+}

@@ -1,0 +1,6 @@
+{"case_id": "pfx-orders-timeout", "prefix_role": "recovery", "goal_at_prefix": false, "new_goal_evidence": false, "exact_grounded_structured_completion": false, "continuation_turns": 1, "guard_blocked_proposals": 0}
+{"case_id": "pfx-files-timeout", "prefix_role": "recovery", "goal_at_prefix": false, "new_goal_evidence": false, "exact_grounded_structured_completion": false, "continuation_turns": 1, "guard_blocked_proposals": 0}
+{"case_id": "pfx-jobs-precondition", "prefix_role": "recovery", "goal_at_prefix": false, "new_goal_evidence": false, "exact_grounded_structured_completion": false, "continuation_turns": 10, "guard_blocked_proposals": 0}
+{"case_id": "pfx-orders-invalid", "prefix_role": "recovery", "goal_at_prefix": false, "new_goal_evidence": false, "exact_grounded_structured_completion": false, "continuation_turns": 11, "guard_blocked_proposals": 0}
+{"case_id": "pfx-orders-unavailable", "prefix_role": "unavailable_stop_control", "goal_at_prefix": false, "new_goal_evidence": false, "exact_grounded_structured_completion": false, "continuation_turns": 10, "guard_blocked_proposals": 0}
+{"case_id": "pfx-orders-ok", "prefix_role": "normal_completion_control", "goal_at_prefix": true, "new_goal_evidence": false, "exact_grounded_structured_completion": false, "continuation_turns": 1, "guard_blocked_proposals": 0}

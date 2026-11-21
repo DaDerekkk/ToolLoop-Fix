@@ -1,0 +1,91 @@
+{
+  "operation": "isolated_runtime_install",
+  "status": "completed",
+  "started_at_utc": "2026-11-16T06:15:43.541788+00:00",
+  "authorization": "2026-11-16 user explicitly requested installation, weights download, and real execution",
+  "config_sha256": "e722b7fc163b72fba103985526d076c8bd3a266dfa2bb7a2b4c2ef2907b91009",
+  "source_script_sha256": "347afede3969263d65c23eeead965c49ea6fac6cb9090b8d258d43558784a76c",
+  "stages": [
+    {
+      "name": "python_install",
+      "command": [
+        "/Users/derek/.local/bin/uv",
+        "python",
+        "install",
+        "3.12",
+        "--no-bin"
+      ],
+      "started_at_utc": "2026-11-16T06:15:43.542364+00:00",
+      "exit_code": 0,
+      "ended_at_utc": "2026-11-16T06:15:49.894388+00:00"
+    },
+    {
+      "name": "venv",
+      "command": [
+        "/Users/derek/.local/bin/uv",
+        "venv",
+        "--python",
+        "3.12",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/.venv"
+      ],
+      "started_at_utc": "2026-11-16T06:15:49.894700+00:00",
+      "exit_code": 0,
+      "ended_at_utc": "2026-11-16T06:15:50.591690+00:00"
+    },
+    {
+      "name": "packages",
+      "command": [
+        "/Users/derek/.local/bin/uv",
+        "pip",
+        "install",
+        "--python",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/.venv/bin/python",
+        "torch==2.15.0",
+        "transformers==5.23.0"
+      ],
+      "started_at_utc": "2026-11-16T06:15:50.591954+00:00",
+      "exit_code": 0,
+      "ended_at_utc": "2026-11-16T06:16:25.069622+00:00"
+    },
+    {
+      "name": "freeze",
+      "command": [
+        "/Users/derek/.local/bin/uv",
+        "pip",
+        "freeze",
+        "--python",
+        "/Users/derek/Documents/ChatGPT/LLM 作业/.venv/bin/python"
+      ],
+      "started_at_utc": "2026-11-16T06:16:25.070085+00:00",
+      "exit_code": 0,
+      "ended_at_utc": "2026-11-16T06:16:25.079370+00:00"
+    },
+    {
+      "name": "runtime_probe",
+      "command": [
+        "/Users/derek/Documents/ChatGPT/LLM 作业/.venv/bin/python",
+        "-c",
+        "import json,platform,sys,torch,transformers; print(json.dumps({'python':sys.version,'platform':platform.platform(),'torch':torch.__version__,'transformers':transformers.__version__,'mps_built':torch.backends.mps.is_built(),'mps_available':torch.backends.mps.is_available()},indent=2))"
+      ],
+      "started_at_utc": "2026-11-16T06:16:25.079746+00:00",
+      "exit_code": 0,
+      "ended_at_utc": "2026-11-16T06:16:33.990044+00:00"
+    }
+  ],
+  "ended_at_utc": "2026-11-16T06:16:33.990454+00:00",
+  "exit_code": 0,
+  "artifacts": {
+    "python_install.stderr.log": "6bbd952fb632b3fa67032bbcaa1996ce63870084add6549eaa6ea8ccf3b2e0a0",
+    "freeze.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "venv.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime_probe.stdout.log": "41721af91b252c9a443b6d434be40a8ef827df556a635632f48995214eae6f5a",
+    "config.json": "e722b7fc163b72fba103985526d076c8bd3a266dfa2bb7a2b4c2ef2907b91009",
+    "bootstrap_local.py": "347afede3969263d65c23eeead965c49ea6fac6cb9090b8d258d43558784a76c",
+    "packages.stderr.log": "30058ea0d0efb54dda0108ee90466cc29cd5c6866da7e70000c52500bb048e54",
+    "freeze.stdout.log": "9fd84bc6d22d167e05a0d58e24d292df498c7bc44f42b4daedc3b63364b16ba2",
+    "python_install.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "venv.stderr.log": "2c1e5c021ef59d6384f9147c7b7e37b25cc006875b68e04d25bb714886b1e0b2",
+    "runtime_probe.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "packages.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

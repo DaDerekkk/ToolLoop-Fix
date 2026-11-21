@@ -1,0 +1,69 @@
+{
+  "evidence_class": "analysis",
+  "local_model_generations": 0,
+  "source_class_if_verified": "remote model_inference",
+  "operations": [
+    {
+      "operation": "COLAB-20261119-002",
+      "provider_gpu": "L4",
+      "owned_released": true,
+      "initial_set_unchanged": true,
+      "account_assignments": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "account_rates_cu_hr": [
+        0.0,
+        1.94,
+        0.0
+      ],
+      "exact_session_bill": null,
+      "gross_client_seconds": 71.21,
+      "sentinel_received": false,
+      "generation_cell_submitted": false,
+      "receipt_received": false,
+      "verified_generations": 0,
+      "proposal_matches": null,
+      "training_performed": false,
+      "failure_code": "sentinel_not_identical",
+      "actual_remote_generations": 0
+    },
+    {
+      "operation": "COLAB-20261119-003",
+      "provider_gpu": "L4",
+      "owned_released": true,
+      "initial_set_unchanged": true,
+      "account_assignments": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "account_rates_cu_hr": [
+        0.0,
+        1.94,
+        0.0
+      ],
+      "exact_session_bill": null,
+      "gross_client_seconds": 427.66,
+      "sentinel_received": true,
+      "generation_cell_submitted": true,
+      "receipt_received": false,
+      "verified_generations": 0,
+      "proposal_matches": null,
+      "training_performed": false,
+      "failure_code": "missing_valid_frame",
+      "generation_cell_error": "client_wall_timeout",
+      "generation_cell_stdout_bytes": 0,
+      "same_file_read_stdout_bytes": 0,
+      "contents_sentinel_matched": true,
+      "contents_receipt_received": false,
+      "actual_remote_generations": null
+    }
+  ],
+  "remote_verified_generations": 0,
+  "tool_was_executed": false,
+  "training": false,
+  "source_count": 15,
+  "limitations": "Client/VM evidence and tokenizer replay, not signed attestation, task completion, recovery rate or training."
+}

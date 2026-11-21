@@ -1,0 +1,20 @@
+{
+  "purpose": "Freeze reviewed new cloud operation and run stdout-transport regression offline before allocation. No new model evidence from this preflight.",
+  "operation": "COLAB-20261119-003",
+  "gpu": "L4",
+  "training": false,
+  "purchase": false,
+  "new_session_only": true,
+  "work_wall_seconds": 510,
+  "cleanup_target_seconds": 600,
+  "transfer_only": [
+    "pinned public probe",
+    "pinned stdlib receipt codec",
+    "public sentinel and reviewed driver snippets"
+  ],
+  "probe_sha256": "99172529772f33e31d955c9f5dacfee448aa6f15326b3c030c6dbf3c8832401b",
+  "codec_sha256": "4deb6bef46d5b011239b6a6e26ff55b66070443abb6a080bb9cac5c0283c8b64",
+  "pinned_revision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "controller_sha256": "f9afbabbb7713b590753d2cb7e7bc464eb102fa46369f64ab840326fec2947af",
+  "delta": "Separate cold kernel handshake from compressed pinned bootstrap and try same-file sentinel read before stopping. Public sources decompress byte-for-byte; auth and hidden data never uploaded."
+}

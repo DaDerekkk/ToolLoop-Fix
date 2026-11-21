@@ -1,0 +1,88 @@
+{
+  "adapter_version": "qwen_xml_single_call_v1",
+  "detector_status": "prototype_not_human_validated",
+  "evidence_class": "model_inference",
+  "groups": [
+    {
+      "budget_exhaustion": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "case_count": 1,
+      "continuation_tool_attempts_per_success": {
+        "denominator": 0,
+        "numerator": 1,
+        "value": null
+      },
+      "correct_termination": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "cost_scope": "total_including_prefix; tool_attempts_not_tokens_or_money",
+      "error_recovery": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "false_success": {
+        "denominator": 1,
+        "numerator": 1,
+        "value": 1.0
+      },
+      "generation_seconds": 219.69873374999952,
+      "input_tokens": 1426,
+      "invalid_loop_rate": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "mode": "end_to_end",
+      "necessary_retry_success": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "normal_completion": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "output_tokens": 70,
+      "parser_error_turn_rate": {
+        "denominator": 2,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "policy": "qwen3.5-0.8b_raw_xml_preflight",
+      "premature_abandonment": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "task_completion": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "tokens_per_success": {
+        "denominator": 0,
+        "numerator": 1496,
+        "value": null
+      },
+      "tool_attempts_per_success": {
+        "denominator": 0,
+        "numerator": 1,
+        "value": null
+      },
+      "unnecessary_clarification": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      }
+    }
+  ],
+  "schema_version": 2,
+  "warning": "Actual raw-model inference on hand-authored development fixtures with a custom single-call XML adapter; not a native benchmark, held-out result, training result or validated model-loop attribution."
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "run_id": "EXP-20261116-013",
+  "kind": "model_inference",
+  "owner": "root",
+  "parent_run": "EXP-20261116-012",
+  "status": "completed",
+  "acceptance_status": "not_reviewed",
+  "hypothesis": "MPS 接入已验证后可用现有15开发夹具刻画原始模型的工具行为和失败类型",
+  "acceptance_criteria": "15逐例结果与完整生成/状态；无脚本接管；如实记录失败、分母与成本；不要求全部成功且不构成正式B0或循环归因结论",
+  "started_at_utc": "2026-11-16T06:33:40.096230+00:00",
+  "report_timezone": "Asia/Shanghai",
+  "environment": {
+    "python": "3.12.13 (main, May  8 2026, 18:24:29) [Clang 22.1.3 ]",
+    "executable": "/Users/derek/Documents/ChatGPT/LLM 作业/.venv/bin/python",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64"
+  },
+  "inputs": {
+    "configs/bootstrap_validation.json": "ff8f39d36270014b77d21ef1483cdd21e989ba6dd0fe735676e6fd9503e9ea6e",
+    "configs/model_cpu_preflight.json": "f3390f0483455e4fb0bd7205d3b587c0c18a2abc9cf3d903185bcb54f73d2720",
+    "configs/model_mps_dev15.json": "610af5163a01f6e93853021a436c314c983cab71aeda4920a1411cd9b39416fc",
+    "configs/model_mps_preflight.json": "dd66bc6681b3f0f4538715a20169fe9b2ab755b468f278b24695a30c483d28b7",
+    "configs/model_preflight.json": "75ca95d48f7292766279667b7fddb8dcfe7a7790e0f5d2bd946c9d3ae7522a1a",
+    "configs/runtime_setup.json": "e722b7fc163b72fba103985526d076c8bd3a266dfa2bb7a2b4c2ef2907b91009",
+    "configs/smoke.json": "fff6ffeec5eff129678a08178593f926cd557205e9deb2becfc97faacbdb89a2",
+    "data/dev/pilot_cases.jsonl": "6797958d66b9fe6022e04141d6736774b3c2e899f16d5f16dc70311b86a2f03c",
+    "docs/protocols/EVALUATION_SPEC.md": "211ce276441e0ecca9abeba6d8f9b8ce0041ba2c1f4e8a9b3cba673a1d265988",
+    "docs/protocols/EXPERIMENT_TEMPLATE.md": "203fc74e8c59f85b9f7ad41db63c410ce188732dcd5a4f964ee2748791ae06a1",
+    "docs/protocols/EXPERIMENT_WORKFLOW.md": "1bd5d58f2c28926f2c0f453c60652c4026e497cf74fbff63af265fd499d48d7f",
+    "scripts/bootstrap_local.py": "347afede3969263d65c23eeead965c49ea6fac6cb9090b8d258d43558784a76c",
+    "scripts/check_replay.py": "b039b05faf1b54d87f53a7bf0f4162c618bda6723954a3b0bcaa125bd7ca28ef",
+    "scripts/download_model.py": "4574604c926eaeb11d68a762f60338a98affd68e69bd209b046317166a68a60c",
+    "scripts/record_run.py": "afbb2290e1ddc881703de7165af3ebc343f1f687ace38c9a662d1f68fae19468",
+    "scripts/validate_records.py": "b5bee5a8d80508bcb05e57a6a03d7846c2667a0d16982910045769d1d41e3c54",
+    "tests/test_harness.py": "5d490e942d94d2af3d9b8fdffa097a97e4a4304a7f7a39d924bcfd3dffc53b45",
+    "tests/test_model_adapter.py": "c18529177127c04875d0abceed5b1359c36db2e9a6b8369ba0b9b1b6213712f0",
+    "tests/test_records.py": "8482c5a8619fddcb9734ca6a8751bf5f10bef036cf02924eda5c686c1fa96244",
+    "tests/test_records_model.py": "8d9aff464a9171324f98d58e6aeeb4839f7543f2b95338d3b34e6d9f0963ff2b",
+    "tests/test_records_regression.py": "dbf8ec878e31d43d120f72eb6e74ef256c8797926c7fe4dd1fb21bda6f05ad3b",
+    "toolloop_fix/__init__.py": "8dc1cdcb07f200e4533636a53a48c24700aaafb826ff21e862071ec678996545",
+    "toolloop_fix/harness.py": "02aa7a4a4b08e7a1ceac68b25183d957006ef5e3a8db4fb0609647e84b10f444",
+    "toolloop_fix/model_backend.py": "51ac5593ef4204a56535b6f92d6521b6c21b24f996be69571e985e1a340aad31",
+    "toolloop_fix/model_protocol.py": "9e7926601883574b6b98ae26f9adbb6787de4b28248215e94993a8ffbe9cf751",
+    "toolloop_fix/model_run.py": "68e672f9e57ccc31cdb465679ecdd7d75cb0ebd75658370eee185935df87d3b1",
+    "toolloop_fix/run.py": "27ff2580aaa552b1a3ab88cca2ea07dc46cb41a8ef5c4a0061dee8caaa8a76dd"
+  },
+  "outputs": {
+    "case_results.jsonl": "f6ba0f7b0847b0cf4df6e7a0704402507134c7765cd16f5a48ece27fc5ea9c23",
+    "config.json": "610af5163a01f6e93853021a436c314c983cab71aeda4920a1411cd9b39416fc",
+    "execution_events.jsonl": "6bec42983f4fc9fff30476480f0c3fede04fe2214e77ed8ef775c99e55d92e23",
+    "external_inputs/model_manifest.json": "049c3d159e86cf1492a8020d5a95f8d0b92c13091fc82891ce12979c26899d2d",
+    "external_inputs/runtime_install_manifest.json": "60df3c860e6bf7fe578756e8471cd84320c68465246aa5ac3bddd9146e778baa",
+    "generations.jsonl": "0c534a5f7302c708085b22948339ac62b8ad5c6b17a6996c18b92477950aaad8",
+    "metrics.json": "385101cf02109515b8747312fd421e6dc49a2ff9d69b4e9b70155b8af5880a0b",
+    "model_provenance.json": "92309b6bdafab0bd6694883b40c5699d5fa84b88de80cf8e577903dc87254b18",
+    "partial_case.json": "0b0e312586e2bbd25e45bedb9055579aa199d3a9914444ac3cae3fb2b0270017",
+    "stderr.log": "d78091294dd04ac2d70857f43406764cfd72bb718e4c0ada37e34da9c24ca64d",
+    "stdout.log": "22b64e849a22c6af6fa139ef3a998fc19a3b051aae89d4d1c3582d63f409b040",
+    "trajectories.jsonl": "e389fff516bdd2ce38fd25c21492f51511bea43ec1ebb66850fb7f7ec0dce8f1"
+  },
+  "exit_code": 0,
+  "evidence_valid": true,
+  "execution_mode": "frozen_snapshot",
+  "source_workspace": "/Users/derek/Documents/ChatGPT/LLM 作业",
+  "config_input_path": "configs/model_mps_dev15.json",
+  "artifact_contract": "model_inference",
+  "external_inputs": [
+    {
+      "name": "model_manifest",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/models/manifests/Qwen3.5-0.8B-2fc06364715b967f1860aea9cf38778875588b17.json",
+      "sha256": "049c3d159e86cf1492a8020d5a95f8d0b92c13091fc82891ce12979c26899d2d",
+      "snapshot_path": "external_inputs/model_manifest.json"
+    },
+    {
+      "name": "runtime_install_manifest",
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/operations/SETUP-20261116-001/manifest.json",
+      "sha256": "60df3c860e6bf7fe578756e8471cd84320c68465246aa5ac3bddd9146e778baa",
+      "snapshot_path": "external_inputs/runtime_install_manifest.json"
+    }
+  ],
+  "contract_errors": [],
+  "command": [
+    "/Users/derek/Documents/ChatGPT/LLM 作业/.venv/bin/python",
+    "-m",
+    "toolloop_fix.model_run",
+    "--config",
+    "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-013/config.json",
+    "--output",
+    "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-013"
+  ],
+  "cwd": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-013/inputs",
+  "config_sha256": "610af5163a01f6e93853021a436c314c983cab71aeda4920a1411cd9b39416fc",
+  "child_executable": "/Users/derek/Documents/ChatGPT/LLM 作业/.venv/bin/python",
+  "ended_at_utc": "2026-11-16T06:41:55.867119+00:00",
+  "elapsed_seconds": 495.764483,
+  "inputs_changed_during_run": [],
+  "live_workspace_changes_during_run": [
+    "docs/protocols/EXPERIMENT_WORKFLOW.md"
+  ],
+  "external_inputs_changed_during_run": []
+}

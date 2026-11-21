@@ -1,0 +1,25 @@
+{
+  "kind": "model_inference",
+  "contract": "single_proposal_no_dispatch",
+  "validated_by": "EXP-20261119-043",
+  "launcher_exit_code": 0,
+  "completed_at_utc": "2026-11-19T08:22:58.732369+00:00",
+  "artifacts": {
+    "command.json": "9f9c82a1b6a3d6c680fd1030a92b3abe92ead18a2f757c5c02a9c753f9f98ae4",
+    "config.json": "de24f52bf8367d395a8fecdcb0778ba439164b8953400a63672d8d2185190133",
+    "inputs/scripts/cpu_crossed_iter6.py": "aedc4dfaa98d8fdc6615ad46be16f6922b64a77b74e8d99606725e5f82da2786",
+    "inputs/toolloop_fix/__init__.py": "8dc1cdcb07f200e4533636a53a48c24700aaafb826ff21e862071ec678996545",
+    "inputs/toolloop_fix/calibrated_protocol.py": "ba4b1ef50fbfe69d652e890c1bd231a08c623a1cdfa7db7fab611bb7960368de",
+    "inputs/toolloop_fix/model_backend.py": "51ac5593ef4204a56535b6f92d6521b6c21b24f996be69571e985e1a340aad31",
+    "inputs/toolloop_fix/model_protocol.py": "9e7926601883574b6b98ae26f9adbb6787de4b28248215e94993a8ffbe9cf751",
+    "inputs_sha256.json": "ec21c1b572044f28c34790ed41365fc2092aed46a20db456f8c3b9b2801d6da4",
+    "model_provenance.json": "f115cd2e4bccc258989848cd0c5c0690f640fa1807b9d7d5b7b52ce44b74a9ca",
+    "preregistration.md": "fe7f642c906c2e2ef6280f9a6700517eafe743ecad0736431de051d3b1fb76bc",
+    "public_payloads.jsonl": "5e6ef17e6136e6fbb42f85c62f6dd7cafe714c2c816486f78fe32be1fb8cf563",
+    "raw_generations.jsonl": "755df98132e458082344f367e2cbdc282d4f15c71887c198c373c0b86bf59df3",
+    "status.json": "15175c9ff2b02370de53d9d8da2df533219bafc1b402565b48395edf5c0b2822",
+    "stderr.log": "9b4296280ce63997e90da4f5ba788d4e58064063b3715f5fc3313813e225a91a",
+    "stdout.log": "785380c66105b1a25dcb1afa7f27e882038a3e2d90d3dd6c4071143a89c9e04e",
+    "weight_manifest.json": "049c3d159e86cf1492a8020d5a95f8d0b92c13091fc82891ce12979c26899d2d"
+  }
+}

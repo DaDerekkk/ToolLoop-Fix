@@ -1,0 +1,105 @@
+{
+  "evidence_kind": "analysis",
+  "old_run_manifests": [
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-001/manifest.json",
+      "sha256": "10830a2f0eed9b8390d3adb1b0dfe53472555f629fe34442e113c900fa0c7cbb"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-002/manifest.json",
+      "sha256": "f2e46c1a8ee3e692d828d27beee741d5984bd52972cf17086a033ff80fb96c37"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-003/manifest.json",
+      "sha256": "08b896e99ab1c7c0ea3ff9ebad5f4b160f823bd2526ebb71e343479145a8d694"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-004/manifest.json",
+      "sha256": "f21099acaaaa6a8ca5968aa0809be174d1334b338d81d48de50ac94510e9f9d3"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-005/manifest.json",
+      "sha256": "c508e77fb0b4b0e6d55b2f84e051154365d61c84dec5c8c0e3b47135eff7edc6"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-006/manifest.json",
+      "sha256": "adfab7de8ecb83889f45efa931d57383b92781c2d9a719bdfba587c9ae305653"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-007/manifest.json",
+      "sha256": "9261ea29514267f8ccaef15a281b48a19c4ca863f5483c4e069dad2285308a9f"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-008/manifest.json",
+      "sha256": "5565f9f0f472f94f596d28f13a7d07dd6a7bee9c07b02543f1b30a9dade055f4"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-009/manifest.json",
+      "sha256": "0b82267b510db640255cbeb29cd5144c79d61200aaaacbf24234b3c6847b1f35"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-010/manifest.json",
+      "sha256": "05ea4563686e67bbc74f7bbd54e400fad5f0aa5ca981ff7ed1263eb11e54fde1"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-011/manifest.json",
+      "sha256": "287b0630bc91d86627c94a48e528cba6a6d120829d2dd197816f5a8928c175da"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-012/manifest.json",
+      "sha256": "8b9c7518ad5185d8f84864687c0bfcd36987d93f4bd158ff676c154e34739e15"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-013/manifest.json",
+      "sha256": "6434789979bb6d7687497405a22e393b629d966b335a5b4d899f57693d53134e"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-014/manifest.json",
+      "sha256": "72d5bf3b48c122c86f376f36de2334018c4761491dbfe0257f3742cf16fc91d4"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-015/manifest.json",
+      "sha256": "f0bc3d17f21a33004c3e4f8b1010ad385a92223173aeb57376f14e0c8416c9a1"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-016/manifest.json",
+      "sha256": "d88f392c8dd63d601e2e7562deea864a719fe21c2e6d77bc53e945a450177a20"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-017/manifest.json",
+      "sha256": "ad0a479ed2ecdbbafe5a55a251b98434760a3e78e4d5f967ef81a6b2a77e4706"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-018/manifest.json",
+      "sha256": "c88fc548bac0cdceb62d7802ad15e4c1c72e3fef77dec7c9d46587410b5adfde"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-019/manifest.json",
+      "sha256": "68f8fc5a2d5332f452fc2b1270922db3814d62dc06e61d3f1f1bed0380511253"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-020/manifest.json",
+      "sha256": "e709e4f8ef67314c4ea9a5a65430bc23daaa47101d84b5654c7aeff3c0a96bbc"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-REGRESSION-001/manifest.json",
+      "sha256": "0baa519e342eae4b3e8a7e058ae731ba08bc1c6fbdf33698b7fe79e7c0d09265"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-REVIEW-001/manifest.json",
+      "sha256": "0b4478e207f20fe7ada6966210566639cae8110b1c2774eccc4d6bc8b65cbc10"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-REVIEW-002/manifest.json",
+      "sha256": "beb88af40034af2d4c73885cc01907d84d66f94946924a96105162b013265280"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-REVIEW-003/manifest.json",
+      "sha256": "bb0d4e1549ec45923d218935eba44301a02fc9c61934289ca23941ceee09ecf2"
+    },
+    {
+      "path": "/Users/derek/Documents/ChatGPT/LLM 作业/experiments/EXP-20261116-REVIEW-004/manifest.json",
+      "sha256": "74d69308e2bb7a6950bf367cd46db1cc8c2e85469dfd2a1a7bae0a066ee1b956"
+    }
+  ]
+}
