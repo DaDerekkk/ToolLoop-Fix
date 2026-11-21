@@ -3,6 +3,7 @@
 基于用户研究提案和 Liquid AI AntiDoom，研究小模型在工具失败后如何恢复、合理重试或停止。
 
 **当前阶段：项目主线全部完成（G0–G4 闭环收官，2026-11-20）。已完成 G2 检测器冻结与零泄漏 `N=400` 训练包（ITER-008）、Colab NVIDIA L4 3 波次 10 个 LoRA 适配器训练、本机 MPS 开发选择与 36 例零泄漏 G4 封闭测试集单次解封评测、模板聚类统计对比及 846-episode 纯 CPU 重放审计（总计 `123` runs / `0` errors，`326/326` 项测试通过；全部自有云实例已释放）。**
+- 英文汇报（最终版）：[下载 PowerPoint](docs/presentation/final/ToolLoop-Fix.pptx) · [在线查看 PDF](docs/presentation/final/ToolLoop-Fix.pdf) · [演讲备注](docs/presentation/final/speaker-notes.md)
 - 最终中文研究报告：`FINAL_REPORT.md`
 - 正式统计对比：`experiments/EXP-20261120-105R1/g3_g4_comparison.{md,json}`
 - 独立审查与纯 CPU 回放审计：`agents/reviews/iteration9_final_review.md`、`experiments/EXP-20261120-REVIEW-009R2/iter9_replay_audit.json`

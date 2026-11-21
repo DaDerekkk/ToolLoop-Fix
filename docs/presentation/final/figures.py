@@ -22,19 +22,19 @@ def pairmark(d,x,y,k,sc=1):
 im=Image.new('RGB',(1760,620),paper);d=ImageDraw.Draw(im)
 for h,dom in enumerate(['files','jobs','orders']):
  off=35+h*574
- tx(d,(off,76),['Files','Jobs: held out','Orders'][h],46,b=True)
+ tx(d,(off,76),['File tasks','Background jobs','Order lookups'][h],46,b=True)
  d.line((off,129,off+525,129),fill=line,width=3)
  keys=sorted(k for k in b if '-'+dom+'-' in k);assert len(keys)==10
  for i,k in enumerate(keys):pairmark(d,off+25+i*52,210,(b[k],p[k]),1.23)
-tx(d,(35,311),'Each mark is one task evaluated by both methods.',32,fill='#64595E')
+tx(d,(35,311),'Each symbol is one test task. Its shape tells you which method finished it.',32,fill='#64595E')
 d.line((35,376,1715,376),fill=line,width=2)
-for idx,(k,name) in enumerate([((1,1),'Both completed'),((1,0),'SFT only'),((0,1),'DPO only'),((0,0),'Neither')]):
+for idx,(k,name) in enumerate([((1,1),'Both methods'),((1,0),'Supervision only'),((0,1),'Preference training only'),((0,0),'Neither method')]):
  x=38+idx*438; count=sum((b[task],p[task])==k for task in b)
  pairmark(d,x+20,466,k,.84);tx(d,(x+53,467),str(count),66,b=True);tx(d,(x+4,547),name,34)
 im.save(A/'pairs.png')
 im=Image.new('RGB',(1760,620),paper);d=ImageDraw.Draw(im)
-for i,(domain,label) in enumerate([('overall','All eligible tasks'),('cross_domain_heldout_jobs','Held-out jobs')]):
- off=42+i*870;tx(d,(off,50),label,42,b=True)
+for i,(domain,label) in enumerate([('overall','All 30 tasks: exact completion'),('cross_domain_heldout_jobs','10 unseen jobs: exact completion')]):
+ off=42+i*870;tx(d,(off,50),label,39,b=True)
  x=lambda v:off+122+v*625
  for v in [0,.5,1]:
   d.line((x(v),130,x(v),460),fill=line,width=2);tx(d,(x(v),499),f'{v:.0%}',26,anchor='mm')
@@ -48,8 +48,8 @@ for i,(domain,label) in enumerate([('overall','All eligible tasks'),('cross_doma
    else:d.ellipse((x0-r,y-r,x0+r,y+r),fill=copper)
    tx(d,(x0,y-36),f"{pt['numerator']}/{pt['denominator']}",29,fill=wine if h else copper,b=True,anchor='mm')
  tx(d,(off,106),'Seed',22,fill='#685B60')
-for h,(color,label) in enumerate([(copper,'Action DPO'),(wine,'Corrective SFT')]):
- x0=562+h*328;y=570
+for h,(color,label) in enumerate([(copper,'Preference training (DPO)'),(wine,'Corrective supervision (SFT)')]):
+ x0=380+h*535;y=570
  if h:d.rectangle((x0-9,y-9,x0+9,y+9),fill=color)
  else:d.ellipse((x0-10,y-10,x0+10,y+10),fill=color)
  tx(d,(x0+25,y),label,29)
@@ -62,8 +62,8 @@ for hi in (None,0,1,2,3,None):
  for i,(a,caption) in enumerate(zip(hist,['Wrong identifier','Identifier found','Timed out','Order retrieved'])):
   x0=45+440*i;c='#EFBC81' if i in (0,2) else '#D7C7DF'
   tx(d,(x0,57),f'CALL  {i+1:02d}',26,c,b=True)
-  tx(d,(x0,153),a['action']['tool'],44,'white',mono=True)
+  tx(d,(x0,153),a['action']['tool'],44,'white',b=True)
   d.line((x0,222,x0+383,222),fill=c if i==hi else '#73616D',width=9 if hi==i else 2)
-  tx(d,(x0,285),caption,39,'white',b=True);tx(d,(x0,365),a['response']['code'],31,fill=c,mono=True)
+  tx(d,(x0,285),caption,39,'white',b=True);tx(d,(x0,365),a['response']['code'],31,fill=c,b=True)
  frames.append(im)
 frames[0].save(A/'trace.gif',save_all=True,append_images=frames[1:],duration=[1200,900,900,900,900,1300],loop=0,disposal=2)
